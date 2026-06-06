@@ -19,7 +19,7 @@ export const researchPosts: Post[] = [
     content: [
       {
         type: 'p',
-        text: '这次整理的 research/ 内容不是普通项目收藏，而是一组围绕个人 AI 工程栈的技术观察。Qwen3.6-27B、Voicebox、SmallCode、Mesh-LLM、Lance、LongCat-Video-Avatar-1.5、WanGP / Wan2GP、LocateAnything、Aholo Viewer、Step 3.7 Flash、RealRestorer、Lyra 2.0、MiniCPM5-1B、Gemma 4 / Unsloth、Heretic、SoulX-FlashTalk、LongLive 2.0、SANA-WM、ERNIE-Image、HiDream-O1、NAVA、Qwen3.5-LiveTranslate、UniVidX、DreamLite、Sulphur-2-Base-GGUF 与 IDMVTON_CN 分别落在模型、语音、Coding Agent、分布式推理、多模态生成、音频驱动数字人、本地视频生产、视觉定位、浏览器 3DGS、高吞吐多模态 Agent、真实图像修复、3D 世界模型、端侧模型、本地运行、安全治理、实时数字人、长视频、世界模型、图像生成、音视频同步、实时翻译、可控视频编辑、端侧生成、本地视频与虚拟试衣应用层。',
+        text: '这次整理的 research/ 内容不是普通项目收藏，而是一组围绕个人 AI 工程栈的技术观察。Qwen3.6-27B、Voicebox、SmallCode、Mesh-LLM、Lance、LongCat-Video-Avatar-1.5、WanGP / Wan2GP、LocateAnything、Aholo Viewer、Step 3.7 Flash、RealRestorer、Lyra 2.0、MiniCPM5-1B、Gemma 4 / Unsloth、Heretic、SoulX-FlashTalk、LongLive 2.0、SANA-WM、ERNIE-Image、HiDream-O1、NAVA、Qwen3.5-LiveTranslate、UniVidX、SubForge、World-R1、ERNIE-Image 8B、Ideogram 4、Lens、DreamLite、Sulphur-2-Base-GGUF 与 IDMVTON_CN 分别落在模型、语音、Coding Agent、分布式推理、多模态生成、音频驱动数字人、本地视频生产、视觉定位、浏览器 3DGS、高吞吐多模态 Agent、真实图像修复、3D 世界模型、端侧模型、本地运行、安全治理、实时数字人、长视频、世界模型、图像生成、音视频同步、实时翻译、可控视频编辑、字幕生产、本地视频资料入库、3D-aware reward、设计可控生图、训练效率、端侧生成、本地视频与虚拟试衣应用层。',
       },
       { type: 'h2', id: 'thesis', text: '主线判断' },
       {
@@ -34,7 +34,7 @@ export const researchPosts: Post[] = [
       { type: 'h2', id: 'priority', text: '优先级结构' },
       {
         type: 'p',
-        text: 'P0 应该放在会改变个人工作流入口的位置：Qwen3.6-27B 作为长上下文 Agentic Coding 基线，Voicebox 作为本地语音输入输出与 MCP 语音层。P1 是需要进入实验矩阵的基础设施和模型方向：SmallCode、Mesh-LLM、Lance、LongCat-Video-Avatar-1.5、WanGP / Wan2GP、LocateAnything、Step 3.7 Flash、RealRestorer、MiniCPM5-1B、Gemma 4 / Unsloth、ERNIE-Image / HiDream-O1 与 LongLive 2.0 / SANA-WM。P2 是有明确实验价值但受许可、复现、硬件或生态成熟度约束影响的方向：Aholo Viewer、Lyra 2.0、SoulX-FlashTalk、NAVA、Qwen3.5-LiveTranslate、DreamLite、Sulphur-2-Base-GGUF。P3 是低频索引、风险档案和历史基线：Heretic、UniVidX、IDMVTON_CN。',
+        text: 'P0 应该放在会改变个人工作流入口的位置：Qwen3.6-27B 作为长上下文 Agentic Coding 基线，Voicebox 作为本地语音输入输出与 MCP 语音层。P1 是需要进入实验矩阵的基础设施和模型方向：SmallCode、Mesh-LLM、Lance、LongCat-Video-Avatar-1.5、WanGP / Wan2GP、LocateAnything、Step 3.7 Flash、RealRestorer、MiniCPM5-1B、Gemma 4 / Unsloth、ERNIE-Image / HiDream-O1、LongLive 2.0 / SANA-WM、SubForge、ERNIE-Image 8B 与 Ideogram 4。P2 是有明确实验价值但受许可、复现、硬件或生态成熟度约束影响的方向：Aholo Viewer、Lyra 2.0、SoulX-FlashTalk、NAVA、Qwen3.5-LiveTranslate、World-R1、Lens、DreamLite、Sulphur-2-Base-GGUF。P3 是低频索引、风险档案和历史基线：Heretic、UniVidX、受限微信来源、IDMVTON_CN。',
       },
       { type: 'h2', id: 'experiment-loop', text: '后续实验闭环' },
       {
@@ -42,7 +42,7 @@ export const researchPosts: Post[] = [
         items: [
           '先测 Qwen3.6-27B、SmallCode、Voicebox：覆盖代码理解、文件编辑、语音输入、TTS 输出和 MCP 调用。',
           '再测 Mesh-LLM 私有 mesh：固定模型、固定任务、固定机器组合，记录延迟、吞吐、失败恢复和数据边界。',
-          '多模态项目只做固定样例集：Lance 测理解/编辑/短视频，LongCat 与 SoulX 测音频驱动数字人，WanGP 测低显存视频生产，LocateAnything 测视觉定位，Aholo Viewer 与 Lyra 2.0 测浏览器 3DGS / 3D 世界生成，Step 3.7 Flash 测高吞吐 Agent/视觉任务，RealRestorer 测真实图像修复，MiniCPM5-1B 与 Gemma/Unsloth 测本地端侧任务，ERNIE-Image 与 HiDream-O1 测图像 prompt 套件，LongLive / SANA-WM / NAVA / UniVidX 测视频与音视频同步，Heretic 只进安全观察档案，DreamLite 测端侧编辑，Sulphur 测 ComfyUI 中不同 GGUF 量化档位。',
+          '多模态项目只做固定样例集：Lance 测理解/编辑/短视频，LongCat 与 SoulX 测音频驱动数字人，WanGP 测低显存视频生产，LocateAnything 测视觉定位，Aholo Viewer 与 Lyra 2.0 测浏览器 3DGS / 3D 世界生成，Step 3.7 Flash 测高吞吐 Agent/视觉任务，RealRestorer 测真实图像修复，MiniCPM5-1B 与 Gemma/Unsloth 测本地端侧任务，ERNIE-Image、ERNIE-Image 8B、Ideogram 4、Lens 与 HiDream-O1 测图像 prompt 套件，LongLive / SANA-WM / World-R1 / NAVA / UniVidX 测视频一致性与音视频同步，SubForge 测视频资料字幕入库，Heretic 和受限微信来源只进安全与来源观察档案，DreamLite 测端侧编辑，Sulphur 测 ComfyUI 中不同 GGUF 量化档位。',
           '每次实验都记录来源、环境、显存、耗时、失败率、许可限制和可复现步骤，形成下一轮 research/ 增量。',
         ],
       },
@@ -57,6 +57,184 @@ export const researchPosts: Post[] = [
           'research/ -> project report -> priority -> experiment card -> benchmark notes -> blog synthesis\n' +
           '              |                                           |\n' +
           '              |--------------- update loop ----------------|',
+      },
+    ],
+  },
+  {
+    slug: 'wechat-image-generation-world-models',
+    title: 'World-R1、ERNIE-Image 8B、Ideogram 4 与 Lens：生成模型正在转向结构可控',
+    subtitle: '6/4 简报显示，图像和视频生成的竞争点正在从单张好看图，转向 3D 几何、文字渲染、版式控制和训练效率。',
+    date: '2026-06-04',
+    category: 'Image & World Model Briefing',
+    tags: ['World-R1', 'ERNIE-Image', 'Ideogram 4', 'Lens', 'Image Generation', 'World Model', 'Training Efficiency'],
+    cover: '/assets/generated-covers/wechat-image-generation-world-models.png',
+    readMins: 10,
+    section: 'Research',
+    priority: 'P1',
+    sourcePath: 'research/10_outputs/briefings/2026-06-04-wechat-image-generation-world-model-briefing.md',
+    excerpt:
+      'World-R1 把视频生成拉向 3D-aware reward，ERNIE-Image 8B 和 Ideogram 4 把图像生成拉向文字与版式控制，Lens 则把训练效率拆成可复用工程清单。',
+    content: [
+      {
+        type: 'p',
+        text: '这份 6/4 简报不是又一组“谁出图更好看”的模型新闻。它更像一条结构化生成的分水岭：World-R1 关心视频里的 3D 几何一致性，ERNIE-Image 8B 关心中文和长文本渲染，Ideogram 4 关心 structured JSON、bbox 与调色盘控制，Lens 关心怎样用更少训练算力得到可竞争的 T2I 基座。',
+      },
+      { type: 'h2', id: 'signals', text: '四条新信号' },
+      {
+        type: 'list',
+        items: [
+          'World-R1：用 Flow-GRPO、3D-aware rewards、相机感知 latent 和周期性解耦训练，让文本生成视频更接近 world simulation。',
+          'ERNIE-Image 8B：百度 open text-to-image 模型家族，标准版重画质，Turbo 版面向 8-step 快速生成，核心卖点是中文理解、长文本渲染和 ComfyUI / Diffusers / SGLang 入口。',
+          'Ideogram 4：9.3B open-weight 设计向图像模型，强调 structured JSON prompt、bounding-box layout、color palette、多语言文字和原生 2K 输出。',
+          'Lens：微软 3.8B 文生图模型，把训练效率拆成 dense caption、混合分辨率、text encoder、semantic VAE、RL tuning 和 4-step Turbo 蒸馏。',
+        ],
+      },
+      { type: 'h2', id: 'structure', text: '从好看图到结构控制' },
+      {
+        type: 'p',
+        text: '这批项目共同说明，生成模型的评估对象正在换挡。下一阶段不只问图像是否漂亮，而要问文字能不能准、元素能不能落在指定区域、颜色能不能锁定、视频相机路径是否一致、世界几何是否自洽。这会直接改变个人图像工作流的评测方式。',
+      },
+      {
+        type: 'list',
+        items: [
+          '图像 prompt 集需要加入中文长文本、英文长文本、UI mock、商品包装、海报版式、透明素材和 bbox 约束。',
+          '视频 prompt 集需要加入相机运动、遮挡、长镜头、场景回看和多物体几何一致性。',
+          '每次实验都要保存原始 prompt、改写后 prompt、seed、分辨率、推理框架、权重许可和输出图。'
+        ],
+      },
+      { type: 'h2', id: 'license', text: '许可先于试用' },
+      {
+        type: 'p',
+        text: 'Ideogram 4 是这批里最需要醒目标注的项目：代码仓库显示 Apache-2.0，但模型权重是 gated，README 口径为 Ideogram 4 Non-Commercial。对博客和实验来说，这不是阻止观察，而是要求把“代码许可”和“权重许可”分开写清楚。',
+      },
+      {
+        type: 'list',
+        items: [
+          'ERNIE-Image 的 Apache-2.0 更适合进入中文视觉内容生产实验。',
+          'Ideogram 4 可以进入设计可控能力观察，但商用边界必须置顶提醒。',
+          'World-R1 和 Lens 的方法论价值高，短期更适合阅读 reward pipeline、训练清单和评估脚本，而不是急着完整复现训练。',
+        ],
+      },
+      { type: 'h2', id: 'priority', text: '优先级判断' },
+      {
+        type: 'list',
+        items: [
+          'P1：ERNIE-Image 8B，原因是中文文字渲染、海报类任务和 ComfyUI / Diffusers 接入都能进入固定样例集。',
+          'P1：Ideogram 4 license review，原因是设计可控能力强，但 Non-Commercial 权重边界必须先写进工具链规则。',
+          'P2：Lens，原因是训练效率拆解可沉淀为模型训练报告模板。',
+          'P2：World-R1，原因是 3D-aware reward 和 RL 后训练有方法论价值，但完整复现成本较高。',
+          'P3：受限微信 image_detail 来源，先保留链接参数，等待截图或正文补录。',
+        ],
+      },
+      { type: 'h2', id: 'next', text: '下一步实验' },
+      {
+        type: 'list',
+        items: [
+          '新建图像生成评测 prompt 集，覆盖中文长文本、版式约束、透明背景、bbox、UI 和商品包装。',
+          '为 ERNIE-Image 做 ComfyUI、Diffusers、SGLang 三路实验记录，保存增强前后 prompt。',
+          '为 Ideogram 4 写许可提醒片段，贴到任何试用记录顶部。',
+          '把 Lens 拆成训练效率 checklist：caption、resolution、VAE、text encoder、RL、distillation。',
+          '给 World-R1 另开阅读笔记，先拆 reward server、dataset 结构和评估脚本。',
+        ],
+      },
+      {
+        type: 'quote',
+        text: '生成模型的下一轮竞争，不是“能不能生成”，而是“能不能在约束下稳定生成”。',
+      },
+      {
+        type: 'code',
+        language: 'txt',
+        text:
+          'image prompt suite -> text / layout / palette / bbox metrics\n' +
+          'video world model -> camera path / 3D reward / consistency notes\n' +
+          'training report -> caption density / encoder / VAE / RL / distillation checklist',
+      },
+    ],
+  },
+  {
+    slug: 'subforge-subtitle-research-pipeline',
+    title: 'SubForge：把视频字幕生产变成个人研究系统的入口层',
+    subtitle: '转录、分段、翻译、质检和字幕合成被收敛成 CLI 管线后，视频资料就能更稳定地进入知识库。',
+    date: '2026-06-02',
+    category: 'Creator Toolchain',
+    tags: ['SubForge', 'Subtitle', 'Video Localization', 'CLI', 'Research Workflow', 'FFmpeg'],
+    cover: '/assets/generated-covers/subforge-subtitle-research-pipeline.png',
+    readMins: 8,
+    section: 'Research',
+    priority: 'P1',
+    sourcePath: 'research/10_outputs/briefings/2026-06-02-wechat-subtitle-restricted-sources-briefing.md',
+    excerpt:
+      'SubForge 的价值不只是自动生成字幕，而是把视频资料先转成可检索、可翻译、可复核的文本层，让技术课程、访谈和播客进入长期 research/ 归档。',
+    content: [
+      {
+        type: 'p',
+        text: '这份 6/2 简报看起来很小：一篇 SubForge 文章，两个微信受限 image_detail 来源。但它指向一个非常实用的入口问题：技术视频、课程、访谈和播客如果不能先变成可靠字幕，就很难进入长期检索、引用和总结。',
+      },
+      { type: 'h2', id: 'pipeline', text: '字幕是视频资料的索引层' },
+      {
+        type: 'p',
+        text: 'SubForge 用 Rust CLI 加 Python sidecar，把转录、分段、翻译、质量评估和硬字幕/软字幕输出串成可复跑流程。对个人研究系统来说，这意味着视频不再只是“看过的素材”，而能变成 SRT、双语文本、主题标签和来源卡片。',
+      },
+      {
+        type: 'list',
+        items: [
+          '转录：本地 faster-whisper，可配置 CPU 或 CUDA。',
+          '分段：用 SaT 改善字幕断句和可读性。',
+          '翻译：支持 Google、Bing 与 OpenAI-compatible LLM 后端。',
+          '质检：通过 GEMBA-MQM 定位低分片段并支持重翻。',
+          '合成：通过 FFmpeg 输出硬字幕、软字幕或两者同时保留。',
+        ],
+      },
+      { type: 'h2', id: 'research-workflow', text: '接入 research/ 的方式' },
+      {
+        type: 'p',
+        text: '更有意思的不是 SubForge 自己，而是它能放在 research/ 的哪一层。我的建议是把它放在视频资料入库前：先跑小样，生成字幕和中间文件，再把视频路径、字幕路径、语言、转录模型、翻译后端、输出模式和校验状态写进来源卡。',
+      },
+      {
+        type: 'list',
+        items: [
+          '课程和公开课：先生成双语 SRT，再做章节摘要和关键概念索引。',
+          '技术访谈和播客：先做说话内容检索，再抽取项目、人物、时间线和观点。',
+          '产品视频和 demo：先做字幕和镜头说明，再进入多模态 RAG 或资料库。',
+          '跨语种材料：保留原文字幕、译文字幕和术语表，避免后续引用失真。',
+        ],
+      },
+      { type: 'h2', id: 'restricted-sources', text: '受限来源的处理' },
+      {
+        type: 'p',
+        text: '两个 image_detail 链接当前没有正文，只能保留参数、抓取状态和补录入口。这类来源不应该硬写成内容结论，但应该留在来源系统里，等截图、正文或普通文章页补齐后再升级卡片。',
+      },
+      { type: 'h2', id: 'priority', text: '优先级判断' },
+      {
+        type: 'list',
+        items: [
+          'P1：SubForge small-sample test，原因是 2 到 5 分钟视频就能验证转录、翻译、字体、软字幕和硬字幕输出。',
+          'P1：Video-to-research pipeline，原因是字幕层能把视频资料接入检索、摘要、引用和多语言整理。',
+          'P2：SubForge dependency matrix，原因是 Rust、Python、FFmpeg、CUDA、模型和 LLM API 都要记录。',
+          'P2：Restricted source recovery，原因是需要截图、复制正文或普通文章页才能升级来源质量。',
+        ],
+      },
+      { type: 'h2', id: 'next', text: '下一步实验' },
+      {
+        type: 'list',
+        items: [
+          '建立 `research/06_projects/experiments/subforge-subtitle-pipeline/`，记录安装、样片、命令、输出和问题。',
+          '设计视频资料来源卡模板字段：视频路径、字幕路径、语言、转录模型、翻译后端、输出模式、校验状态。',
+          '用 5 分钟中文技术视频和 5 分钟英文访谈各跑一次，记录时间轴质量、术语一致性和字幕烧制问题。',
+          '等两个受限 image_detail 来源拿到截图或正文后，再升级 source card。',
+        ],
+      },
+      {
+        type: 'quote',
+        text: '视频资料进入知识库的第一步，不是总结，而是先拥有一层可信字幕。',
+      },
+      {
+        type: 'code',
+        language: 'txt',
+        text:
+          'video/audio -> transcript -> segmentation -> translation -> QA -> SRT/MP4\n' +
+          '              |                                      |\n' +
+          '              |---------- source card + research index ---|',
       },
     ],
   },
