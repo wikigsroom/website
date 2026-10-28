@@ -1,0 +1,42 @@
+# Dependencies
+node_modules/
+
+# Build
+/dist/
+/coverage/
+
+# Env
+.env
+.env.*
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Vite
+.vite/
+
+# Editor
+.vscode/
+.idea/
+
+# Cache
+*.log
+*.tmp
+*.swp
+
+# Live2D widget local
+live2d-widget/
+.vercel
+
+# Temporary documentation recordings; final screenshots, MP4s and GIFs are tracked.
+docs/media/.raw/
+playwright-report/
+test-results/
+*.tsbuildinfo

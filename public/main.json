@@ -1,0 +1,3232 @@
+[
+  {
+    "id": "chatgpt",
+    "name": {
+      "en-US": "ChatGPT",
+      "zh-CN": "ChatGPT"
+    },
+    "category": {
+      "id": "assistant",
+      "label": {
+        "en-US": "AI Assistant",
+        "zh-CN": "AI 助手"
+      }
+    },
+    "vendor": {
+      "en-US": "OpenAI",
+      "zh-CN": "OpenAI"
+    },
+    "website": "https://openai.com/chatgpt/overview",
+    "description": {
+      "en-US": "General-purpose AI assistant for chat, writing, and problem solving.",
+      "zh-CN": "???????????????? AI ???"
+    },
+    "tags": [
+      {
+        "id": "chat",
+        "label": {
+          "en-US": "Chat",
+          "zh-CN": "对话"
+        }
+      },
+      {
+        "id": "general",
+        "label": {
+          "en-US": "General",
+          "zh-CN": "通用"
+        }
+      }
+    ],
+    "sources": [
+      "https://openai.com/chatgpt/overview"
+    ]
+  },
+  {
+    "id": "claude",
+    "name": {
+      "en-US": "Claude",
+      "zh-CN": "Claude"
+    },
+    "category": {
+      "id": "assistant",
+      "label": {
+        "en-US": "AI Assistant",
+        "zh-CN": "AI 助手"
+      }
+    },
+    "vendor": {
+      "en-US": "Anthropic",
+      "zh-CN": "Anthropic"
+    },
+    "website": "https://www.anthropic.com/claude",
+    "description": {
+      "en-US": "AI assistant from Anthropic, available on web and desktop apps.",
+      "zh-CN": "Anthropic ??? AI ??????????????"
+    },
+    "tags": [
+      {
+        "id": "chat",
+        "label": {
+          "en-US": "Chat",
+          "zh-CN": "对话"
+        }
+      },
+      {
+        "id": "general",
+        "label": {
+          "en-US": "General",
+          "zh-CN": "通用"
+        }
+      }
+    ],
+    "sources": [
+      "https://www.anthropic.com/claude",
+      "https://support.anthropic.com/en/articles/8114491-how-do-i-get-started-with-claude-ai"
+    ]
+  },
+  {
+    "id": "gemini",
+    "name": {
+      "en-US": "Gemini",
+      "zh-CN": "Gemini"
+    },
+    "category": {
+      "id": "assistant",
+      "label": {
+        "en-US": "AI Assistant",
+        "zh-CN": "AI 助手"
+      }
+    },
+    "vendor": {
+      "en-US": "Google",
+      "zh-CN": "Google"
+    },
+    "website": "https://assistant.google.com/intl/en_en/platforms/phones/",
+    "description": {
+      "en-US": "Google's AI assistant available via the Gemini app and Google Assistant experiences.",
+      "zh-CN": "Google ? AI ?????? Gemini ????????????"
+    },
+    "tags": [
+      {
+        "id": "chat",
+        "label": {
+          "en-US": "Chat",
+          "zh-CN": "对话"
+        }
+      },
+      {
+        "id": "mobile",
+        "label": {
+          "en-US": "Mobile",
+          "zh-CN": "移动端"
+        }
+      }
+    ],
+    "sources": [
+      "https://assistant.google.com/intl/en_en/platforms/phones/",
+      "https://apps.apple.com/us/app/google-gemini/id6477489729"
+    ]
+  },
+  {
+    "id": "microsoft-copilot",
+    "name": {
+      "en-US": "Microsoft Copilot",
+      "zh-CN": "Microsoft Copilot"
+    },
+    "category": {
+      "id": "assistant",
+      "label": {
+        "en-US": "AI Assistant",
+        "zh-CN": "AI 助手"
+      }
+    },
+    "vendor": {
+      "en-US": "Microsoft",
+      "zh-CN": "Microsoft"
+    },
+    "website": "https://www.microsoft.com/microsoft-365/copilot",
+    "description": {
+      "en-US": "AI productivity tools for work inside Microsoft 365 experiences.",
+      "zh-CN": "??? Microsoft 365 ???? AI ?????????"
+    },
+    "tags": [
+      {
+        "id": "chat",
+        "label": {
+          "en-US": "Chat",
+          "zh-CN": "对话"
+        }
+      },
+      {
+        "id": "productivity",
+        "label": {
+          "en-US": "Productivity",
+          "zh-CN": "生产力"
+        }
+      }
+    ],
+    "sources": [
+      "https://www.microsoft.com/microsoft-365/copilot"
+    ]
+  },
+  {
+    "id": "perplexity",
+    "name": {
+      "en-US": "Perplexity",
+      "zh-CN": "Perplexity"
+    },
+    "category": {
+      "id": "assistant",
+      "label": {
+        "en-US": "AI Assistant",
+        "zh-CN": "AI 助手"
+      }
+    },
+    "vendor": {
+      "en-US": "Perplexity",
+      "zh-CN": "Perplexity"
+    },
+    "website": "https://www.perplexity.ai/about",
+    "description": {
+      "en-US": "Answer engine that retrieves and cites information in responses.",
+      "zh-CN": "???????????????????????"
+    },
+    "tags": [
+      {
+        "id": "search",
+        "label": {
+          "en-US": "Search",
+          "zh-CN": "搜索"
+        }
+      },
+      {
+        "id": "citations",
+        "label": {
+          "en-US": "Citations",
+          "zh-CN": "引用"
+        }
+      }
+    ],
+    "sources": [
+      "https://www.perplexity.ai/about"
+    ]
+  },
+  {
+    "id": "codex",
+    "name": {
+      "en-US": "Codex",
+      "zh-CN": "Codex"
+    },
+    "category": {
+      "id": "builder",
+      "label": {
+        "en-US": "AI Builder",
+        "zh-CN": "AI 构建工具"
+      }
+    },
+    "vendor": {
+      "en-US": "OpenAI",
+      "zh-CN": "OpenAI"
+    },
+    "website": "https://openai.com/codex",
+    "description": {
+      "en-US": "Agentic software engineer that works through CLI, IDE extensions, and cloud tasks to read, edit, run, and test code with citations.",
+      "zh-CN": "?????????????????????????????????"
+    },
+    "tags": [
+      {
+        "id": "agent",
+        "label": {
+          "en-US": "Agent",
+          "zh-CN": "智能体"
+        }
+      },
+      {
+        "id": "ide",
+        "label": {
+          "en-US": "IDE",
+          "zh-CN": "集成开发环境"
+        }
+      }
+    ],
+    "sources": [
+      "https://openai.com/codex"
+    ]
+  },
+  {
+    "id": "antigravity",
+    "name": {
+      "en-US": "Google Antigravity",
+      "zh-CN": "Google Antigravity"
+    },
+    "category": {
+      "id": "builder",
+      "label": {
+        "en-US": "AI Builder",
+        "zh-CN": "AI 构建工具"
+      }
+    },
+    "vendor": {
+      "en-US": "Google",
+      "zh-CN": "Google"
+    },
+    "website": "https://antigravity.google/",
+    "description": {
+      "en-US": "Agent-first IDE powered by Gemini 3 models that coordinates asynchronous AI agents and surfaces trustworthy artifacts.",
+      "zh-CN": "Google ??? agent-first IDE?? Gemini ????????????"
+    },
+    "tags": [
+      {
+        "id": "agent",
+        "label": {
+          "en-US": "Agent",
+          "zh-CN": "智能体"
+        }
+      },
+      {
+        "id": "ide",
+        "label": {
+          "en-US": "IDE",
+          "zh-CN": "集成开发环境"
+        }
+      }
+    ],
+    "sources": [
+      "https://antigravity.google/"
+    ]
+  },
+  {
+    "id": "ai-studio",
+    "name": {
+      "en-US": "AI Studio",
+      "zh-CN": "AI Studio"
+    },
+    "category": {
+      "id": "builder",
+      "label": {
+        "en-US": "AI Builder",
+        "zh-CN": "AI 构建工具"
+      }
+    },
+    "vendor": {
+      "en-US": "Google",
+      "zh-CN": "Google"
+    },
+    "website": "https://ai.google.dev/aistudio/",
+    "description": {
+      "en-US": "Gemini-powered Build mode that turns prompts into React apps, visuals, and deployable previews with editable templates.",
+      "zh-CN": "Gemini ??? Build ?????????? React ?????????????"
+    },
+    "tags": [
+      {
+        "id": "app_builder",
+        "label": {
+          "en-US": "App Builder",
+          "zh-CN": "应用生成"
+        }
+      },
+      {
+        "id": "gemini",
+        "label": {
+          "en-US": "Gemini",
+          "zh-CN": "Gemini"
+        }
+      }
+    ],
+    "sources": [
+      "https://ai.google.dev/aistudio/"
+    ]
+  },
+  {
+    "id": "lovable",
+    "name": {
+      "en-US": "Lovable",
+      "zh-CN": "Lovable"
+    },
+    "category": {
+      "id": "builder",
+      "label": {
+        "en-US": "AI Builder",
+        "zh-CN": "AI 构建工具"
+      }
+    },
+    "vendor": {
+      "en-US": "Lovable",
+      "zh-CN": "Lovable"
+    },
+    "website": "https://lovable.dev/",
+    "description": {
+      "en-US": "Swedish vibe coding platform that converts natural-language briefs into pixel-perfect, full-stack apps with backend services.",
+      "zh-CN": "?????????????????? vibe coding ???"
+    },
+    "tags": [
+      {
+        "id": "app_builder",
+        "label": {
+          "en-US": "App Builder",
+          "zh-CN": "应用生成"
+        }
+      },
+      {
+        "id": "no_code",
+        "label": {
+          "en-US": "No-Code",
+          "zh-CN": "低代码"
+        }
+      }
+    ],
+    "sources": [
+      "https://lovable.dev/"
+    ]
+  },
+  {
+    "id": "tempo-labs",
+    "name": {
+      "en-US": "Tempo Labs",
+      "zh-CN": "Tempo Labs"
+    },
+    "category": {
+      "id": "builder",
+      "label": {
+        "en-US": "AI Builder",
+        "zh-CN": "AI 构建工具"
+      }
+    },
+    "vendor": {
+      "en-US": "Tempo",
+      "zh-CN": "Tempo"
+    },
+    "website": "https://tempo.new/",
+    "description": {
+      "en-US": "AI visual editor for React that blends design tools, Gemini reasoning, and drag-and-drop components for production UIs.",
+      "zh-CN": "?? React ? AI ????????????????????????"
+    },
+    "tags": [
+      {
+        "id": "design",
+        "label": {
+          "en-US": "Design",
+          "zh-CN": "设计"
+        }
+      },
+      {
+        "id": "ui",
+        "label": {
+          "en-US": "UI",
+          "zh-CN": "界面"
+        }
+      }
+    ],
+    "sources": [
+      "https://tempo.new/"
+    ]
+  },
+  {
+    "id": "poolside",
+    "name": {
+      "en-US": "Poolside",
+      "zh-CN": "Poolside"
+    },
+    "category": {
+      "id": "builder",
+      "label": {
+        "en-US": "AI Builder",
+        "zh-CN": "AI 构建工具"
+      }
+    },
+    "vendor": {
+      "en-US": "Poolside",
+      "zh-CN": "Poolside"
+    },
+    "website": "https://poolside.ai/",
+    "description": {
+      "en-US": "Foundation model lab that ships secure AI agents, IDE extensions, terminals, and observability for enterprise code generation.",
+      "zh-CN": "????????????????????? AI ???IDE ????????"
+    },
+    "tags": [
+      {
+        "id": "enterprise",
+        "label": {
+          "en-US": "Enterprise",
+          "zh-CN": "企业级"
+        }
+      },
+      {
+        "id": "models",
+        "label": {
+          "en-US": "Models",
+          "zh-CN": "模型"
+        }
+      }
+    ],
+    "sources": [
+      "https://poolside.ai/"
+    ]
+  },
+  {
+    "id": "emergent",
+    "name": {
+      "en-US": "Emergent",
+      "zh-CN": "Emergent"
+    },
+    "category": {
+      "id": "builder",
+      "label": {
+        "en-US": "AI Builder",
+        "zh-CN": "AI 构建工具"
+      }
+    },
+    "vendor": {
+      "en-US": "Emergent",
+      "zh-CN": "Emergent"
+    },
+    "website": "https://emergentmind.com/",
+    "description": {
+      "en-US": "Agentic vibe coding platform that lets non-technical founders build production-ready apps by orchestrating autonomous AI agents.",
+      "zh-CN": "?????? AI ??????????????????????"
+    },
+    "tags": [
+      {
+        "id": "agent",
+        "label": {
+          "en-US": "Agent",
+          "zh-CN": "智能体"
+        }
+      },
+      {
+        "id": "app_builder",
+        "label": {
+          "en-US": "App Builder",
+          "zh-CN": "应用生成"
+        }
+      }
+    ],
+    "sources": [
+      "https://emergentmind.com/"
+    ]
+  },
+  {
+    "id": "base44",
+    "name": {
+      "en-US": "Base44",
+      "zh-CN": "Base44"
+    },
+    "category": {
+      "id": "builder",
+      "label": {
+        "en-US": "AI Builder",
+        "zh-CN": "AI 构建工具"
+      }
+    },
+    "vendor": {
+      "en-US": "Base44",
+      "zh-CN": "Base44"
+    },
+    "website": "https://base44.com/",
+    "description": {
+      "en-US": "Conversational builder that translates prompts into responsive web and mobile apps, handling auth and analytics.",
+      "zh-CN": "????????? Web ?????????????????????"
+    },
+    "tags": [
+      {
+        "id": "app_builder",
+        "label": {
+          "en-US": "App Builder",
+          "zh-CN": "应用生成"
+        }
+      },
+      {
+        "id": "design",
+        "label": {
+          "en-US": "Design",
+          "zh-CN": "设计"
+        }
+      }
+    ],
+    "sources": [
+      "https://base44.com/"
+    ]
+  },
+  {
+    "id": "div-idy",
+    "name": {
+      "en-US": "Div-idy",
+      "zh-CN": "Div-idy"
+    },
+    "category": {
+      "id": "builder",
+      "label": {
+        "en-US": "AI Builder",
+        "zh-CN": "AI 构建工具"
+      }
+    },
+    "vendor": {
+      "en-US": "Div-idy",
+      "zh-CN": "Div-idy"
+    },
+    "website": "https://www.div-idy.com/",
+    "description": {
+      "en-US": "Prompt-driven web app generator that scaffolds UI, backend logic, CMS features, and deployment.",
+      "zh-CN": "??????? Web ????????? UI??????CMS ??????"
+    },
+    "tags": [
+      {
+        "id": "web",
+        "label": {
+          "en-US": "Web",
+          "zh-CN": "网页"
+        }
+      },
+      {
+        "id": "app_builder",
+        "label": {
+          "en-US": "App Builder",
+          "zh-CN": "应用生成"
+        }
+      }
+    ],
+    "sources": [
+      "https://www.div-idy.com/"
+    ]
+  },
+  {
+    "id": "supernova",
+    "name": {
+      "en-US": "Supernova",
+      "zh-CN": "Supernova"
+    },
+    "category": {
+      "id": "builder",
+      "label": {
+        "en-US": "AI Builder",
+        "zh-CN": "AI 构建工具"
+      }
+    },
+    "vendor": {
+      "en-US": "Supernova",
+      "zh-CN": "Supernova"
+    },
+    "website": "https://www.supernova.io/",
+    "description": {
+      "en-US": "Design-system platform that keeps tokens, docs, and code in sync while exporting high-quality components.",
+      "zh-CN": "??????????????????????????????????"
+    },
+    "tags": [
+      {
+        "id": "design_system",
+        "label": {
+          "en-US": "Design System",
+          "zh-CN": "设计系统"
+        }
+      },
+      {
+        "id": "export",
+        "label": {
+          "en-US": "Export",
+          "zh-CN": "导出"
+        }
+      }
+    ],
+    "sources": [
+      "https://www.supernova.io/"
+    ]
+  },
+  {
+    "id": "memex",
+    "name": {
+      "en-US": "Memex",
+      "zh-CN": "Memex"
+    },
+    "category": {
+      "id": "builder",
+      "label": {
+        "en-US": "AI Builder",
+        "zh-CN": "AI 构建工具"
+      }
+    },
+    "vendor": {
+      "en-US": "Memex",
+      "zh-CN": "Memex"
+    },
+    "website": "https://memex.tech/",
+    "description": {
+      "en-US": "Privacy-forward vibe coding workspace optimized for offline dev, local testing, and reproducible exports.",
+      "zh-CN": "?????????? vibe coding ?????????????????"
+    },
+    "tags": [
+      {
+        "id": "privacy",
+        "label": {
+          "en-US": "Privacy",
+          "zh-CN": "隐私"
+        }
+      },
+      {
+        "id": "local",
+        "label": {
+          "en-US": "Local",
+          "zh-CN": "本地"
+        }
+      }
+    ],
+    "sources": [
+      "https://memex.tech/"
+    ]
+  },
+  {
+    "id": "flowise-ai",
+    "name": {
+      "en-US": "FlowiseAI",
+      "zh-CN": "FlowiseAI"
+    },
+    "category": {
+      "id": "builder",
+      "label": {
+        "en-US": "AI Builder",
+        "zh-CN": "AI 构建工具"
+      }
+    },
+    "vendor": {
+      "en-US": "FlowiseAI",
+      "zh-CN": "FlowiseAI"
+    },
+    "website": "https://flowiseai.com/",
+    "description": {
+      "en-US": "Open-source no-code LLM orchestration layer that lets you chain prompts, models, and tools into automation workflows.",
+      "zh-CN": "?????? LLM ????????????????????????"
+    },
+    "tags": [
+      {
+        "id": "workflow",
+        "label": {
+          "en-US": "Workflow",
+          "zh-CN": "工作流"
+        }
+      },
+      {
+        "id": "open_source",
+        "label": {
+          "en-US": "Open Source",
+          "zh-CN": "开源"
+        }
+      }
+    ],
+    "sources": [
+      "https://flowiseai.com/"
+    ]
+  },
+  {
+    "id": "anysphere",
+    "name": {
+      "en-US": "Anysphere",
+      "zh-CN": "Anysphere"
+    },
+    "category": {
+      "id": "builder",
+      "label": {
+        "en-US": "AI Builder",
+        "zh-CN": "AI 构建工具"
+      }
+    },
+    "vendor": {
+      "en-US": "Anysphere",
+      "zh-CN": "Anysphere"
+    },
+    "website": "https://anysphere.inc/",
+    "description": {
+      "en-US": "Agent-centric environment where high-level instructions spin up code, refactors, and architecture decisions.",
+      "zh-CN": "???????????????????????????"
+    },
+    "tags": [
+      {
+        "id": "agent",
+        "label": {
+          "en-US": "Agent",
+          "zh-CN": "智能体"
+        }
+      },
+      {
+        "id": "planning",
+        "label": {
+          "en-US": "Planning",
+          "zh-CN": "规划"
+        }
+      }
+    ],
+    "sources": [
+      "https://anysphere.inc/"
+    ]
+  },
+  {
+    "id": "openinterpreter",
+    "name": {
+      "en-US": "OpenInterpreter",
+      "zh-CN": "OpenInterpreter"
+    },
+    "category": {
+      "id": "builder",
+      "label": {
+        "en-US": "AI Builder",
+        "zh-CN": "AI 构建工具"
+      }
+    },
+    "vendor": {
+      "en-US": "OpenInterpreter",
+      "zh-CN": "OpenInterpreter"
+    },
+    "website": "https://openinterpreter.com/",
+    "description": {
+      "en-US": "Local natural-language interface that executes Python, JavaScript, and shell commands while keeping code under your control.",
+      "zh-CN": "???????????? Python?JavaScript ? shell ???????????"
+    },
+    "tags": [
+      {
+        "id": "terminal",
+        "label": {
+          "en-US": "Terminal",
+          "zh-CN": "终端"
+        }
+      },
+      {
+        "id": "automation",
+        "label": {
+          "en-US": "Automation",
+          "zh-CN": "自动化"
+        }
+      }
+    ],
+    "sources": [
+      "https://openinterpreter.com/"
+    ]
+  },
+  {
+    "id": "windmill",
+    "name": {
+      "en-US": "Windmill",
+      "zh-CN": "Windmill"
+    },
+    "category": {
+      "id": "builder",
+      "label": {
+        "en-US": "AI Builder",
+        "zh-CN": "AI 构建工具"
+      }
+    },
+    "vendor": {
+      "en-US": "Windmill Labs",
+      "zh-CN": "Windmill Labs"
+    },
+    "website": "https://windmill.dev/",
+    "description": {
+      "en-US": "Open-source platform that turns scripts into UI, APIs, and workflows with auto-generated interfaces.",
+      "zh-CN": "????????API ????????????????????"
+    },
+    "tags": [
+      {
+        "id": "automation",
+        "label": {
+          "en-US": "Automation",
+          "zh-CN": "自动化"
+        }
+      },
+      {
+        "id": "workflow",
+        "label": {
+          "en-US": "Workflow",
+          "zh-CN": "工作流"
+        }
+      }
+    ],
+    "sources": [
+      "https://windmill.dev/"
+    ]
+  },
+  {
+    "id": "glitch",
+    "name": {
+      "en-US": "Glitch",
+      "zh-CN": "Glitch"
+    },
+    "category": {
+      "id": "builder",
+      "label": {
+        "en-US": "AI Builder",
+        "zh-CN": "AI 构建工具"
+      }
+    },
+    "vendor": {
+      "en-US": "Glitch",
+      "zh-CN": "Glitch"
+    },
+    "website": "https://glitch.com/",
+    "description": {
+      "en-US": "Remixable dev environment with serverless runtimes and LLM-powered editing for fast prototypes.",
+      "zh-CN": "???????? remix ?????????????? LLM ?????"
+    },
+    "tags": [
+      {
+        "id": "prototyping",
+        "label": {
+          "en-US": "Prototyping",
+          "zh-CN": "原型"
+        }
+      },
+      {
+        "id": "web",
+        "label": {
+          "en-US": "Web",
+          "zh-CN": "网页"
+        }
+      }
+    ],
+    "sources": [
+      "https://glitch.com/"
+    ]
+  },
+  {
+    "id": "codesandbox-projects",
+    "name": {
+      "en-US": "CodeSandbox Projects",
+      "zh-CN": "CodeSandbox Projects"
+    },
+    "category": {
+      "id": "builder",
+      "label": {
+        "en-US": "AI Builder",
+        "zh-CN": "AI 构建工具"
+      }
+    },
+    "vendor": {
+      "en-US": "CodeSandbox",
+      "zh-CN": "CodeSandbox"
+    },
+    "website": "https://codesandbox.io/projects",
+    "description": {
+      "en-US": "Browser-native workspace for React and full-stack apps with Dev Containers and professional workflows.",
+      "zh-CN": "??????????? React ??????Dev Containers ????????"
+    },
+    "tags": [
+      {
+        "id": "react",
+        "label": {
+          "en-US": "React",
+          "zh-CN": "React"
+        }
+      },
+      {
+        "id": "dev_tools",
+        "label": {
+          "en-US": "Dev Tools",
+          "zh-CN": "开发工具"
+        }
+      }
+    ],
+    "sources": [
+      "https://codesandbox.io/projects"
+    ]
+  },
+  {
+    "id": "tldraw-codegen",
+    "name": {
+      "en-US": "tldraw + Codegen",
+      "zh-CN": "tldraw + Codegen"
+    },
+    "category": {
+      "id": "builder",
+      "label": {
+        "en-US": "AI Builder",
+        "zh-CN": "AI 构建工具"
+      }
+    },
+    "vendor": {
+      "en-US": "tldraw",
+      "zh-CN": "tldraw"
+    },
+    "website": "https://tldraw.com/",
+    "description": {
+      "en-US": "Visual canvas that hooks into codegen extensions so designers can turn sketches into working front-end code.",
+      "zh-CN": "????????????????????????????????"
+    },
+    "tags": [
+      {
+        "id": "design",
+        "label": {
+          "en-US": "Design",
+          "zh-CN": "设计"
+        }
+      },
+      {
+        "id": "prototype",
+        "label": {
+          "en-US": "Prototype",
+          "zh-CN": "原型"
+        }
+      }
+    ],
+    "sources": [
+      "https://tldraw.com/"
+    ]
+  },
+  {
+    "id": "warp-terminal",
+    "name": {
+      "en-US": "Warp Terminal",
+      "zh-CN": "Warp Terminal"
+    },
+    "category": {
+      "id": "builder",
+      "label": {
+        "en-US": "AI Builder",
+        "zh-CN": "AI 构建工具"
+      }
+    },
+    "vendor": {
+      "en-US": "Warp",
+      "zh-CN": "Warp"
+    },
+    "website": "https://www.warp.dev/",
+    "description": {
+      "en-US": "Modern terminal with blocks, autosuggestions, AI command help, and real-time co-terminals.",
+      "zh-CN": "??????????????????AI ????????????"
+    },
+    "tags": [
+      {
+        "id": "terminal",
+        "label": {
+          "en-US": "Terminal",
+          "zh-CN": "终端"
+        }
+      },
+      {
+        "id": "collaboration",
+        "label": {
+          "en-US": "Collaboration",
+          "zh-CN": "协作"
+        }
+      }
+    ],
+    "sources": [
+      "https://www.warp.dev/"
+    ]
+  },
+  {
+    "id": "github-copilot",
+    "name": {
+      "en-US": "GitHub Copilot",
+      "zh-CN": "GitHub Copilot"
+    },
+    "category": {
+      "id": "builder",
+      "label": {
+        "en-US": "AI Builder",
+        "zh-CN": "AI 构建工具"
+      }
+    },
+    "vendor": {
+      "en-US": "GitHub",
+      "zh-CN": "GitHub"
+    },
+    "website": "https://github.com/features/copilot/",
+    "description": {
+      "en-US": "AI pair programmer that autocompletes code, writes documentation, and powers Copilot Chat inside familiar IDEs.",
+      "zh-CN": "AI ????????? IDE ??????????????????"
+    },
+    "tags": [
+      {
+        "id": "ide",
+        "label": {
+          "en-US": "IDE",
+          "zh-CN": "集成开发环境"
+        }
+      },
+      {
+        "id": "completion",
+        "label": {
+          "en-US": "Completion",
+          "zh-CN": "补全"
+        }
+      }
+    ],
+    "sources": [
+      "https://github.com/features/copilot/"
+    ]
+  },
+  {
+    "id": "amazon-codewhisperer",
+    "name": {
+      "en-US": "Amazon CodeWhisperer",
+      "zh-CN": "Amazon CodeWhisperer"
+    },
+    "category": {
+      "id": "builder",
+      "label": {
+        "en-US": "AI Builder",
+        "zh-CN": "AI 构建工具"
+      }
+    },
+    "vendor": {
+      "en-US": "Amazon Web Services",
+      "zh-CN": "Amazon Web Services"
+    },
+    "website": "https://aws.amazon.com/codewhisperer/",
+    "description": {
+      "en-US": "AWS-native coding assistant that offers secure snippets, policy checks, and cloud documentation hints.",
+      "zh-CN": "AWS ???????????????????????????"
+    },
+    "tags": [
+      {
+        "id": "aws",
+        "label": {
+          "en-US": "AWS",
+          "zh-CN": "AWS"
+        }
+      },
+      {
+        "id": "security",
+        "label": {
+          "en-US": "Security",
+          "zh-CN": "安全"
+        }
+      }
+    ],
+    "sources": [
+      "https://aws.amazon.com/codewhisperer/"
+    ]
+  },
+  {
+    "id": "tabnine",
+    "name": {
+      "en-US": "Tabnine",
+      "zh-CN": "Tabnine"
+    },
+    "category": {
+      "id": "builder",
+      "label": {
+        "en-US": "AI Builder",
+        "zh-CN": "AI 构建工具"
+      }
+    },
+    "vendor": {
+      "en-US": "Tabnine",
+      "zh-CN": "Tabnine"
+    },
+    "website": "https://www.tabnine.com/",
+    "description": {
+      "en-US": "Privacy-focused autocomplete that can run locally, learn team conventions, and sync across IDEs.",
+      "zh-CN": "?????????????????????????? IDE ???"
+    },
+    "tags": [
+      {
+        "id": "autocomplete",
+        "label": {
+          "en-US": "Autocomplete",
+          "zh-CN": "自动补全"
+        }
+      },
+      {
+        "id": "privacy",
+        "label": {
+          "en-US": "Privacy",
+          "zh-CN": "隐私"
+        }
+      }
+    ],
+    "sources": [
+      "https://www.tabnine.com/"
+    ]
+  },
+  {
+    "id": "jetbrains-ai-assistant",
+    "name": {
+      "en-US": "JetBrains AI Assistant",
+      "zh-CN": "JetBrains AI Assistant"
+    },
+    "category": {
+      "id": "builder",
+      "label": {
+        "en-US": "AI Builder",
+        "zh-CN": "AI 构建工具"
+      }
+    },
+    "vendor": {
+      "en-US": "JetBrains",
+      "zh-CN": "JetBrains"
+    },
+    "website": "https://www.jetbrains.com/ai/",
+    "description": {
+      "en-US": "Assistant for IntelliJ, PyCharm, and WebStorm that turns prompts into code, documentation, and explanations.",
+      "zh-CN": "??? IntelliJ?PyCharm?WebStorm ? JetBrains IDE ? AI ???"
+    },
+    "tags": [
+      {
+        "id": "jetbrains",
+        "label": {
+          "en-US": "JetBrains",
+          "zh-CN": "JetBrains"
+        }
+      },
+      {
+        "id": "ide",
+        "label": {
+          "en-US": "IDE",
+          "zh-CN": "集成开发环境"
+        }
+      }
+    ],
+    "sources": [
+      "https://www.jetbrains.com/ai/"
+    ]
+  },
+  {
+    "id": "claude-code",
+    "name": {
+      "en-US": "Claude Code",
+      "zh-CN": "Claude Code"
+    },
+    "category": {
+      "id": "builder",
+      "label": {
+        "en-US": "AI Builder",
+        "zh-CN": "AI 构建工具"
+      }
+    },
+    "vendor": {
+      "en-US": "Anthropic",
+      "zh-CN": "Anthropic"
+    },
+    "website": "https://www.claudecode.io/",
+    "description": {
+      "en-US": "Logic-focused coding agent that understands multi-file context, refactors, and explains code for collaborators.",
+      "zh-CN": "????????????????????????"
+    },
+    "tags": [
+      {
+        "id": "code_review",
+        "label": {
+          "en-US": "Code Review",
+          "zh-CN": "代码审查"
+        }
+      },
+      {
+        "id": "agent",
+        "label": {
+          "en-US": "Agent",
+          "zh-CN": "智能体"
+        }
+      }
+    ],
+    "sources": [
+      "https://www.claudecode.io/"
+    ]
+  },
+  {
+    "id": "codeium",
+    "name": {
+      "en-US": "Codeium",
+      "zh-CN": "Codeium"
+    },
+    "category": {
+      "id": "builder",
+      "label": {
+        "en-US": "AI Builder",
+        "zh-CN": "AI 构建工具"
+      }
+    },
+    "vendor": {
+      "en-US": "Codeium",
+      "zh-CN": "Codeium"
+    },
+    "website": "https://codeium.com/",
+    "description": {
+      "en-US": "Budget-friendly autocomplete and code generation tool with unlimited free usage and IDE plugins.",
+      "zh-CN": "????????????????? IDE ??????????????"
+    },
+    "tags": [
+      {
+        "id": "autocomplete",
+        "label": {
+          "en-US": "Autocomplete",
+          "zh-CN": "自动补全"
+        }
+      },
+      {
+        "id": "budget",
+        "label": {
+          "en-US": "Budget",
+          "zh-CN": "低成本"
+        }
+      }
+    ],
+    "sources": [
+      "https://codeium.com/"
+    ]
+  },
+  {
+    "id": "qodo",
+    "name": {
+      "en-US": "Qodo",
+      "zh-CN": "Qodo"
+    },
+    "category": {
+      "id": "builder",
+      "label": {
+        "en-US": "AI Builder",
+        "zh-CN": "AI 构建工具"
+      }
+    },
+    "vendor": {
+      "en-US": "Qodo",
+      "zh-CN": "Qodo"
+    },
+    "website": "https://qodo.ai/",
+    "description": {
+      "en-US": "AI code-review assistant that offers PR feedback, tests, and security checks for distributed teams.",
+      "zh-CN": "????? AI ?????????? PR ?????????????"
+    },
+    "tags": [
+      {
+        "id": "code_review",
+        "label": {
+          "en-US": "Code Review",
+          "zh-CN": "代码审查"
+        }
+      },
+      {
+        "id": "teams",
+        "label": {
+          "en-US": "Teams",
+          "zh-CN": "团队"
+        }
+      }
+    ],
+    "sources": [
+      "https://qodo.ai/"
+    ]
+  },
+  {
+    "id": "aider",
+    "name": {
+      "en-US": "Aider",
+      "zh-CN": "Aider"
+    },
+    "category": {
+      "id": "builder",
+      "label": {
+        "en-US": "AI Builder",
+        "zh-CN": "AI 构建工具"
+      }
+    },
+    "vendor": {
+      "en-US": "Aider",
+      "zh-CN": "Aider"
+    },
+    "website": "https://aider.chat/",
+    "description": {
+      "en-US": "Offline, terminal-first AI chat that supports custom LLMs for private automation.",
+      "zh-CN": "??????????? AI ???????????? LLM ???????"
+    },
+    "tags": [
+      {
+        "id": "terminal",
+        "label": {
+          "en-US": "Terminal",
+          "zh-CN": "终端"
+        }
+      },
+      {
+        "id": "offline",
+        "label": {
+          "en-US": "Offline",
+          "zh-CN": "离线"
+        }
+      }
+    ],
+    "sources": [
+      "https://aider.chat/"
+    ]
+  },
+  {
+    "id": "replit-ghostwriter",
+    "name": {
+      "en-US": "Replit Ghostwriter",
+      "zh-CN": "Replit Ghostwriter"
+    },
+    "category": {
+      "id": "builder",
+      "label": {
+        "en-US": "AI Builder",
+        "zh-CN": "AI 构建工具"
+      }
+    },
+    "vendor": {
+      "en-US": "Replit",
+      "zh-CN": "Replit"
+    },
+    "website": "https://www.smart-tools.ai/",
+    "description": {
+      "en-US": "Browser-based pair programmer that explains, edits, and generates code inside Replit's collaborative IDE.",
+      "zh-CN": "??? Replit ?? IDE ??????????????????????"
+    },
+    "tags": [
+      {
+        "id": "ide",
+        "label": {
+          "en-US": "IDE",
+          "zh-CN": "集成开发环境"
+        }
+      },
+      {
+        "id": "ghostwriter",
+        "label": {
+          "en-US": "Ghostwriter",
+          "zh-CN": "Ghostwriter"
+        }
+      }
+    ],
+    "sources": [
+      "https://www.smart-tools.ai/"
+    ]
+  },
+  {
+    "id": "cursor",
+    "name": {
+      "en-US": "Cursor",
+      "zh-CN": "Cursor"
+    },
+    "category": {
+      "id": "builder",
+      "label": {
+        "en-US": "AI Builder",
+        "zh-CN": "AI 构建工具"
+      }
+    },
+    "vendor": {
+      "en-US": "Cursor",
+      "zh-CN": "Cursor"
+    },
+    "website": "https://www.trycursor.com/",
+    "description": {
+      "en-US": "AI code editor with natural-language edits and codebase-aware assistance.",
+      "zh-CN": "????????????????? AI ??????"
+    },
+    "tags": [
+      {
+        "id": "ide",
+        "label": {
+          "en-US": "IDE",
+          "zh-CN": "集成开发环境"
+        }
+      },
+      {
+        "id": "coding",
+        "label": {
+          "en-US": "Coding",
+          "zh-CN": "编码"
+        }
+      }
+    ],
+    "sources": [
+      "https://www.trycursor.com/"
+    ]
+  },
+  {
+    "id": "replit-agent",
+    "name": {
+      "en-US": "Replit Agent",
+      "zh-CN": "Replit Agent"
+    },
+    "category": {
+      "id": "builder",
+      "label": {
+        "en-US": "AI Builder",
+        "zh-CN": "AI 构建工具"
+      }
+    },
+    "vendor": {
+      "en-US": "Replit",
+      "zh-CN": "Replit"
+    },
+    "website": "https://replit.com/ai",
+    "description": {
+      "en-US": "Natural-language app builder that generates and deploys apps from prompts.",
+      "zh-CN": "??????????????? AI ?????"
+    },
+    "tags": [
+      {
+        "id": "app_builder",
+        "label": {
+          "en-US": "App Builder",
+          "zh-CN": "应用生成"
+        }
+      },
+      {
+        "id": "no_code",
+        "label": {
+          "en-US": "No-Code",
+          "zh-CN": "低代码"
+        }
+      }
+    ],
+    "sources": [
+      "https://replit.com/ai",
+      "https://replit.com/products/agent"
+    ]
+  },
+  {
+    "id": "v0",
+    "name": {
+      "en-US": "v0",
+      "zh-CN": "v0"
+    },
+    "category": {
+      "id": "builder",
+      "label": {
+        "en-US": "AI Builder",
+        "zh-CN": "AI 构建工具"
+      }
+    },
+    "vendor": {
+      "en-US": "Vercel",
+      "zh-CN": "Vercel"
+    },
+    "website": "https://v0.app/",
+    "description": {
+      "en-US": "AI app builder that generates UI and application code from prompts.",
+      "zh-CN": "Vercel ??? AI ??????????????????????"
+    },
+    "tags": [
+      {
+        "id": "ui",
+        "label": {
+          "en-US": "UI",
+          "zh-CN": "界面"
+        }
+      },
+      {
+        "id": "app_builder",
+        "label": {
+          "en-US": "App Builder",
+          "zh-CN": "应用生成"
+        }
+      }
+    ],
+    "sources": [
+      "https://v0.app/",
+      "https://vercel.com/blog/v0-app"
+    ]
+  },
+  {
+    "id": "bolt-new",
+    "name": {
+      "en-US": "Bolt.new",
+      "zh-CN": "Bolt.new"
+    },
+    "category": {
+      "id": "builder",
+      "label": {
+        "en-US": "AI Builder",
+        "zh-CN": "AI 构建工具"
+      }
+    },
+    "vendor": {
+      "en-US": "StackBlitz",
+      "zh-CN": "StackBlitz"
+    },
+    "website": "https://bolt.new/",
+    "description": {
+      "en-US": "Prompt-to-app experience for building and running web apps in the browser.",
+      "zh-CN": "?????????????????????????"
+    },
+    "tags": [
+      {
+        "id": "app_builder",
+        "label": {
+          "en-US": "App Builder",
+          "zh-CN": "应用生成"
+        }
+      },
+      {
+        "id": "full_stack",
+        "label": {
+          "en-US": "Full Stack",
+          "zh-CN": "全栈"
+        }
+      }
+    ],
+    "sources": [
+      "https://github.com/stackblitz/bolt.new"
+    ]
+  },
+  {
+    "id": "vmind",
+    "name": {
+      "en-US": "Vmind",
+      "zh-CN": "Vmind"
+    },
+    "category": {
+      "id": "builder",
+      "label": {
+        "en-US": "AI Builder",
+        "zh-CN": "AI 构建工具"
+      }
+    },
+    "vendor": {
+      "en-US": "MWM",
+      "zh-CN": "MWM"
+    },
+    "website": "https://vmind.mwm.mom/",
+    "description": {
+      "en-US": "Gemini-3-powered mind-map studio that asks the model to emit a JSON tree with at least 15 nodes and 3+ levels, then renders the topology with JointJS so prompts become shareable diagrams.",
+      "zh-CN": "Gemini 3 ???????????????? 15 ????3 ???? JSON ???????"
+    },
+    "tags": [
+      {
+        "id": "mindmap",
+        "label": {
+          "en-US": "Mind Map",
+          "zh-CN": "思维导图"
+        }
+      },
+      {
+        "id": "agent",
+        "label": {
+          "en-US": "Agent",
+          "zh-CN": "智能体"
+        }
+      },
+      {
+        "id": "design",
+        "label": {
+          "en-US": "Design",
+          "zh-CN": "设计"
+        }
+      }
+    ],
+    "sources": [
+      "https://vmind.mwm.mom/"
+    ]
+  },
+  {
+    "id": "lastpush",
+    "name": {
+      "en-US": "LastPush",
+      "zh-CN": "LastPush"
+    },
+    "category": {
+      "id": "builder",
+      "label": {
+        "en-US": "AI Builder",
+        "zh-CN": "AI 构建工具"
+      }
+    },
+    "vendor": {
+      "en-US": "LastPush",
+      "zh-CN": "LastPush"
+    },
+    "website": "https://lastpush.xyz/",
+    "description": {
+      "en-US": "Dev-first deployment cockpit that pairs site/domain/billing navigation with wallet balance, activity logs, and deploy buttons so developers ship updates without leaving the dashboard.",
+      "zh-CN": "?????????????????????????????????????"
+    },
+    "tags": [
+      {
+        "id": "deployment",
+        "label": {
+          "en-US": "Deployment",
+          "zh-CN": "部署"
+        }
+      },
+      {
+        "id": "platform",
+        "label": {
+          "en-US": "Platform",
+          "zh-CN": "平台"
+        }
+      },
+      {
+        "id": "dev_tools",
+        "label": {
+          "en-US": "Dev Tools",
+          "zh-CN": "开发工具"
+        }
+      }
+    ],
+    "sources": [
+      "https://lastpush.xyz/"
+    ]
+  },
+  {
+    "id": "xer",
+    "name": {
+      "en-US": "xer",
+      "zh-CN": "xer"
+    },
+    "category": {
+      "id": "builder",
+      "label": {
+        "en-US": "AI Builder",
+        "zh-CN": "AI 构建工具"
+      }
+    },
+    "vendor": {
+      "en-US": "xer",
+      "zh-CN": "xer"
+    },
+    "website": "https://xer.mwm.mom/",
+    "description": {
+      "en-US": "Open-source Chrome extension copilot for X (Twitter) that collects timeline posts, drafts replies, suggests interactions, and ships built-in risk control plus local privacy analysis so users stay in control.",
+      "zh-CN": "??? X ???????????????????????????????????"
+    },
+    "tags": [
+      {
+        "id": "copilot",
+        "label": {
+          "en-US": "Copilot",
+          "zh-CN": "副驾驶"
+        }
+      },
+      {
+        "id": "twitter",
+        "label": {
+          "en-US": "Twitter / X",
+          "zh-CN": "Twitter / X"
+        }
+      },
+      {
+        "id": "extension",
+        "label": {
+          "en-US": "Extension",
+          "zh-CN": "扩展"
+        }
+      }
+    ],
+    "sources": [
+      "https://xer.mwm.mom/"
+    ]
+  },
+  {
+    "id": "degenskill",
+    "name": {
+      "en-US": "Degenskills",
+      "zh-CN": "Degenskills"
+    },
+    "category": {
+      "id": "builder",
+      "label": {
+        "en-US": "AI Builder",
+        "zh-CN": "AI 构建工具"
+      }
+    },
+    "vendor": {
+      "en-US": "Degenskills",
+      "zh-CN": "Degenskills"
+    },
+    "website": "https://degenskill.fun/",
+    "description": {
+      "en-US": "Crypto venture architect workspace that runs targeted or chaos agentic prompts against Gemini models to mint wild Web3 startup ideas, verify viability, and build tokenomic/roadmap/tech blueprints with a forge UI.",
+      "zh-CN": "???????????????? Web3 ?????????????????????"
+    },
+    "tags": [
+      {
+        "id": "crypto",
+        "label": {
+          "en-US": "Crypto",
+          "zh-CN": "加密"
+        }
+      },
+      {
+        "id": "agent",
+        "label": {
+          "en-US": "Agent",
+          "zh-CN": "智能体"
+        }
+      },
+      {
+        "id": "blueprint",
+        "label": {
+          "en-US": "Blueprint",
+          "zh-CN": "蓝图"
+        }
+      }
+    ],
+    "sources": [
+      "https://degenskill.fun/"
+    ]
+  },
+  {
+    "id": "windsurf",
+    "name": {
+      "en-US": "Windsurf",
+      "zh-CN": "Windsurf"
+    },
+    "category": {
+      "id": "agent_stack",
+      "label": {
+        "en-US": "Agent Stack",
+        "zh-CN": "Agent 技术栈"
+      }
+    },
+    "vendor": {
+      "en-US": "Windsurf",
+      "zh-CN": "Windsurf"
+    },
+    "website": "https://windsurf.com/",
+    "description": {
+      "en-US": "AI coding environment with agentic features and MCP support.",
+      "zh-CN": "???????? MCP ??? AI ?????"
+    },
+    "tags": [
+      {
+        "id": "ide",
+        "label": {
+          "en-US": "IDE",
+          "zh-CN": "集成开发环境"
+        }
+      },
+      {
+        "id": "mcp",
+        "label": {
+          "en-US": "MCP",
+          "zh-CN": "MCP"
+        }
+      }
+    ],
+    "sources": [
+      "https://windsurf.com/",
+      "https://docs.windsurf.com/windsurf/cascade/mcp"
+    ]
+  },
+  {
+    "id": "claude-desktop",
+    "name": {
+      "en-US": "Claude Desktop",
+      "zh-CN": "Claude Desktop"
+    },
+    "category": {
+      "id": "agent_stack",
+      "label": {
+        "en-US": "Agent Stack",
+        "zh-CN": "Agent 技术栈"
+      }
+    },
+    "vendor": {
+      "en-US": "Anthropic",
+      "zh-CN": "Anthropic"
+    },
+    "website": "https://www.anthropic.com/claude",
+    "description": {
+      "en-US": "Desktop Claude app with MCP support.",
+      "zh-CN": "?? MCP ? Claude ?????"
+    },
+    "tags": [
+      {
+        "id": "assistant",
+        "label": {
+          "en-US": "assistant",
+          "zh-CN": "AI 助手"
+        }
+      },
+      {
+        "id": "mcp",
+        "label": {
+          "en-US": "MCP",
+          "zh-CN": "MCP"
+        }
+      }
+    ],
+    "sources": [
+      "https://support.anthropic.com/en/articles/10065433-installing-claude-desktop",
+      "https://modelcontextprotocol.info/docs/clients/"
+    ]
+  },
+  {
+    "id": "continue",
+    "name": {
+      "en-US": "Continue",
+      "zh-CN": "Continue"
+    },
+    "category": {
+      "id": "agent_stack",
+      "label": {
+        "en-US": "Agent Stack",
+        "zh-CN": "Agent 技术栈"
+      }
+    },
+    "vendor": {
+      "en-US": "Continue",
+      "zh-CN": "Continue"
+    },
+    "website": "https://docs.continue.dev/index",
+    "description": {
+      "en-US": "Open-source AI coding assistant with MCP support.",
+      "zh-CN": "?? MCP ??? AI ?????"
+    },
+    "tags": [
+      {
+        "id": "ide",
+        "label": {
+          "en-US": "IDE",
+          "zh-CN": "集成开发环境"
+        }
+      },
+      {
+        "id": "mcp",
+        "label": {
+          "en-US": "MCP",
+          "zh-CN": "MCP"
+        }
+      }
+    ],
+    "sources": [
+      "https://github.com/continuedev/continue",
+      "https://docs.continue.dev/customize/deep-dives/mcp",
+      "https://modelcontextprotocol.info/docs/clients/"
+    ]
+  },
+  {
+    "id": "zed",
+    "name": {
+      "en-US": "Zed",
+      "zh-CN": "Zed"
+    },
+    "category": {
+      "id": "agent_stack",
+      "label": {
+        "en-US": "Agent Stack",
+        "zh-CN": "Agent 技术栈"
+      }
+    },
+    "vendor": {
+      "en-US": "Zed Industries",
+      "zh-CN": "Zed Industries"
+    },
+    "website": "https://zed.dev/",
+    "description": {
+      "en-US": "High-performance code editor with built-in AI features and MCP support.",
+      "zh-CN": "??????????? AI ????? MCP?"
+    },
+    "tags": [
+      {
+        "id": "ide",
+        "label": {
+          "en-US": "IDE",
+          "zh-CN": "集成开发环境"
+        }
+      },
+      {
+        "id": "mcp",
+        "label": {
+          "en-US": "MCP",
+          "zh-CN": "MCP"
+        }
+      }
+    ],
+    "sources": [
+      "https://zed.dev/ai",
+      "https://modelcontextprotocol.info/docs/clients/"
+    ]
+  },
+  {
+    "id": "sourcegraph-cody",
+    "name": {
+      "en-US": "Sourcegraph Cody",
+      "zh-CN": "Sourcegraph Cody"
+    },
+    "category": {
+      "id": "agent_stack",
+      "label": {
+        "en-US": "Agent Stack",
+        "zh-CN": "Agent 技术栈"
+      }
+    },
+    "vendor": {
+      "en-US": "Sourcegraph",
+      "zh-CN": "Sourcegraph"
+    },
+    "website": "https://sourcegraph.com/cody",
+    "description": {
+      "en-US": "AI coding assistant from Sourcegraph with MCP support.",
+      "zh-CN": "Sourcegraph ??? AI ??????? MCP ???"
+    },
+    "tags": [
+      {
+        "id": "coding_assistant",
+        "label": {
+          "en-US": "Coding Assistant",
+          "zh-CN": "编程助手"
+        }
+      },
+      {
+        "id": "mcp",
+        "label": {
+          "en-US": "MCP",
+          "zh-CN": "MCP"
+        }
+      }
+    ],
+    "sources": [
+      "https://sourcegraph.com/cody",
+      "https://modelcontextprotocol.info/docs/clients/"
+    ]
+  },
+  {
+    "id": "manus",
+    "name": {
+      "en-US": "Manus",
+      "zh-CN": "Manus"
+    },
+    "category": {
+      "id": "agent_stack",
+      "label": {
+        "en-US": "Agent Stack",
+        "zh-CN": "Agent 技术栈"
+      }
+    },
+    "vendor": {
+      "en-US": "Butterfly Effect",
+      "zh-CN": "Butterfly Effect"
+    },
+    "website": "https://manus.im/",
+    "description": {
+      "en-US": "Autonomous AI agent launched in 2025 that plans, executes, and monitors complex workflows across analytics, research, and productivity systems.",
+      "zh-CN": "2025 ?????? AI ??????????????????????????"
+    },
+    "tags": [
+      {
+        "id": "autonomous",
+        "label": {
+          "en-US": "Autonomous",
+          "zh-CN": "自治"
+        }
+      },
+      {
+        "id": "enterprise",
+        "label": {
+          "en-US": "Enterprise",
+          "zh-CN": "企业级"
+        }
+      }
+    ],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Manus_(AI_agent)"
+    ]
+  },
+  {
+    "id": "autogpt",
+    "name": {
+      "en-US": "AutoGPT",
+      "zh-CN": "AutoGPT"
+    },
+    "category": {
+      "id": "agent_stack",
+      "label": {
+        "en-US": "Agent Stack",
+        "zh-CN": "Agent 技术栈"
+      }
+    },
+    "vendor": {
+      "en-US": "Significant Gravitas",
+      "zh-CN": "Significant Gravitas"
+    },
+    "website": "https://agpt.co",
+    "description": {
+      "en-US": "Open-source autonomous agent that decomposes high-level goals into self-managing loops of planning, web research, and execution tasks.",
+      "zh-CN": "???????????????????????????"
+    },
+    "tags": [
+      {
+        "id": "autonomous",
+        "label": {
+          "en-US": "Autonomous",
+          "zh-CN": "自治"
+        }
+      },
+      {
+        "id": "open_source",
+        "label": {
+          "en-US": "Open Source",
+          "zh-CN": "开源"
+        }
+      }
+    ],
+    "sources": [
+      "https://en.wikipedia.org/wiki/AutoGPT"
+    ]
+  },
+  {
+    "id": "agentgpt",
+    "name": {
+      "en-US": "AgentGPT",
+      "zh-CN": "AgentGPT"
+    },
+    "category": {
+      "id": "agent_stack",
+      "label": {
+        "en-US": "Agent Stack",
+        "zh-CN": "Agent 技术栈"
+      }
+    },
+    "vendor": {
+      "en-US": "Reworkd AI",
+      "zh-CN": "Reworkd AI"
+    },
+    "website": "https://agentgpt.reworkd.ai",
+    "description": {
+      "en-US": "Browser-native agent studio where non-developers create autonomous agents that browse the web, call tools, and iteratively refine goals.",
+      "zh-CN": "????????????????????????????????????"
+    },
+    "tags": [
+      {
+        "id": "browser",
+        "label": {
+          "en-US": "Browser",
+          "zh-CN": "浏览器"
+        }
+      },
+      {
+        "id": "autonomous",
+        "label": {
+          "en-US": "Autonomous",
+          "zh-CN": "自治"
+        }
+      }
+    ],
+    "sources": [
+      "https://agentwelt.com/agentgpt/"
+    ]
+  },
+  {
+    "id": "babyagi",
+    "name": {
+      "en-US": "BabyAGI",
+      "zh-CN": "BabyAGI"
+    },
+    "category": {
+      "id": "agent_stack",
+      "label": {
+        "en-US": "Agent Stack",
+        "zh-CN": "Agent 技术栈"
+      }
+    },
+    "vendor": {
+      "en-US": "BabyAGI",
+      "zh-CN": "BabyAGI"
+    },
+    "website": "https://babyagi.org/",
+    "description": {
+      "en-US": "Self-building agent framework with dashboards that track function graphs, dependencies, and execution logs for autonomous workflows.",
+      "zh-CN": "???????????????????????????????"
+    },
+    "tags": [
+      {
+        "id": "planner",
+        "label": {
+          "en-US": "Planner",
+          "zh-CN": "规划器"
+        }
+      },
+      {
+        "id": "open_source",
+        "label": {
+          "en-US": "Open Source",
+          "zh-CN": "开源"
+        }
+      }
+    ],
+    "sources": [
+      "https://babyagi.org/"
+    ]
+  },
+  {
+    "id": "crewai",
+    "name": {
+      "en-US": "CrewAI",
+      "zh-CN": "CrewAI"
+    },
+    "category": {
+      "id": "agent_stack",
+      "label": {
+        "en-US": "Agent Stack",
+        "zh-CN": "Agent 技术栈"
+      }
+    },
+    "vendor": {
+      "en-US": "CrewAI",
+      "zh-CN": "CrewAI"
+    },
+    "website": "https://www.crewai.com/",
+    "description": {
+      "en-US": "Enterprise platform that lets teams orchestrate crews of agentic workflows, complete with visual editors, governance, and monitoring.",
+      "zh-CN": "??????????????????????????????"
+    },
+    "tags": [
+      {
+        "id": "multi_agent",
+        "label": {
+          "en-US": "Multi-Agent",
+          "zh-CN": "多智能体"
+        }
+      },
+      {
+        "id": "enterprise",
+        "label": {
+          "en-US": "Enterprise",
+          "zh-CN": "企业级"
+        }
+      }
+    ],
+    "sources": [
+      "https://www.crewai.com/"
+    ]
+  },
+  {
+    "id": "superagi",
+    "name": {
+      "en-US": "SuperAGI",
+      "zh-CN": "SuperAGI"
+    },
+    "category": {
+      "id": "agent_stack",
+      "label": {
+        "en-US": "Agent Stack",
+        "zh-CN": "Agent 技术栈"
+      }
+    },
+    "vendor": {
+      "en-US": "SuperAGI",
+      "zh-CN": "SuperAGI"
+    },
+    "website": "https://superagi.com/",
+    "description": {
+      "en-US": "Agent-native CRM that bundles AI sales, marketing, support, and automation agents inside one GTM platform.",
+      "zh-CN": "???????????????????? GTM ??? agent-native CRM?"
+    },
+    "tags": [
+      {
+        "id": "crm",
+        "label": {
+          "en-US": "CRM",
+          "zh-CN": "CRM"
+        }
+      },
+      {
+        "id": "agent",
+        "label": {
+          "en-US": "Agent",
+          "zh-CN": "智能体"
+        }
+      }
+    ],
+    "sources": [
+      "https://superagi.com/"
+    ]
+  },
+  {
+    "id": "langchain-agents",
+    "name": {
+      "en-US": "LangChain Agents",
+      "zh-CN": "LangChain Agents"
+    },
+    "category": {
+      "id": "agent_stack",
+      "label": {
+        "en-US": "Agent Stack",
+        "zh-CN": "Agent 技术栈"
+      }
+    },
+    "vendor": {
+      "en-US": "LangChain",
+      "zh-CN": "LangChain"
+    },
+    "website": "https://www.langchain.com/use-case/agents",
+    "description": {
+      "en-US": "Developer framework that wires tools, memories, and planners into customizable agents with human-in-the-loop controls.",
+      "zh-CN": "LangChain ??????????????????????????"
+    },
+    "tags": [
+      {
+        "id": "framework",
+        "label": {
+          "en-US": "Framework",
+          "zh-CN": "框架"
+        }
+      },
+      {
+        "id": "tooling",
+        "label": {
+          "en-US": "Tooling",
+          "zh-CN": "工具链"
+        }
+      }
+    ],
+    "sources": [
+      "https://www.langchain.com/use-case/agents"
+    ]
+  },
+  {
+    "id": "metagpt",
+    "name": {
+      "en-US": "MetaGPT",
+      "zh-CN": "MetaGPT"
+    },
+    "category": {
+      "id": "agent_stack",
+      "label": {
+        "en-US": "Agent Stack",
+        "zh-CN": "Agent 技术栈"
+      }
+    },
+    "vendor": {
+      "en-US": "DeepWisdom",
+      "zh-CN": "DeepWisdom"
+    },
+    "website": "https://docs.deepwisdom.ai/main/",
+    "description": {
+      "en-US": "Multi-agent simulation that assigns product, engineering, testing, and documentation roles to GPTs to deliver full software projects.",
+      "zh-CN": "???????????????????????????????"
+    },
+    "tags": [
+      {
+        "id": "multi_agent",
+        "label": {
+          "en-US": "Multi-Agent",
+          "zh-CN": "多智能体"
+        }
+      },
+      {
+        "id": "software",
+        "label": {
+          "en-US": "Software",
+          "zh-CN": "软件"
+        }
+      }
+    ],
+    "sources": [
+      "https://docs.deepwisdom.ai/main/"
+    ]
+  },
+  {
+    "id": "devin-ai",
+    "name": {
+      "en-US": "Devin AI",
+      "zh-CN": "Devin AI"
+    },
+    "category": {
+      "id": "agent_stack",
+      "label": {
+        "en-US": "Agent Stack",
+        "zh-CN": "Agent 技术栈"
+      }
+    },
+    "vendor": {
+      "en-US": "Cognition Labs",
+      "zh-CN": "Cognition Labs"
+    },
+    "website": "https://devin.ai/",
+    "description": {
+      "en-US": "AI engineer agent that plans, writes, refactors, and deploys software with explicit change reports and tool calls.",
+      "zh-CN": "AI ????????????????????????????????"
+    },
+    "tags": [
+      {
+        "id": "code",
+        "label": {
+          "en-US": "code",
+          "zh-CN": "code"
+        }
+      },
+      {
+        "id": "assistant",
+        "label": {
+          "en-US": "assistant",
+          "zh-CN": "AI 助手"
+        }
+      }
+    ],
+    "sources": [
+      "https://devin.ai/"
+    ]
+  },
+  {
+    "id": "agentops",
+    "name": {
+      "en-US": "AgentOps",
+      "zh-CN": "AgentOps"
+    },
+    "category": {
+      "id": "agent_stack",
+      "label": {
+        "en-US": "Agent Stack",
+        "zh-CN": "Agent 技术栈"
+      }
+    },
+    "vendor": {
+      "en-US": "AgentOps",
+      "zh-CN": "AgentOps"
+    },
+    "website": "https://agentops.ai/",
+    "description": {
+      "en-US": "Observability and monitoring layer that traces, audits, and benchmarks multi-agent executions from prototype to production.",
+      "zh-CN": "??????????????????????????????"
+    },
+    "tags": [
+      {
+        "id": "observability",
+        "label": {
+          "en-US": "Observability",
+          "zh-CN": "可观测性"
+        }
+      },
+      {
+        "id": "monitoring",
+        "label": {
+          "en-US": "Monitoring",
+          "zh-CN": "监控"
+        }
+      }
+    ],
+    "sources": [
+      "https://agentops.ai/"
+    ]
+  },
+  {
+    "id": "agentbasis",
+    "name": {
+      "en-US": "AgentBasis",
+      "zh-CN": "AgentBasis"
+    },
+    "category": {
+      "id": "agent_stack",
+      "label": {
+        "en-US": "Agent Stack",
+        "zh-CN": "Agent 技术栈"
+      }
+    },
+    "vendor": {
+      "en-US": "AgentBasis",
+      "zh-CN": "AgentBasis"
+    },
+    "website": "https://www.agentbasis.co/",
+    "description": {
+      "en-US": "Control-plane for managing fleets of AI agents with dashboards, health metrics, and cost-aware scheduling.",
+      "zh-CN": "???? AI ?????????????????????????"
+    },
+    "tags": [
+      {
+        "id": "control_plane",
+        "label": {
+          "en-US": "Control Plane",
+          "zh-CN": "控制平面"
+        }
+      },
+      {
+        "id": "monitor",
+        "label": {
+          "en-US": "Monitor",
+          "zh-CN": "监视"
+        }
+      }
+    ],
+    "sources": [
+      "https://www.agentbasis.co/"
+    ]
+  },
+  {
+    "id": "agentcore",
+    "name": {
+      "en-US": "AgentCORE",
+      "zh-CN": "AgentCORE"
+    },
+    "category": {
+      "id": "agent_stack",
+      "label": {
+        "en-US": "Agent Stack",
+        "zh-CN": "Agent 技术栈"
+      }
+    },
+    "vendor": {
+      "en-US": "CoreOps",
+      "zh-CN": "CoreOps"
+    },
+    "website": "https://www.coreops.ai/products/agentcore",
+    "description": {
+      "en-US": "Enterprise platform for building, training, and deploying intelligent agents that span ERP, CRM, and automation workflows.",
+      "zh-CN": "??????????????????????? ERP?CRM ???????"
+    },
+    "tags": [
+      {
+        "id": "enterprise",
+        "label": {
+          "en-US": "Enterprise",
+          "zh-CN": "企业级"
+        }
+      },
+      {
+        "id": "workflow",
+        "label": {
+          "en-US": "Workflow",
+          "zh-CN": "工作流"
+        }
+      }
+    ],
+    "sources": [
+      "https://www.coreops.ai/products/agentcore"
+    ]
+  },
+  {
+    "id": "agentop",
+    "name": {
+      "en-US": "AgentOp",
+      "zh-CN": "AgentOp"
+    },
+    "category": {
+      "id": "agent_stack",
+      "label": {
+        "en-US": "Agent Stack",
+        "zh-CN": "Agent 技术栈"
+      }
+    },
+    "vendor": {
+      "en-US": "AgentOp",
+      "zh-CN": "AgentOp"
+    },
+    "website": "https://www.agentop.com/",
+    "description": {
+      "en-US": "Local-first web builder for Python-powered AI agents that export standalone HTML bundles and run with WebLLMs.",
+      "zh-CN": "????? Python AI ?? Web ????????? HTML ??? WebLLM ???"
+    },
+    "tags": [
+      {
+        "id": "browser",
+        "label": {
+          "en-US": "Browser",
+          "zh-CN": "浏览器"
+        }
+      },
+      {
+        "id": "python",
+        "label": {
+          "en-US": "Python",
+          "zh-CN": "Python"
+        }
+      }
+    ],
+    "sources": [
+      "https://www.agentop.com/"
+    ]
+  },
+  {
+    "id": "managed-agentops",
+    "name": {
+      "en-US": "Managed AgentOps",
+      "zh-CN": "Managed AgentOps"
+    },
+    "category": {
+      "id": "agent_stack",
+      "label": {
+        "en-US": "Agent Stack",
+        "zh-CN": "Agent 技术栈"
+      }
+    },
+    "vendor": {
+      "en-US": "Managed AgentOps",
+      "zh-CN": "Managed AgentOps"
+    },
+    "website": "https://www.managedagentops.com/",
+    "description": {
+      "en-US": "Full-stack service that designs, governs, and observes agent workloads for enterprises, including prompt-versioning and HITL checkpoints.",
+      "zh-CN": "?????????????????????????"
+    },
+    "tags": [
+      {
+        "id": "governance",
+        "label": {
+          "en-US": "Governance",
+          "zh-CN": "治理"
+        }
+      },
+      {
+        "id": "ops",
+        "label": {
+          "en-US": "Ops",
+          "zh-CN": "运维"
+        }
+      }
+    ],
+    "sources": [
+      "https://www.managedagentops.com/"
+    ]
+  },
+  {
+    "id": "aiagents-for-ops",
+    "name": {
+      "en-US": "AI Agents for Ops",
+      "zh-CN": "AI Agents for Ops"
+    },
+    "category": {
+      "id": "agent_stack",
+      "label": {
+        "en-US": "Agent Stack",
+        "zh-CN": "Agent 技术栈"
+      }
+    },
+    "vendor": {
+      "en-US": "AI Agents for Ops",
+      "zh-CN": "AI Agents for Ops"
+    },
+    "website": "https://www.aiagentsforops.com/",
+    "description": {
+      "en-US": "Consulting-ready practice that sculpts AWS Bedrock-powered agents to automate insurance, finance, and operations workflows.",
+      "zh-CN": "? AWS Bedrock ?????????????????????????"
+    },
+    "tags": [
+      {
+        "id": "aws",
+        "label": {
+          "en-US": "AWS",
+          "zh-CN": "AWS"
+        }
+      },
+      {
+        "id": "bedrock",
+        "label": {
+          "en-US": "Bedrock",
+          "zh-CN": "Bedrock"
+        }
+      }
+    ],
+    "sources": [
+      "https://www.aiagentsforops.com/"
+    ]
+  },
+  {
+    "id": "agent-365",
+    "name": {
+      "en-US": "Agent 365",
+      "zh-CN": "Agent 365"
+    },
+    "category": {
+      "id": "agent_stack",
+      "label": {
+        "en-US": "Agent Stack",
+        "zh-CN": "Agent 技术栈"
+      }
+    },
+    "vendor": {
+      "en-US": "Microsoft",
+      "zh-CN": "Microsoft"
+    },
+    "website": "https://www.windowscentral.com/microsoft/microsoft-doubles-down-on-agentic-ai-agent-365",
+    "description": {
+      "en-US": "Microsoft's Agent 365 brings enterprise-scale governance and monitoring to billions of AI agents across Copilot, Azure, and Windows.",
+      "zh-CN": "Microsoft ? Agent 365???? AI ???????????????"
+    },
+    "tags": [
+      {
+        "id": "microsoft",
+        "label": {
+          "en-US": "Microsoft",
+          "zh-CN": "Microsoft"
+        }
+      },
+      {
+        "id": "governance",
+        "label": {
+          "en-US": "Governance",
+          "zh-CN": "治理"
+        }
+      }
+    ],
+    "sources": [
+      "https://www.windowscentral.com/microsoft/microsoft-doubles-down-on-agentic-ai-agent-365"
+    ]
+  },
+  {
+    "id": "amazon-bedrock-agentcore",
+    "name": {
+      "en-US": "Amazon Bedrock AgentCore",
+      "zh-CN": "Amazon Bedrock AgentCore"
+    },
+    "category": {
+      "id": "agent_stack",
+      "label": {
+        "en-US": "Agent Stack",
+        "zh-CN": "Agent 技术栈"
+      }
+    },
+    "vendor": {
+      "en-US": "Amazon Web Services",
+      "zh-CN": "Amazon Web Services"
+    },
+    "website": "https://www.techradar.com/pro/aws-looks-to-super-charge-ai-agents-with-amazon-bedrock-agentcore",
+    "description": {
+      "en-US": "Preview infrastructure for building, securing, and observing AWS-native agents with runtime, memory, and identity components.",
+      "zh-CN": "AWS ????????????????????????????"
+    },
+    "tags": [
+      {
+        "id": "aws",
+        "label": {
+          "en-US": "AWS",
+          "zh-CN": "AWS"
+        }
+      },
+      {
+        "id": "platform",
+        "label": {
+          "en-US": "Platform",
+          "zh-CN": "平台"
+        }
+      }
+    ],
+    "sources": [
+      "https://www.techradar.com/pro/aws-looks-to-super-charge-ai-agents-with-amazon-bedrock-agentcore"
+    ]
+  },
+  {
+    "id": "agent5i",
+    "name": {
+      "en-US": "Agent5i",
+      "zh-CN": "Agent5i"
+    },
+    "category": {
+      "id": "agent_stack",
+      "label": {
+        "en-US": "Agent Stack",
+        "zh-CN": "Agent 技术栈"
+      }
+    },
+    "vendor": {
+      "en-US": "C5i",
+      "zh-CN": "C5i"
+    },
+    "website": "https://timesofindia.indiatimes.com/technology/tech-news/c5i-launches-enterprise-grade-platform-that-integrates-autonomous-agents-for-streamlined-workflows-and-more/articleshow/127151291.cms",
+    "description": {
+      "en-US": "Agent5i platform integrates autonomous agents into enterprise workflows for planning, intelligence, and governance.",
+      "zh-CN": "???????????????????????????????"
+    },
+    "tags": [
+      {
+        "id": "enterprise",
+        "label": {
+          "en-US": "Enterprise",
+          "zh-CN": "企业级"
+        }
+      },
+      {
+        "id": "automation",
+        "label": {
+          "en-US": "Automation",
+          "zh-CN": "自动化"
+        }
+      }
+    ],
+    "sources": [
+      "https://timesofindia.indiatimes.com/technology/tech-news/c5i-launches-enterprise-grade-platform-that-integrates-autonomous-agents-for-streamlined-workflows-and-more/articleshow/127151291.cms"
+    ]
+  },
+  {
+    "id": "workato-enterprise-mcp",
+    "name": {
+      "en-US": "Workato Enterprise MCP",
+      "zh-CN": "Workato Enterprise MCP"
+    },
+    "category": {
+      "id": "agent_stack",
+      "label": {
+        "en-US": "Agent Stack",
+        "zh-CN": "Agent 技术栈"
+      }
+    },
+    "vendor": {
+      "en-US": "Workato",
+      "zh-CN": "Workato"
+    },
+    "website": "https://www.axios.com/sponsored/workato-delivers-industrys-first-enterprise-mcp-platform-for-ai-agents",
+    "description": {
+      "en-US": "Enterprise-ready MCP platform that gives agents secure context, compliance, and integration-ready connectors.",
+      "zh-CN": "??? MCP ???????????????????????"
+    },
+    "tags": [
+      {
+        "id": "mcp",
+        "label": {
+          "en-US": "MCP",
+          "zh-CN": "MCP"
+        }
+      },
+      {
+        "id": "enterprise",
+        "label": {
+          "en-US": "Enterprise",
+          "zh-CN": "企业级"
+        }
+      }
+    ],
+    "sources": [
+      "https://www.axios.com/sponsored/workato-delivers-industrys-first-enterprise-mcp-platform-for-ai-agents"
+    ]
+  },
+  {
+    "id": "logicbroker-agentic-platform",
+    "name": {
+      "en-US": "Logicbroker Agentic Platform",
+      "zh-CN": "Logicbroker Agentic Platform"
+    },
+    "category": {
+      "id": "agent_stack",
+      "label": {
+        "en-US": "Agent Stack",
+        "zh-CN": "Agent 技术栈"
+      }
+    },
+    "vendor": {
+      "en-US": "Logicbroker",
+      "zh-CN": "Logicbroker"
+    },
+    "website": "https://logicbroker.com/agentic-platform",
+    "description": {
+      "en-US": "Commerce orchestration engine that exposes MCP-ready datasets so shopping agents can discover, compare, and purchase from catalogs in real time.",
+      "zh-CN": "??????? MCP ??????????????????????"
+    },
+    "tags": [
+      {
+        "id": "commerce",
+        "label": {
+          "en-US": "Commerce",
+          "zh-CN": "电商"
+        }
+      },
+      {
+        "id": "mcp",
+        "label": {
+          "en-US": "MCP",
+          "zh-CN": "MCP"
+        }
+      }
+    ],
+    "sources": [
+      "https://logicbroker.com/agentic-platform"
+    ]
+  },
+  {
+    "id": "bluerock-agentic-protection",
+    "name": {
+      "en-US": "BlueRock Agentic Protection Platform",
+      "zh-CN": "BlueRock Agentic Protection Platform"
+    },
+    "category": {
+      "id": "agent_stack",
+      "label": {
+        "en-US": "Agent Stack",
+        "zh-CN": "Agent 技术栈"
+      }
+    },
+    "vendor": {
+      "en-US": "BlueRock",
+      "zh-CN": "BlueRock"
+    },
+    "website": "https://www.bluerock.io/post/bluerock-unveils-the-agentic-protection-platform",
+    "description": {
+      "en-US": "Security platform that observes and enforces guardrails around MCP-agent actions before they execute.",
+      "zh-CN": "???????????????????????"
+    },
+    "tags": [
+      {
+        "id": "security",
+        "label": {
+          "en-US": "Security",
+          "zh-CN": "安全"
+        }
+      },
+      {
+        "id": "mcp",
+        "label": {
+          "en-US": "MCP",
+          "zh-CN": "MCP"
+        }
+      }
+    ],
+    "sources": [
+      "https://www.bluerock.io/post/bluerock-unveils-the-agentic-protection-platform"
+    ]
+  },
+  {
+    "id": "descope-agentic-identity-hub",
+    "name": {
+      "en-US": "Descope Agentic Identity Hub",
+      "zh-CN": "Descope Agentic Identity Hub"
+    },
+    "category": {
+      "id": "agent_stack",
+      "label": {
+        "en-US": "Agent Stack",
+        "zh-CN": "Agent 技术栈"
+      }
+    },
+    "vendor": {
+      "en-US": "Descope",
+      "zh-CN": "Descope"
+    },
+    "website": "https://www.descope.com/press-release/agentic-identity-hub",
+    "description": {
+      "en-US": "Standards-based identity platform that lets AI agents and MCP servers exchange credentials with fine-grained, purpose-built policies.",
+      "zh-CN": "??????????? AI ??? MCP ????????????"
+    },
+    "tags": [
+      {
+        "id": "identity",
+        "label": {
+          "en-US": "Identity",
+          "zh-CN": "身份"
+        }
+      },
+      {
+        "id": "mcp",
+        "label": {
+          "en-US": "MCP",
+          "zh-CN": "MCP"
+        }
+      }
+    ],
+    "sources": [
+      "https://www.descope.com/press-release/agentic-identity-hub"
+    ]
+  },
+  {
+    "id": "adept-act-1",
+    "name": {
+      "en-US": "Adept ACT-1",
+      "zh-CN": "Adept ACT-1"
+    },
+    "category": {
+      "id": "agent_stack",
+      "label": {
+        "en-US": "Agent Stack",
+        "zh-CN": "Agent 技术栈"
+      }
+    },
+    "vendor": {
+      "en-US": "Adept",
+      "zh-CN": "Adept"
+    },
+    "website": "https://www.adept.ai/blog/act-1",
+    "description": {
+      "en-US": "Action Transformer model and agent stack that perceives user screens, composes multi-step plans, and executes UI interactions autonomously.",
+      "zh-CN": "???????????????????????????????"
+    },
+    "tags": [
+      {
+        "id": "automation",
+        "label": {
+          "en-US": "Automation",
+          "zh-CN": "自动化"
+        }
+      },
+      {
+        "id": "agent",
+        "label": {
+          "en-US": "Agent",
+          "zh-CN": "智能体"
+        }
+      }
+    ],
+    "sources": [
+      "https://www.adept.ai/blog/act-1"
+    ]
+  },
+  {
+    "id": "oracle-miracle-agent",
+    "name": {
+      "en-US": "Oracle Miracle Agent",
+      "zh-CN": "Oracle Miracle Agent"
+    },
+    "category": {
+      "id": "agent_stack",
+      "label": {
+        "en-US": "Agent Stack",
+        "zh-CN": "Agent 技术栈"
+      }
+    },
+    "vendor": {
+      "en-US": "Oracle",
+      "zh-CN": "Oracle"
+    },
+    "website": "https://agentlocker.ai/agent/miracle-agent",
+    "description": {
+      "en-US": "AI agent inside Oracle Fusion Apps that automates finance, HR, supply chain, and CX processes while keeping context in Fusion Cloud.",
+      "zh-CN": "??? Oracle Fusion Apps ?? AI ??????????????????????"
+    },
+    "tags": [
+      {
+        "id": "erp",
+        "label": {
+          "en-US": "ERP",
+          "zh-CN": "ERP"
+        }
+      },
+      {
+        "id": "fusion",
+        "label": {
+          "en-US": "Fusion",
+          "zh-CN": "Fusion"
+        }
+      }
+    ],
+    "sources": [
+      "https://agentlocker.ai/agent/miracle-agent"
+    ]
+  },
+  {
+    "id": "notion-agent",
+    "name": {
+      "en-US": "Notion Agent",
+      "zh-CN": "Notion Agent"
+    },
+    "category": {
+      "id": "agent_stack",
+      "label": {
+        "en-US": "Agent Stack",
+        "zh-CN": "Agent 技术栈"
+      }
+    },
+    "vendor": {
+      "en-US": "Notion",
+      "zh-CN": "Notion"
+    },
+    "website": "https://www.notion.com/releases/2025-09-18",
+    "description": {
+      "en-US": "Notion 3.0 agent adds multi-step automation, memory-backed profiles, and MCP connectors that let the workspace act on behalf of users.",
+      "zh-CN": "Notion 3.0 ??????????????????? MCP ????"
+    },
+    "tags": [
+      {
+        "id": "workspace",
+        "label": {
+          "en-US": "Workspace",
+          "zh-CN": "工作空间"
+        }
+      },
+      {
+        "id": "agent",
+        "label": {
+          "en-US": "Agent",
+          "zh-CN": "智能体"
+        }
+      }
+    ],
+    "sources": [
+      "https://www.notion.com/releases/2025-09-18"
+    ]
+  },
+  {
+    "id": "chatdev",
+    "name": {
+      "en-US": "ChatDev",
+      "zh-CN": "ChatDev"
+    },
+    "category": {
+      "id": "agent_stack",
+      "label": {
+        "en-US": "Agent Stack",
+        "zh-CN": "Agent 技术栈"
+      }
+    },
+    "vendor": {
+      "en-US": "ChatDev",
+      "zh-CN": "ChatDev"
+    },
+    "website": "https://chatdev.ai/",
+    "description": {
+      "en-US": "Multi-agent software company simulation with CTO, programmer, tester, and ops agents that collaborate on product delivery.",
+      "zh-CN": "?? CTO????????????????????????????????"
+    },
+    "tags": [
+      {
+        "id": "software",
+        "label": {
+          "en-US": "Software",
+          "zh-CN": "软件"
+        }
+      },
+      {
+        "id": "multi_agent",
+        "label": {
+          "en-US": "Multi-Agent",
+          "zh-CN": "多智能体"
+        }
+      }
+    ],
+    "sources": [
+      "https://chatdev.ai/"
+    ]
+  },
+  {
+    "id": "superagent-safety",
+    "name": {
+      "en-US": "Superagent Safety Agent",
+      "zh-CN": "Superagent Safety Agent"
+    },
+    "category": {
+      "id": "agent_stack",
+      "label": {
+        "en-US": "Agent Stack",
+        "zh-CN": "Agent 技术栈"
+      }
+    },
+    "vendor": {
+      "en-US": "Superagent AI",
+      "zh-CN": "Superagent AI"
+    },
+    "website": "https://www.superagent.sh/",
+    "description": {
+      "en-US": "Runtime safety agent that detects prompt injections, redacts secrets, and stops unsafe tool calls before they reach downstream agents.",
+      "zh-CN": "??????????????????????????????"
+    },
+    "tags": [
+      {
+        "id": "safety",
+        "label": {
+          "en-US": "safety",
+          "zh-CN": "safety"
+        }
+      },
+      {
+        "id": "mcp",
+        "label": {
+          "en-US": "MCP",
+          "zh-CN": "MCP"
+        }
+      }
+    ],
+    "sources": [
+      "https://www.superagent.sh/"
+    ]
+  },
+  {
+    "id": "reactor-superagent",
+    "name": {
+      "en-US": "REACTOR SuperAgent",
+      "zh-CN": "REACTOR SuperAgent"
+    },
+    "category": {
+      "id": "agent_stack",
+      "label": {
+        "en-US": "Agent Stack",
+        "zh-CN": "Agent 技术栈"
+      }
+    },
+    "vendor": {
+      "en-US": "SuperAgent NG",
+      "zh-CN": "SuperAgent NG"
+    },
+    "website": "https://superagent.ng/",
+    "description": {
+      "en-US": "AIOps platform that lets enterprises run conversational agent commands to monitor infrastructure, detect threats, and automate remediations.",
+      "zh-CN": "?? AIOps ???????????????????????????"
+    },
+    "tags": [
+      {
+        "id": "itops",
+        "label": {
+          "en-US": "IT Ops",
+          "zh-CN": "IT 运维"
+        }
+      },
+      {
+        "id": "automation",
+        "label": {
+          "en-US": "Automation",
+          "zh-CN": "自动化"
+        }
+      }
+    ],
+    "sources": [
+      "https://superagent.ng/"
+    ]
+  },
+  {
+    "id": "nova-act",
+    "name": {
+      "en-US": "Nova Act",
+      "zh-CN": "Nova Act"
+    },
+    "category": {
+      "id": "agent_stack",
+      "label": {
+        "en-US": "Agent Stack",
+        "zh-CN": "Agent 技术栈"
+      }
+    },
+    "vendor": {
+      "en-US": "Amazon AGI Labs",
+      "zh-CN": "Amazon AGI Labs"
+    },
+    "website": "https://nova.amazon.com/",
+    "description": {
+      "en-US": "Nova Act model directly executes shopping, research, and web navigation tasks through a sandboxed browser in preview for developers.",
+      "zh-CN": "Amazon ? Nova Act ????????????????????????????"
+    },
+    "tags": [
+      {
+        "id": "shopping",
+        "label": {
+          "en-US": "Shopping",
+          "zh-CN": "购物"
+        }
+      },
+      {
+        "id": "browser",
+        "label": {
+          "en-US": "Browser",
+          "zh-CN": "浏览器"
+        }
+      }
+    ],
+    "sources": [
+      "https://www.theverge.com/news/639688/amazon-nova-act-ai-agent-web-browser"
+    ]
+  },
+  {
+    "id": "openai-personal-assistant",
+    "name": {
+      "en-US": "OpenAI Personal Assistant",
+      "zh-CN": "OpenAI Personal Assistant"
+    },
+    "category": {
+      "id": "agent_stack",
+      "label": {
+        "en-US": "Agent Stack",
+        "zh-CN": "Agent 技术栈"
+      }
+    },
+    "vendor": {
+      "en-US": "OpenAI",
+      "zh-CN": "OpenAI"
+    },
+    "website": "https://openai.com/",
+    "description": {
+      "en-US": "ChatGPT agent that mixes research tools, a browser, and safety checks to control files, emails, and purchases on behalf of subscribers.",
+      "zh-CN": "????????????????????????????????? ChatGPT ???"
+    },
+    "tags": [
+      {
+        "id": "personal",
+        "label": {
+          "en-US": "Personal",
+          "zh-CN": "个人"
+        }
+      },
+      {
+        "id": "autonomous",
+        "label": {
+          "en-US": "Autonomous",
+          "zh-CN": "自治"
+        }
+      }
+    ],
+    "sources": [
+      "https://www.theguardian.com/technology/2025/jul/17/openai-launches-personal-assistant-capable-of-controlling-files-and-web-browsers"
+    ]
+  }
+]

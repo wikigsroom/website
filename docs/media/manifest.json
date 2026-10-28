@@ -1,0 +1,151 @@
+{
+  "capturedAt": "2026-10-28T00:25:10.306Z",
+  "sourceDigest": "ed24ee8f76467ac813a6885f4b74065dfe62785303d2bb4608872611ab550278",
+  "capture": {
+    "source": "local Vite production preview",
+    "desktopViewport": {
+      "width": 1440,
+      "height": 960
+    },
+    "mobileViewport": {
+      "width": 390,
+      "height": 844
+    },
+    "recording": "real browser interactions; GIF playback accelerated to 0.65 of the original duration",
+    "externalLive2DWidget": "blocked during documentation capture; application source unchanged",
+    "fonts": "Google Fonts blocked during capture; CSS system-font fallback used",
+    "audio": "none"
+  },
+  "checks": [
+    {
+      "route": "/aitoolbox",
+      "cards": 76
+    },
+    {
+      "route": "/mybox",
+      "cards": 18
+    },
+    {
+      "route": "/devtoolbox",
+      "cards": 5
+    },
+    {
+      "check": "search codex",
+      "matches": [
+        "Codex"
+      ]
+    },
+    {
+      "check": "unmatched search",
+      "cards": 0
+    },
+    {
+      "check": "mobile overflow",
+      "overflow": false
+    }
+  ],
+  "assets": [
+    {
+      "file": "home-desktop.png",
+      "bytes": 921481,
+      "sha256": "8461194b2945f66a5bd454d127e6ca9b3c0b87286b607c2056eb722012d483da",
+      "width": 1440,
+      "height": 960
+    },
+    {
+      "file": "home-full.png",
+      "bytes": 2516610,
+      "sha256": "d8515e1cc70a9d2bc909cfc61d333f32b2f07fe3f58af4ed44714ddfd893ad6a",
+      "width": 1440,
+      "height": 3364
+    },
+    {
+      "file": "footer.png",
+      "bytes": 8549,
+      "sha256": "719b8d5f77e29961eceb48611ef15fb7873c8727a714ea7ba5187379f374ca63",
+      "width": 1440,
+      "height": 86
+    },
+    {
+      "file": "home-zh-CN.png",
+      "bytes": 921037,
+      "sha256": "84b77477e04daed7fba6dd8ab0dea4e9091db07ff0629957d759c272fef0a37e",
+      "width": 1440,
+      "height": 960
+    },
+    {
+      "file": "ai-toolbox.png",
+      "bytes": 743887,
+      "sha256": "30a2252e3e0c6a0150d9d8fa811cd673427217eb41443b8f8528ff4ee30892ea",
+      "width": 1440,
+      "height": 960
+    },
+    {
+      "file": "my-box.png",
+      "bytes": 858353,
+      "sha256": "832fc9b090bc79dd500b5ac79116291cf49b7185e70aa90f5557f2f1517a7f2e",
+      "width": 1440,
+      "height": 960
+    },
+    {
+      "file": "dev-toolbox.png",
+      "bytes": 831466,
+      "sha256": "aa431c68bb0939759f233d362d1b6a2e92a07c89c8f157364f8f5055c7f620ce",
+      "width": 1440,
+      "height": 960
+    },
+    {
+      "file": "ai-search.png",
+      "bytes": 822245,
+      "sha256": "f021d2f898269bb6df11bbf54a7d9796828377033de5eff8e5b69da46ed56a16",
+      "width": 1440,
+      "height": 960
+    },
+    {
+      "file": "not-found.png",
+      "bytes": 648351,
+      "sha256": "69562488bb2a787d5db0bcfdf96ea2ff33d3e350e4e764e26796792f1bac4750",
+      "width": 1440,
+      "height": 960
+    },
+    {
+      "file": "home-mobile.png",
+      "bytes": 297670,
+      "sha256": "0d5655773418819e5f824060b5d0804df672e185d9c0106769c5d3a08dec0b22",
+      "width": 390,
+      "height": 844
+    },
+    {
+      "file": "desktop-tour.mp4",
+      "bytes": 2313472,
+      "sha256": "8984e4b80acfd32ba45b99d0dc3eb9adaa50b243cec7f3a113a75ba22b50303a",
+      "width": 1280,
+      "height": 800,
+      "durationSeconds": 18.32
+    },
+    {
+      "file": "website-tour.gif",
+      "bytes": 10769898,
+      "sha256": "179987d8075445624a6faab33f21ebad2faab91213347c9a61f743549ecdad19",
+      "width": 880,
+      "height": 550,
+      "durationSeconds": 11.9
+    },
+    {
+      "file": "mobile-tour.mp4",
+      "bytes": 628150,
+      "sha256": "7b615dfaaac796d7f23e29dc78eba99b059ba914a9c010dad35a43926c83cf78",
+      "width": 390,
+      "height": 844,
+      "durationSeconds": 9.48
+    },
+    {
+      "file": "mobile-tour.gif",
+      "bytes": 2494563,
+      "sha256": "df0b7881aad41beaf6521c3a9cda54903ae41886e8337aa77e43dd2abdd1e941",
+      "width": 312,
+      "height": 676,
+      "durationSeconds": 6.2
+    }
+  ]
+}
