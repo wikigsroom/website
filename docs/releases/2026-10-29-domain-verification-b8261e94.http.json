@@ -1,0 +1,137 @@
+{
+  "verifiedAt": "2026-10-29T08:43:41.326Z",
+  "authentication": "none",
+  "checks": [
+    {
+      "requestedUrl": "https://www.sidcloud.cn/b8261e943cb1290db1a42a32c0ee9566.txt",
+      "chain": [
+        {
+          "url": "https://www.sidcloud.cn/b8261e943cb1290db1a42a32c0ee9566.txt",
+          "status": 200,
+          "contentType": "text/plain; charset=utf-8"
+        }
+      ],
+      "finalUrl": "https://www.sidcloud.cn/b8261e943cb1290db1a42a32c0ee9566.txt",
+      "bytes": 40,
+      "exactMatch": true,
+      "body": "ec8ff0c82edb079d74fc8fc19d6c709828a0650a"
+    },
+    {
+      "requestedUrl": "https://sidcloud.cn/b8261e943cb1290db1a42a32c0ee9566.txt",
+      "chain": [
+        {
+          "url": "https://sidcloud.cn/b8261e943cb1290db1a42a32c0ee9566.txt",
+          "status": 308,
+          "contentType": "text/plain",
+          "location": "https://www.sidcloud.cn/b8261e943cb1290db1a42a32c0ee9566.txt"
+        },
+        {
+          "url": "https://www.sidcloud.cn/b8261e943cb1290db1a42a32c0ee9566.txt",
+          "status": 200,
+          "contentType": "text/plain; charset=utf-8"
+        }
+      ],
+      "finalUrl": "https://www.sidcloud.cn/b8261e943cb1290db1a42a32c0ee9566.txt",
+      "bytes": 40,
+      "exactMatch": true,
+      "body": "ec8ff0c82edb079d74fc8fc19d6c709828a0650a"
+    },
+    {
+      "requestedUrl": "http://www.sidcloud.cn/b8261e943cb1290db1a42a32c0ee9566.txt",
+      "chain": [
+        {
+          "url": "http://www.sidcloud.cn/b8261e943cb1290db1a42a32c0ee9566.txt",
+          "status": 308,
+          "contentType": "text/plain",
+          "location": "https://www.sidcloud.cn/b8261e943cb1290db1a42a32c0ee9566.txt"
+        },
+        {
+          "url": "https://www.sidcloud.cn/b8261e943cb1290db1a42a32c0ee9566.txt",
+          "status": 200,
+          "contentType": "text/plain; charset=utf-8"
+        }
+      ],
+      "finalUrl": "https://www.sidcloud.cn/b8261e943cb1290db1a42a32c0ee9566.txt",
+      "bytes": 40,
+      "exactMatch": true,
+      "body": "ec8ff0c82edb079d74fc8fc19d6c709828a0650a"
+    },
+    {
+      "requestedUrl": "http://sidcloud.cn/b8261e943cb1290db1a42a32c0ee9566.txt",
+      "chain": [
+        {
+          "url": "http://sidcloud.cn/b8261e943cb1290db1a42a32c0ee9566.txt",
+          "status": 308,
+          "contentType": "text/plain",
+          "location": "https://sidcloud.cn/b8261e943cb1290db1a42a32c0ee9566.txt"
+        },
+        {
+          "url": "https://sidcloud.cn/b8261e943cb1290db1a42a32c0ee9566.txt",
+          "status": 308,
+          "contentType": "text/plain",
+          "location": "https://www.sidcloud.cn/b8261e943cb1290db1a42a32c0ee9566.txt"
+        },
+        {
+          "url": "https://www.sidcloud.cn/b8261e943cb1290db1a42a32c0ee9566.txt",
+          "status": 200,
+          "contentType": "text/plain; charset=utf-8"
+        }
+      ],
+      "finalUrl": "https://www.sidcloud.cn/b8261e943cb1290db1a42a32c0ee9566.txt",
+      "bytes": 40,
+      "exactMatch": true,
+      "body": "ec8ff0c82edb079d74fc8fc19d6c709828a0650a"
+    },
+    {
+      "requestedUrl": "https://www.sidcloud.cn/17df1b98016e4dce51cf8d4080665747.txt",
+      "chain": [
+        {
+          "url": "https://www.sidcloud.cn/17df1b98016e4dce51cf8d4080665747.txt",
+          "status": 200,
+          "contentType": "text/plain; charset=utf-8"
+        }
+      ],
+      "finalUrl": "https://www.sidcloud.cn/17df1b98016e4dce51cf8d4080665747.txt",
+      "bytes": 40,
+      "exactMatch": true,
+      "body": "ce49460b29a0a3d3fbf87ef530c8954f96e0258c"
+    },
+    {
+      "requestedUrl": "https://sidcloud.cn/17df1b98016e4dce51cf8d4080665747.txt",
+      "chain": [
+        {
+          "url": "https://sidcloud.cn/17df1b98016e4dce51cf8d4080665747.txt",
+          "status": 308,
+          "contentType": "text/plain",
+          "location": "https://www.sidcloud.cn/17df1b98016e4dce51cf8d4080665747.txt"
+        },
+        {
+          "url": "https://www.sidcloud.cn/17df1b98016e4dce51cf8d4080665747.txt",
+          "status": 200,
+          "contentType": "text/plain; charset=utf-8"
+        }
+      ],
+      "finalUrl": "https://www.sidcloud.cn/17df1b98016e4dce51cf8d4080665747.txt",
+      "bytes": 40,
+      "exactMatch": true,
+      "body": "ce49460b29a0a3d3fbf87ef530c8954f96e0258c"
+    }
+  ],
+  "smokeChecks": [
+    {
+      "path": "/",
+      "status": 200,
+      "applicationBundle": "index-CK-rTQO2.js"
+    },
+    {
+      "path": "/main.json",
+      "status": 200,
+      "entries": 76
+    },
+    {
+      "path": "/myapp.json",
+      "status": 200,
+      "entries": 18
+    }
+  ]
+}
