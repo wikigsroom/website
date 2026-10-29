@@ -1,0 +1,86 @@
+{
+  "verifiedAt": "2026-10-29T08:27:49.782Z",
+  "authentication": "none",
+  "checks": [
+    {
+      "requestedUrl": "https://www.sidcloud.cn/17df1b98016e4dce51cf8d4080665747.txt",
+      "chain": [
+        {
+          "url": "https://www.sidcloud.cn/17df1b98016e4dce51cf8d4080665747.txt",
+          "status": 200,
+          "contentType": "text/plain; charset=utf-8"
+        }
+      ],
+      "finalUrl": "https://www.sidcloud.cn/17df1b98016e4dce51cf8d4080665747.txt",
+      "bytes": 40,
+      "exactMatch": true,
+      "body": "ce49460b29a0a3d3fbf87ef530c8954f96e0258c"
+    },
+    {
+      "requestedUrl": "https://sidcloud.cn/17df1b98016e4dce51cf8d4080665747.txt",
+      "chain": [
+        {
+          "url": "https://sidcloud.cn/17df1b98016e4dce51cf8d4080665747.txt",
+          "status": 308,
+          "contentType": "text/plain",
+          "location": "https://www.sidcloud.cn/17df1b98016e4dce51cf8d4080665747.txt"
+        },
+        {
+          "url": "https://www.sidcloud.cn/17df1b98016e4dce51cf8d4080665747.txt",
+          "status": 200,
+          "contentType": "text/plain; charset=utf-8"
+        }
+      ],
+      "finalUrl": "https://www.sidcloud.cn/17df1b98016e4dce51cf8d4080665747.txt",
+      "bytes": 40,
+      "exactMatch": true,
+      "body": "ce49460b29a0a3d3fbf87ef530c8954f96e0258c"
+    },
+    {
+      "requestedUrl": "http://www.sidcloud.cn/17df1b98016e4dce51cf8d4080665747.txt",
+      "chain": [
+        {
+          "url": "http://www.sidcloud.cn/17df1b98016e4dce51cf8d4080665747.txt",
+          "status": 308,
+          "contentType": "text/plain",
+          "location": "https://www.sidcloud.cn/17df1b98016e4dce51cf8d4080665747.txt"
+        },
+        {
+          "url": "https://www.sidcloud.cn/17df1b98016e4dce51cf8d4080665747.txt",
+          "status": 200,
+          "contentType": "text/plain; charset=utf-8"
+        }
+      ],
+      "finalUrl": "https://www.sidcloud.cn/17df1b98016e4dce51cf8d4080665747.txt",
+      "bytes": 40,
+      "exactMatch": true,
+      "body": "ce49460b29a0a3d3fbf87ef530c8954f96e0258c"
+    },
+    {
+      "requestedUrl": "http://sidcloud.cn/17df1b98016e4dce51cf8d4080665747.txt",
+      "chain": [
+        {
+          "url": "http://sidcloud.cn/17df1b98016e4dce51cf8d4080665747.txt",
+          "status": 308,
+          "contentType": "text/plain",
+          "location": "https://sidcloud.cn/17df1b98016e4dce51cf8d4080665747.txt"
+        },
+        {
+          "url": "https://sidcloud.cn/17df1b98016e4dce51cf8d4080665747.txt",
+          "status": 308,
+          "contentType": "text/plain",
+          "location": "https://www.sidcloud.cn/17df1b98016e4dce51cf8d4080665747.txt"
+        },
+        {
+          "url": "https://www.sidcloud.cn/17df1b98016e4dce51cf8d4080665747.txt",
+          "status": 200,
+          "contentType": "text/plain; charset=utf-8"
+        }
+      ],
+      "finalUrl": "https://www.sidcloud.cn/17df1b98016e4dce51cf8d4080665747.txt",
+      "bytes": 40,
+      "exactMatch": true,
+      "body": "ce49460b29a0a3d3fbf87ef530c8954f96e0258c"
+    }
+  ]
+}
