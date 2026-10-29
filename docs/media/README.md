@@ -24,8 +24,10 @@ Captured from the visual edition built on the frozen 2026-10-29 benchmark data: 
 | [batch-mobile.mp4](benchmark-20261029/batch-mobile.mp4) · [GIF](benchmark-20261029/batch-mobile.gif) | 手机复核文章 / Mobile review article |
 | [verification.json](benchmark-20261029/verification.json) | 46 路由、770 次展开、筛选、阅读和布局检查 / Route, coverage and interaction checks |
 | [cross-origin-proof.json](benchmark-20261029/cross-origin-proof.json) | 真实博客域名下的原素材加载验证 / Original media loading from the real blog origin |
-| [production-article-desktop.png](benchmark-20261029/production-article-desktop.png) | 本次正式域名上线截图 / Refreshed article on the production domain |
-| [生产验收 / Production proof](../releases/2026-10-29-editorial-production.json) | 部署绑定、构建文件与 46 篇文章验收 / Deployment, build files and all 46 published articles |
+| [production-visual-article-desktop.png](benchmark-20261029/production-visual-article-desktop.png) | 2026-10-30 可视化版正式域名截图 / Visual edition on the production domain |
+| [可视化版生产验收 / Visual production proof](../releases/2026-10-30-visual-production.json) | 当前部署、构建文件与 46 篇图文测评验收 / Current deployment, exact build files and 46 illustrated journals |
+| [production-article-desktop.png](benchmark-20261029/production-article-desktop.png) | 2026-10-29 标题版本历史截图 / Historical editorial release screenshot |
+| [标题版生产验收 / Editorial production proof](../releases/2026-10-29-editorial-production.json) | 上一版部署记录 / Previous production release record |
 
 ![桌面栏目 / Desktop index](benchmark-20261029/batch-index-desktop.png)
 
@@ -49,6 +51,6 @@ npm run docs:check
 
 Requires native Chrome, FFmpeg and FFprobe. On a fresh machine, run `npx playwright-core install ffmpeg` once to install Playwright's native recording helper. 新机器还需以该命令安装原生录制辅助程序。Executable paths can be selected with the environment variables above. The script owns a temporary browser context, closes its browser and preview server on exit, and keeps raw recordings in the ignored directory. Browser verification checks 320/390/768/1440px layouts; no third-party font dependency is needed for captures.
 
-`docs:check` 核对媒体存在、验收通过、资源已关闭，并以规范化换行后的 SHA-256 绑定当前内容与界面，避免代码变了而截图仍旧。上表 `batch-*` 与 `review-*` 为本地构建捕获，`production-article-desktop.png` 则来自已部署的正式域名。
+`docs:check` 核对媒体存在、验收通过、资源已关闭，并以规范化换行后的 SHA-256 绑定当前内容与界面，避免代码变了而截图仍旧。上表本地验收媒体来自实际生产构建；两张 `production-*` 截图来自对应版本的正式域名，并有各自的发布验收记录。
 
-`docs:check` checks media presence, passing verification, resource cleanup and a newline-normalized SHA-256 of the content/UI files. The `batch-*` and `review-*` files are local build captures; `production-article-desktop.png` comes from the deployed production domain and is supported by the separate release proof.
+`docs:check` checks media presence, passing verification, resource cleanup and a newline-normalized SHA-256 of the content/UI files. Local verification media comes from the production build; both `production-*` screenshots come from the corresponding deployed editions and have separate release proofs.

@@ -103,6 +103,43 @@ try {
     });
   }
 
+  const visualPaths = new Set();
+  for (const entry of Object.values(visuals.rounds)) {
+    visualPaths.add(entry.cover.hero);
+    visualPaths.add(entry.cover.card);
+    for (const figure of entry.gallery) {
+      visualPaths.add(figure.src);
+      if (figure.poster) visualPaths.add(figure.poster);
+    }
+  }
+  for (const cover of Object.values(visuals.research)) {
+    visualPaths.add(cover.hero);
+    visualPaths.add(cover.card);
+  }
+  const imagePaths = [...visualPaths].sort();
+  const imageHash = (bytes) => crypto.createHash('sha256').update(bytes).digest('hex');
+  for (let offset = 0; offset < imagePaths.length; offset += 8) {
+    await Promise.all(
+      imagePaths.slice(offset, offset + 8).map(async (asset) => {
+        const remote = await fetch(new URL(asset, metadata.productionUrl), {
+          signal: AbortSignal.timeout(45000),
+        });
+        assert(remote.ok, `Production image HTTP ${remote.status}: ${asset}`);
+        assert.equal(
+          imageHash(Buffer.from(await remote.arrayBuffer())),
+          imageHash(await fs.readFile(path.join(root, 'public', asset))),
+          `Production image differs: ${asset}`,
+        );
+      }),
+    );
+  }
+  report.visualAssetsChecked = imagePaths.length;
+  report.checks.push({
+    check: 'production image bytes match verified visual derivatives',
+    files: imagePaths.length,
+    passed: true,
+  });
+
   browser = await chromium.launch({
     headless: true,
     ...(process.env.PLAYWRIGHT_CHROMIUM_EXECUTABLE_PATH
@@ -155,6 +192,7 @@ try {
       hasText: benchmarkEditorial['r4090-community-complete-20261029'].title,
     })
     .waitFor();
+  await page.locator('.article-cover img').evaluate((image) => image.decode());
   await page.evaluate(() => document.fonts.ready);
   await page.evaluate(() => window.scrollTo({ top: 0, behavior: 'instant' }));
   await page.screenshot({

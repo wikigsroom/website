@@ -14,7 +14,7 @@ The visual edition adds actual video frames, result screenshots, full-track audi
 
 ![Voice-casting cover: thematic artwork with actual audio waveforms](public/assets/benchmark-visuals/card/r4090-voice-casting.webp)
 
-The refreshed journals are live at [blog.sidcloud.cn](https://blog.sidcloud.cn/#/benchmark). Production verification on 2026-10-29 checked all 46 articles and exact build files; see the [release proof](docs/releases/2026-10-29-editorial-production.json).
+The visual edition is live at [blog.sidcloud.cn](https://blog.sidcloud.cn/#/benchmark). Production verification on 2026-10-30 checked all 46 illustrated journals, all 225 visual files and exact build files; see the [release proof](docs/releases/2026-10-30-visual-production.json).
 
 ## Run locally
 

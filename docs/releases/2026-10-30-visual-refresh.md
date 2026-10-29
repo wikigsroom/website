@@ -19,7 +19,11 @@
 
 Lint、TypeScript/Vite 构建及全部批次关联/素材来源检查已通过。浏览器验收共 109 项：全部 70 篇封面、46 篇文章的 103 张正文图可解码，代表原音视频可播放，770 次记录展开及 320/390/768/1440px 布局通过。已刷新 12 张页面截图、两段 MP4 与两段 GIF；浏览器与临时服务均已关闭，见 [验收记录](../media/benchmark-20261029/verification.json)。
 
-225 个压缩 WebP 文件合计 11,311,356 字节（约 10.79 MiB），包含 48 组 hero/card 封面、103 张正文图和 26 张视频 poster。插画原 PNG 及完整测评影音不上传至博客项目。正式发布信息在域名验收后补入本节。
+225 个压缩 WebP 文件合计 11,311,356 字节（约 10.79 MiB），包含 48 组 hero/card 封面、103 张正文图和 26 张视频 poster。插画原 PNG 及完整测评影音不上传至博客项目。
+
+可视化版已通过独立账户发布到 [正式博客](https://blog.sidcloud.cn/#/benchmark)。Vercel 部署 `dpl_2Yvf75b3rgsEDUCjNxa8oaFZoKcu` 为 READY / production，正式域名绑定正确；发布源码为 `58033ec509ba365d233f6d4551b3f7db92bb46f4`。全部 46 篇图文测评及构建文件已核验，默认全局账户的 10 个配置文件哈希保持不变。见 [生产验收](2026-10-30-visual-production.json) 和 [线上截图](../media/benchmark-20261029/production-visual-article-desktop.png)。
+
+增强后的生产检查共 49 项：两个构建文件、225 个衍生图的字节哈希及全部 46 篇文章均通过。正式截图等待当前封面解码完成再捕获；验收浏览器已关闭。
 
 ## English
 
@@ -33,4 +37,8 @@ The public Benchmark 1.9.0 snapshot remains unchanged, including all 681 unique 
 
 Lint, type/build and visual/source attribution checks passed. All 109 browser checks passed, including 70 raster covers, 103 figures across 46 articles, original audio/video playback, 770 evidence expansions and four responsive widths. Twelve screenshots, two MP4s and two GIFs record the new visual reading flow; the [report](../media/benchmark-20261029/verification.json) confirms browser and preview cleanup.
 
-The 225 WebP files total 11,311,356 bytes (10.79 MiB): 48 hero/card cover pairs, 103 inline figures and 26 video posters. Illustration PNG originals and full benchmark media are excluded from blog uploads. Verified production details will be added after release.
+The 225 WebP files total 11,311,356 bytes (10.79 MiB): 48 hero/card cover pairs, 103 inline figures and 26 video posters. Illustration PNG originals and full benchmark media are excluded from blog uploads.
+
+The visual edition is published through the isolated account at the [production blog](https://blog.sidcloud.cn/#/benchmark). Deployment `dpl_2Yvf75b3rgsEDUCjNxa8oaFZoKcu` is READY / production and owns the custom domain; the deployed source commit is `58033ec509ba365d233f6d4551b3f7db92bb46f4`. All 46 illustrated journals and exact build files have been verified, while hashes for all 10 default account files remain unchanged. See the [production proof](2026-10-30-visual-production.json) and [live screenshot](../media/benchmark-20261029/production-visual-article-desktop.png).
+
+All 49 strengthened production checks passed: two build assets, byte hashes for all 225 visual derivatives and all 46 journals. The final screenshot waits for the current cover to decode before capture, and the verification browser is closed.

@@ -8,7 +8,12 @@
 - English: Added 103 inline figures with real frames, image/3D screenshots, full-track amplitude envelopes, record excerpts and original playback.
 - 中文：使用指定技能与 gpt-image-2.5 生成 13 组主题插画，保留提示词、原图和来源；旧文字封面及旧生成脚本已替换。
 - English: Generated 13 labeled thematic illustrations through the requested skill/model, retaining prompts, originals and provenance.
+- 中文：已通过独立账户发布到 [正式博客](https://blog.sidcloud.cn/#/benchmark)，核验全部 46 篇图文测评与构建文件，全局账户的 10 个配置文件未变化。
+- English: Published through the isolated account; all 46 illustrated journals and exact build files are verified, with all 10 default account files unchanged.
+- 中文：线上 225 个衍生图文件均与本地字节哈希一致，49 项生产检查通过；发布截图等待当前封面完成解码后再捕获。
+- English: All 225 production image files match local byte hashes; 49 production checks passed, with the final screenshot captured after the current cover decoded.
 - [实现与发布 / Implementation and release](docs/releases/2026-10-30-visual-refresh.md) · [素材方案 / Material design](docs/benchmark-visuals.md)。
+- [生产验收 / Production proof](docs/releases/2026-10-30-visual-production.json)。
 
 ## 2026-10-29 — Editorial refresh / 标题与正文重写
 

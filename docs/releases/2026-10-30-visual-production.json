@@ -1,0 +1,362 @@
+{
+  "url": "https://blog.sidcloud.cn",
+  "sourceCommit": "58033ec509ba365d233f6d4551b3f7db92bb46f4",
+  "snapshotSha256": "81c20e4eece8e2280df46d76b8f09cab8eab7bdab3da2053e8700258438a7ed5",
+  "checkedAt": "2026-10-29T16:39:17.273Z",
+  "checks": [
+    {
+      "check": "production asset matches verified build",
+      "asset": "/assets/index-D1wr1OkI.css",
+      "passed": true
+    },
+    {
+      "check": "production asset matches verified build",
+      "asset": "/assets/index-DZjAqw1q.js",
+      "passed": true
+    },
+    {
+      "check": "production image bytes match verified visual derivatives",
+      "files": 225,
+      "passed": true
+    },
+    {
+      "check": "published headline, raster cover, figures and evidence",
+      "roundId": "r4090-community-complete-20261029",
+      "records": 10,
+      "figures": 3,
+      "passed": true
+    },
+    {
+      "check": "published headline, raster cover, figures and evidence",
+      "roundId": "r4090-lipsync-complete-20261029",
+      "records": 2,
+      "figures": 2,
+      "passed": true
+    },
+    {
+      "check": "published headline, raster cover, figures and evidence",
+      "roundId": "r4090-voice-casting",
+      "records": 40,
+      "figures": 3,
+      "passed": true
+    },
+    {
+      "check": "published headline, raster cover, figures and evidence",
+      "roundId": "r4090-tts",
+      "records": 67,
+      "figures": 3,
+      "passed": true
+    },
+    {
+      "check": "published headline, raster cover, figures and evidence",
+      "roundId": "r4090-lipsync",
+      "records": 5,
+      "figures": 3,
+      "passed": true
+    },
+    {
+      "check": "published headline, raster cover, figures and evidence",
+      "roundId": "r4090-community-install",
+      "records": 39,
+      "figures": 3,
+      "passed": true
+    },
+    {
+      "check": "published headline, raster cover, figures and evidence",
+      "roundId": "r4090-community-defaults",
+      "records": 22,
+      "figures": 3,
+      "passed": true
+    },
+    {
+      "check": "published headline, raster cover, figures and evidence",
+      "roundId": "r4090-app",
+      "records": 3,
+      "figures": 1,
+      "passed": true
+    },
+    {
+      "check": "published headline, raster cover, figures and evidence",
+      "roundId": "r4090-tts-earlier",
+      "records": 130,
+      "figures": 3,
+      "passed": true
+    },
+    {
+      "check": "published headline, raster cover, figures and evidence",
+      "roundId": "r4090-quality",
+      "records": 34,
+      "figures": 3,
+      "passed": true
+    },
+    {
+      "check": "published headline, raster cover, figures and evidence",
+      "roundId": "r4090-docs",
+      "records": 29,
+      "figures": 3,
+      "passed": true
+    },
+    {
+      "check": "published headline, raster cover, figures and evidence",
+      "roundId": "r3080-voice-selection",
+      "records": 21,
+      "figures": 3,
+      "passed": true
+    },
+    {
+      "check": "published headline, raster cover, figures and evidence",
+      "roundId": "r3080-vocal-pilot",
+      "records": 1,
+      "figures": 1,
+      "passed": true
+    },
+    {
+      "check": "published headline, raster cover, figures and evidence",
+      "roundId": "r3080-podcast-initial",
+      "records": 3,
+      "figures": 3,
+      "passed": true
+    },
+    {
+      "check": "published headline, raster cover, figures and evidence",
+      "roundId": "r3080-podcast",
+      "records": 15,
+      "figures": 3,
+      "passed": true
+    },
+    {
+      "check": "published headline, raster cover, figures and evidence",
+      "roundId": "r3080-music-v3",
+      "records": 17,
+      "figures": 3,
+      "passed": true
+    },
+    {
+      "check": "published headline, raster cover, figures and evidence",
+      "roundId": "r3080-music-v2",
+      "records": 3,
+      "figures": 2,
+      "passed": true
+    },
+    {
+      "check": "published headline, raster cover, figures and evidence",
+      "roundId": "r3080-music-preparations",
+      "records": 26,
+      "figures": 1,
+      "passed": true
+    },
+    {
+      "check": "published headline, raster cover, figures and evidence",
+      "roundId": "r3080-music-plans",
+      "records": 8,
+      "figures": 1,
+      "passed": true
+    },
+    {
+      "check": "published headline, raster cover, figures and evidence",
+      "roundId": "r3080-music",
+      "records": 18,
+      "figures": 3,
+      "passed": true
+    },
+    {
+      "check": "published headline, raster cover, figures and evidence",
+      "roundId": "r3080-yue-prepodcast",
+      "records": 2,
+      "figures": 2,
+      "passed": true
+    },
+    {
+      "check": "published headline, raster cover, figures and evidence",
+      "roundId": "r3080-music-original",
+      "records": 17,
+      "figures": 3,
+      "passed": true
+    },
+    {
+      "check": "published headline, raster cover, figures and evidence",
+      "roundId": "r3080-music-diagnostics",
+      "records": 2,
+      "figures": 2,
+      "passed": true
+    },
+    {
+      "check": "published headline, raster cover, figures and evidence",
+      "roundId": "r3080-duo",
+      "records": 6,
+      "figures": 3,
+      "passed": true
+    },
+    {
+      "check": "published headline, raster cover, figures and evidence",
+      "roundId": "r-podcast-source-research",
+      "records": 1,
+      "figures": 1,
+      "passed": true
+    },
+    {
+      "check": "published headline, raster cover, figures and evidence",
+      "roundId": "r4090-swift-20261022",
+      "records": 28,
+      "figures": 1,
+      "passed": true
+    },
+    {
+      "check": "published headline, raster cover, figures and evidence",
+      "roundId": "r3080-source",
+      "records": 4,
+      "figures": 1,
+      "passed": true
+    },
+    {
+      "check": "published headline, raster cover, figures and evidence",
+      "roundId": "r3080-original-install",
+      "records": 6,
+      "figures": 3,
+      "passed": true
+    },
+    {
+      "check": "published headline, raster cover, figures and evidence",
+      "roundId": "r3080-lustify-correction",
+      "records": 2,
+      "figures": 2,
+      "passed": true
+    },
+    {
+      "check": "published headline, raster cover, figures and evidence",
+      "roundId": "r3080-image-retries",
+      "records": 14,
+      "figures": 3,
+      "passed": true
+    },
+    {
+      "check": "published headline, raster cover, figures and evidence",
+      "roundId": "r3080-edit",
+      "records": 6,
+      "figures": 3,
+      "passed": true
+    },
+    {
+      "check": "published headline, raster cover, figures and evidence",
+      "roundId": "r3080-author-safe",
+      "records": 7,
+      "figures": 3,
+      "passed": true
+    },
+    {
+      "check": "published headline, raster cover, figures and evidence",
+      "roundId": "r3080-3d",
+      "records": 4,
+      "figures": 3,
+      "passed": true
+    },
+    {
+      "check": "published headline, raster cover, figures and evidence",
+      "roundId": "r-h3-world-research",
+      "records": 2,
+      "figures": 1,
+      "passed": true
+    },
+    {
+      "check": "published headline, raster cover, figures and evidence",
+      "roundId": "r-3080-input-research",
+      "records": 1,
+      "figures": 1,
+      "passed": true
+    },
+    {
+      "check": "published headline, raster cover, figures and evidence",
+      "roundId": "r4090-lingbot-worlds",
+      "records": 9,
+      "figures": 3,
+      "passed": true
+    },
+    {
+      "check": "published headline, raster cover, figures and evidence",
+      "roundId": "r4090-h3",
+      "records": 102,
+      "figures": 3,
+      "passed": true
+    },
+    {
+      "check": "published headline, raster cover, figures and evidence",
+      "roundId": "r3080-yue-recovery",
+      "records": 20,
+      "figures": 3,
+      "passed": true
+    },
+    {
+      "check": "published headline, raster cover, figures and evidence",
+      "roundId": "r3080-lustify-independent",
+      "records": 1,
+      "figures": 1,
+      "passed": true
+    },
+    {
+      "check": "published headline, raster cover, figures and evidence",
+      "roundId": "r3080-llm",
+      "records": 2,
+      "figures": 1,
+      "passed": true
+    },
+    {
+      "check": "published headline, raster cover, figures and evidence",
+      "roundId": "r-h3-input-research",
+      "records": 1,
+      "figures": 1,
+      "passed": true
+    },
+    {
+      "check": "published headline, raster cover, figures and evidence",
+      "roundId": "r4090-llm-initial",
+      "records": 1,
+      "figures": 1,
+      "passed": true
+    },
+    {
+      "check": "published headline, raster cover, figures and evidence",
+      "roundId": "r4090-llm",
+      "records": 1,
+      "figures": 1,
+      "passed": true
+    },
+    {
+      "check": "published headline, raster cover, figures and evidence",
+      "roundId": "r4090-base",
+      "records": 29,
+      "figures": 3,
+      "passed": true
+    },
+    {
+      "check": "published headline, raster cover, figures and evidence",
+      "roundId": "r3080-base",
+      "records": 7,
+      "figures": 3,
+      "passed": true
+    },
+    {
+      "check": "published headline, raster cover, figures and evidence",
+      "roundId": "r-h3-community-research",
+      "records": 2,
+      "figures": 1,
+      "passed": true
+    }
+  ],
+  "browserClosed": true,
+  "deployment": {
+    "id": "dpl_2Yvf75b3rgsEDUCjNxa8oaFZoKcu",
+    "url": "blogs-49ky4d74m-carzygodwu-2768s-projects.vercel.app",
+    "projectId": "prj_xw9zxtAguYTBZyWtdfpog5tGkY0y",
+    "state": "READY",
+    "target": "production",
+    "aliases": [
+      "blog.sidcloud.cn",
+      "blogs-murex-three.vercel.app",
+      "blogs-carzygodwu-2768s-projects.vercel.app"
+    ]
+  },
+  "visualAssetsChecked": 225,
+  "defaultAccountFilesChecked": 10,
+  "defaultAccountFilesUnchanged": true,
+  "passed": true
+}

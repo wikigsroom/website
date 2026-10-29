@@ -14,7 +14,7 @@
 
 ![声线选角封面：主题插画叠加实际音轨波形](public/assets/benchmark-visuals/card/r4090-voice-casting.webp)
 
-新版已上线 [blog.sidcloud.cn](https://blog.sidcloud.cn/#/benchmark)，2026-10-29 已核验全部 46 篇文章与构建文件，详见 [生产验收记录](docs/releases/2026-10-29-editorial-production.json)。
+可视化版已上线 [blog.sidcloud.cn](https://blog.sidcloud.cn/#/benchmark)，2026-10-30 已核验全部 46 篇图文测评、225 个图片文件与构建文件，详见 [生产验收记录](docs/releases/2026-10-30-visual-production.json)。
 
 ## 本地运行
 
