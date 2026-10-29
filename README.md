@@ -10,6 +10,8 @@ Search, section/category/tag filters, sorting, archives, article navigation, a t
 
 [All 46 batches](docs/benchmark-batches.md) · [Material reuse design](docs/benchmark-materials.md) · [Editorial refresh](docs/releases/2026-10-29-editorial-refresh.md) · [Screenshots and recordings](docs/media/README.md)
 
+The refreshed journals are live at [blog.sidcloud.cn](https://blog.sidcloud.cn/#/benchmark). Production verification on 2026-10-29 checked all 46 articles and exact build files; see the [release proof](docs/releases/2026-10-29-editorial-production.json).
+
 ## Run locally
 
 Use native Node.js 22 and npm:

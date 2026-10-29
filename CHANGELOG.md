@@ -8,7 +8,9 @@
 - English: Unified cover/card/related titles and topic categories; refined typography, phrase wrapping and responsive spacing.
 - 中文：刷新截图、MP4/GIF 及浏览器验收，新增固定目标的博客独立账户部署入口。
 - English: Refreshed screenshots, recordings and browser verification; added a guarded blog deployment wrapper.
-- 发布验收追加于 [更新详情 / Release details](docs/releases/2026-10-29-editorial-refresh.md)。
+- 中文：已通过独立账户发布到 [正式博客](https://blog.sidcloud.cn/#/benchmark)，线上 46 篇文章与本地构建文件全部核对通过，默认账户文件未变化。
+- English: Published through the isolated account; all 46 production articles and exact build files are verified, with default account files unchanged.
+- [更新详情 / Release details](docs/releases/2026-10-29-editorial-refresh.md) · [生产验收 / Production proof](docs/releases/2026-10-29-editorial-production.json)。
 
 ## 2026-10-29 — All benchmark batches as journals / 全部测评按批次成文
 

@@ -10,6 +10,8 @@
 
 [全部 46 个批次](docs/benchmark-batches.md) · [素材复用方案](docs/benchmark-materials.md) · [标题与正文重写](docs/releases/2026-10-29-editorial-refresh.md) · [截图、录屏与 GIF](docs/media/README.md)
 
+新版已上线 [blog.sidcloud.cn](https://blog.sidcloud.cn/#/benchmark)，2026-10-29 已核验全部 46 篇文章与构建文件，详见 [生产验收记录](docs/releases/2026-10-29-editorial-production.json)。
+
 ## 本地运行
 
 使用原生 Node.js 22 和 npm：

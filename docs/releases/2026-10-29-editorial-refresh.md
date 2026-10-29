@@ -26,7 +26,13 @@
 
 验证包括 Lint、类型/Vite 构建、覆盖与链接检查、46 个文章路由、770 次记录展开、标题/提要、代表素材、栏目与阅读交互及 320/390/768/1440px 布局。截图、桌面/手机 MP4 和 GIF 已刷新，详见 [页面验收](../media/benchmark-20261029/verification.json)。浏览器和临时服务在结束时关闭。
 
-新增博客专用 `scripts/vercel.ps1`，固定核验 `blogs` 项目并使用既有独立账户。生产发布结果将在完成后追加于本页；Git 推送不代替上线确认。
+新增博客专用 `scripts/vercel.ps1`，固定核验 `blogs` 项目并使用既有独立账户。
+
+### 生产发布结果
+
+已发布到 [blog.sidcloud.cn](https://blog.sidcloud.cn/#/benchmark)，Vercel 状态为 `READY` / `production`，部署为 `dpl_HijjCQZ3DJquVECk2RLQ4evzi8sH`，发布源码提交为 `d662306e789f7008d3a91c48be2fa4996e1f3cc6`。
+
+2026-10-29 23:18（UTC+8）开始核验：正式域名已绑定该部署，JS/CSS 与本地验收构建哈希一致，全部 46 篇的标题、三点提要与记录数量匹配；默认账户目录的 10 个文件哈希未变化。验收浏览器已关闭。完整证据见 [生产记录](2026-10-29-editorial-production.json) 与 [线上截图](../media/benchmark-20261029/production-article-desktop.png)。后续文档提交只补充发布结果，不改变已部署的页面。
 
 ## English
 
@@ -38,4 +44,6 @@ All 681 unique records and 89 cross-batch references keep their original associa
 
 Validation covers lint, TypeScript/Vite compilation, coverage, 46 routes and 770 expanded records, all headlines and takeaways, media, reader controls and four responsive widths. Screenshots and desktop/mobile MP4/GIF demos are refreshed; the [browser report](../media/benchmark-20261029/verification.json) records cleanup.
 
-The deployment wrapper checks the isolated account and existing `blogs` project. The production outcome will be appended after domain, build-asset and article verification.
+The deployment wrapper checks the isolated account and existing `blogs` project. The refresh is live at [blog.sidcloud.cn](https://blog.sidcloud.cn/#/benchmark), deployment `dpl_HijjCQZ3DJquVECk2RLQ4evzi8sH`, source commit `d662306e789f7008d3a91c48be2fa4996e1f3cc6`.
+
+Production verification began at 2026-10-29 23:18 UTC+8 and passed: the custom domain points to this READY production deployment, published JS/CSS hashes match the verified local build, and all 46 headlines, takeaway blocks and evidence counts match. Ten default-account files remained unchanged and the verification browser was closed. See the [machine-readable proof](2026-10-29-editorial-production.json) and [production screenshot](../media/benchmark-20261029/production-article-desktop.png). A following documentation-only commit records this outcome without changing the deployed application.

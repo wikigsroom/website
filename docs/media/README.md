@@ -19,6 +19,8 @@ Captured from the refreshed local production build, including all 46 editorial h
 | [batch-mobile.mp4](benchmark-20261029/batch-mobile.mp4) · [GIF](benchmark-20261029/batch-mobile.gif) | 手机复核文章 / Mobile review article |
 | [verification.json](benchmark-20261029/verification.json) | 46 路由、770 次展开、筛选、阅读和布局检查 / Route, coverage and interaction checks |
 | [cross-origin-proof.json](benchmark-20261029/cross-origin-proof.json) | 真实博客域名下的原素材加载验证 / Original media loading from the real blog origin |
+| [production-article-desktop.png](benchmark-20261029/production-article-desktop.png) | 本次正式域名上线截图 / Refreshed article on the production domain |
+| [生产验收 / Production proof](../releases/2026-10-29-editorial-production.json) | 部署绑定、构建文件与 46 篇文章验收 / Deployment, build files and all 46 published articles |
 
 ![桌面栏目 / Desktop index](benchmark-20261029/batch-index-desktop.png)
 
@@ -38,6 +40,6 @@ npm run docs:check
 
 Requires native Chrome, FFmpeg and FFprobe. On a fresh machine, run `npx playwright-core install ffmpeg` once to install Playwright's native recording helper. 新机器还需以该命令安装原生录制辅助程序。Executable paths can be selected with the environment variables above. The script owns a temporary browser context, closes its browser and preview server on exit, and keeps raw recordings in the ignored directory. Browser verification checks 320/390/768/1440px layouts; no third-party font dependency is needed for captures.
 
-`docs:check` 核对媒体存在、验收通过、资源已关闭，并以规范化换行后的 SHA-256 绑定当前内容与界面，避免代码变了而截图仍旧。未把未发布的 Git 内容声称为线上截图。
+`docs:check` 核对媒体存在、验收通过、资源已关闭，并以规范化换行后的 SHA-256 绑定当前内容与界面，避免代码变了而截图仍旧。上表 `batch-*` 与 `review-*` 为本地构建捕获，`production-article-desktop.png` 则来自已部署的正式域名。
 
-`docs:check` checks media presence, passing verification, resource cleanup and a newline-normalized SHA-256 of the content/UI files. These are local build captures, not a claim of a production deployment.
+`docs:check` checks media presence, passing verification, resource cleanup and a newline-normalized SHA-256 of the content/UI files. The `batch-*` and `review-*` files are local build captures; `production-article-desktop.png` comes from the deployed production domain and is supported by the separate release proof.
