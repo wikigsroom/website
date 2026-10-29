@@ -1,0 +1,21 @@
+{
+  "checkedAt": "2026-10-29T13:16:42.281Z",
+  "deploymentId": "dpl_GsobZr6evTM1Vk9PtjvhYBBRJtti",
+  "isolatedAccount": "carzygodwu-2768",
+  "projectId": "prj_7FzL7ilgYomtw9XcRlEGQFfRhvSm",
+  "defaultGlobalFilesUnchanged": true,
+  "files": [
+    {
+      "file": "config.json",
+      "unchanged": true
+    },
+    {
+      "file": "Data/auth.json",
+      "unchanged": true
+    },
+    {
+      "file": "Data/config.json",
+      "unchanged": true
+    }
+  ]
+}

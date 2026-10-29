@@ -1,0 +1,689 @@
+{
+  "checkedAt": "2026-10-29T13:15:45.383Z",
+  "deploymentId": "dpl_GsobZr6evTM1Vk9PtjvhYBBRJtti",
+  "base": "https://www.sidcloud.cn",
+  "transport": "direct",
+  "scope": "Public header, link destinations/attributes and existing client navigation. External destination availability is outside this check.",
+  "externalLive2DWidget": "blocked during verification",
+  "fonts": "Google Fonts blocked; system fallback used",
+  "passed": true,
+  "checks": [
+    {
+      "locale": "en-US",
+      "width": 320,
+      "links": [
+        {
+          "label": "Home",
+          "href": "/",
+          "target": "",
+          "rel": "",
+          "left": 25,
+          "right": 71.984375
+        },
+        {
+          "label": "BLOG",
+          "href": "https://blog.sidcloud.cn/",
+          "target": "_blank",
+          "rel": "noopener noreferrer",
+          "left": 87.984375,
+          "right": 129.53125
+        },
+        {
+          "label": "Benchmark",
+          "href": "https://benchmark.sidcloud.cn/",
+          "target": "_blank",
+          "rel": "noopener noreferrer",
+          "left": 145.53125,
+          "right": 243.953125
+        },
+        {
+          "label": "My box",
+          "href": "/mybox",
+          "target": "",
+          "rel": "",
+          "left": 25,
+          "right": 86.734375
+        },
+        {
+          "label": "AI Toolbox",
+          "href": "/aitoolbox",
+          "target": "",
+          "rel": "",
+          "left": 102.734375,
+          "right": 199.09375
+        },
+        {
+          "label": "Dev Toolbox",
+          "href": "/devtoolbox",
+          "target": "",
+          "rel": "",
+          "left": 25,
+          "right": 135.640625
+        }
+      ],
+      "passed": true
+    },
+    {
+      "locale": "en-US",
+      "width": 390,
+      "links": [
+        {
+          "label": "Home",
+          "href": "/",
+          "target": "",
+          "rel": "",
+          "left": 25,
+          "right": 71.984375
+        },
+        {
+          "label": "BLOG",
+          "href": "https://blog.sidcloud.cn/",
+          "target": "_blank",
+          "rel": "noopener noreferrer",
+          "left": 87.984375,
+          "right": 129.53125
+        },
+        {
+          "label": "Benchmark",
+          "href": "https://benchmark.sidcloud.cn/",
+          "target": "_blank",
+          "rel": "noopener noreferrer",
+          "left": 145.53125,
+          "right": 243.953125
+        },
+        {
+          "label": "My box",
+          "href": "/mybox",
+          "target": "",
+          "rel": "",
+          "left": 259.953125,
+          "right": 321.6875
+        },
+        {
+          "label": "AI Toolbox",
+          "href": "/aitoolbox",
+          "target": "",
+          "rel": "",
+          "left": 25,
+          "right": 121.359375
+        },
+        {
+          "label": "Dev Toolbox",
+          "href": "/devtoolbox",
+          "target": "",
+          "rel": "",
+          "left": 137.359375,
+          "right": 248
+        }
+      ],
+      "passed": true
+    },
+    {
+      "locale": "en-US",
+      "width": 768,
+      "links": [
+        {
+          "label": "Home",
+          "href": "/",
+          "target": "",
+          "rel": "",
+          "left": 25,
+          "right": 71.984375
+        },
+        {
+          "label": "BLOG",
+          "href": "https://blog.sidcloud.cn/",
+          "target": "_blank",
+          "rel": "noopener noreferrer",
+          "left": 87.984375,
+          "right": 129.53125
+        },
+        {
+          "label": "Benchmark",
+          "href": "https://benchmark.sidcloud.cn/",
+          "target": "_blank",
+          "rel": "noopener noreferrer",
+          "left": 145.53125,
+          "right": 243.953125
+        },
+        {
+          "label": "My box",
+          "href": "/mybox",
+          "target": "",
+          "rel": "",
+          "left": 259.953125,
+          "right": 321.6875
+        },
+        {
+          "label": "AI Toolbox",
+          "href": "/aitoolbox",
+          "target": "",
+          "rel": "",
+          "left": 337.6875,
+          "right": 434.046875
+        },
+        {
+          "label": "Dev Toolbox",
+          "href": "/devtoolbox",
+          "target": "",
+          "rel": "",
+          "left": 450.046875,
+          "right": 560.6875
+        }
+      ],
+      "passed": true
+    },
+    {
+      "locale": "en-US",
+      "width": 1024,
+      "links": [
+        {
+          "label": "Home",
+          "href": "/",
+          "target": "",
+          "rel": "",
+          "left": 206.171875,
+          "right": 261
+        },
+        {
+          "label": "BLOG",
+          "href": "https://blog.sidcloud.cn/",
+          "target": "_blank",
+          "rel": "noopener noreferrer",
+          "left": 285,
+          "right": 333.484375
+        },
+        {
+          "label": "Benchmark",
+          "href": "https://benchmark.sidcloud.cn/",
+          "target": "_blank",
+          "rel": "noopener noreferrer",
+          "left": 357.484375,
+          "right": 472.296875
+        },
+        {
+          "label": "My box",
+          "href": "/mybox",
+          "target": "",
+          "rel": "",
+          "left": 496.296875,
+          "right": 568.328125
+        },
+        {
+          "label": "AI Toolbox",
+          "href": "/aitoolbox",
+          "target": "",
+          "rel": "",
+          "left": 592.328125,
+          "right": 704.75
+        },
+        {
+          "label": "Dev Toolbox",
+          "href": "/devtoolbox",
+          "target": "",
+          "rel": "",
+          "left": 728.75,
+          "right": 857.828125
+        }
+      ],
+      "passed": true
+    },
+    {
+      "locale": "en-US",
+      "width": 1280,
+      "links": [
+        {
+          "label": "Home",
+          "href": "/",
+          "target": "",
+          "rel": "",
+          "left": 334.171875,
+          "right": 389
+        },
+        {
+          "label": "BLOG",
+          "href": "https://blog.sidcloud.cn/",
+          "target": "_blank",
+          "rel": "noopener noreferrer",
+          "left": 413,
+          "right": 461.484375
+        },
+        {
+          "label": "Benchmark",
+          "href": "https://benchmark.sidcloud.cn/",
+          "target": "_blank",
+          "rel": "noopener noreferrer",
+          "left": 485.484375,
+          "right": 600.296875
+        },
+        {
+          "label": "My box",
+          "href": "/mybox",
+          "target": "",
+          "rel": "",
+          "left": 624.296875,
+          "right": 696.328125
+        },
+        {
+          "label": "AI Toolbox",
+          "href": "/aitoolbox",
+          "target": "",
+          "rel": "",
+          "left": 720.328125,
+          "right": 832.75
+        },
+        {
+          "label": "Dev Toolbox",
+          "href": "/devtoolbox",
+          "target": "",
+          "rel": "",
+          "left": 856.75,
+          "right": 985.828125
+        }
+      ],
+      "passed": true
+    },
+    {
+      "locale": "en-US",
+      "width": 1440,
+      "links": [
+        {
+          "label": "Home",
+          "href": "/",
+          "target": "",
+          "rel": "",
+          "left": 414.171875,
+          "right": 469
+        },
+        {
+          "label": "BLOG",
+          "href": "https://blog.sidcloud.cn/",
+          "target": "_blank",
+          "rel": "noopener noreferrer",
+          "left": 493,
+          "right": 541.484375
+        },
+        {
+          "label": "Benchmark",
+          "href": "https://benchmark.sidcloud.cn/",
+          "target": "_blank",
+          "rel": "noopener noreferrer",
+          "left": 565.484375,
+          "right": 680.296875
+        },
+        {
+          "label": "My box",
+          "href": "/mybox",
+          "target": "",
+          "rel": "",
+          "left": 704.296875,
+          "right": 776.328125
+        },
+        {
+          "label": "AI Toolbox",
+          "href": "/aitoolbox",
+          "target": "",
+          "rel": "",
+          "left": 800.328125,
+          "right": 912.75
+        },
+        {
+          "label": "Dev Toolbox",
+          "href": "/devtoolbox",
+          "target": "",
+          "rel": "",
+          "left": 936.75,
+          "right": 1065.828125
+        }
+      ],
+      "passed": true
+    },
+    {
+      "locale": "zh-CN",
+      "width": 320,
+      "links": [
+        {
+          "label": "首页",
+          "href": "/",
+          "target": "",
+          "rel": "",
+          "left": 25,
+          "right": 53.8125
+        },
+        {
+          "label": "BLOG",
+          "href": "https://blog.sidcloud.cn/",
+          "target": "_blank",
+          "rel": "noopener noreferrer",
+          "left": 69.8125,
+          "right": 111.359375
+        },
+        {
+          "label": "Benchmark",
+          "href": "https://benchmark.sidcloud.cn/",
+          "target": "_blank",
+          "rel": "noopener noreferrer",
+          "left": 127.359375,
+          "right": 225.78125
+        },
+        {
+          "label": "俺做的",
+          "href": "/mybox",
+          "target": "",
+          "rel": "",
+          "left": 241.78125,
+          "right": 284.984375
+        },
+        {
+          "label": "AI 工具箱",
+          "href": "/aitoolbox",
+          "target": "",
+          "rel": "",
+          "left": 25,
+          "right": 90.921875
+        },
+        {
+          "label": "Dev 工具箱",
+          "href": "/devtoolbox",
+          "target": "",
+          "rel": "",
+          "left": 106.921875,
+          "right": 187.140625
+        }
+      ],
+      "passed": true
+    },
+    {
+      "locale": "zh-CN",
+      "width": 390,
+      "links": [
+        {
+          "label": "首页",
+          "href": "/",
+          "target": "",
+          "rel": "",
+          "left": 25,
+          "right": 53.8125
+        },
+        {
+          "label": "BLOG",
+          "href": "https://blog.sidcloud.cn/",
+          "target": "_blank",
+          "rel": "noopener noreferrer",
+          "left": 69.8125,
+          "right": 111.359375
+        },
+        {
+          "label": "Benchmark",
+          "href": "https://benchmark.sidcloud.cn/",
+          "target": "_blank",
+          "rel": "noopener noreferrer",
+          "left": 127.359375,
+          "right": 225.78125
+        },
+        {
+          "label": "俺做的",
+          "href": "/mybox",
+          "target": "",
+          "rel": "",
+          "left": 241.78125,
+          "right": 284.984375
+        },
+        {
+          "label": "AI 工具箱",
+          "href": "/aitoolbox",
+          "target": "",
+          "rel": "",
+          "left": 25,
+          "right": 90.921875
+        },
+        {
+          "label": "Dev 工具箱",
+          "href": "/devtoolbox",
+          "target": "",
+          "rel": "",
+          "left": 106.921875,
+          "right": 187.140625
+        }
+      ],
+      "passed": true
+    },
+    {
+      "locale": "zh-CN",
+      "width": 768,
+      "links": [
+        {
+          "label": "首页",
+          "href": "/",
+          "target": "",
+          "rel": "",
+          "left": 25,
+          "right": 53.8125
+        },
+        {
+          "label": "BLOG",
+          "href": "https://blog.sidcloud.cn/",
+          "target": "_blank",
+          "rel": "noopener noreferrer",
+          "left": 69.8125,
+          "right": 111.359375
+        },
+        {
+          "label": "Benchmark",
+          "href": "https://benchmark.sidcloud.cn/",
+          "target": "_blank",
+          "rel": "noopener noreferrer",
+          "left": 127.359375,
+          "right": 225.78125
+        },
+        {
+          "label": "俺做的",
+          "href": "/mybox",
+          "target": "",
+          "rel": "",
+          "left": 241.78125,
+          "right": 284.984375
+        },
+        {
+          "label": "AI 工具箱",
+          "href": "/aitoolbox",
+          "target": "",
+          "rel": "",
+          "left": 300.984375,
+          "right": 366.90625
+        },
+        {
+          "label": "Dev 工具箱",
+          "href": "/devtoolbox",
+          "target": "",
+          "rel": "",
+          "left": 382.90625,
+          "right": 463.125
+        }
+      ],
+      "passed": true
+    },
+    {
+      "locale": "zh-CN",
+      "width": 1024,
+      "links": [
+        {
+          "label": "首页",
+          "href": "/",
+          "target": "",
+          "rel": "",
+          "left": 266.921875,
+          "right": 300.53125
+        },
+        {
+          "label": "BLOG",
+          "href": "https://blog.sidcloud.cn/",
+          "target": "_blank",
+          "rel": "noopener noreferrer",
+          "left": 324.53125,
+          "right": 373.015625
+        },
+        {
+          "label": "Benchmark",
+          "href": "https://benchmark.sidcloud.cn/",
+          "target": "_blank",
+          "rel": "noopener noreferrer",
+          "left": 397.015625,
+          "right": 511.828125
+        },
+        {
+          "label": "俺做的",
+          "href": "/mybox",
+          "target": "",
+          "rel": "",
+          "left": 535.828125,
+          "right": 586.234375
+        },
+        {
+          "label": "AI 工具箱",
+          "href": "/aitoolbox",
+          "target": "",
+          "rel": "",
+          "left": 610.234375,
+          "right": 687.15625
+        },
+        {
+          "label": "Dev 工具箱",
+          "href": "/devtoolbox",
+          "target": "",
+          "rel": "",
+          "left": 711.15625,
+          "right": 804.734375
+        }
+      ],
+      "passed": true
+    },
+    {
+      "locale": "zh-CN",
+      "width": 1280,
+      "links": [
+        {
+          "label": "首页",
+          "href": "/",
+          "target": "",
+          "rel": "",
+          "left": 394.921875,
+          "right": 428.53125
+        },
+        {
+          "label": "BLOG",
+          "href": "https://blog.sidcloud.cn/",
+          "target": "_blank",
+          "rel": "noopener noreferrer",
+          "left": 452.53125,
+          "right": 501.015625
+        },
+        {
+          "label": "Benchmark",
+          "href": "https://benchmark.sidcloud.cn/",
+          "target": "_blank",
+          "rel": "noopener noreferrer",
+          "left": 525.015625,
+          "right": 639.828125
+        },
+        {
+          "label": "俺做的",
+          "href": "/mybox",
+          "target": "",
+          "rel": "",
+          "left": 663.828125,
+          "right": 714.234375
+        },
+        {
+          "label": "AI 工具箱",
+          "href": "/aitoolbox",
+          "target": "",
+          "rel": "",
+          "left": 738.234375,
+          "right": 815.15625
+        },
+        {
+          "label": "Dev 工具箱",
+          "href": "/devtoolbox",
+          "target": "",
+          "rel": "",
+          "left": 839.15625,
+          "right": 932.734375
+        }
+      ],
+      "passed": true
+    },
+    {
+      "locale": "zh-CN",
+      "width": 1440,
+      "links": [
+        {
+          "label": "首页",
+          "href": "/",
+          "target": "",
+          "rel": "",
+          "left": 474.921875,
+          "right": 508.53125
+        },
+        {
+          "label": "BLOG",
+          "href": "https://blog.sidcloud.cn/",
+          "target": "_blank",
+          "rel": "noopener noreferrer",
+          "left": 532.53125,
+          "right": 581.015625
+        },
+        {
+          "label": "Benchmark",
+          "href": "https://benchmark.sidcloud.cn/",
+          "target": "_blank",
+          "rel": "noopener noreferrer",
+          "left": 605.015625,
+          "right": 719.828125
+        },
+        {
+          "label": "俺做的",
+          "href": "/mybox",
+          "target": "",
+          "rel": "",
+          "left": 743.828125,
+          "right": 794.234375
+        },
+        {
+          "label": "AI 工具箱",
+          "href": "/aitoolbox",
+          "target": "",
+          "rel": "",
+          "left": 818.234375,
+          "right": 895.15625
+        },
+        {
+          "label": "Dev 工具箱",
+          "href": "/devtoolbox",
+          "target": "",
+          "rel": "",
+          "left": 919.15625,
+          "right": 1012.734375
+        }
+      ],
+      "passed": true
+    },
+    {
+      "route": "/mybox",
+      "cards": 18,
+      "passed": true
+    },
+    {
+      "route": "/aitoolbox",
+      "cards": 76,
+      "passed": true
+    },
+    {
+      "route": "/devtoolbox",
+      "cards": 5,
+      "passed": true
+    }
+  ],
+  "errors": [],
+  "browserClosed": true
+}
