@@ -2,7 +2,7 @@
   "snapshot": "1.9.0",
   "snapshotDate": "2026-10-29",
   "sourceCatalogSha256": "81c20e4eece8e2280df46d76b8f09cab8eab7bdab3da2053e8700258438a7ed5",
-  "implementationSha256": "b6bb971bd839affa59d8ec016cb0a83c86d448d44241a59bf16927aa7af030c6",
+  "implementationSha256": "51133b6d8f267c167187546cfd4cae6b91065235bc7cee35145c75805aa3f107",
   "evidenceFiles": [
     "src/App.tsx",
     "src/styles.css",
@@ -14,7 +14,55 @@
     "src/data/benchmarkIndex.json",
     "src/data/benchmarkSnapshot.json",
     "src/components/BenchmarkResults.tsx",
-    "src/components/ArticleMedia.tsx"
+    "src/components/ArticleMedia.tsx",
+    "public/assets/batch-covers/r4090-community-complete-20261029.svg",
+    "public/assets/batch-covers/r4090-lipsync-complete-20261029.svg",
+    "public/assets/batch-covers/r4090-voice-casting.svg",
+    "public/assets/batch-covers/r4090-tts.svg",
+    "public/assets/batch-covers/r4090-lipsync.svg",
+    "public/assets/batch-covers/r4090-community-install.svg",
+    "public/assets/batch-covers/r4090-community-defaults.svg",
+    "public/assets/batch-covers/r4090-app.svg",
+    "public/assets/batch-covers/r4090-tts-earlier.svg",
+    "public/assets/batch-covers/r4090-quality.svg",
+    "public/assets/batch-covers/r4090-docs.svg",
+    "public/assets/batch-covers/r3080-voice-selection.svg",
+    "public/assets/batch-covers/r3080-vocal-pilot.svg",
+    "public/assets/batch-covers/r3080-podcast-initial.svg",
+    "public/assets/batch-covers/r3080-podcast.svg",
+    "public/assets/batch-covers/r3080-music-v3.svg",
+    "public/assets/batch-covers/r3080-music-v2.svg",
+    "public/assets/batch-covers/r3080-music-preparations.svg",
+    "public/assets/batch-covers/r3080-music-plans.svg",
+    "public/assets/batch-covers/r3080-music.svg",
+    "public/assets/batch-covers/r3080-yue-prepodcast.svg",
+    "public/assets/batch-covers/r3080-music-original.svg",
+    "public/assets/batch-covers/r3080-music-diagnostics.svg",
+    "public/assets/batch-covers/r3080-duo.svg",
+    "public/assets/batch-covers/r-podcast-source-research.svg",
+    "public/assets/batch-covers/r4090-swift-20261022.svg",
+    "public/assets/batch-covers/r3080-source.svg",
+    "public/assets/batch-covers/r3080-original-install.svg",
+    "public/assets/batch-covers/r3080-lustify-correction.svg",
+    "public/assets/batch-covers/r3080-image-retries.svg",
+    "public/assets/batch-covers/r3080-edit.svg",
+    "public/assets/batch-covers/r3080-author-safe.svg",
+    "public/assets/batch-covers/r3080-3d.svg",
+    "public/assets/batch-covers/r-h3-world-research.svg",
+    "public/assets/batch-covers/r-3080-input-research.svg",
+    "public/assets/batch-covers/r4090-lingbot-worlds.svg",
+    "public/assets/batch-covers/r4090-h3.svg",
+    "public/assets/batch-covers/r3080-yue-recovery.svg",
+    "public/assets/batch-covers/r3080-lustify-independent.svg",
+    "public/assets/batch-covers/r3080-llm.svg",
+    "public/assets/batch-covers/r-h3-input-research.svg",
+    "public/assets/batch-covers/r4090-llm-initial.svg",
+    "public/assets/batch-covers/r4090-llm.svg",
+    "public/assets/batch-covers/r4090-base.svg",
+    "public/assets/batch-covers/r3080-base.svg",
+    "public/assets/batch-covers/r-h3-community-research.svg",
+    "public/assets/batch-covers/wechat-image-generation-world-models.svg",
+    "public/assets/batch-covers/subforge-subtitle-research-pipeline.svg"
   ],
   "checks": [
     {
@@ -405,7 +453,7 @@
           }
         ],
         "format": {
-          "duration": "12.560000"
+          "duration": "12.720000"
         }
       }
     },
@@ -423,7 +471,7 @@
           }
         ],
         "format": {
-          "duration": "10.040000"
+          "duration": "10.280000"
         }
       }
     },

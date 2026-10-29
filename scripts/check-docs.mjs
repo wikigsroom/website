@@ -37,6 +37,7 @@ for (const filename of [
   'docs/benchmark-batches.md',
   'docs/benchmark-materials.md',
   'docs/releases/2026-10-29-benchmark-batches.md',
+  'docs/releases/2026-10-29-editorial-refresh.md',
   'docs/media/README.md',
 ]) {
   const text = await fs.readFile(path.join(root, filename), 'utf8');

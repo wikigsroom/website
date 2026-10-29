@@ -1,4 +1,4 @@
-/* global document, localStorage */
+/* global document, window, localStorage */
 import fs from 'node:fs/promises';
 import path from 'node:path';
 import assert from 'node:assert/strict';
@@ -8,6 +8,7 @@ import { fileURLToPath } from 'node:url';
 import { setTimeout as delay } from 'node:timers/promises';
 import { chromium } from 'playwright-core';
 import { preview as vitePreview } from 'vite';
+import { readContentModule } from './content-module.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const directory = path.join(root, 'docs/media/benchmark-20261029');
@@ -15,6 +16,7 @@ const rawDirectory = path.join(root, 'docs/media/.raw/benchmark-20261029');
 await fs.mkdir(directory, { recursive: true });
 await fs.mkdir(rawDirectory, { recursive: true });
 const data = JSON.parse(await fs.readFile(path.join(root, 'src/data/benchmarkIndex.json'), 'utf8'));
+const { benchmarkEditorial } = readContentModule(path.join(root, 'src/data/benchmarkEditorial.ts'));
 const ffmpeg = process.env.FFMPEG_PATH || 'ffmpeg';
 const ffprobe = process.env.FFPROBE_PATH || 'ffprobe';
 execFileSync(ffmpeg, ['-version'], { windowsHide: true, stdio: 'ignore' });
@@ -30,6 +32,9 @@ const evidenceFiles = [
   'src/data/benchmarkSnapshot.json',
   'src/components/BenchmarkResults.tsx',
   'src/components/ArticleMedia.tsx',
+  ...data.rounds.map((round) => `public/assets/batch-covers/${round.id}.svg`),
+  'public/assets/batch-covers/wechat-image-generation-world-models.svg',
+  'public/assets/batch-covers/subforge-subtitle-research-pipeline.svg',
 ];
 const digest = crypto.createHash('sha256');
 for (const filename of evidenceFiles)
@@ -68,6 +73,7 @@ async function open(page, hash) {
     await page
       .locator(`.batch-results[data-round-id="${hash.slice('#/post/benchmark-'.length)}"]`)
       .waitFor();
+  await page.evaluate(() => window.scrollTo({ top: 0, behavior: 'instant' }));
 }
 
 async function shot(page, filename, locator) {
@@ -189,7 +195,8 @@ try {
 
   for (const round of data.rounds) {
     await open(page, `#/post/benchmark-${round.id}`);
-    assert.match(await page.locator('h1').innerText(), new RegExp(round.date));
+    assert.equal(await page.locator('h1').textContent(), benchmarkEditorial[round.id].title);
+    assert.equal(await page.locator('.article-takeaways li').count(), 3);
     assert.match(await page.locator('.batch-date').innerText(), /整理日期 2026-10-29/);
     assert.deepEqual(
       await page
@@ -218,9 +225,7 @@ try {
         .length,
     );
     assert(
-      await page
-        .locator('.article-cover img')
-        .evaluate((image) => image.complete && image.naturalWidth > 0),
+      (await page.request.get(`${report.localOrigin}assets/batch-covers/${round.id}.svg`)).ok(),
     );
     const media = page.locator('.article-media img, .article-media video, .article-media audio');
     if (await media.count()) {

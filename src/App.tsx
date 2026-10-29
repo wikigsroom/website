@@ -60,7 +60,7 @@ const postSearchText = (post: Post) =>
     post.sourcePath || '',
     ...post.tags,
     ...post.content.map((block) => {
-      if (block.type === 'list') return block.items.join(' ');
+      if (block.type === 'list' || block.type === 'takeaways') return block.items.join(' ');
       return block.text;
     }),
   ]
@@ -98,6 +98,17 @@ const getArchive = (items: Post[]) => {
 };
 
 const ContentRenderer = ({ block }: { block: ContentBlock }) => {
+  if (block.type === 'takeaways')
+    return (
+      <aside className="article-takeaways" aria-label={block.text}>
+        <p className="takeaways-label">{block.text}</p>
+        <ul>
+          {block.items.map((item) => (
+            <li key={item}>{item}</li>
+          ))}
+        </ul>
+      </aside>
+    );
   if (block.type === 'benchmark-results')
     return (
       <Suspense fallback={<p role="status">正在读取本批测评记录…</p>}>
@@ -204,6 +215,18 @@ const SiteFooter = () => (
   </footer>
 );
 
+const EditorialTitle = ({ title }: { title: string }) => {
+  const split = title.indexOf('：');
+  return split < 0 ? (
+    title
+  ) : (
+    <>
+      <span className="headline-phrase">{title.slice(0, split + 1)}</span>
+      <span className="headline-phrase">{title.slice(split + 1)}</span>
+    </>
+  );
+};
+
 const Spotlight = ({ post }: { post: Post }) => (
   <section
     className={`spotlight-panel${post.benchmarkRoundId ? ' is-batch-spotlight' : ''}`}
@@ -211,7 +234,9 @@ const Spotlight = ({ post }: { post: Post }) => (
   >
     <div className="spotlight-copy">
       <div>
-        <p className="kicker">Pinned Dispatch</p>
+        <p className="kicker">
+          {post.benchmarkRoundId ? '实验手记 · 本期推荐' : 'Pinned Dispatch'}
+        </p>
         <div className="meta-line">
           <span>{getPostSection(post)}</span>
           {post.priority ? <span>{post.priority}</span> : null}
@@ -219,11 +244,7 @@ const Spotlight = ({ post }: { post: Post }) => (
           <span>{formatDate(post.date)}</span>
           <span>{post.readMins} min read</span>
         </div>
-        <h2>
-          {post.benchmarkRoundId
-            ? benchmark.rounds.find((round) => round.id === post.benchmarkRoundId)?.title
-            : post.title}
-        </h2>
+        <h2>{post.benchmarkRoundId ? <EditorialTitle title={post.title} /> : post.title}</h2>
         <p>{post.benchmarkRoundId ? post.subtitle : post.excerpt}</p>
       </div>
       <a className="open-link" href={`#/post/${post.slug}`}>
@@ -282,7 +303,9 @@ const PostCard = ({
         </span>
       </div>
       <h3>
-        <a href={`#/post/${post.slug}`}>{post.title}</a>
+        <a href={`#/post/${post.slug}`}>
+          {post.benchmarkRoundId ? <EditorialTitle title={post.title} /> : post.title}
+        </a>
       </h3>
       <p>{post.excerpt}</p>
       <div className="chip-list">
@@ -400,7 +423,7 @@ const HomeView = ({
           <p className="kicker">Web3 x AI Agents Studio</p>
           <h1 id="blogTitle">sidcloud Notes</h1>
           <p className="intro-copy">
-            记录协议基础设施、AI Agent 工作流、浏览器扩展、产品发布与工程复盘。
+            从一次实际运行开始，记录 AI 模型、Agent 工作流与内容制作中的发现。
           </p>
           <div className="stats-strip" aria-label="Blog stats">
             <span>
@@ -459,18 +482,21 @@ const HomeView = ({
       {section === 'Benchmark' ? (
         <section className="batch-board" aria-label="测评批次总览">
           <p className="kicker">Benchmark Journal</p>
-          <h2>按批次读完整测评过程</h2>
+          <h2>
+            好看的演示之后，
+            <br />
+            还有值得记录的实验。
+          </h2>
           <p>
-            {benchmark.rounds.length} 篇日志覆盖 {benchmark.cases.length}{' '}
-            项独立记录，含生成、失败、准备、复核与更正。点击文章展开逐项证据，原素材继续由{' '}
+            视频怎样还原，声音如何选角，长曲为什么要重做——{benchmark.rounds.length}{' '}
+            篇手记从具体问题出发，带你回到输入、过程与实际输出。完整实验与原素材收录于{' '}
             <a href="https://benchmark.sidcloud.cn/" target="_blank" rel="noopener noreferrer">
               Benchmark
             </a>{' '}
-            提供。
+            。
           </p>
           <p>
-            数据快照 {benchmark.version} · {benchmark.snapshotDate}
-            ；文章日期为测评批次日期，整理日期另列。
+            按实验批次持续记录 · 覆盖 {benchmark.cases.length} 项独立记录 · 包含失败、复核与更正
           </p>
         </section>
       ) : null}
@@ -621,36 +647,67 @@ const ArticleView = ({
 
   return (
     <main className="article-view">
-      <article className="article-shell">
-        <div
-          className={`article-cover${post.cover.startsWith('/assets/batch-covers/') ? ' batch-cover' : ''}`}
-        >
-          <img
-            src={getOptimizedCover(post.cover, 'hero')}
-            alt={post.title}
-            width={1120}
-            height={700}
-            decoding="async"
-            fetchPriority="high"
-            sizes="(max-width: 920px) 100vw, 920px"
-          />
-        </div>
+      <article className={`article-shell${post.benchmarkRoundId ? ' is-benchmark-article' : ''}`}>
+        {!post.benchmarkRoundId && (
+          <div
+            className={`article-cover${post.cover.startsWith('/assets/batch-covers/') ? ' batch-cover' : ''}`}
+          >
+            <img
+              src={getOptimizedCover(post.cover, 'hero')}
+              alt={post.title}
+              width={1120}
+              height={700}
+              decoding="async"
+              fetchPriority="high"
+              sizes="(max-width: 920px) 100vw, 920px"
+            />
+          </div>
+        )}
         <header className="article-header">
-          <p className="kicker">{post.category}</p>
+          <p className="kicker">
+            {post.benchmarkRoundId ? `实验手记 / ${post.category}` : post.category}
+          </p>
+          {post.benchmarkRoundId && (
+            <>
+              <h1>
+                <EditorialTitle title={post.title} />
+              </h1>
+              <p className="article-deck">{post.subtitle}</p>
+            </>
+          )}
           <div className="meta-line">
             <span>{getPostSection(post)}</span>
             {post.priority ? <span>{post.priority}</span> : null}
-            <span>{formatDate(post.date)}</span>
-            <span>{post.readMins} min read</span>
-            <span>{post.tags.map((item) => `#${item}`).join(' ')}</span>
+            {!post.benchmarkRoundId && <span>{formatDate(post.date)}</span>}
+            <span>
+              {post.benchmarkRoundId ? `正文约 ${post.readMins} 分钟` : `${post.readMins} min read`}
+            </span>
+            <span>
+              {(post.benchmarkRoundId ? post.tags.slice(1, 3) : post.tags)
+                .map((item) => `#${item}`)
+                .join(' ')}
+            </span>
           </div>
-          <h1>{post.title}</h1>
+          {!post.benchmarkRoundId && <h1>{post.title}</h1>}
           {post.benchmarkRoundId && (
             <p className="batch-date">
-              测评日期 {post.date} · 整理日期 {post.publishedAt} · 来源快照 {benchmark.version}
+              测评日期 {post.date} · 整理日期 {post.publishedAt}
             </p>
           )}
-          <p>{post.subtitle}</p>
+          {!post.benchmarkRoundId && <p>{post.subtitle}</p>}
+          {post.benchmarkRoundId && (
+            <button
+              className="article-jump"
+              type="button"
+              onClick={() =>
+                document
+                  .getElementById('results')
+                  ?.scrollIntoView({ behavior: 'smooth', block: 'start' })
+              }
+            >
+              查看逐项实验记录 ↓
+            </button>
+          )}
         </header>
         <section className="article-content">
           {post.content.map((block, index) => (
@@ -780,7 +837,7 @@ const App = () => {
 
   useEffect(() => {
     document.title = activePost ? `${activePost.title} - sidcloud Notes` : 'sidcloud Notes';
-    window.scrollTo({ top: 0, behavior: 'auto' });
+    window.scrollTo({ top: 0, behavior: 'instant' });
   }, [activePost]);
 
   useEffect(() => {

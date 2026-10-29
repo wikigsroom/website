@@ -5,6 +5,7 @@ export type ContentBlock =
   | { type: 'p'; text: string }
   | { type: 'h2'; id: string; text: string }
   | { type: 'list'; items: string[] }
+  | { type: 'takeaways'; text: string; items: string[] }
   | { type: 'quote'; text: string }
   | { type: 'code'; language: string; text: string }
   | { type: 'table'; text: string; headers: string[]; rows: string[][] }

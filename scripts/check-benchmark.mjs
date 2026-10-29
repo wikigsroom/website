@@ -27,6 +27,13 @@ for (const round of data.rounds) {
   const article = batches.find((post) => post.benchmarkRoundId === round.id);
   assert(article, `Missing batch article ${round.id}`);
   assert.equal(article.date, round.date);
+  assert(!article.title.includes(round.date), `Date belongs in metadata: ${round.id}`);
+  assert(article.title.length <= 50, `Review headline length: ${round.id}`);
+  assert.equal(article.content.filter((block) => block.type === 'takeaways').length, 1);
+  assert(
+    article.content.filter((block) => block.type === 'h2' && block.id.startsWith('story-'))
+      .length >= 2,
+  );
   assert.equal(article.content.filter((block) => block.type === 'benchmark-results').length, 1);
   assert(
     article.content.some(

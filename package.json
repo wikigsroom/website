@@ -16,6 +16,7 @@
     "check:benchmark": "node scripts/check-benchmark.mjs",
     "docs:media": "node scripts/capture-benchmark.mjs",
     "docs:check": "node scripts/check-docs.mjs",
+    "verify:production": "node scripts/verify-production.mjs",
     "release:check": "npm run lint && npm run build && npm run check:benchmark && npm run docs:check"
   },
   "dependencies": {

@@ -1235,6 +1235,133 @@ select:focus {
 .post-card figure.batch-cover img {
   transform: none;
 }
+
+/* Put the finding first: a quiet reading surface beneath the existing studio skin. */
+.headline-phrase {
+  display: inline-block;
+  max-width: 100%;
+  text-wrap: pretty;
+}
+.is-benchmark-article .article-header {
+  padding: 38px 40px 30px;
+}
+.is-benchmark-article .article-header h1 {
+  margin: 20px 0 18px;
+  font-family: 'Noto Serif SC', 'Source Han Serif SC', 'Songti SC', STSong, SimSun, Georgia, serif;
+  font-size: clamp(2rem, 3.4vw, 2.8rem);
+  font-weight: 700;
+  line-height: 1.38;
+  letter-spacing: -0.025em;
+  text-transform: none;
+  text-wrap: balance;
+  overflow-wrap: anywhere;
+}
+.is-benchmark-article .article-header .kicker {
+  color: var(--cyan);
+  font-size: 0.74rem;
+}
+.is-benchmark-article .article-deck {
+  margin: 0 0 26px;
+  font-size: 1.08rem;
+  color: #b7c4d4;
+  line-height: 1.85;
+}
+.is-benchmark-article .batch-date {
+  margin: 14px 0 0;
+  font-size: 0.76rem;
+  color: var(--soft);
+}
+.is-benchmark-article .article-content {
+  padding: 12px 40px 40px;
+}
+.is-benchmark-article .article-content > p:first-child {
+  font-size: 1.08em;
+  color: var(--text);
+}
+.is-benchmark-article .article-content > h2 {
+  font-size: 1.45em;
+  line-height: 1.5;
+  letter-spacing: 0;
+  text-wrap: balance;
+  scroll-margin-top: 110px;
+}
+.article-jump {
+  margin-top: 22px;
+  padding: 0 0 5px;
+  border: 0;
+  border-bottom: 1px solid rgba(120, 212, 255, 0.4);
+  background: none;
+  color: var(--cyan);
+  font-size: 0.8rem;
+}
+.article-jump:hover {
+  border-color: var(--cyan);
+}
+.article-takeaways {
+  margin: 28px 0 36px;
+  padding: 22px 24px;
+  border-left: 2px solid var(--pink);
+  background: rgba(183, 196, 212, 0.045);
+}
+.article-content .takeaways-label {
+  margin: 0 0 12px;
+  color: var(--pink);
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+}
+.article-takeaways ul {
+  margin: 0;
+  display: grid;
+  gap: 10px;
+  font-size: 0.94em;
+}
+.article-takeaways li::marker {
+  color: var(--pink);
+}
+.post-card h3 {
+  line-height: 1.55;
+  text-wrap: balance;
+}
+.spotlight-panel.is-batch-spotlight .spotlight-copy h2 {
+  line-height: 1.4;
+  letter-spacing: -0.02em;
+  text-wrap: balance;
+}
+.batch-board h2 {
+  font-size: clamp(1.6rem, 3vw, 2.25rem);
+  line-height: 1.55;
+  letter-spacing: -0.02em;
+}
+.batch-board p:last-child {
+  font-size: 0.76rem;
+  color: var(--soft);
+}
+@media (max-width: 720px) {
+  .is-benchmark-article .article-header {
+    padding: 26px 22px;
+  }
+  .is-benchmark-article .article-header h1 {
+    font-size: 1.9rem;
+    line-height: 1.45;
+  }
+  .is-benchmark-article .article-content {
+    padding: 8px 22px 28px;
+  }
+  .is-benchmark-article .article-deck {
+    font-size: 1rem;
+  }
+  .article-takeaways {
+    padding: 18px 16px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  body::after {
+    animation: none;
+  }
+}
 @media (max-width: 640px) {
   .batch-result-heading {
     display: none;

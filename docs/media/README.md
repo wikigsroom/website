@@ -1,10 +1,10 @@
 # 页面截图与演示 / Screenshots and demos
 
-[中文 README](../../README.zh-CN.md) · [English README](../../README.md) · [更新详情 / Release](../releases/2026-10-29-benchmark-batches.md)
+[中文 README](../../README.zh-CN.md) · [English README](../../README.md) · [最新更新 / Latest release](../releases/2026-10-29-editorial-refresh.md) · [批次归档 / Batch archive](../releases/2026-10-29-benchmark-batches.md)
 
-2026-10-29 测评日志的实际本地生产构建截图与录制。记录文章导航、结果展开和响应式页面，不是重新运行模型的录像。
+2026-10-29 标题与正文重写后的实际本地生产构建截图与录制，已更新 46 篇人工标题、摘要、三点提要和分析章节。记录文章导航、结果展开和响应式页面，不是重新运行模型的录像。
 
-Captured from the local production build of the batch journals. These recordings demonstrate navigation, evidence expansion and responsive layouts, rather than fresh model execution.
+Captured from the refreshed local production build, including all 46 editorial headlines, decks, takeaways and analysis chapters. These recordings demonstrate navigation, evidence expansion and responsive layouts, rather than fresh model execution.
 
 | 文件 / File | 内容 / Content |
 | --- | --- |

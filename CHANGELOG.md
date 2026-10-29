@@ -1,5 +1,15 @@
 # Changelog / 更新记录
 
+## 2026-10-29 — Editorial refresh / 标题与正文重写
+
+- 中文：逐篇重写 46 篇测评标题、独立摘要与正文，新增三点提要与两个分析章节；日期单列，681 条证据与 89 次引用归属不变。
+- English: Rewrote 46 headlines, decks and narratives, with three takeaways and two analysis chapters; dates and evidence associations remain intact.
+- 中文：统一封面、主题分类、推荐与关联标题，调整字形、短句换行与手机间距，文章打开时直接回到顶部。
+- English: Unified cover/card/related titles and topic categories; refined typography, phrase wrapping and responsive spacing.
+- 中文：刷新截图、MP4/GIF 及浏览器验收，新增固定目标的博客独立账户部署入口。
+- English: Refreshed screenshots, recordings and browser verification; added a guarded blog deployment wrapper.
+- 发布验收追加于 [更新详情 / Release details](docs/releases/2026-10-29-editorial-refresh.md)。
+
 ## 2026-10-29 — All benchmark batches as journals / 全部测评按批次成文
 
 ### English

@@ -8,7 +8,7 @@
 
 支持搜索、栏目/分类/标签筛选、排序、归档、目录、阅读进度、大字、收藏和复制链接。正文、证据数据与封面本地打包，影音等大素材复用 Benchmark 的公开地址，不需要应用后端或账户登录。
 
-[全部 46 个批次](docs/benchmark-batches.md) · [素材复用方案](docs/benchmark-materials.md) · [本次更新详情](docs/releases/2026-10-29-benchmark-batches.md) · [截图、录屏与 GIF](docs/media/README.md)
+[全部 46 个批次](docs/benchmark-batches.md) · [素材复用方案](docs/benchmark-materials.md) · [标题与正文重写](docs/releases/2026-10-29-editorial-refresh.md) · [截图、录屏与 GIF](docs/media/README.md)
 
 ## 本地运行
 
@@ -38,7 +38,7 @@ npm run preview
 | [`src/App.tsx`](src/App.tsx) | Hash 导航、搜索/筛选/排序状态、阅读器、收藏和分享 |
 | [`src/data/posts.ts`](src/data/posts.ts) | `Post`/`ContentBlock` 类型、六篇 Blog 和合并后的文章导出 |
 | [`src/data/researchPosts.ts`](src/data/researchPosts.ts) | 十八篇整理后的 Research 内容、优先级及来源引用 |
-| [`src/data/benchmarkEditorial.ts`](src/data/benchmarkEditorial.ts) | 各批次人工核对的导语、阅读方法与结论 |
+| [`src/data/benchmarkEditorial.ts`](src/data/benchmarkEditorial.ts) | 独立标题、摘要、主题、三点提要、两个分析章节与结论 |
 | [`src/data/benchmarkPosts.ts`](src/data/benchmarkPosts.ts) | 一批一篇的文章生成、统计、来源与关联批次链接 |
 | [`src/data/benchmarkIndex.json`](src/data/benchmarkIndex.json) | 冻结的公开摘要索引，用于导航与搜索 |
 | [`src/data/benchmarkSnapshot.json`](src/data/benchmarkSnapshot.json) | 完整证据、参数、输入、指标和公开素材引用 |
@@ -65,6 +65,12 @@ npm run optimize:covers
 脚本在 `optimized/card/`、`optimized/hero/` 中生成 WebP，最大宽度分别为 640/1120。原图与优化结果一起提交。既有 Vercel 忽略规则不上传生成封面的 PNG/JPEG 原图，因此需要确保 WebP 优化版本齐全。
 
 ## 测评日志的发布逻辑
+
+### 标题与阅读顺序
+
+46 篇测评日志已逐篇重写标题与独立摘要，日期不再拼进标题。分类采用视频生成、语音、音乐、三维等真实主题。文章先呈现标题与摘要，再依次阅读开场、三点提要、两个专题分析章节和结论，最后提供范围、过程补记与全部逐项证据，也可以直接跳到记录。原始批次名、日期、状态和稳定链接继续保留。
+
+卡片、推荐位、封面、关联链接和目录统一使用人工标题。冒号前后的短句在空间允许时整体换行，结合宋体标题、独立摘要和手机间距形成清楚的阅读层级。打开文章直接回到顶部。新增 `takeaways` 提要块参与搜索；阅读分钟数只估算正文，不包含可选展开的完整证据。分析围绕已有实验展开，不声称重新运行模型、增加主观评分或证明新的因果关系。
 
 来源中每条 `rounds[]` 对应一篇文章，按 `caseIds` 原顺序提供全部记录，包括有 130 条记录的历史 TTS 批次。展开条目可读到已记录的执行标记、计时范围、成品时长、指标、输入、参数、核验、限制和原始证据。完整证据包在打开批次文章时载入，条目关闭时不挂载详细正文。搜索包含条目 ID、标题、模型名和摘要。
 
@@ -135,6 +141,16 @@ git push origin blog
 
 ## 部署与凭证
 
+博客自己的部署入口固定发布既有 `blogs` 项目。提交已检查源码与刷新后的媒体后执行：
+
+```powershell
+pwsh -NoProfile -File scripts/vercel.ps1 Status
+pwsh -NoProfile -File scripts/vercel.ps1 Production
+npm run verify:production -- "<Vercel 输出的部署主机名>"
+```
+
+`operations/vercel-project.json` 只保存公开项目标识。脚本核验本地关联、账户和团队，运行发布检查，退出时恢复进程环境变量。生产核验检查 READY 状态、域名归属、构建文件及全部 46 篇文章，并关闭自己的浏览器；随后保存发布验收并推送 `origin/blog`。
+
 已有 Vercel 博客项目名为 `blogs`，与官网项目 `sidcloud` 分离。Git 同步不代表已完成 Vercel 发布；用户要求部署时需独立验证生产结果，并在更新记录中保存结果。
 
-已授权 Windows 登录继续隔离保存在 Git 外的 `%LOCALAPPDATA%\sidcloud\vercel-profile`。使用工作区的独立部署工具，并核验目标为博客项目；保留默认全局 Vercel 登录状态。不得提交 `.vercel/`、`.env*`、依赖/构建目录或账户凭证。
+已授权 Windows 登录继续隔离保存在 Git 外的 `%LOCALAPPDATA%\sidcloud\vercel-profile`。独立部署工具核验博客项目，并在发布前仅将默认账户文件的本地哈希保存在忽略目录 `.vercel/`，上线后比较是否变化，不复制凭证。不得提交 `.vercel/`、`.env*`、依赖/构建目录或账户凭证。

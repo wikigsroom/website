@@ -8,7 +8,7 @@ Current content includes **70 articles: 46 Benchmark batch journals, 18 Research
 
 Search, section/category/tag filters, sorting, archives, article navigation, a table of contents, reading progress, font-size controls, local bookmarks and link copying are available. Text, evidence and covers are bundled; large audio/video/images reuse public Benchmark URLs. No application backend or account login is required.
 
-[All 46 batches](docs/benchmark-batches.md) · [Material reuse design](docs/benchmark-materials.md) · [Release details](docs/releases/2026-10-29-benchmark-batches.md) · [Screenshots and recordings](docs/media/README.md)
+[All 46 batches](docs/benchmark-batches.md) · [Material reuse design](docs/benchmark-materials.md) · [Editorial refresh](docs/releases/2026-10-29-editorial-refresh.md) · [Screenshots and recordings](docs/media/README.md)
 
 ## Run locally
 
@@ -38,7 +38,7 @@ npm run preview
 | [`src/App.tsx`](src/App.tsx) | Hash navigation, search/filter/sort state, reader, bookmarks and sharing |
 | [`src/data/posts.ts`](src/data/posts.ts) | `Post`/`ContentBlock` types, six Blog entries and the combined article export |
 | [`src/data/researchPosts.ts`](src/data/researchPosts.ts) | 18 curated Research entries, priorities and source references |
-| [`src/data/benchmarkEditorial.ts`](src/data/benchmarkEditorial.ts) | Reviewed introduction, interpretation and conclusion for every batch |
+| [`src/data/benchmarkEditorial.ts`](src/data/benchmarkEditorial.ts) | Headline/deck/topic, three takeaways, two analysis chapters and conclusion per batch |
 | [`src/data/benchmarkPosts.ts`](src/data/benchmarkPosts.ts) | One typed article per batch, computed counts, source and related-batch links |
 | [`src/data/benchmarkIndex.json`](src/data/benchmarkIndex.json) | Frozen public summary index used for navigation and search |
 | [`src/data/benchmarkSnapshot.json`](src/data/benchmarkSnapshot.json) | Detailed evidence, parameters, inputs, metrics and public asset references |
@@ -65,6 +65,12 @@ npm run optimize:covers
 WebP variants are written to `optimized/card/` and `optimized/hero/`, at maximum widths 640/1120 pixels. Commit originals and variants together. Existing Vercel ignore rules exclude original generated PNG/JPEG covers from uploads, so the WebP variants must exist.
 
 ## Benchmark publishing logic
+
+### Headlines and reading flow
+
+All 46 journals have individually edited headlines and distinct decks. Dates no longer appear in display titles. Topics such as video, speech, music and 3D serve as categories. Each article opens with its title and deck, then a lead, three takeaways, two analysis chapters and a conclusion. Scope, process notes and all expandable evidence follow; readers can also jump directly to evidence. Original batch names, dates, statuses and stable slugs remain available.
+
+Cards, featured posts, covers, related links and the index share the same headline. Colon-separated phrases wrap together where space permits; restrained serif headings, distinct decks and responsive spacing establish the reading hierarchy. Opening an article starts at the top. The searchable `takeaways` block joins the narrative, and reading-time estimates exclude optional evidence expansion. Analysis explains recorded experiments without claiming new runs, scores or causal findings.
 
 Each source `rounds[]` entry becomes one article. Its `caseIds` order is preserved; every record is available as an expandable entry, including the 130-record historical TTS batch. Expanded entries show execution flags, timing scope, output duration, metrics, inputs, parameters, verification, limitations and original evidence links when recorded. The full evidence bundle loads when a batch article is opened; closed entries do not mount their detailed bodies. Search includes record IDs, titles, model names and summaries alongside article text.
 
@@ -135,6 +141,16 @@ Do not overwrite the site's `main`, force push or send routine updates to the le
 
 ## Deployment and credentials
 
+The dedicated blog wrapper targets the existing `blogs` project. After committing checked source and refreshed media:
+
+```powershell
+pwsh -NoProfile -File scripts/vercel.ps1 Status
+pwsh -NoProfile -File scripts/vercel.ps1 Production
+npm run verify:production -- "<deployment hostname printed by Vercel>"
+```
+
+`operations/vercel-project.json` contains public identifiers. The wrapper validates the linked project, account and team, runs release checks and restores process environment overrides. Production verification checks READY state, domain assignment, exact build assets and all 46 articles, then closes its browser. Record release evidence and push it to `origin/blog`.
+
 The existing Vercel blog project is `blogs`, separate from the studio project `sidcloud`. Git synchronization does not itself certify a Vercel release; when deployment is requested, independently verify production and record the result in the changelog.
 
-The authorized Windows login stays isolated at `%LOCALAPPDATA%\sidcloud\vercel-profile`, outside Git. Use the workspace's isolated deployment tooling and verify the target blog project. Preserve the default global Vercel login. `.vercel/`, `.env*`, dependencies, build folders and credentials must not be committed.
+The authorized Windows login stays isolated at `%LOCALAPPDATA%\sidcloud\vercel-profile`, outside Git. Use the workspace's isolated deployment tooling and verify the target blog project. Before deployment, the wrapper saves only local hashes of default account files under ignored `.vercel/`; production verification compares them without copying credentials. `.vercel/`, `.env*`, dependencies, build folders and credentials must not be committed.

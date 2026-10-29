@@ -1,13 +1,15 @@
 import fs from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { readContentModule } from './content-module.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const data = JSON.parse(await fs.readFile(path.join(root, 'src/data/benchmarkIndex.json'), 'utf8'));
 const byId = new Map(data.cases.map((item) => [item.id, item]));
+const { benchmarkEditorial } = readContentModule(path.join(root, 'src/data/benchmarkEditorial.ts'));
 const rows = data.rounds.map((round) => {
   const own = round.caseIds.filter((id) => byId.get(id).round === round.id).length;
-  return `| ${round.date} | ${round.device} | [${round.title.replaceAll('|', '\\|')}](https://blog.sidcloud.cn/#/post/benchmark-${round.id}) | ${own} | ${round.caseIds.length - own} | ${round.caseIds.length} |`;
+  return `| ${round.date} | ${round.device} | [${benchmarkEditorial[round.id].title.replaceAll('|', '\\|')}](https://blog.sidcloud.cn/#/post/benchmark-${round.id}) | ${own} | ${round.caseIds.length - own} | ${round.caseIds.length} |`;
 });
 const text = `# 测评批次目录 / Benchmark batch index
 
