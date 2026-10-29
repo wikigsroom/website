@@ -7,15 +7,21 @@ import {
   casesOfRound,
 } from './benchmark';
 import { benchmarkEditorial } from './benchmarkEditorial';
+import { benchmarkVisuals, visualCoverLabel } from './benchmarkVisuals';
 
 export const benchmarkPosts: Post[] = benchmark.rounds.map((round, index) => {
   const edit = benchmarkEditorial[round.id];
   if (!edit) throw new Error(`Missing editorial for benchmark batch ${round.id}`);
+  const visuals = benchmarkVisuals.rounds[round.id];
+  if (!visuals) throw new Error(`Missing visual assets for benchmark batch ${round.id}`);
   const cases = casesOfRound(round);
   const primary = cases.filter((item) => item.round === round.id);
   const references = cases.length - primary.length;
   const statusText = Object.entries(benchmarkStatus)
-    .map(([id, label]) => ({ label, count: cases.filter((item) => item.status === id).length }))
+    .map(([id, label]) => ({
+      label,
+      count: cases.filter((item) => item.status === id).length,
+    }))
     .filter((item) => item.count > 0)
     .map((item) => `${item.label} ${item.count} 项`)
     .join('，');
@@ -23,19 +29,6 @@ export const benchmarkPosts: Post[] = benchmark.rounds.map((round, index) => {
   const related = benchmark.rounds.filter(
     (other) => other.id !== round.id && other.caseIds.some((id) => round.caseIds.includes(id)),
   );
-  const preview = primary.find(
-    (item) =>
-      item.generated &&
-      [
-        'lipsync-K01',
-        'lipsync-K03',
-        'tts-gpt-sovits-v2proplus',
-        'music-church-classical',
-        '3d-TRELLIS2',
-        'community-default-01a',
-      ].includes(item.id),
-  );
-  const media = preview?.media[0];
   const relatedLink = (id: string, label: string): ContentBlock => ({
     type: 'link',
     href: `#/post/${benchmarkSlug(id)}`,
@@ -44,30 +37,22 @@ export const benchmarkPosts: Post[] = benchmark.rounds.map((round, index) => {
   const content: ContentBlock[] = [
     { type: 'p', text: edit.intro },
     { type: 'takeaways', text: '先读这三点', items: edit.takeaways },
+    {
+      type: 'h2',
+      id: 'visuals',
+      text: visuals.cover.kind === 'illustration' ? '把这批记录展开看' : '先看这一批的实际产物',
+    },
+    {
+      type: 'benchmark-gallery',
+      roundId: round.id,
+      text: visuals.gallery.map((figure) => `${figure.title} ${figure.caption}`).join(' '),
+    },
     ...edit.sections.flatMap((section, i): ContentBlock[] => [
       { type: 'h2', id: `story-${i + 1}`, text: section.title },
       ...section.paragraphs.map((text): ContentBlock => ({ type: 'p', text })),
     ]),
     { type: 'h2', id: 'conclusion', text: '这轮实验，值得带走什么' },
     { type: 'p', text: edit.conclusion },
-    ...(media
-      ? [
-          { type: 'h2' as const, id: 'sample', text: '回到实际样本' },
-          media.type === 'image'
-            ? {
-                type: 'image' as const,
-                src: media.url,
-                alt: media.label,
-                text: `${preview.title} · ${media.label}`,
-              }
-            : {
-                type: media.type === 'video' ? ('video' as const) : ('audio' as const),
-                src: media.url,
-                poster: media.poster,
-                text: `${preview.title} · ${media.label}。完整对照和原始输入可在下方记录中查看。`,
-              },
-        ]
-      : []),
     { type: 'h2', id: 'scope', text: '实验范围与过程补记' },
     {
       type: 'p',
@@ -85,7 +70,11 @@ export const benchmarkPosts: Post[] = benchmark.rounds.map((round, index) => {
       ],
     },
     ...(round.changes.length ? [{ type: 'list' as const, items: round.changes }] : []),
-    { type: 'h2', id: 'results', text: `逐项记录与原始证据（${cases.length} 项）` },
+    {
+      type: 'h2',
+      id: 'results',
+      text: `逐项记录与原始证据（${cases.length} 项）`,
+    },
     {
       type: 'p',
       text: `展开可查输入、参数、指标、计时范围、限制与原素材。本页依据 ${benchmark.snapshotDate} 的 Benchmark ${benchmark.version} 快照展示状态：${statusText}。上文历史观察与后续验收分别保留，执行完成不等于质量通过。`,
@@ -96,7 +85,11 @@ export const benchmarkPosts: Post[] = benchmark.rounds.map((round, index) => {
       text: cases.map((item) => `${item.id} ${item.title} ${item.model} ${item.summary}`).join(' '),
     },
     { type: 'h2', id: 'sources', text: '继续阅读与资料来源' },
-    { type: 'link', href: benchmarkRoundUrl(round.id), text: '在 Benchmark 查看原始批次' },
+    {
+      type: 'link',
+      href: benchmarkRoundUrl(round.id),
+      text: '在 Benchmark 查看原始批次',
+    },
     ...reportIds.map((id) => ({
       type: 'link' as const,
       href: `https://benchmark.sidcloud.cn/reports/${encodeURIComponent(id)}`,
@@ -134,7 +127,9 @@ export const benchmarkPosts: Post[] = benchmark.rounds.map((round, index) => {
     section: 'Benchmark',
     benchmarkRoundId: round.id,
     tags: ['Benchmark', round.device, round.type, ...categories],
-    cover: `/assets/batch-covers/${round.id}.svg`,
+    cover: visuals.cover.hero,
+    coverCaption: visuals.cover.caption,
+    coverLabel: visualCoverLabel(visuals.cover.kind),
     // The estimate covers the narrative; the full evidence is optional reading.
     readMins: Math.max(3, Math.ceil(narrative.length / 300)),
     pinned: index === 0,

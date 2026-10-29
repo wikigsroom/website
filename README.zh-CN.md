@@ -10,6 +10,10 @@
 
 [全部 46 个批次](docs/benchmark-batches.md) · [素材复用方案](docs/benchmark-materials.md) · [标题与正文重写](docs/releases/2026-10-29-editorial-refresh.md) · [截图、录屏与 GIF](docs/media/README.md)
 
+可视化版为封面和正文补上实际视频抽帧、结果截图、完整音轨波形及带标识的主题插画：[本次更新](docs/releases/2026-10-30-visual-refresh.md) · [方案与复现](docs/benchmark-visuals.md) · [插画原图与提示词](output/imagegen/README.md)。
+
+![声线选角封面：主题插画叠加实际音轨波形](public/assets/benchmark-visuals/card/r4090-voice-casting.webp)
+
 新版已上线 [blog.sidcloud.cn](https://blog.sidcloud.cn/#/benchmark)，2026-10-29 已核验全部 46 篇文章与构建文件，详见 [生产验收记录](docs/releases/2026-10-29-editorial-production.json)。
 
 ## 本地运行
@@ -46,6 +50,10 @@ npm run preview
 | [`src/data/benchmarkSnapshot.json`](src/data/benchmarkSnapshot.json) | 完整证据、参数、输入、指标和公开素材引用 |
 | [`src/components/BenchmarkResults.tsx`](src/components/BenchmarkResults.tsx) | 打开批次文章时载入，逐项展开结果并标明本批/引用 |
 | [`src/components/ArticleMedia.tsx`](src/components/ArticleMedia.tsx) | 带控制条、说明和失败回退的原素材预览 |
+| [`src/components/BenchmarkGallery.tsx`](src/components/BenchmarkGallery.tsx) | 可见的分镜、图片、波形、记录摘录及原素材播放 |
+| [`src/data/benchmarkVisuals.json`](src/data/benchmarkVisuals.json) | 封面、配图、记录归属、时间点与插画来源 |
+| [`operations/benchmark-visual-plan.json`](operations/benchmark-visual-plan.json) | 人工挑选的样本和主题插画分配 |
+| [`scripts/prepare-benchmark-visuals.py`](scripts/prepare-benchmark-visuals.py) | 原生 FFmpeg/Pillow 抽帧、波形计算和 WebP 输出 |
 | [`src/styles.css`](src/styles.css) | 暗色玻璃风格、霓虹高亮和响应式布局 |
 | [`public/assets/`](public/assets/) | 本地图片，构建时复制到产物 |
 | [`scripts/optimize-covers.mjs`](scripts/optimize-covers.mjs) | 使用原生 FFmpeg 生成卡片/头图 WebP 封面 |
@@ -70,9 +78,11 @@ npm run optimize:covers
 
 ### 标题与阅读顺序
 
-46 篇测评日志已逐篇重写标题与独立摘要，日期不再拼进标题。分类采用视频生成、语音、音乐、三维等真实主题。文章先呈现标题与摘要，再依次阅读开场、三点提要、两个专题分析章节和结论，最后提供范围、过程补记与全部逐项证据，也可以直接跳到记录。原始批次名、日期、状态和稳定链接继续保留。
+46 篇测评日志已逐篇重写标题与独立摘要，日期不再拼进标题。分类采用视频生成、语音、音乐、三维等真实主题。文章先展示内容封面，再呈现标题与摘要、开场、三点提要、可视化样本、两个专题分析章节和结论，最后提供范围、过程补记与全部逐项证据，也可以直接跳到记录。原始批次名、日期、状态和稳定链接继续保留。
 
-卡片、推荐位、封面、关联链接和目录统一使用人工标题。冒号前后的短句在空间允许时整体换行，结合宋体标题、独立摘要和手机间距形成清楚的阅读层级。打开文章直接回到顶部。新增 `takeaways` 提要块参与搜索；阅读分钟数只估算正文，不包含可选展开的完整证据。分析围绕已有实验展开，不声称重新运行模型、增加主观评分或证明新的因果关系。
+卡片、推荐位、关联链接和目录统一使用人工标题。冒号前后的短句在空间允许时整体换行，结合宋体标题、独立摘要和手机间距形成清楚的阅读层级。打开文章直接回到顶部。新增 `takeaways` 提要块参与搜索；阅读分钟数只估算正文，不包含可选展开的完整证据。分析围绕已有实验展开，不声称重新运行模型、增加主观评分或证明新的因果关系。
+
+全部 70 篇文章均有图像封面。46 篇测评封面改用实际视频抽帧、结果截图、真实波形或明确标识的 gpt-image-2.5 插画。正文配图保留原素材链接、记录归属和时间点，并可直接播放代表音视频。详见 [可视化流水线](docs/benchmark-visuals.md)。重建素材另需原生 Python、Pillow（`python -m pip install Pillow`）、FFmpeg/FFprobe 与中文字体；普通构建直接使用已提交的衍生图，不需要重新生图或访问本地归档。
 
 来源中每条 `rounds[]` 对应一篇文章，按 `caseIds` 原顺序提供全部记录，包括有 130 条记录的历史 TTS 批次。展开条目可读到已记录的执行标记、计时范围、成品时长、指标、输入、参数、核验、限制和原始证据。完整证据包在打开批次文章时载入，条目关闭时不挂载详细正文。搜索包含条目 ID、标题、模型名和摘要。
 
@@ -100,7 +110,7 @@ Windows 下可选的本地素材入口：
 npm run benchmark:link -- "E:\dev\sandbox\windows操控\模型测评发布包-无损优化版"
 ```
 
-脚本在 `.vercel/benchmark-source/archive` 建立 **目录联接（Junction）**，其他系统使用目录软链接。当前 Windows 进程无法创建真正的 SymbolicLink，采用目录联接可以避免更改系统设置。该入口仅供本地浏览，位于忽略目录且不放入 `public/`。线上采用绝对 HTTPS 素材引用：本地文件系统链接无法跨两个 Vercel 项目使用，构建时复制联接内容也会重复上传素材。详见 [素材方案和边界](docs/benchmark-materials.md)。
+脚本在 `.vercel/benchmark-source/archive` 建立 **目录联接（Junction）**，其他系统使用目录软链接。当前 Windows 进程无法创建真正的 SymbolicLink，采用目录联接可以避免更改系统设置。该入口用于本地浏览及提取小型衍生图，位于忽略目录且不放入 `public/`。线上采用绝对 HTTPS 素材引用：本地文件系统链接无法跨两个 Vercel 项目使用，构建时复制联接内容也会重复上传素材。详见 [素材方案和边界](docs/benchmark-materials.md)。
 
 ![测评栏目概览](docs/media/benchmark-20261029/batch-overview-desktop.png)
 

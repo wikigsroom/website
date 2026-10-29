@@ -1,10 +1,10 @@
 # 页面截图与演示 / Screenshots and demos
 
-[中文 README](../../README.zh-CN.md) · [English README](../../README.md) · [最新更新 / Latest release](../releases/2026-10-29-editorial-refresh.md) · [批次归档 / Batch archive](../releases/2026-10-29-benchmark-batches.md)
+[中文 README](../../README.zh-CN.md) · [English README](../../README.md) · [最新更新 / Latest release](../releases/2026-10-30-visual-refresh.md) · [标题更新 / Editorial release](../releases/2026-10-29-editorial-refresh.md)
 
-2026-10-29 标题与正文重写后的实际本地生产构建截图与录制，已更新 46 篇人工标题、摘要、三点提要和分析章节。记录文章导航、结果展开和响应式页面，不是重新运行模型的录像。
+基于 2026-10-29 冻结测评数据的可视化版本：46 篇栅格封面、103 张正文图，以及原音视频播放、文章导航和逐项记录。截图和演示录制自实际本地生产构建，不是重新运行模型的录像。
 
-Captured from the refreshed local production build, including all 46 editorial headlines, decks, takeaways and analysis chapters. These recordings demonstrate navigation, evidence expansion and responsive layouts, rather than fresh model execution.
+Captured from the visual edition built on the frozen 2026-10-29 benchmark data: raster covers for 46 journals, 103 inline figures, original playback, navigation and evidence expansion. The demos show the actual built UI, rather than fresh model execution.
 
 | 文件 / File | 内容 / Content |
 | --- | --- |
@@ -15,6 +15,11 @@ Captured from the refreshed local production build, including all 46 editorial h
 | [review-batch-desktop.png](benchmark-20261029/review-batch-desktop.png) | 无新增执行的复核批次 / Review batch with no new executions |
 | [batch-article-mobile.png](benchmark-20261029/batch-article-mobile.png) | 390px 手机阅读 / Mobile article |
 | [batch-record-mobile.png](benchmark-20261029/batch-record-mobile.png) | 历史 TTS 记录 / Historical TTS entry on mobile |
+| [batch-gallery-desktop.png](benchmark-20261029/batch-gallery-desktop.png) | 实际视频抽帧与时间点 / Real video frames and timestamps |
+| [audio-gallery-desktop.png](benchmark-20261029/audio-gallery-desktop.png) | 完整音轨波形与试听 / Full-track waveform and audio controls |
+| [image-gallery-desktop.png](benchmark-20261029/image-gallery-desktop.png) | 实际 3D 网格预览截图 / Actual 3D mesh preview screenshot |
+| [illustrated-article-desktop.png](benchmark-20261029/illustrated-article-desktop.png) | 插画封面和文本测评 / Illustration-led reasoning article |
+| [batch-gallery-mobile.png](benchmark-20261029/batch-gallery-mobile.png) | 手机上的样片分镜与来源 / Mobile storyboard and source attribution |
 | [batch-walkthrough.mp4](benchmark-20261029/batch-walkthrough.mp4) · [GIF](benchmark-20261029/batch-walkthrough.gif) | 桌面栏目到逐项记录 / Desktop navigation and expansion |
 | [batch-mobile.mp4](benchmark-20261029/batch-mobile.mp4) · [GIF](benchmark-20261029/batch-mobile.gif) | 手机复核文章 / Mobile review article |
 | [verification.json](benchmark-20261029/verification.json) | 46 路由、770 次展开、筛选、阅读和布局检查 / Route, coverage and interaction checks |
@@ -23,6 +28,10 @@ Captured from the refreshed local production build, including all 46 editorial h
 | [生产验收 / Production proof](../releases/2026-10-29-editorial-production.json) | 部署绑定、构建文件与 46 篇文章验收 / Deployment, build files and all 46 published articles |
 
 ![桌面栏目 / Desktop index](benchmark-20261029/batch-index-desktop.png)
+
+![真实样片分镜 / Actual video storyboard](benchmark-20261029/batch-gallery-desktop.png)
+
+![音轨波形与试听 / Audio waveform and playback](benchmark-20261029/audio-gallery-desktop.png)
 
 ![阅读演示 / Reading walkthrough](benchmark-20261029/batch-walkthrough.gif)
 

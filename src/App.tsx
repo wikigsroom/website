@@ -13,6 +13,7 @@ import {
 import { posts, type ContentBlock, type Post } from './data/posts';
 import { benchmark } from './data/benchmark';
 import ArticleMedia from './components/ArticleMedia';
+import BenchmarkGallery from './components/BenchmarkGallery';
 
 const BenchmarkResults = lazy(() => import('./components/BenchmarkResults'));
 
@@ -82,6 +83,8 @@ const getSectionFromHash = (): SectionFilter => sectionRoutes[window.location.ha
 const getPostSection = (post: Post) => post.section || 'Blog';
 
 const getOptimizedCover = (cover: string, variant: CoverVariant) => {
+  if (cover.startsWith('/assets/benchmark-visuals/hero/'))
+    return cover.replace('/benchmark-visuals/hero/', `/benchmark-visuals/${variant}/`);
   if (!cover.startsWith(generatedCoverRoot)) return cover;
   const fileName = cover.slice(generatedCoverRoot.length).replace(/\.[^.]+$/, '.webp');
   return `${optimizedCoverRoot}${variant}/${fileName}`;
@@ -98,6 +101,7 @@ const getArchive = (items: Post[]) => {
 };
 
 const ContentRenderer = ({ block }: { block: ContentBlock }) => {
+  if (block.type === 'benchmark-gallery') return <BenchmarkGallery roundId={block.roundId} />;
   if (block.type === 'takeaways')
     return (
       <aside className="article-takeaways" aria-label={block.text}>
@@ -277,7 +281,9 @@ const PostCard = ({
   onTag: (tag: string) => void;
 }) => (
   <article className="post-card">
-    <figure className={post.cover.startsWith('/assets/batch-covers/') ? 'batch-cover' : undefined}>
+    <figure
+      className={post.cover.startsWith('/assets/benchmark-visuals/') ? 'visual-cover' : undefined}
+    >
       <img
         src={getOptimizedCover(post.cover, 'card')}
         alt={post.title}
@@ -289,6 +295,7 @@ const PostCard = ({
       />
       <div className="card-badges">
         <span className="category-pill">{post.category}</span>
+        {post.coverLabel ? <span className="cover-kind-pill">{post.coverLabel}</span> : null}
         {post.priority ? <span className="priority-pill">{post.priority}</span> : null}
       </div>
     </figure>
@@ -488,7 +495,8 @@ const HomeView = ({
             还有值得记录的实验。
           </h2>
           <p>
-            视频怎样还原，声音如何选角，长曲为什么要重做——{benchmark.rounds.length}{' '}
+            视频怎样还原，声音如何选角，长曲为什么要重做——
+            {benchmark.rounds.length}{' '}
             篇手记从具体问题出发，带你回到输入、过程与实际输出。完整实验与原素材收录于{' '}
             <a href="https://benchmark.sidcloud.cn/" target="_blank" rel="noopener noreferrer">
               Benchmark
@@ -648,21 +656,18 @@ const ArticleView = ({
   return (
     <main className="article-view">
       <article className={`article-shell${post.benchmarkRoundId ? ' is-benchmark-article' : ''}`}>
-        {!post.benchmarkRoundId && (
-          <div
-            className={`article-cover${post.cover.startsWith('/assets/batch-covers/') ? ' batch-cover' : ''}`}
-          >
-            <img
-              src={getOptimizedCover(post.cover, 'hero')}
-              alt={post.title}
-              width={1120}
-              height={700}
-              decoding="async"
-              fetchPriority="high"
-              sizes="(max-width: 920px) 100vw, 920px"
-            />
-          </div>
-        )}
+        <figure className="article-cover">
+          <img
+            src={getOptimizedCover(post.cover, 'hero')}
+            alt={post.title}
+            width={1120}
+            height={post.benchmarkRoundId ? 630 : 700}
+            decoding="async"
+            fetchPriority="high"
+            sizes="(max-width: 920px) 100vw, 920px"
+          />
+          {post.coverCaption ? <figcaption>{post.coverCaption}</figcaption> : null}
+        </figure>
         <header className="article-header">
           <p className="kicker">
             {post.benchmarkRoundId ? `实验手记 / ${post.category}` : post.category}

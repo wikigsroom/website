@@ -10,6 +10,10 @@ Search, section/category/tag filters, sorting, archives, article navigation, a t
 
 [All 46 batches](docs/benchmark-batches.md) · [Material reuse design](docs/benchmark-materials.md) · [Editorial refresh](docs/releases/2026-10-29-editorial-refresh.md) · [Screenshots and recordings](docs/media/README.md)
 
+The visual edition adds actual video frames, result screenshots, full-track audio waveforms and labeled thematic illustrations to covers and article bodies. [Visual release](docs/releases/2026-10-30-visual-refresh.md) · [Visual design and reproduction](docs/benchmark-visuals.md) · [Illustration originals and prompts](output/imagegen/README.md).
+
+![Voice-casting cover: thematic artwork with actual audio waveforms](public/assets/benchmark-visuals/card/r4090-voice-casting.webp)
+
 The refreshed journals are live at [blog.sidcloud.cn](https://blog.sidcloud.cn/#/benchmark). Production verification on 2026-10-29 checked all 46 articles and exact build files; see the [release proof](docs/releases/2026-10-29-editorial-production.json).
 
 ## Run locally
@@ -46,6 +50,10 @@ npm run preview
 | [`src/data/benchmarkSnapshot.json`](src/data/benchmarkSnapshot.json) | Detailed evidence, parameters, inputs, metrics and public asset references |
 | [`src/components/BenchmarkResults.tsx`](src/components/BenchmarkResults.tsx) | Loaded on article access; expandable records with owning/reference labels |
 | [`src/components/ArticleMedia.tsx`](src/components/ArticleMedia.tsx) | Public media previews with controls, captions and failure fallback |
+| [`src/components/BenchmarkGallery.tsx`](src/components/BenchmarkGallery.tsx) | Visible frame/image/waveform/record figures, attribution and original playback |
+| [`src/data/benchmarkVisuals.json`](src/data/benchmarkVisuals.json) | Covers, figures, source ownership, timestamps and illustration provenance |
+| [`operations/benchmark-visual-plan.json`](operations/benchmark-visual-plan.json) | Curated sample choices and illustration themes |
+| [`scripts/prepare-benchmark-visuals.py`](scripts/prepare-benchmark-visuals.py) | Native FFmpeg/Pillow extraction, amplitude envelopes and WebP variants |
 | [`src/styles.css`](src/styles.css) | Dark glass styling, neon accents and responsive layout |
 | [`public/assets/`](public/assets/) | Local images, copied into the production build |
 | [`scripts/optimize-covers.mjs`](scripts/optimize-covers.mjs) | Native FFmpeg conversion to card/hero WebP variants |
@@ -70,9 +78,11 @@ WebP variants are written to `optimized/card/` and `optimized/hero/`, at maximum
 
 ### Headlines and reading flow
 
-All 46 journals have individually edited headlines and distinct decks. Dates no longer appear in display titles. Topics such as video, speech, music and 3D serve as categories. Each article opens with its title and deck, then a lead, three takeaways, two analysis chapters and a conclusion. Scope, process notes and all expandable evidence follow; readers can also jump directly to evidence. Original batch names, dates, statuses and stable slugs remain available.
+All 46 journals have individually edited headlines and distinct decks. Dates no longer appear in display titles. Topics such as video, speech, music and 3D serve as categories. Each article opens with a content-specific image cover, then its title/deck, lead, three takeaways, visual samples, two analysis chapters and a conclusion. Scope, process notes and all expandable evidence follow; readers can also jump directly to evidence. Original batch names, dates, statuses and stable slugs remain available.
 
-Cards, featured posts, covers, related links and the index share the same headline. Colon-separated phrases wrap together where space permits; restrained serif headings, distinct decks and responsive spacing establish the reading hierarchy. Opening an article starts at the top. The searchable `takeaways` block joins the narrative, and reading-time estimates exclude optional evidence expansion. Analysis explains recorded experiments without claiming new runs, scores or causal findings.
+Cards, featured posts, related links and the index share the same headline. Colon-separated phrases wrap together where space permits; restrained serif headings, distinct decks and responsive spacing establish the reading hierarchy. Opening an article starts at the top. The searchable `takeaways` block joins the narrative, and reading-time estimates exclude optional evidence expansion. Analysis explains recorded experiments without claiming new runs, scores or causal findings.
+
+All 70 articles have image covers. The 46 batch covers now use actual video frames, result screenshots, audio waveforms or explicitly labeled gpt-image-2.5 artwork. Inline figures retain source links, original ownership and frame timestamps; selected original audio/video can be played without opening the full evidence list. See the [visual pipeline](docs/benchmark-visuals.md). Rebuilding visual assets additionally requires native Python with Pillow (`python -m pip install Pillow`), FFmpeg/FFprobe and a CJK font. A normal build uses committed derivatives and does not require image generation or the local archive.
 
 Each source `rounds[]` entry becomes one article. Its `caseIds` order is preserved; every record is available as an expandable entry, including the 130-record historical TTS batch. Expanded entries show execution flags, timing scope, output duration, metrics, inputs, parameters, verification, limitations and original evidence links when recorded. The full evidence bundle loads when a batch article is opened; closed entries do not mount their detailed bodies. Search includes record IDs, titles, model names and summaries alongside article text.
 
@@ -100,9 +110,11 @@ For optional local material access on Windows:
 npm run benchmark:link -- "E:\dev\sandbox\windows操控\模型测评发布包-无损优化版"
 ```
 
-This creates a **directory junction** at `.vercel/benchmark-source/archive` (a directory symlink on other systems). The current Windows process cannot create a true SymbolicLink; the junction avoids changing system settings. It is for browsing only, excluded from Git and outside `public/`. Cloud playback uses absolute HTTPS references; a local filesystem link cannot span separate Vercel projects, and copying it through a build would duplicate the assets. See [material details and limits](docs/benchmark-materials.md).
+This creates a **directory junction** at `.vercel/benchmark-source/archive` (a directory symlink on other systems). The current Windows process cannot create a true SymbolicLink; the junction avoids changing system settings. It is used for local browsing and extracting small visual derivatives, excluded from Git and outside `public/`. Cloud playback uses absolute HTTPS references; a local filesystem link cannot span separate Vercel projects, and copying it through a build would duplicate the assets. See [material details and limits](docs/benchmark-materials.md).
 
 ![Batch overview](docs/media/benchmark-20261029/batch-overview-desktop.png)
+
+![Actual experimental video frames and timestamps](docs/media/benchmark-20261029/batch-gallery-desktop.png)
 
 ![Batch walkthrough](docs/media/benchmark-20261029/batch-walkthrough.gif)
 

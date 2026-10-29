@@ -1,0 +1,75 @@
+{
+  "model": "gpt-image-2.5",
+  "size": "1536x1024",
+  "quality": "high",
+  "preferredMedia": { "r4090-lingbot-worlds": "image" },
+  "preferredCases": {
+    "r4090-community-complete-20261029": [
+      "community-default-08e",
+      "community-default-12b",
+      "community-default-02b"
+    ],
+    "r4090-community-defaults": [
+      "community-default-01a",
+      "community-default-01b",
+      "community-default-02c"
+    ],
+    "r4090-quality": ["h3-pinkcherry_v15__multi_image", "h3-pinkcherry_v15__multi_ref"],
+    "r4090-h3": [
+      "h3-pinkcherry_v15__t2v",
+      "h3-pinkcherry_v15__i2v",
+      "h3-pinkcherry_v15__multi_ref"
+    ],
+    "r4090-base": ["4090-00_h3_baseline", "4090-02_t8_native_audio", "4090-03_director_t2va"],
+    "r4090-docs": ["4090-00_h3_baseline", "4090-02_t8_native_audio", "4090-03_director_t2va"],
+    "r4090-voice-casting": ["voice-casting-O01", "voice-casting-O10", "voice-casting-O30"],
+    "r3080-voice-selection": [
+      "voice-selection-benchmark-moss-v01",
+      "voice-selection-benchmark-firered-v01",
+      "voice-selection-benchmark-soulx-v01"
+    ],
+    "r3080-author-safe": ["author-safe-0", "author-safe-6", "author-roi-initial"],
+    "r3080-3d": ["3d-TRELLIS2", "3d-Pixal3D", "3d-Sparc3D"],
+    "r3080-edit": ["edit-noct_single", "edit-noct_multi", "edit-wai_multi"],
+    "r3080-original-install": ["author-safe-0", "author-safe-6", "edit-noct_single"],
+    "r3080-base": [
+      "3080-10_noct_q_v4_qwen_image21",
+      "3080-12_wai_illustrious_v17_exact",
+      "3080-20_soulx_official_voice_tts"
+    ]
+  },
+  "themes": {
+    "r4090-voice-casting": "voice-casting",
+    "r4090-tts": "voice-studio",
+    "r4090-tts-earlier": "repair-bench",
+    "r3080-voice-selection": "voice-casting",
+    "r3080-vocal-pilot": "music-stage",
+    "r3080-podcast-initial": "duo-podcast",
+    "r3080-podcast": "duo-podcast",
+    "r3080-music-v3": "music-stage",
+    "r3080-music-v2": "music-score",
+    "r3080-music": "music-journey",
+    "r3080-yue-prepodcast": "repair-bench",
+    "r3080-music-original": "music-journey",
+    "r3080-music-diagnostics": "repair-bench",
+    "r3080-duo": "duo-podcast",
+    "r3080-yue-recovery": "repair-bench",
+    "r4090-app": "video-story",
+    "r3080-music-preparations": "music-score",
+    "r3080-music-plans": "music-score",
+    "r-podcast-source-research": "duo-podcast",
+    "r4090-swift-20261022": "context-library",
+    "r3080-source": "model-archive",
+    "r-h3-world-research": "world-portal",
+    "r-3080-input-research": "workflow-lab",
+    "r3080-llm": "context-puzzle",
+    "r-h3-input-research": "video-story",
+    "r4090-llm-initial": "context-puzzle",
+    "r4090-llm": "context-library",
+    "r-h3-community-research": "workflow-lab"
+  },
+  "researchCovers": {
+    "wechat-image-generation-world-models": "video-story",
+    "subforge-subtitle-research-pipeline": "workflow-lab"
+  }
+}

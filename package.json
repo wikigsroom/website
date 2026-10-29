@@ -11,7 +11,7 @@
     "lint": "eslint .",
     "benchmark:sync": "node scripts/sync-benchmark.mjs",
     "benchmark:link": "node scripts/link-benchmark-assets.mjs",
-    "benchmark:covers": "node scripts/create-batch-covers.mjs",
+    "benchmark:covers": "python scripts/prepare-benchmark-visuals.py",
     "benchmark:index": "node scripts/create-batch-index.mjs",
     "check:benchmark": "node scripts/check-benchmark.mjs",
     "docs:media": "node scripts/capture-benchmark.mjs",

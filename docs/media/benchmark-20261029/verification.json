@@ -1,8 +1,9 @@
 {
+  "checkedAt": "2026-10-29T16:13:25.407Z",
   "snapshot": "1.9.0",
   "snapshotDate": "2026-10-29",
   "sourceCatalogSha256": "81c20e4eece8e2280df46d76b8f09cab8eab7bdab3da2053e8700258438a7ed5",
-  "implementationSha256": "51133b6d8f267c167187546cfd4cae6b91065235bc7cee35145c75805aa3f107",
+  "implementationSha256": "b55c2eb633039b588bfe70f9fcae67eedbc2aac63181ce59d7858edba3d8bf7f",
   "evidenceFiles": [
     "src/App.tsx",
     "src/styles.css",
@@ -15,56 +16,242 @@
     "src/data/benchmarkSnapshot.json",
     "src/components/BenchmarkResults.tsx",
     "src/components/ArticleMedia.tsx",
-    "public/assets/batch-covers/r4090-community-complete-20261029.svg",
-    "public/assets/batch-covers/r4090-lipsync-complete-20261029.svg",
-    "public/assets/batch-covers/r4090-voice-casting.svg",
-    "public/assets/batch-covers/r4090-tts.svg",
-    "public/assets/batch-covers/r4090-lipsync.svg",
-    "public/assets/batch-covers/r4090-community-install.svg",
-    "public/assets/batch-covers/r4090-community-defaults.svg",
-    "public/assets/batch-covers/r4090-app.svg",
-    "public/assets/batch-covers/r4090-tts-earlier.svg",
-    "public/assets/batch-covers/r4090-quality.svg",
-    "public/assets/batch-covers/r4090-docs.svg",
-    "public/assets/batch-covers/r3080-voice-selection.svg",
-    "public/assets/batch-covers/r3080-vocal-pilot.svg",
-    "public/assets/batch-covers/r3080-podcast-initial.svg",
-    "public/assets/batch-covers/r3080-podcast.svg",
-    "public/assets/batch-covers/r3080-music-v3.svg",
-    "public/assets/batch-covers/r3080-music-v2.svg",
-    "public/assets/batch-covers/r3080-music-preparations.svg",
-    "public/assets/batch-covers/r3080-music-plans.svg",
-    "public/assets/batch-covers/r3080-music.svg",
-    "public/assets/batch-covers/r3080-yue-prepodcast.svg",
-    "public/assets/batch-covers/r3080-music-original.svg",
-    "public/assets/batch-covers/r3080-music-diagnostics.svg",
-    "public/assets/batch-covers/r3080-duo.svg",
-    "public/assets/batch-covers/r-podcast-source-research.svg",
-    "public/assets/batch-covers/r4090-swift-20261022.svg",
-    "public/assets/batch-covers/r3080-source.svg",
-    "public/assets/batch-covers/r3080-original-install.svg",
-    "public/assets/batch-covers/r3080-lustify-correction.svg",
-    "public/assets/batch-covers/r3080-image-retries.svg",
-    "public/assets/batch-covers/r3080-edit.svg",
-    "public/assets/batch-covers/r3080-author-safe.svg",
-    "public/assets/batch-covers/r3080-3d.svg",
-    "public/assets/batch-covers/r-h3-world-research.svg",
-    "public/assets/batch-covers/r-3080-input-research.svg",
-    "public/assets/batch-covers/r4090-lingbot-worlds.svg",
-    "public/assets/batch-covers/r4090-h3.svg",
-    "public/assets/batch-covers/r3080-yue-recovery.svg",
-    "public/assets/batch-covers/r3080-lustify-independent.svg",
-    "public/assets/batch-covers/r3080-llm.svg",
-    "public/assets/batch-covers/r-h3-input-research.svg",
-    "public/assets/batch-covers/r4090-llm-initial.svg",
-    "public/assets/batch-covers/r4090-llm.svg",
-    "public/assets/batch-covers/r4090-base.svg",
-    "public/assets/batch-covers/r3080-base.svg",
-    "public/assets/batch-covers/r-h3-community-research.svg",
-    "public/assets/batch-covers/wechat-image-generation-world-models.svg",
-    "public/assets/batch-covers/subforge-subtitle-research-pipeline.svg"
+    "src/components/BenchmarkGallery.tsx",
+    "src/data/benchmarkVisuals.ts",
+    "src/data/benchmarkVisuals.json",
+    "public/assets/benchmark-visuals/hero/r4090-community-complete-20261029.webp",
+    "public/assets/benchmark-visuals/card/r4090-community-complete-20261029.webp",
+    "public/assets/benchmark-visuals/samples/r4090-community-complete-20261029-0.webp",
+    "public/assets/benchmark-visuals/samples/r4090-community-complete-20261029-1.webp",
+    "public/assets/benchmark-visuals/samples/r4090-community-complete-20261029-2.webp",
+    "public/assets/benchmark-visuals/samples/r4090-community-complete-20261029-0-poster.webp",
+    "public/assets/benchmark-visuals/samples/r4090-community-complete-20261029-1-poster.webp",
+    "public/assets/benchmark-visuals/samples/r4090-community-complete-20261029-2-poster.webp",
+    "public/assets/benchmark-visuals/hero/r4090-lipsync-complete-20261029.webp",
+    "public/assets/benchmark-visuals/card/r4090-lipsync-complete-20261029.webp",
+    "public/assets/benchmark-visuals/samples/r4090-lipsync-complete-20261029-0.webp",
+    "public/assets/benchmark-visuals/samples/r4090-lipsync-complete-20261029-1.webp",
+    "public/assets/benchmark-visuals/samples/r4090-lipsync-complete-20261029-0-poster.webp",
+    "public/assets/benchmark-visuals/samples/r4090-lipsync-complete-20261029-1-poster.webp",
+    "public/assets/benchmark-visuals/hero/r4090-voice-casting.webp",
+    "public/assets/benchmark-visuals/card/r4090-voice-casting.webp",
+    "public/assets/benchmark-visuals/samples/r4090-voice-casting-0.webp",
+    "public/assets/benchmark-visuals/samples/r4090-voice-casting-1.webp",
+    "public/assets/benchmark-visuals/samples/r4090-voice-casting-2.webp",
+    "public/assets/benchmark-visuals/hero/r4090-tts.webp",
+    "public/assets/benchmark-visuals/card/r4090-tts.webp",
+    "public/assets/benchmark-visuals/samples/r4090-tts-0.webp",
+    "public/assets/benchmark-visuals/samples/r4090-tts-1.webp",
+    "public/assets/benchmark-visuals/samples/r4090-tts-2.webp",
+    "public/assets/benchmark-visuals/hero/r4090-lipsync.webp",
+    "public/assets/benchmark-visuals/card/r4090-lipsync.webp",
+    "public/assets/benchmark-visuals/samples/r4090-lipsync-0.webp",
+    "public/assets/benchmark-visuals/samples/r4090-lipsync-1.webp",
+    "public/assets/benchmark-visuals/samples/r4090-lipsync-2.webp",
+    "public/assets/benchmark-visuals/samples/r4090-lipsync-0-poster.webp",
+    "public/assets/benchmark-visuals/samples/r4090-lipsync-1-poster.webp",
+    "public/assets/benchmark-visuals/samples/r4090-lipsync-2-poster.webp",
+    "public/assets/benchmark-visuals/hero/r4090-community-install.webp",
+    "public/assets/benchmark-visuals/card/r4090-community-install.webp",
+    "public/assets/benchmark-visuals/samples/r4090-community-install-0.webp",
+    "public/assets/benchmark-visuals/samples/r4090-community-install-1.webp",
+    "public/assets/benchmark-visuals/samples/r4090-community-install-2.webp",
+    "public/assets/benchmark-visuals/samples/r4090-community-install-0-poster.webp",
+    "public/assets/benchmark-visuals/samples/r4090-community-install-1-poster.webp",
+    "public/assets/benchmark-visuals/samples/r4090-community-install-2-poster.webp",
+    "public/assets/benchmark-visuals/hero/r4090-community-defaults.webp",
+    "public/assets/benchmark-visuals/card/r4090-community-defaults.webp",
+    "public/assets/benchmark-visuals/samples/r4090-community-defaults-0.webp",
+    "public/assets/benchmark-visuals/samples/r4090-community-defaults-1.webp",
+    "public/assets/benchmark-visuals/samples/r4090-community-defaults-2.webp",
+    "public/assets/benchmark-visuals/samples/r4090-community-defaults-0-poster.webp",
+    "public/assets/benchmark-visuals/samples/r4090-community-defaults-1-poster.webp",
+    "public/assets/benchmark-visuals/samples/r4090-community-defaults-2-poster.webp",
+    "public/assets/benchmark-visuals/hero/r4090-app.webp",
+    "public/assets/benchmark-visuals/card/r4090-app.webp",
+    "public/assets/benchmark-visuals/samples/r4090-app-records.webp",
+    "public/assets/benchmark-visuals/hero/r4090-tts-earlier.webp",
+    "public/assets/benchmark-visuals/card/r4090-tts-earlier.webp",
+    "public/assets/benchmark-visuals/samples/r4090-tts-earlier-0.webp",
+    "public/assets/benchmark-visuals/samples/r4090-tts-earlier-1.webp",
+    "public/assets/benchmark-visuals/samples/r4090-tts-earlier-2.webp",
+    "public/assets/benchmark-visuals/hero/r4090-quality.webp",
+    "public/assets/benchmark-visuals/card/r4090-quality.webp",
+    "public/assets/benchmark-visuals/samples/r4090-quality-0.webp",
+    "public/assets/benchmark-visuals/samples/r4090-quality-1.webp",
+    "public/assets/benchmark-visuals/samples/r4090-quality-2.webp",
+    "public/assets/benchmark-visuals/samples/r4090-quality-0-poster.webp",
+    "public/assets/benchmark-visuals/samples/r4090-quality-1-poster.webp",
+    "public/assets/benchmark-visuals/samples/r4090-quality-2-poster.webp",
+    "public/assets/benchmark-visuals/hero/r4090-docs.webp",
+    "public/assets/benchmark-visuals/card/r4090-docs.webp",
+    "public/assets/benchmark-visuals/samples/r4090-docs-0.webp",
+    "public/assets/benchmark-visuals/samples/r4090-docs-1.webp",
+    "public/assets/benchmark-visuals/samples/r4090-docs-2.webp",
+    "public/assets/benchmark-visuals/samples/r4090-docs-0-poster.webp",
+    "public/assets/benchmark-visuals/samples/r4090-docs-1-poster.webp",
+    "public/assets/benchmark-visuals/samples/r4090-docs-2-poster.webp",
+    "public/assets/benchmark-visuals/hero/r3080-voice-selection.webp",
+    "public/assets/benchmark-visuals/card/r3080-voice-selection.webp",
+    "public/assets/benchmark-visuals/samples/r3080-voice-selection-0.webp",
+    "public/assets/benchmark-visuals/samples/r3080-voice-selection-1.webp",
+    "public/assets/benchmark-visuals/samples/r3080-voice-selection-2.webp",
+    "public/assets/benchmark-visuals/hero/r3080-vocal-pilot.webp",
+    "public/assets/benchmark-visuals/card/r3080-vocal-pilot.webp",
+    "public/assets/benchmark-visuals/samples/r3080-vocal-pilot-0.webp",
+    "public/assets/benchmark-visuals/hero/r3080-podcast-initial.webp",
+    "public/assets/benchmark-visuals/card/r3080-podcast-initial.webp",
+    "public/assets/benchmark-visuals/samples/r3080-podcast-initial-0.webp",
+    "public/assets/benchmark-visuals/samples/r3080-podcast-initial-1.webp",
+    "public/assets/benchmark-visuals/samples/r3080-podcast-initial-2.webp",
+    "public/assets/benchmark-visuals/hero/r3080-podcast.webp",
+    "public/assets/benchmark-visuals/card/r3080-podcast.webp",
+    "public/assets/benchmark-visuals/samples/r3080-podcast-0.webp",
+    "public/assets/benchmark-visuals/samples/r3080-podcast-1.webp",
+    "public/assets/benchmark-visuals/samples/r3080-podcast-2.webp",
+    "public/assets/benchmark-visuals/hero/r3080-music-v3.webp",
+    "public/assets/benchmark-visuals/card/r3080-music-v3.webp",
+    "public/assets/benchmark-visuals/samples/r3080-music-v3-0.webp",
+    "public/assets/benchmark-visuals/samples/r3080-music-v3-1.webp",
+    "public/assets/benchmark-visuals/samples/r3080-music-v3-2.webp",
+    "public/assets/benchmark-visuals/hero/r3080-music-v2.webp",
+    "public/assets/benchmark-visuals/card/r3080-music-v2.webp",
+    "public/assets/benchmark-visuals/samples/r3080-music-v2-0.webp",
+    "public/assets/benchmark-visuals/samples/r3080-music-v2-1.webp",
+    "public/assets/benchmark-visuals/hero/r3080-music-preparations.webp",
+    "public/assets/benchmark-visuals/card/r3080-music-preparations.webp",
+    "public/assets/benchmark-visuals/samples/r3080-music-preparations-records.webp",
+    "public/assets/benchmark-visuals/hero/r3080-music-plans.webp",
+    "public/assets/benchmark-visuals/card/r3080-music-plans.webp",
+    "public/assets/benchmark-visuals/samples/r3080-music-plans-records.webp",
+    "public/assets/benchmark-visuals/hero/r3080-music.webp",
+    "public/assets/benchmark-visuals/card/r3080-music.webp",
+    "public/assets/benchmark-visuals/samples/r3080-music-0.webp",
+    "public/assets/benchmark-visuals/samples/r3080-music-1.webp",
+    "public/assets/benchmark-visuals/samples/r3080-music-2.webp",
+    "public/assets/benchmark-visuals/hero/r3080-yue-prepodcast.webp",
+    "public/assets/benchmark-visuals/card/r3080-yue-prepodcast.webp",
+    "public/assets/benchmark-visuals/samples/r3080-yue-prepodcast-0.webp",
+    "public/assets/benchmark-visuals/samples/r3080-yue-prepodcast-1.webp",
+    "public/assets/benchmark-visuals/hero/r3080-music-original.webp",
+    "public/assets/benchmark-visuals/card/r3080-music-original.webp",
+    "public/assets/benchmark-visuals/samples/r3080-music-original-0.webp",
+    "public/assets/benchmark-visuals/samples/r3080-music-original-1.webp",
+    "public/assets/benchmark-visuals/samples/r3080-music-original-2.webp",
+    "public/assets/benchmark-visuals/hero/r3080-music-diagnostics.webp",
+    "public/assets/benchmark-visuals/card/r3080-music-diagnostics.webp",
+    "public/assets/benchmark-visuals/samples/r3080-music-diagnostics-0.webp",
+    "public/assets/benchmark-visuals/samples/r3080-music-diagnostics-1.webp",
+    "public/assets/benchmark-visuals/hero/r3080-duo.webp",
+    "public/assets/benchmark-visuals/card/r3080-duo.webp",
+    "public/assets/benchmark-visuals/samples/r3080-duo-0.webp",
+    "public/assets/benchmark-visuals/samples/r3080-duo-1.webp",
+    "public/assets/benchmark-visuals/samples/r3080-duo-2.webp",
+    "public/assets/benchmark-visuals/hero/r-podcast-source-research.webp",
+    "public/assets/benchmark-visuals/card/r-podcast-source-research.webp",
+    "public/assets/benchmark-visuals/samples/r-podcast-source-research-records.webp",
+    "public/assets/benchmark-visuals/hero/r4090-swift-20261022.webp",
+    "public/assets/benchmark-visuals/card/r4090-swift-20261022.webp",
+    "public/assets/benchmark-visuals/samples/r4090-swift-20261022-records.webp",
+    "public/assets/benchmark-visuals/hero/r3080-source.webp",
+    "public/assets/benchmark-visuals/card/r3080-source.webp",
+    "public/assets/benchmark-visuals/samples/r3080-source-records.webp",
+    "public/assets/benchmark-visuals/hero/r3080-original-install.webp",
+    "public/assets/benchmark-visuals/card/r3080-original-install.webp",
+    "public/assets/benchmark-visuals/samples/r3080-original-install-0.webp",
+    "public/assets/benchmark-visuals/samples/r3080-original-install-1.webp",
+    "public/assets/benchmark-visuals/samples/r3080-original-install-2.webp",
+    "public/assets/benchmark-visuals/hero/r3080-lustify-correction.webp",
+    "public/assets/benchmark-visuals/card/r3080-lustify-correction.webp",
+    "public/assets/benchmark-visuals/samples/r3080-lustify-correction-0.webp",
+    "public/assets/benchmark-visuals/samples/r3080-lustify-correction-1.webp",
+    "public/assets/benchmark-visuals/hero/r3080-image-retries.webp",
+    "public/assets/benchmark-visuals/card/r3080-image-retries.webp",
+    "public/assets/benchmark-visuals/samples/r3080-image-retries-0.webp",
+    "public/assets/benchmark-visuals/samples/r3080-image-retries-1.webp",
+    "public/assets/benchmark-visuals/samples/r3080-image-retries-2.webp",
+    "public/assets/benchmark-visuals/hero/r3080-edit.webp",
+    "public/assets/benchmark-visuals/card/r3080-edit.webp",
+    "public/assets/benchmark-visuals/samples/r3080-edit-0.webp",
+    "public/assets/benchmark-visuals/samples/r3080-edit-1.webp",
+    "public/assets/benchmark-visuals/samples/r3080-edit-2.webp",
+    "public/assets/benchmark-visuals/hero/r3080-author-safe.webp",
+    "public/assets/benchmark-visuals/card/r3080-author-safe.webp",
+    "public/assets/benchmark-visuals/samples/r3080-author-safe-0.webp",
+    "public/assets/benchmark-visuals/samples/r3080-author-safe-1.webp",
+    "public/assets/benchmark-visuals/samples/r3080-author-safe-2.webp",
+    "public/assets/benchmark-visuals/hero/r3080-3d.webp",
+    "public/assets/benchmark-visuals/card/r3080-3d.webp",
+    "public/assets/benchmark-visuals/samples/r3080-3d-0.webp",
+    "public/assets/benchmark-visuals/samples/r3080-3d-1.webp",
+    "public/assets/benchmark-visuals/samples/r3080-3d-2.webp",
+    "public/assets/benchmark-visuals/hero/r-h3-world-research.webp",
+    "public/assets/benchmark-visuals/card/r-h3-world-research.webp",
+    "public/assets/benchmark-visuals/samples/r-h3-world-research-records.webp",
+    "public/assets/benchmark-visuals/hero/r-3080-input-research.webp",
+    "public/assets/benchmark-visuals/card/r-3080-input-research.webp",
+    "public/assets/benchmark-visuals/samples/r-3080-input-research-records.webp",
+    "public/assets/benchmark-visuals/hero/r4090-lingbot-worlds.webp",
+    "public/assets/benchmark-visuals/card/r4090-lingbot-worlds.webp",
+    "public/assets/benchmark-visuals/samples/r4090-lingbot-worlds-0.webp",
+    "public/assets/benchmark-visuals/samples/r4090-lingbot-worlds-1.webp",
+    "public/assets/benchmark-visuals/samples/r4090-lingbot-worlds-2.webp",
+    "public/assets/benchmark-visuals/hero/r4090-h3.webp",
+    "public/assets/benchmark-visuals/card/r4090-h3.webp",
+    "public/assets/benchmark-visuals/samples/r4090-h3-0.webp",
+    "public/assets/benchmark-visuals/samples/r4090-h3-1.webp",
+    "public/assets/benchmark-visuals/samples/r4090-h3-2.webp",
+    "public/assets/benchmark-visuals/samples/r4090-h3-0-poster.webp",
+    "public/assets/benchmark-visuals/samples/r4090-h3-1-poster.webp",
+    "public/assets/benchmark-visuals/samples/r4090-h3-2-poster.webp",
+    "public/assets/benchmark-visuals/hero/r3080-yue-recovery.webp",
+    "public/assets/benchmark-visuals/card/r3080-yue-recovery.webp",
+    "public/assets/benchmark-visuals/samples/r3080-yue-recovery-0.webp",
+    "public/assets/benchmark-visuals/samples/r3080-yue-recovery-1.webp",
+    "public/assets/benchmark-visuals/samples/r3080-yue-recovery-2.webp",
+    "public/assets/benchmark-visuals/hero/r3080-lustify-independent.webp",
+    "public/assets/benchmark-visuals/card/r3080-lustify-independent.webp",
+    "public/assets/benchmark-visuals/samples/r3080-lustify-independent-0.webp",
+    "public/assets/benchmark-visuals/hero/r3080-llm.webp",
+    "public/assets/benchmark-visuals/card/r3080-llm.webp",
+    "public/assets/benchmark-visuals/samples/r3080-llm-records.webp",
+    "public/assets/benchmark-visuals/hero/r-h3-input-research.webp",
+    "public/assets/benchmark-visuals/card/r-h3-input-research.webp",
+    "public/assets/benchmark-visuals/samples/r-h3-input-research-records.webp",
+    "public/assets/benchmark-visuals/hero/r4090-llm-initial.webp",
+    "public/assets/benchmark-visuals/card/r4090-llm-initial.webp",
+    "public/assets/benchmark-visuals/samples/r4090-llm-initial-records.webp",
+    "public/assets/benchmark-visuals/hero/r4090-llm.webp",
+    "public/assets/benchmark-visuals/card/r4090-llm.webp",
+    "public/assets/benchmark-visuals/samples/r4090-llm-records.webp",
+    "public/assets/benchmark-visuals/hero/r4090-base.webp",
+    "public/assets/benchmark-visuals/card/r4090-base.webp",
+    "public/assets/benchmark-visuals/samples/r4090-base-0.webp",
+    "public/assets/benchmark-visuals/samples/r4090-base-1.webp",
+    "public/assets/benchmark-visuals/samples/r4090-base-2.webp",
+    "public/assets/benchmark-visuals/samples/r4090-base-0-poster.webp",
+    "public/assets/benchmark-visuals/samples/r4090-base-1-poster.webp",
+    "public/assets/benchmark-visuals/samples/r4090-base-2-poster.webp",
+    "public/assets/benchmark-visuals/hero/r3080-base.webp",
+    "public/assets/benchmark-visuals/card/r3080-base.webp",
+    "public/assets/benchmark-visuals/samples/r3080-base-0.webp",
+    "public/assets/benchmark-visuals/samples/r3080-base-1.webp",
+    "public/assets/benchmark-visuals/samples/r3080-base-2.webp",
+    "public/assets/benchmark-visuals/hero/r-h3-community-research.webp",
+    "public/assets/benchmark-visuals/card/r-h3-community-research.webp",
+    "public/assets/benchmark-visuals/samples/r-h3-community-research-records.webp",
+    "public/assets/benchmark-visuals/hero/wechat-image-generation-world-models.webp",
+    "public/assets/benchmark-visuals/card/wechat-image-generation-world-models.webp",
+    "public/assets/benchmark-visuals/hero/subforge-subtitle-research-pipeline.webp",
+    "public/assets/benchmark-visuals/card/subforge-subtitle-research-pipeline.webp"
   ],
   "checks": [
+    {
+      "check": "raster cover and inline visual figures",
+      "roundId": "r4090-community-complete-20261029",
+      "figures": 3,
+      "passed": true
+    },
     {
       "check": "batch article and all expanded records",
       "roundId": "r4090-community-complete-20261029",
@@ -72,15 +259,21 @@
       "passed": true
     },
     {
-      "check": "reused public media loaded",
+      "check": "raster cover and inline visual figures",
       "roundId": "r4090-lipsync-complete-20261029",
-      "src": "https://benchmark.sidcloud.cn/archive/history/4090-lipsync-20261029/K03/K03-60s.mp4",
+      "figures": 2,
       "passed": true
     },
     {
       "check": "batch article and all expanded records",
       "roundId": "r4090-lipsync-complete-20261029",
       "records": 2,
+      "passed": true
+    },
+    {
+      "check": "raster cover and inline visual figures",
+      "roundId": "r4090-voice-casting",
+      "figures": 3,
       "passed": true
     },
     {
@@ -90,9 +283,9 @@
       "passed": true
     },
     {
-      "check": "reused public media loaded",
+      "check": "raster cover and inline visual figures",
       "roundId": "r4090-tts",
-      "src": "https://benchmark.sidcloud.cn/archive/tts/audio/gpt-sovits-v2proplus-original.lossless.flac",
+      "figures": 3,
       "passed": true
     },
     {
@@ -102,9 +295,9 @@
       "passed": true
     },
     {
-      "check": "reused public media loaded",
+      "check": "raster cover and inline visual figures",
       "roundId": "r4090-lipsync",
-      "src": "https://benchmark.sidcloud.cn/archive/history/4090-lipsync/K01/K01-60s.mp4",
+      "figures": 3,
       "passed": true
     },
     {
@@ -114,15 +307,21 @@
       "passed": true
     },
     {
+      "check": "raster cover and inline visual figures",
+      "roundId": "r4090-community-install",
+      "figures": 3,
+      "passed": true
+    },
+    {
       "check": "batch article and all expanded records",
       "roundId": "r4090-community-install",
       "records": 39,
       "passed": true
     },
     {
-      "check": "reused public media loaded",
+      "check": "raster cover and inline visual figures",
       "roundId": "r4090-community-defaults",
-      "src": "https://benchmark.sidcloud.cn/archive/history/4090-community-complete-20261029/%E6%9C%AC%E6%AC%A1%E7%94%9F%E6%88%90/01a/%E8%8A%82%E7%82%B9214_214_%E4%BD%9C%E8%80%85%E6%A0%B7%E7%89%87%E9%87%8D%E5%BB%BA_15%E7%A7%92_00001-audio.mp4",
+      "figures": 3,
       "passed": true
     },
     {
@@ -132,9 +331,21 @@
       "passed": true
     },
     {
+      "check": "raster cover and inline visual figures",
+      "roundId": "r4090-app",
+      "figures": 1,
+      "passed": true
+    },
+    {
       "check": "batch article and all expanded records",
       "roundId": "r4090-app",
       "records": 3,
+      "passed": true
+    },
+    {
+      "check": "raster cover and inline visual figures",
+      "roundId": "r4090-tts-earlier",
+      "figures": 3,
       "passed": true
     },
     {
@@ -144,9 +355,21 @@
       "passed": true
     },
     {
+      "check": "raster cover and inline visual figures",
+      "roundId": "r4090-quality",
+      "figures": 3,
+      "passed": true
+    },
+    {
       "check": "batch article and all expanded records",
       "roundId": "r4090-quality",
       "records": 34,
+      "passed": true
+    },
+    {
+      "check": "raster cover and inline visual figures",
+      "roundId": "r4090-docs",
+      "figures": 3,
       "passed": true
     },
     {
@@ -156,9 +379,21 @@
       "passed": true
     },
     {
+      "check": "raster cover and inline visual figures",
+      "roundId": "r3080-voice-selection",
+      "figures": 3,
+      "passed": true
+    },
+    {
       "check": "batch article and all expanded records",
       "roundId": "r3080-voice-selection",
       "records": 21,
+      "passed": true
+    },
+    {
+      "check": "raster cover and inline visual figures",
+      "roundId": "r3080-vocal-pilot",
+      "figures": 1,
       "passed": true
     },
     {
@@ -168,9 +403,21 @@
       "passed": true
     },
     {
+      "check": "raster cover and inline visual figures",
+      "roundId": "r3080-podcast-initial",
+      "figures": 3,
+      "passed": true
+    },
+    {
       "check": "batch article and all expanded records",
       "roundId": "r3080-podcast-initial",
       "records": 3,
+      "passed": true
+    },
+    {
+      "check": "raster cover and inline visual figures",
+      "roundId": "r3080-podcast",
+      "figures": 3,
       "passed": true
     },
     {
@@ -180,9 +427,21 @@
       "passed": true
     },
     {
+      "check": "raster cover and inline visual figures",
+      "roundId": "r3080-music-v3",
+      "figures": 3,
+      "passed": true
+    },
+    {
       "check": "batch article and all expanded records",
       "roundId": "r3080-music-v3",
       "records": 17,
+      "passed": true
+    },
+    {
+      "check": "raster cover and inline visual figures",
+      "roundId": "r3080-music-v2",
+      "figures": 2,
       "passed": true
     },
     {
@@ -192,9 +451,21 @@
       "passed": true
     },
     {
+      "check": "raster cover and inline visual figures",
+      "roundId": "r3080-music-preparations",
+      "figures": 1,
+      "passed": true
+    },
+    {
       "check": "batch article and all expanded records",
       "roundId": "r3080-music-preparations",
       "records": 26,
+      "passed": true
+    },
+    {
+      "check": "raster cover and inline visual figures",
+      "roundId": "r3080-music-plans",
+      "figures": 1,
       "passed": true
     },
     {
@@ -204,9 +475,9 @@
       "passed": true
     },
     {
-      "check": "reused public media loaded",
+      "check": "raster cover and inline visual figures",
       "roundId": "r3080-music",
-      "src": "https://benchmark.sidcloud.cn/archive/3080/music-20261024/audio/1/01_church-classical.mp3",
+      "figures": 3,
       "passed": true
     },
     {
@@ -216,9 +487,21 @@
       "passed": true
     },
     {
+      "check": "raster cover and inline visual figures",
+      "roundId": "r3080-yue-prepodcast",
+      "figures": 2,
+      "passed": true
+    },
+    {
       "check": "batch article and all expanded records",
       "roundId": "r3080-yue-prepodcast",
       "records": 2,
+      "passed": true
+    },
+    {
+      "check": "raster cover and inline visual figures",
+      "roundId": "r3080-music-original",
+      "figures": 3,
       "passed": true
     },
     {
@@ -228,9 +511,21 @@
       "passed": true
     },
     {
+      "check": "raster cover and inline visual figures",
+      "roundId": "r3080-music-diagnostics",
+      "figures": 2,
+      "passed": true
+    },
+    {
       "check": "batch article and all expanded records",
       "roundId": "r3080-music-diagnostics",
       "records": 2,
+      "passed": true
+    },
+    {
+      "check": "raster cover and inline visual figures",
+      "roundId": "r3080-duo",
+      "figures": 3,
       "passed": true
     },
     {
@@ -240,9 +535,21 @@
       "passed": true
     },
     {
+      "check": "raster cover and inline visual figures",
+      "roundId": "r-podcast-source-research",
+      "figures": 1,
+      "passed": true
+    },
+    {
       "check": "batch article and all expanded records",
       "roundId": "r-podcast-source-research",
       "records": 1,
+      "passed": true
+    },
+    {
+      "check": "raster cover and inline visual figures",
+      "roundId": "r4090-swift-20261022",
+      "figures": 1,
       "passed": true
     },
     {
@@ -252,9 +559,21 @@
       "passed": true
     },
     {
+      "check": "raster cover and inline visual figures",
+      "roundId": "r3080-source",
+      "figures": 1,
+      "passed": true
+    },
+    {
       "check": "batch article and all expanded records",
       "roundId": "r3080-source",
       "records": 4,
+      "passed": true
+    },
+    {
+      "check": "raster cover and inline visual figures",
+      "roundId": "r3080-original-install",
+      "figures": 3,
       "passed": true
     },
     {
@@ -264,9 +583,21 @@
       "passed": true
     },
     {
+      "check": "raster cover and inline visual figures",
+      "roundId": "r3080-lustify-correction",
+      "figures": 2,
+      "passed": true
+    },
+    {
       "check": "batch article and all expanded records",
       "roundId": "r3080-lustify-correction",
       "records": 2,
+      "passed": true
+    },
+    {
+      "check": "raster cover and inline visual figures",
+      "roundId": "r3080-image-retries",
+      "figures": 3,
       "passed": true
     },
     {
@@ -276,9 +607,21 @@
       "passed": true
     },
     {
+      "check": "raster cover and inline visual figures",
+      "roundId": "r3080-edit",
+      "figures": 3,
+      "passed": true
+    },
+    {
       "check": "batch article and all expanded records",
       "roundId": "r3080-edit",
       "records": 6,
+      "passed": true
+    },
+    {
+      "check": "raster cover and inline visual figures",
+      "roundId": "r3080-author-safe",
+      "figures": 3,
       "passed": true
     },
     {
@@ -288,9 +631,9 @@
       "passed": true
     },
     {
-      "check": "reused public media loaded",
+      "check": "raster cover and inline visual figures",
       "roundId": "r3080-3d",
-      "src": "https://benchmark.sidcloud.cn/archive/files/8e66ec671eb1d65f/TRELLIS2-comparison.png",
+      "figures": 3,
       "passed": true
     },
     {
@@ -300,9 +643,21 @@
       "passed": true
     },
     {
+      "check": "raster cover and inline visual figures",
+      "roundId": "r-h3-world-research",
+      "figures": 1,
+      "passed": true
+    },
+    {
       "check": "batch article and all expanded records",
       "roundId": "r-h3-world-research",
       "records": 2,
+      "passed": true
+    },
+    {
+      "check": "raster cover and inline visual figures",
+      "roundId": "r-3080-input-research",
+      "figures": 1,
       "passed": true
     },
     {
@@ -312,9 +667,21 @@
       "passed": true
     },
     {
+      "check": "raster cover and inline visual figures",
+      "roundId": "r4090-lingbot-worlds",
+      "figures": 3,
+      "passed": true
+    },
+    {
       "check": "batch article and all expanded records",
       "roundId": "r4090-lingbot-worlds",
       "records": 9,
+      "passed": true
+    },
+    {
+      "check": "raster cover and inline visual figures",
+      "roundId": "r4090-h3",
+      "figures": 3,
       "passed": true
     },
     {
@@ -324,9 +691,21 @@
       "passed": true
     },
     {
+      "check": "raster cover and inline visual figures",
+      "roundId": "r3080-yue-recovery",
+      "figures": 3,
+      "passed": true
+    },
+    {
       "check": "batch article and all expanded records",
       "roundId": "r3080-yue-recovery",
       "records": 20,
+      "passed": true
+    },
+    {
+      "check": "raster cover and inline visual figures",
+      "roundId": "r3080-lustify-independent",
+      "figures": 1,
       "passed": true
     },
     {
@@ -336,9 +715,21 @@
       "passed": true
     },
     {
+      "check": "raster cover and inline visual figures",
+      "roundId": "r3080-llm",
+      "figures": 1,
+      "passed": true
+    },
+    {
       "check": "batch article and all expanded records",
       "roundId": "r3080-llm",
       "records": 2,
+      "passed": true
+    },
+    {
+      "check": "raster cover and inline visual figures",
+      "roundId": "r-h3-input-research",
+      "figures": 1,
       "passed": true
     },
     {
@@ -348,9 +739,21 @@
       "passed": true
     },
     {
+      "check": "raster cover and inline visual figures",
+      "roundId": "r4090-llm-initial",
+      "figures": 1,
+      "passed": true
+    },
+    {
       "check": "batch article and all expanded records",
       "roundId": "r4090-llm-initial",
       "records": 1,
+      "passed": true
+    },
+    {
+      "check": "raster cover and inline visual figures",
+      "roundId": "r4090-llm",
+      "figures": 1,
       "passed": true
     },
     {
@@ -360,15 +763,33 @@
       "passed": true
     },
     {
+      "check": "raster cover and inline visual figures",
+      "roundId": "r4090-base",
+      "figures": 3,
+      "passed": true
+    },
+    {
       "check": "batch article and all expanded records",
       "roundId": "r4090-base",
       "records": 29,
       "passed": true
     },
     {
+      "check": "raster cover and inline visual figures",
+      "roundId": "r3080-base",
+      "figures": 3,
+      "passed": true
+    },
+    {
       "check": "batch article and all expanded records",
       "roundId": "r3080-base",
       "records": 7,
+      "passed": true
+    },
+    {
+      "check": "raster cover and inline visual figures",
+      "roundId": "r-h3-community-research",
+      "figures": 1,
       "passed": true
     },
     {
@@ -384,11 +805,23 @@
       "passed": true
     },
     {
+      "check": "all 70 article covers decode as raster images",
+      "passed": true
+    },
+    {
       "check": "70 total / 46 Benchmark / 18 Research / 6 Notes; bookmarks persist",
       "passed": true
     },
     {
+      "check": "original public video plays",
+      "passed": true
+    },
+    {
       "check": "reader controls and return to batch index",
+      "passed": true
+    },
+    {
+      "check": "original public audio plays",
       "passed": true
     },
     {
@@ -453,7 +886,7 @@
           }
         ],
         "format": {
-          "duration": "12.720000"
+          "duration": "18.200000"
         }
       }
     },
@@ -471,7 +904,7 @@
           }
         ],
         "format": {
-          "duration": "10.280000"
+          "duration": "13.400000"
         }
       }
     },
@@ -484,12 +917,17 @@
     "batch-index-desktop.png",
     "batch-overview-desktop.png",
     "batch-article-desktop.png",
+    "batch-gallery-desktop.png",
     "batch-record-desktop.png",
     "review-batch-desktop.png",
+    "audio-gallery-desktop.png",
+    "image-gallery-desktop.png",
+    "illustrated-article-desktop.png",
     "batch-record-mobile.png",
     "batch-walkthrough.mp4",
     "batch-walkthrough.gif",
     "batch-article-mobile.png",
+    "batch-gallery-mobile.png",
     "batch-mobile.mp4",
     "batch-mobile.gif"
   ],

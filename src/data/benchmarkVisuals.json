@@ -1,0 +1,2391 @@
+{
+  "snapshotSha256": "81c20e4eece8e2280df46d76b8f09cab8eab7bdab3da2053e8700258438a7ed5",
+  "rounds": {
+    "r4090-community-complete-20261029": {
+      "cover": {
+        "hero": "/assets/benchmark-visuals/hero/r4090-community-complete-20261029.webp",
+        "card": "/assets/benchmark-visuals/card/r4090-community-complete-20261029.webp",
+        "kind": "video-frame",
+        "caption": "实际视频抽帧 · 来源见下方样本",
+        "caseIds": ["community-default-08e", "community-default-12b", "community-default-02b"]
+      },
+      "gallery": [
+        {
+          "caseId": "community-default-08e",
+          "title": "08e · 江边旅行／SelfLift 4K",
+          "sourceUrl": "https://benchmark.sidcloud.cn/archive/history/4090-community-complete-20261029/%E6%9C%AC%E6%AC%A1%E7%94%9F%E6%88%90/08e/%E8%8A%82%E7%82%B9243_243_%E4%BD%9C%E8%80%85%E6%A0%B7%E7%89%87%E9%87%8D%E5%BB%BA_15%E7%A7%92VIDEO%E5%8D%95%E8%B7%AF%E6%81%A2%E5%A4%8D_1793227840_00001_.mp4",
+          "reference": false,
+          "originalRoundId": "r4090-community-complete-20261029",
+          "mediaLabel": "正式成片 · 3840×2150 · 15.062 秒",
+          "kind": "video-frames",
+          "frames": [2.708, 7.521, 12.333],
+          "duration": 15.0625,
+          "caption": "实际成片的三个时间点；抽帧用于观察画面，运动与口型请播放完整视频。",
+          "playback": {
+            "type": "video",
+            "src": "https://benchmark.sidcloud.cn/archive/history/4090-community-complete-20261029/%E6%9C%AC%E6%AC%A1%E7%94%9F%E6%88%90/08e/%E8%8A%82%E7%82%B9243_243_%E4%BD%9C%E8%80%85%E6%A0%B7%E7%89%87%E9%87%8D%E5%BB%BA_15%E7%A7%92VIDEO%E5%8D%95%E8%B7%AF%E6%81%A2%E5%A4%8D_1793227840_00001_.mp4",
+            "poster": "/assets/benchmark-visuals/samples/r4090-community-complete-20261029-0-poster.webp"
+          },
+          "poster": "/assets/benchmark-visuals/samples/r4090-community-complete-20261029-0-poster.webp",
+          "src": "/assets/benchmark-visuals/samples/r4090-community-complete-20261029-0.webp",
+          "alt": "08e · 江边旅行／SelfLift 4K · 实际样片分镜"
+        },
+        {
+          "caseId": "community-default-12b",
+          "title": "12b · 双刀女武神／DaSiWa",
+          "sourceUrl": "https://benchmark.sidcloud.cn/archive/history/4090-community-complete-20261029/%E6%9C%AC%E6%AC%A1%E7%94%9F%E6%88%90/12b/%E8%8A%82%E7%82%B992_92_%E4%BD%9C%E8%80%85%E6%A0%B7%E7%89%87%E9%87%8D%E5%BB%BA_15%E7%A7%92SDPA%E5%85%BC%E5%AE%B9%E6%81%A2%E5%A4%8D_225927_00001_.mp4",
+          "reference": false,
+          "originalRoundId": "r4090-community-complete-20261029",
+          "mediaLabel": "正式成片 · 1376×768 · 15.083 秒",
+          "kind": "video-frames",
+          "frames": [2.708, 7.5, 12.333],
+          "duration": 15.083333,
+          "caption": "实际成片的三个时间点；抽帧用于观察画面，运动与口型请播放完整视频。",
+          "playback": {
+            "type": "video",
+            "src": "https://benchmark.sidcloud.cn/archive/history/4090-community-complete-20261029/%E6%9C%AC%E6%AC%A1%E7%94%9F%E6%88%90/12b/%E8%8A%82%E7%82%B992_92_%E4%BD%9C%E8%80%85%E6%A0%B7%E7%89%87%E9%87%8D%E5%BB%BA_15%E7%A7%92SDPA%E5%85%BC%E5%AE%B9%E6%81%A2%E5%A4%8D_225927_00001_.mp4",
+            "poster": "/assets/benchmark-visuals/samples/r4090-community-complete-20261029-1-poster.webp"
+          },
+          "poster": "/assets/benchmark-visuals/samples/r4090-community-complete-20261029-1-poster.webp",
+          "src": "/assets/benchmark-visuals/samples/r4090-community-complete-20261029-1.webp",
+          "alt": "12b · 双刀女武神／DaSiWa · 实际样片分镜"
+        },
+        {
+          "caseId": "community-default-02b",
+          "title": "02b · 纯色牛仔衬衫展示",
+          "sourceUrl": "https://benchmark.sidcloud.cn/archive/history/4090-community-complete-20261029/%E6%9C%AC%E6%AC%A1%E7%94%9F%E6%88%90/02b/%E8%8A%82%E7%82%B977_77_%E4%BD%9C%E8%80%85%E6%A0%B7%E7%89%87%E9%87%8D%E5%BB%BA_15%E7%A7%92VIDEO%E5%8D%95%E8%B7%AF%E6%81%A2%E5%A4%8D_1793227840_00001_.mp4",
+          "reference": false,
+          "originalRoundId": "r4090-community-complete-20261029",
+          "mediaLabel": "正式成片 · 1088×1440 · 15.083 秒",
+          "kind": "video-frames",
+          "frames": [2.708, 7.5, 12.333],
+          "duration": 15.083333,
+          "caption": "实际成片的三个时间点；抽帧用于观察画面，运动与口型请播放完整视频。",
+          "playback": {
+            "type": "video",
+            "src": "https://benchmark.sidcloud.cn/archive/history/4090-community-complete-20261029/%E6%9C%AC%E6%AC%A1%E7%94%9F%E6%88%90/02b/%E8%8A%82%E7%82%B977_77_%E4%BD%9C%E8%80%85%E6%A0%B7%E7%89%87%E9%87%8D%E5%BB%BA_15%E7%A7%92VIDEO%E5%8D%95%E8%B7%AF%E6%81%A2%E5%A4%8D_1793227840_00001_.mp4",
+            "poster": "/assets/benchmark-visuals/samples/r4090-community-complete-20261029-2-poster.webp"
+          },
+          "poster": "/assets/benchmark-visuals/samples/r4090-community-complete-20261029-2-poster.webp",
+          "src": "/assets/benchmark-visuals/samples/r4090-community-complete-20261029-2.webp",
+          "alt": "02b · 纯色牛仔衬衫展示 · 实际样片分镜"
+        }
+      ]
+    },
+    "r4090-lipsync-complete-20261029": {
+      "cover": {
+        "hero": "/assets/benchmark-visuals/hero/r4090-lipsync-complete-20261029.webp",
+        "card": "/assets/benchmark-visuals/card/r4090-lipsync-complete-20261029.webp",
+        "kind": "video-frame",
+        "caption": "实际视频抽帧 · 来源见下方样本",
+        "caseIds": ["lipsync-K03", "lipsync-K05"]
+      },
+      "gallery": [
+        {
+          "caseId": "lipsync-K03",
+          "title": "FeatherTalk 女A教师训练实验版",
+          "sourceUrl": "https://benchmark.sidcloud.cn/archive/history/4090-lipsync-20261029/K03/K03-60s.mp4",
+          "reference": false,
+          "originalRoundId": "r4090-lipsync-complete-20261029",
+          "mediaLabel": "60 秒完整口型结果",
+          "kind": "video-frames",
+          "frames": [10.8, 30.0, 49.16],
+          "duration": 60.0,
+          "caption": "实际成片的三个时间点；抽帧用于观察画面，运动与口型请播放完整视频。",
+          "playback": {
+            "type": "video",
+            "src": "https://benchmark.sidcloud.cn/archive/history/4090-lipsync-20261029/K03/K03-60s.mp4",
+            "poster": "/assets/benchmark-visuals/samples/r4090-lipsync-complete-20261029-0-poster.webp"
+          },
+          "poster": "/assets/benchmark-visuals/samples/r4090-lipsync-complete-20261029-0-poster.webp",
+          "src": "/assets/benchmark-visuals/samples/r4090-lipsync-complete-20261029-0.webp",
+          "alt": "FeatherTalk 女A教师训练实验版 · 实际样片分镜"
+        },
+        {
+          "caseId": "lipsync-K05",
+          "title": "LatentSync 1.6",
+          "sourceUrl": "https://benchmark.sidcloud.cn/archive/history/4090-lipsync-20261029/K05/K05-60s.mp4",
+          "reference": false,
+          "originalRoundId": "r4090-lipsync-complete-20261029",
+          "mediaLabel": "60 秒完整口型结果",
+          "kind": "video-frames",
+          "frames": [10.8, 30.0, 49.16],
+          "duration": 60.0,
+          "caption": "实际成片的三个时间点；抽帧用于观察画面，运动与口型请播放完整视频。",
+          "playback": {
+            "type": "video",
+            "src": "https://benchmark.sidcloud.cn/archive/history/4090-lipsync-20261029/K05/K05-60s.mp4",
+            "poster": "/assets/benchmark-visuals/samples/r4090-lipsync-complete-20261029-1-poster.webp"
+          },
+          "poster": "/assets/benchmark-visuals/samples/r4090-lipsync-complete-20261029-1-poster.webp",
+          "src": "/assets/benchmark-visuals/samples/r4090-lipsync-complete-20261029-1.webp",
+          "alt": "LatentSync 1.6 · 实际样片分镜"
+        }
+      ]
+    },
+    "r4090-voice-casting": {
+      "cover": {
+        "hero": "/assets/benchmark-visuals/hero/r4090-voice-casting.webp",
+        "card": "/assets/benchmark-visuals/card/r4090-voice-casting.webp",
+        "kind": "audio-waveform",
+        "caption": "主题插画 + 本批真实音轨波形 · 点击下方试听",
+        "caseIds": ["voice-casting-O01", "voice-casting-O10", "voice-casting-O02"],
+        "illustration": {
+          "name": "voice-casting",
+          "model": "gpt-image-2.5",
+          "prompt": "output/imagegen/prompts/voice-casting.txt",
+          "sourceSha256": "9bee1a20e220490c8fe0fa2285042d0b7640416dbcdd40dbfcfd3df046f5a744"
+        }
+      },
+      "gallery": [
+        {
+          "caseId": "voice-casting-O01",
+          "title": "O01 · 澄夏 · 自然明亮",
+          "sourceUrl": "https://benchmark.sidcloud.cn/archive/history/4090-voice-casting/audio/O01-listen.lossless.flac",
+          "reference": false,
+          "originalRoundId": "r4090-voice-casting",
+          "mediaLabel": "统一响度试听",
+          "kind": "audio-waveform",
+          "duration": 18.49,
+          "caption": "从这条音轨计算的振幅包络，时间轴覆盖完整音频；波形不代表听感评分。",
+          "playback": {
+            "type": "audio",
+            "src": "https://benchmark.sidcloud.cn/archive/history/4090-voice-casting/audio/O01-listen.lossless.flac"
+          },
+          "src": "/assets/benchmark-visuals/samples/r4090-voice-casting-0.webp",
+          "alt": "O01 · 澄夏 · 自然明亮 · 完整音轨波形"
+        },
+        {
+          "caseId": "voice-casting-O10",
+          "title": "O10 · 晚樱 · 柔和低语",
+          "sourceUrl": "https://benchmark.sidcloud.cn/archive/history/4090-voice-casting/audio/O10-listen.lossless.flac",
+          "reference": false,
+          "originalRoundId": "r4090-voice-casting",
+          "mediaLabel": "统一响度试听",
+          "kind": "audio-waveform",
+          "duration": 19.79,
+          "caption": "从这条音轨计算的振幅包络，时间轴覆盖完整音频；波形不代表听感评分。",
+          "playback": {
+            "type": "audio",
+            "src": "https://benchmark.sidcloud.cn/archive/history/4090-voice-casting/audio/O10-listen.lossless.flac"
+          },
+          "src": "/assets/benchmark-visuals/samples/r4090-voice-casting-1.webp",
+          "alt": "O10 · 晚樱 · 柔和低语 · 完整音轨波形"
+        },
+        {
+          "caseId": "voice-casting-O02",
+          "title": "O02 · 晴糖 · 甜美轻盈",
+          "sourceUrl": "https://benchmark.sidcloud.cn/archive/history/4090-voice-casting/audio/O02-listen.lossless.flac",
+          "reference": false,
+          "originalRoundId": "r4090-voice-casting",
+          "mediaLabel": "统一响度试听",
+          "kind": "audio-waveform",
+          "duration": 16.08,
+          "caption": "从这条音轨计算的振幅包络，时间轴覆盖完整音频；波形不代表听感评分。",
+          "playback": {
+            "type": "audio",
+            "src": "https://benchmark.sidcloud.cn/archive/history/4090-voice-casting/audio/O02-listen.lossless.flac"
+          },
+          "src": "/assets/benchmark-visuals/samples/r4090-voice-casting-2.webp",
+          "alt": "O02 · 晴糖 · 甜美轻盈 · 完整音轨波形"
+        }
+      ]
+    },
+    "r4090-tts": {
+      "cover": {
+        "hero": "/assets/benchmark-visuals/hero/r4090-tts.webp",
+        "card": "/assets/benchmark-visuals/card/r4090-tts.webp",
+        "kind": "audio-waveform",
+        "caption": "主题插画 + 本批真实音轨波形 · 点击下方试听",
+        "caseIds": ["tts-gpt-sovits-v2proplus", "tts-index-2.5", "tts-index-2"],
+        "illustration": {
+          "name": "voice-studio",
+          "model": "gpt-image-2.5",
+          "prompt": "output/imagegen/prompts/voice-studio.txt",
+          "sourceSha256": "08e78692f9f9f7f91df05e4f3a05bc92cc83d6f0f2b0f595ac97082a7b952998"
+        }
+      },
+      "gallery": [
+        {
+          "caseId": "tts-gpt-sovits-v2proplus",
+          "title": "GPT-SoVITS v2ProPlus",
+          "sourceUrl": "https://benchmark.sidcloud.cn/archive/tts/audio/gpt-sovits-v2proplus-original.lossless.flac",
+          "reference": false,
+          "originalRoundId": "r4090-tts",
+          "mediaLabel": "原始完整 WAV",
+          "kind": "audio-waveform",
+          "duration": 31.574375,
+          "caption": "从这条音轨计算的振幅包络，时间轴覆盖完整音频；波形不代表听感评分。",
+          "playback": {
+            "type": "audio",
+            "src": "https://benchmark.sidcloud.cn/archive/tts/audio/gpt-sovits-v2proplus-original.lossless.flac"
+          },
+          "src": "/assets/benchmark-visuals/samples/r4090-tts-0.webp",
+          "alt": "GPT-SoVITS v2ProPlus · 完整音轨波形"
+        },
+        {
+          "caseId": "tts-index-2.5",
+          "title": "IndexTTS 2.5",
+          "sourceUrl": "https://benchmark.sidcloud.cn/archive/tts/audio/index-2.5-original.lossless.flac",
+          "reference": false,
+          "originalRoundId": "r4090-tts",
+          "mediaLabel": "原始完整 WAV",
+          "kind": "audio-waveform",
+          "duration": 31.419229,
+          "caption": "从这条音轨计算的振幅包络，时间轴覆盖完整音频；波形不代表听感评分。",
+          "playback": {
+            "type": "audio",
+            "src": "https://benchmark.sidcloud.cn/archive/tts/audio/index-2.5-original.lossless.flac"
+          },
+          "src": "/assets/benchmark-visuals/samples/r4090-tts-1.webp",
+          "alt": "IndexTTS 2.5 · 完整音轨波形"
+        },
+        {
+          "caseId": "tts-index-2",
+          "title": "IndexTTS 2",
+          "sourceUrl": "https://benchmark.sidcloud.cn/archive/tts/audio/index-2-original.lossless.flac",
+          "reference": false,
+          "originalRoundId": "r4090-tts",
+          "mediaLabel": "原始完整 WAV",
+          "kind": "audio-waveform",
+          "duration": 30.646621,
+          "caption": "从这条音轨计算的振幅包络，时间轴覆盖完整音频；波形不代表听感评分。",
+          "playback": {
+            "type": "audio",
+            "src": "https://benchmark.sidcloud.cn/archive/tts/audio/index-2-original.lossless.flac"
+          },
+          "src": "/assets/benchmark-visuals/samples/r4090-tts-2.webp",
+          "alt": "IndexTTS 2 · 完整音轨波形"
+        }
+      ]
+    },
+    "r4090-lipsync": {
+      "cover": {
+        "hero": "/assets/benchmark-visuals/hero/r4090-lipsync.webp",
+        "card": "/assets/benchmark-visuals/card/r4090-lipsync.webp",
+        "kind": "video-frame",
+        "caption": "实际视频抽帧 · 来源见下方样本",
+        "caseIds": ["lipsync-K01", "lipsync-K02", "lipsync-K04"]
+      },
+      "gallery": [
+        {
+          "caseId": "lipsync-K01",
+          "title": "MuseTalk 1.5 原方案",
+          "sourceUrl": "https://benchmark.sidcloud.cn/archive/history/4090-lipsync/K01/K01-60s.mp4",
+          "reference": false,
+          "originalRoundId": "r4090-lipsync",
+          "mediaLabel": "60 秒完整口型结果",
+          "kind": "video-frames",
+          "frames": [10.8, 30.0, 49.16],
+          "duration": 60.0,
+          "caption": "实际成片的三个时间点；抽帧用于观察画面，运动与口型请播放完整视频。",
+          "playback": {
+            "type": "video",
+            "src": "https://benchmark.sidcloud.cn/archive/history/4090-lipsync/K01/K01-60s.mp4",
+            "poster": "/assets/benchmark-visuals/samples/r4090-lipsync-0-poster.webp"
+          },
+          "poster": "/assets/benchmark-visuals/samples/r4090-lipsync-0-poster.webp",
+          "src": "/assets/benchmark-visuals/samples/r4090-lipsync-0.webp",
+          "alt": "MuseTalk 1.5 原方案 · 实际样片分镜"
+        },
+        {
+          "caseId": "lipsync-K02",
+          "title": "MuseTalk 1.5 局部融合优化",
+          "sourceUrl": "https://benchmark.sidcloud.cn/archive/history/4090-lipsync/K02/K02-60s.mp4",
+          "reference": false,
+          "originalRoundId": "r4090-lipsync",
+          "mediaLabel": "60 秒完整口型结果",
+          "kind": "video-frames",
+          "frames": [10.8, 30.0, 49.16],
+          "duration": 60.0,
+          "caption": "实际成片的三个时间点；抽帧用于观察画面，运动与口型请播放完整视频。",
+          "playback": {
+            "type": "video",
+            "src": "https://benchmark.sidcloud.cn/archive/history/4090-lipsync/K02/K02-60s.mp4",
+            "poster": "/assets/benchmark-visuals/samples/r4090-lipsync-1-poster.webp"
+          },
+          "poster": "/assets/benchmark-visuals/samples/r4090-lipsync-1-poster.webp",
+          "src": "/assets/benchmark-visuals/samples/r4090-lipsync-1.webp",
+          "alt": "MuseTalk 1.5 局部融合优化 · 实际样片分镜"
+        },
+        {
+          "caseId": "lipsync-K04",
+          "title": "Wav2Lip GAN",
+          "sourceUrl": "https://benchmark.sidcloud.cn/archive/history/4090-lipsync/K04/K04-60s.mp4",
+          "reference": false,
+          "originalRoundId": "r4090-lipsync",
+          "mediaLabel": "60 秒完整口型结果",
+          "kind": "video-frames",
+          "frames": [10.8, 30.0, 49.16],
+          "duration": 60.0,
+          "caption": "实际成片的三个时间点；抽帧用于观察画面，运动与口型请播放完整视频。",
+          "playback": {
+            "type": "video",
+            "src": "https://benchmark.sidcloud.cn/archive/history/4090-lipsync/K04/K04-60s.mp4",
+            "poster": "/assets/benchmark-visuals/samples/r4090-lipsync-2-poster.webp"
+          },
+          "poster": "/assets/benchmark-visuals/samples/r4090-lipsync-2-poster.webp",
+          "src": "/assets/benchmark-visuals/samples/r4090-lipsync-2.webp",
+          "alt": "Wav2Lip GAN · 实际样片分镜"
+        }
+      ]
+    },
+    "r4090-community-install": {
+      "cover": {
+        "hero": "/assets/benchmark-visuals/hero/r4090-community-install.webp",
+        "card": "/assets/benchmark-visuals/card/r4090-community-install.webp",
+        "kind": "video-frame",
+        "caption": "实际视频抽帧 · 来源见下方样本",
+        "caseIds": [
+          "community-install-0a69d996",
+          "community-install-3fb0e0bd",
+          "community-install-453bad09"
+        ]
+      },
+      "gallery": [
+        {
+          "caseId": "community-install-0a69d996",
+          "title": "12a · Hybrid 合理动态 4+5 双采",
+          "sourceUrl": "https://benchmark.sidcloud.cn/archive/history/recovered-media-4090/%E7%A4%BE%E5%8C%BA%E7%B2%BE%E9%80%89H3/%E5%AE%89%E8%A3%85%E9%AA%8C%E6%94%B6/12a_H3%E7%9F%AD%E6%B5%8B_00001_.mp4",
+          "reference": false,
+          "originalRoundId": "r4090-community-install",
+          "mediaLabel": "1248×832 · 22 帧 · 24 fps · 12a_H3短测_00001_.mp4",
+          "kind": "video-frames",
+          "frames": [0.167, 0.417, 0.708],
+          "duration": 0.916688,
+          "caption": "实际成片的三个时间点；抽帧用于观察画面，运动与口型请播放完整视频。",
+          "playback": {
+            "type": "video",
+            "src": "https://benchmark.sidcloud.cn/archive/history/recovered-media-4090/%E7%A4%BE%E5%8C%BA%E7%B2%BE%E9%80%89H3/%E5%AE%89%E8%A3%85%E9%AA%8C%E6%94%B6/12a_H3%E7%9F%AD%E6%B5%8B_00001_.mp4",
+            "poster": "/assets/benchmark-visuals/samples/r4090-community-install-0-poster.webp"
+          },
+          "poster": "/assets/benchmark-visuals/samples/r4090-community-install-0-poster.webp",
+          "src": "/assets/benchmark-visuals/samples/r4090-community-install-0.webp",
+          "alt": "12a · Hybrid 合理动态 4+5 双采 · 实际样片分镜"
+        },
+        {
+          "caseId": "community-install-3fb0e0bd",
+          "title": "08i · 修复后 SeedVR2 超分与原生 DLSS 插帧",
+          "sourceUrl": "https://benchmark.sidcloud.cn/archive/history/recovered-media-4090/%E7%A4%BE%E5%8C%BA%E7%B2%BE%E9%80%89H3/%E5%AE%89%E8%A3%85%E9%AA%8C%E6%94%B6/08i_SDPA%E4%BF%AE%E5%A4%8D%E5%90%8E_%E8%B6%85%E5%88%86%E6%8F%92%E5%B8%A7_5%E5%B8%A7_00001_.mp4",
+          "reference": false,
+          "originalRoundId": "r4090-community-install",
+          "mediaLabel": "480×384 · 5 帧 · 24 fps · 08i_SDPA修复后_超分插帧_5帧_00001_.mp4",
+          "kind": "video-frames",
+          "frames": [0.042, 0.083, 0.125],
+          "duration": 0.208333,
+          "caption": "实际成片的三个时间点；抽帧用于观察画面，运动与口型请播放完整视频。",
+          "playback": {
+            "type": "video",
+            "src": "https://benchmark.sidcloud.cn/archive/history/recovered-media-4090/%E7%A4%BE%E5%8C%BA%E7%B2%BE%E9%80%89H3/%E5%AE%89%E8%A3%85%E9%AA%8C%E6%94%B6/08i_SDPA%E4%BF%AE%E5%A4%8D%E5%90%8E_%E8%B6%85%E5%88%86%E6%8F%92%E5%B8%A7_5%E5%B8%A7_00001_.mp4",
+            "poster": "/assets/benchmark-visuals/samples/r4090-community-install-1-poster.webp"
+          },
+          "poster": "/assets/benchmark-visuals/samples/r4090-community-install-1-poster.webp",
+          "src": "/assets/benchmark-visuals/samples/r4090-community-install-1.webp",
+          "alt": "08i · 修复后 SeedVR2 超分与原生 DLSS 插帧 · 实际样片分镜"
+        },
+        {
+          "caseId": "community-install-453bad09",
+          "title": "03b · T8 武戏学习型二采与语义桥接",
+          "sourceUrl": "https://benchmark.sidcloud.cn/archive/history/recovered-media-4090/%E7%A4%BE%E5%8C%BA%E7%B2%BE%E9%80%89H3/%E5%AE%89%E8%A3%85%E9%AA%8C%E6%94%B6/03b_H3%E7%9F%AD%E6%B5%8B_00001-audio.mp4",
+          "reference": false,
+          "originalRoundId": "r4090-community-install",
+          "mediaLabel": "576×384 · 22 帧 · 24 fps · 03b_H3短测_00001-audio.mp4",
+          "kind": "video-frames",
+          "frames": [0.167, 0.417, 0.708],
+          "duration": 0.916667,
+          "caption": "实际成片的三个时间点；抽帧用于观察画面，运动与口型请播放完整视频。",
+          "playback": {
+            "type": "video",
+            "src": "https://benchmark.sidcloud.cn/archive/history/recovered-media-4090/%E7%A4%BE%E5%8C%BA%E7%B2%BE%E9%80%89H3/%E5%AE%89%E8%A3%85%E9%AA%8C%E6%94%B6/03b_H3%E7%9F%AD%E6%B5%8B_00001-audio.mp4",
+            "poster": "/assets/benchmark-visuals/samples/r4090-community-install-2-poster.webp"
+          },
+          "poster": "/assets/benchmark-visuals/samples/r4090-community-install-2-poster.webp",
+          "src": "/assets/benchmark-visuals/samples/r4090-community-install-2.webp",
+          "alt": "03b · T8 武戏学习型二采与语义桥接 · 实际样片分镜"
+        }
+      ]
+    },
+    "r4090-community-defaults": {
+      "cover": {
+        "hero": "/assets/benchmark-visuals/hero/r4090-community-defaults.webp",
+        "card": "/assets/benchmark-visuals/card/r4090-community-defaults.webp",
+        "kind": "video-frame",
+        "caption": "实际视频抽帧 · 来源见下方样本",
+        "caseIds": ["community-default-01a", "community-default-01b", "community-default-02c"]
+      },
+      "gallery": [
+        {
+          "caseId": "community-default-01a",
+          "title": "01a · 狐耳角色古街开工",
+          "sourceUrl": "https://benchmark.sidcloud.cn/archive/history/4090-community-complete-20261029/%E6%9C%AC%E6%AC%A1%E7%94%9F%E6%88%90/01a/%E8%8A%82%E7%82%B9214_214_%E4%BD%9C%E8%80%85%E6%A0%B7%E7%89%87%E9%87%8D%E5%BB%BA_15%E7%A7%92_00001-audio.mp4",
+          "reference": false,
+          "originalRoundId": "r4090-community-defaults",
+          "mediaLabel": "正式成片 · 1504×832 · 15.083 秒",
+          "kind": "video-frames",
+          "frames": [2.708, 7.5, 12.333],
+          "duration": 15.083333,
+          "caption": "实际成片的三个时间点；抽帧用于观察画面，运动与口型请播放完整视频。",
+          "playback": {
+            "type": "video",
+            "src": "https://benchmark.sidcloud.cn/archive/history/4090-community-complete-20261029/%E6%9C%AC%E6%AC%A1%E7%94%9F%E6%88%90/01a/%E8%8A%82%E7%82%B9214_214_%E4%BD%9C%E8%80%85%E6%A0%B7%E7%89%87%E9%87%8D%E5%BB%BA_15%E7%A7%92_00001-audio.mp4",
+            "poster": "/assets/benchmark-visuals/samples/r4090-community-defaults-0-poster.webp"
+          },
+          "poster": "/assets/benchmark-visuals/samples/r4090-community-defaults-0-poster.webp",
+          "src": "/assets/benchmark-visuals/samples/r4090-community-defaults-0.webp",
+          "alt": "01a · 狐耳角色古街开工 · 实际样片分镜"
+        },
+        {
+          "caseId": "community-default-01b",
+          "title": "01b · 戏曲武生旋身甩袖",
+          "sourceUrl": "https://benchmark.sidcloud.cn/archive/history/4090-community-complete-20261029/%E6%9C%AC%E6%AC%A1%E7%94%9F%E6%88%90/01b/%E8%8A%82%E7%82%B9214_214_%E4%BD%9C%E8%80%85%E6%A0%B7%E7%89%87%E9%87%8D%E5%BB%BA_15%E7%A7%92_00001-audio.mp4",
+          "reference": false,
+          "originalRoundId": "r4090-community-defaults",
+          "mediaLabel": "正式成片 · 1504×832 · 15.083 秒",
+          "kind": "video-frames",
+          "frames": [2.708, 7.5, 12.333],
+          "duration": 15.083333,
+          "caption": "实际成片的三个时间点；抽帧用于观察画面，运动与口型请播放完整视频。",
+          "playback": {
+            "type": "video",
+            "src": "https://benchmark.sidcloud.cn/archive/history/4090-community-complete-20261029/%E6%9C%AC%E6%AC%A1%E7%94%9F%E6%88%90/01b/%E8%8A%82%E7%82%B9214_214_%E4%BD%9C%E8%80%85%E6%A0%B7%E7%89%87%E9%87%8D%E5%BB%BA_15%E7%A7%92_00001-audio.mp4",
+            "poster": "/assets/benchmark-visuals/samples/r4090-community-defaults-1-poster.webp"
+          },
+          "poster": "/assets/benchmark-visuals/samples/r4090-community-defaults-1-poster.webp",
+          "src": "/assets/benchmark-visuals/samples/r4090-community-defaults-1.webp",
+          "alt": "01b · 戏曲武生旋身甩袖 · 实际样片分镜"
+        },
+        {
+          "caseId": "community-default-02c",
+          "title": "02c · 汉服三段连续展示",
+          "sourceUrl": "https://benchmark.sidcloud.cn/archive/history/4090-community-complete-20261029/%E6%9C%AC%E6%AC%A1%E7%94%9F%E6%88%90/02c/%E8%8A%82%E7%82%B9300_300_%E4%BD%9C%E8%80%85%E6%A0%B7%E7%89%87%E9%87%8D%E5%BB%BA_15%E7%A7%92_00001_.mp4",
+          "reference": false,
+          "originalRoundId": "r4090-community-defaults",
+          "mediaLabel": "正式成片 · 896×1184 · 45.250 秒",
+          "kind": "video-frames",
+          "frames": [8.125, 22.583, 37.083],
+          "duration": 45.25,
+          "caption": "实际成片的三个时间点；抽帧用于观察画面，运动与口型请播放完整视频。",
+          "playback": {
+            "type": "video",
+            "src": "https://benchmark.sidcloud.cn/archive/history/4090-community-complete-20261029/%E6%9C%AC%E6%AC%A1%E7%94%9F%E6%88%90/02c/%E8%8A%82%E7%82%B9300_300_%E4%BD%9C%E8%80%85%E6%A0%B7%E7%89%87%E9%87%8D%E5%BB%BA_15%E7%A7%92_00001_.mp4",
+            "poster": "/assets/benchmark-visuals/samples/r4090-community-defaults-2-poster.webp"
+          },
+          "poster": "/assets/benchmark-visuals/samples/r4090-community-defaults-2-poster.webp",
+          "src": "/assets/benchmark-visuals/samples/r4090-community-defaults-2.webp",
+          "alt": "02c · 汉服三段连续展示 · 实际样片分镜"
+        }
+      ]
+    },
+    "r4090-app": {
+      "cover": {
+        "hero": "/assets/benchmark-visuals/hero/r4090-app.webp",
+        "card": "/assets/benchmark-visuals/card/r4090-app.webp",
+        "kind": "illustration",
+        "caption": "gpt-image-2.5 主题插画 · 本批资料与原文见下方",
+        "caseIds": [],
+        "illustration": {
+          "name": "video-story",
+          "model": "gpt-image-2.5",
+          "prompt": "output/imagegen/prompts/video-story.txt",
+          "sourceSha256": "e5855ee8f6cc387af9e415e1db0773fdef485763c488112854f710c6a76014ea"
+        }
+      },
+      "gallery": [
+        {
+          "kind": "record-graphic",
+          "caseId": "app-streamer",
+          "title": "本批记录与原文摘录",
+          "src": "/assets/benchmark-visuals/samples/r4090-app-records.webp",
+          "alt": "内容应用案例的状态分布与记录原文节选",
+          "caption": "由冻结记录整理的资料图，保留原状态与原文；封面为主题插画。",
+          "sourceUrl": "https://benchmark.sidcloud.cn/benchmarks/app-streamer",
+          "reference": false,
+          "originalRoundId": "r4090-app"
+        }
+      ]
+    },
+    "r4090-tts-earlier": {
+      "cover": {
+        "hero": "/assets/benchmark-visuals/hero/r4090-tts-earlier.webp",
+        "card": "/assets/benchmark-visuals/card/r4090-tts-earlier.webp",
+        "kind": "audio-waveform",
+        "caption": "主题插画 + 本批真实音轨波形 · 点击下方试听",
+        "caseIds": [
+          "tts-attempt-d65cb7e6cbac",
+          "tts-attempt-c60854c3dee6",
+          "tts-attempt-0adb32167cbe"
+        ],
+        "illustration": {
+          "name": "repair-bench",
+          "model": "gpt-image-2.5",
+          "prompt": "output/imagegen/prompts/repair-bench.txt",
+          "sourceSha256": "de44ef4a86d786d83730400516595f60ced8db57c64c12bf4ba848fe875e9da8"
+        }
+      },
+      "gallery": [
+        {
+          "caseId": "tts-attempt-d65cb7e6cbac",
+          "title": "CosyVoice 1 · 历史轮次 05355100",
+          "sourceUrl": "https://benchmark.sidcloud.cn/archive/history/4090-tts-earlier/archive/cosy1-7ddc80b2e3f4dea7.lossless.flac",
+          "reference": false,
+          "originalRoundId": "r4090-tts-earlier",
+          "mediaLabel": "该次执行的原始音轨 · SHA-256 匹配",
+          "kind": "audio-waveform",
+          "duration": 30.267211,
+          "caption": "从这条音轨计算的振幅包络，时间轴覆盖完整音频；波形不代表听感评分。",
+          "playback": {
+            "type": "audio",
+            "src": "https://benchmark.sidcloud.cn/archive/history/4090-tts-earlier/archive/cosy1-7ddc80b2e3f4dea7.lossless.flac"
+          },
+          "src": "/assets/benchmark-visuals/samples/r4090-tts-earlier-0.webp",
+          "alt": "CosyVoice 1 · 历史轮次 05355100 · 完整音轨波形"
+        },
+        {
+          "caseId": "tts-attempt-c60854c3dee6",
+          "title": "Fish Drama 3 · 35B-A3B · 历史轮次 64147400",
+          "sourceUrl": "https://benchmark.sidcloud.cn/archive/history/4090-tts-earlier/archive/fish-drama-cd2b14677fa9928a.lossless.flac",
+          "reference": false,
+          "originalRoundId": "r4090-tts-earlier",
+          "mediaLabel": "该次执行的原始音轨 · SHA-256 匹配",
+          "kind": "audio-waveform",
+          "duration": 120.232925,
+          "caption": "从这条音轨计算的振幅包络，时间轴覆盖完整音频；波形不代表听感评分。",
+          "playback": {
+            "type": "audio",
+            "src": "https://benchmark.sidcloud.cn/archive/history/4090-tts-earlier/archive/fish-drama-cd2b14677fa9928a.lossless.flac"
+          },
+          "src": "/assets/benchmark-visuals/samples/r4090-tts-earlier-1.webp",
+          "alt": "Fish Drama 3 · 35B-A3B · 历史轮次 64147400 · 完整音轨波形"
+        },
+        {
+          "caseId": "tts-attempt-0adb32167cbe",
+          "title": "Kokoro PyTorch · 历史轮次 97452700",
+          "sourceUrl": "https://benchmark.sidcloud.cn/archive/history/4090-tts-earlier/archive/kokoro-torch-3a19647f1f533f24.lossless.flac",
+          "reference": false,
+          "originalRoundId": "r4090-tts-earlier",
+          "mediaLabel": "该次执行的原始音轨 · SHA-256 匹配",
+          "kind": "audio-waveform",
+          "duration": 22.85,
+          "caption": "从这条音轨计算的振幅包络，时间轴覆盖完整音频；波形不代表听感评分。",
+          "playback": {
+            "type": "audio",
+            "src": "https://benchmark.sidcloud.cn/archive/history/4090-tts-earlier/archive/kokoro-torch-3a19647f1f533f24.lossless.flac"
+          },
+          "src": "/assets/benchmark-visuals/samples/r4090-tts-earlier-2.webp",
+          "alt": "Kokoro PyTorch · 历史轮次 97452700 · 完整音轨波形"
+        }
+      ]
+    },
+    "r4090-quality": {
+      "cover": {
+        "hero": "/assets/benchmark-visuals/hero/r4090-quality.webp",
+        "card": "/assets/benchmark-visuals/card/r4090-quality.webp",
+        "kind": "video-frame",
+        "caption": "实际视频抽帧 · 含复核引用，归属见图注",
+        "caseIds": [
+          "h3-pinkcherry_v15__multi_image",
+          "h3-pinkcherry_v15__multi_ref",
+          "h3-pinkcherry_hybrid_v18__multi_image"
+        ]
+      },
+      "gallery": [
+        {
+          "caseId": "h3-pinkcherry_v15__multi_image",
+          "title": "PinkCherry FL2VA v1.5 · 双图参考",
+          "sourceUrl": "https://benchmark.sidcloud.cn/archive/4090/h3-all-modes/media/pinkcherry_v15__multi_image.mp4",
+          "reference": true,
+          "originalRoundId": "r4090-h3",
+          "mediaLabel": " 5.167 秒视频",
+          "kind": "video-frames",
+          "frames": [0.917, 2.583, 4.208],
+          "duration": 5.166688,
+          "caption": "实际成片的三个时间点；抽帧用于观察画面，运动与口型请播放完整视频。",
+          "playback": {
+            "type": "video",
+            "src": "https://benchmark.sidcloud.cn/archive/4090/h3-all-modes/media/pinkcherry_v15__multi_image.mp4",
+            "poster": "/assets/benchmark-visuals/samples/r4090-quality-0-poster.webp"
+          },
+          "poster": "/assets/benchmark-visuals/samples/r4090-quality-0-poster.webp",
+          "src": "/assets/benchmark-visuals/samples/r4090-quality-0.webp",
+          "alt": "PinkCherry FL2VA v1.5 · 双图参考 · 实际样片分镜"
+        },
+        {
+          "caseId": "h3-pinkcherry_v15__multi_ref",
+          "title": "PinkCherry FL2VA v1.5 · 两图＋视频",
+          "sourceUrl": "https://benchmark.sidcloud.cn/archive/4090/h3-all-modes/media/pinkcherry_v15__multi_ref.mp4",
+          "reference": true,
+          "originalRoundId": "r4090-h3",
+          "mediaLabel": " 5.167 秒视频",
+          "kind": "video-frames",
+          "frames": [0.917, 2.583, 4.208],
+          "duration": 5.166688,
+          "caption": "实际成片的三个时间点；抽帧用于观察画面，运动与口型请播放完整视频。",
+          "playback": {
+            "type": "video",
+            "src": "https://benchmark.sidcloud.cn/archive/4090/h3-all-modes/media/pinkcherry_v15__multi_ref.mp4",
+            "poster": "/assets/benchmark-visuals/samples/r4090-quality-1-poster.webp"
+          },
+          "poster": "/assets/benchmark-visuals/samples/r4090-quality-1-poster.webp",
+          "src": "/assets/benchmark-visuals/samples/r4090-quality-1.webp",
+          "alt": "PinkCherry FL2VA v1.5 · 两图＋视频 · 实际样片分镜"
+        },
+        {
+          "caseId": "h3-pinkcherry_hybrid_v18__multi_image",
+          "title": "PinkCherry Hybrid v1.8 · 双图参考",
+          "sourceUrl": "https://benchmark.sidcloud.cn/archive/4090/h3-all-modes/media/pinkcherry_hybrid_v18__multi_image.mp4",
+          "reference": true,
+          "originalRoundId": "r4090-h3",
+          "mediaLabel": " 5.167 秒视频",
+          "kind": "video-frames",
+          "frames": [0.917, 2.583, 4.208],
+          "duration": 5.166688,
+          "caption": "实际成片的三个时间点；抽帧用于观察画面，运动与口型请播放完整视频。",
+          "playback": {
+            "type": "video",
+            "src": "https://benchmark.sidcloud.cn/archive/4090/h3-all-modes/media/pinkcherry_hybrid_v18__multi_image.mp4",
+            "poster": "/assets/benchmark-visuals/samples/r4090-quality-2-poster.webp"
+          },
+          "poster": "/assets/benchmark-visuals/samples/r4090-quality-2-poster.webp",
+          "src": "/assets/benchmark-visuals/samples/r4090-quality-2.webp",
+          "alt": "PinkCherry Hybrid v1.8 · 双图参考 · 实际样片分镜"
+        }
+      ]
+    },
+    "r4090-docs": {
+      "cover": {
+        "hero": "/assets/benchmark-visuals/hero/r4090-docs.webp",
+        "card": "/assets/benchmark-visuals/card/r4090-docs.webp",
+        "kind": "video-frame",
+        "caption": "实际视频抽帧 · 含复核引用，归属见图注",
+        "caseIds": ["4090-00_h3_baseline", "4090-02_t8_native_audio", "4090-03_director_t2va"]
+      },
+      "gallery": [
+        {
+          "caseId": "4090-00_h3_baseline",
+          "title": "H3 原生文生音视频",
+          "sourceUrl": "https://benchmark.sidcloud.cn/archive/files/0b0c46362c2989a9/00_h3_baseline_00001_.mp4",
+          "reference": true,
+          "originalRoundId": "r4090-base",
+          "mediaLabel": "生成视频",
+          "kind": "video-frames",
+          "frames": [0.917, 2.583, 4.208],
+          "duration": 5.166688,
+          "caption": "实际成片的三个时间点；抽帧用于观察画面，运动与口型请播放完整视频。",
+          "playback": {
+            "type": "video",
+            "src": "https://benchmark.sidcloud.cn/archive/files/0b0c46362c2989a9/00_h3_baseline_00001_.mp4",
+            "poster": "/assets/benchmark-visuals/samples/r4090-docs-0-poster.webp"
+          },
+          "poster": "/assets/benchmark-visuals/samples/r4090-docs-0-poster.webp",
+          "src": "/assets/benchmark-visuals/samples/r4090-docs-0.webp",
+          "alt": "H3 原生文生音视频 · 实际样片分镜"
+        },
+        {
+          "caseId": "4090-02_t8_native_audio",
+          "title": "T8 原生音视频生成",
+          "sourceUrl": "https://benchmark.sidcloud.cn/archive/files/aa62aebbae6190d0/02_t8_native_audio_00001_.mp4",
+          "reference": true,
+          "originalRoundId": "r4090-base",
+          "mediaLabel": "生成视频",
+          "kind": "video-frames",
+          "frames": [0.917, 2.583, 4.208],
+          "duration": 5.166688,
+          "caption": "实际成片的三个时间点；抽帧用于观察画面，运动与口型请播放完整视频。",
+          "playback": {
+            "type": "video",
+            "src": "https://benchmark.sidcloud.cn/archive/files/aa62aebbae6190d0/02_t8_native_audio_00001_.mp4",
+            "poster": "/assets/benchmark-visuals/samples/r4090-docs-1-poster.webp"
+          },
+          "poster": "/assets/benchmark-visuals/samples/r4090-docs-1-poster.webp",
+          "src": "/assets/benchmark-visuals/samples/r4090-docs-1.webp",
+          "alt": "T8 原生音视频生成 · 实际样片分镜"
+        },
+        {
+          "caseId": "4090-03_director_t2va",
+          "title": "AIMixer Director 时间线生成",
+          "sourceUrl": "https://benchmark.sidcloud.cn/archive/files/b8574ee1fa19043e/03_director_t2va_00001_.mp4",
+          "reference": true,
+          "originalRoundId": "r4090-base",
+          "mediaLabel": "生成视频",
+          "kind": "video-frames",
+          "frames": [0.917, 2.583, 4.208],
+          "duration": 5.166667,
+          "caption": "实际成片的三个时间点；抽帧用于观察画面，运动与口型请播放完整视频。",
+          "playback": {
+            "type": "video",
+            "src": "https://benchmark.sidcloud.cn/archive/files/b8574ee1fa19043e/03_director_t2va_00001_.mp4",
+            "poster": "/assets/benchmark-visuals/samples/r4090-docs-2-poster.webp"
+          },
+          "poster": "/assets/benchmark-visuals/samples/r4090-docs-2-poster.webp",
+          "src": "/assets/benchmark-visuals/samples/r4090-docs-2.webp",
+          "alt": "AIMixer Director 时间线生成 · 实际样片分镜"
+        }
+      ]
+    },
+    "r3080-voice-selection": {
+      "cover": {
+        "hero": "/assets/benchmark-visuals/hero/r3080-voice-selection.webp",
+        "card": "/assets/benchmark-visuals/card/r3080-voice-selection.webp",
+        "kind": "audio-waveform",
+        "caption": "主题插画 + 本批真实音轨波形 · 点击下方试听",
+        "caseIds": [
+          "voice-selection-benchmark-moss-v01",
+          "voice-selection-benchmark-firered-v01",
+          "voice-selection-benchmark-soulx-v01"
+        ],
+        "illustration": {
+          "name": "voice-casting",
+          "model": "gpt-image-2.5",
+          "prompt": "output/imagegen/prompts/voice-casting.txt",
+          "sourceSha256": "9bee1a20e220490c8fe0fa2285042d0b7640416dbcdd40dbfcfd3df046f5a744"
+        }
+      },
+      "gallery": [
+        {
+          "caseId": "voice-selection-benchmark-moss-v01",
+          "title": "MOSS · 参考 v01",
+          "sourceUrl": "https://benchmark.sidcloud.cn/archive/history/3080-voice-selection-complete/outputs/voices/female-a-v1/benchmark-moss-v01.flac",
+          "reference": false,
+          "originalRoundId": "r3080-voice-selection",
+          "mediaLabel": "模型原始 FLAC",
+          "kind": "audio-waveform",
+          "duration": 8.08,
+          "caption": "从这条音轨计算的振幅包络，时间轴覆盖完整音频；波形不代表听感评分。",
+          "playback": {
+            "type": "audio",
+            "src": "https://benchmark.sidcloud.cn/archive/history/3080-voice-selection-complete/outputs/voices/female-a-v1/benchmark-moss-v01.flac"
+          },
+          "src": "/assets/benchmark-visuals/samples/r3080-voice-selection-0.webp",
+          "alt": "MOSS · 参考 v01 · 完整音轨波形"
+        },
+        {
+          "caseId": "voice-selection-benchmark-firered-v01",
+          "title": "FireRed · 参考 v01",
+          "sourceUrl": "https://benchmark.sidcloud.cn/archive/history/3080-voice-selection-complete/outputs/voices/female-a-v1/benchmark-firered-v01.flac",
+          "reference": false,
+          "originalRoundId": "r3080-voice-selection",
+          "mediaLabel": "模型原始 FLAC",
+          "kind": "audio-waveform",
+          "duration": 5.28,
+          "caption": "从这条音轨计算的振幅包络，时间轴覆盖完整音频；波形不代表听感评分。",
+          "playback": {
+            "type": "audio",
+            "src": "https://benchmark.sidcloud.cn/archive/history/3080-voice-selection-complete/outputs/voices/female-a-v1/benchmark-firered-v01.flac"
+          },
+          "src": "/assets/benchmark-visuals/samples/r3080-voice-selection-1.webp",
+          "alt": "FireRed · 参考 v01 · 完整音轨波形"
+        },
+        {
+          "caseId": "voice-selection-benchmark-soulx-v01",
+          "title": "SoulX · 参考 v01",
+          "sourceUrl": "https://benchmark.sidcloud.cn/archive/history/3080-voice-selection-complete/outputs/voices/female-a-v1/benchmark-soulx-v01.flac",
+          "reference": false,
+          "originalRoundId": "r3080-voice-selection",
+          "mediaLabel": "模型原始 FLAC",
+          "kind": "audio-waveform",
+          "duration": 7.6,
+          "caption": "从这条音轨计算的振幅包络，时间轴覆盖完整音频；波形不代表听感评分。",
+          "playback": {
+            "type": "audio",
+            "src": "https://benchmark.sidcloud.cn/archive/history/3080-voice-selection-complete/outputs/voices/female-a-v1/benchmark-soulx-v01.flac"
+          },
+          "src": "/assets/benchmark-visuals/samples/r3080-voice-selection-2.webp",
+          "alt": "SoulX · 参考 v01 · 完整音轨波形"
+        }
+      ]
+    },
+    "r3080-vocal-pilot": {
+      "cover": {
+        "hero": "/assets/benchmark-visuals/hero/r3080-vocal-pilot.webp",
+        "card": "/assets/benchmark-visuals/card/r3080-vocal-pilot.webp",
+        "kind": "audio-waveform",
+        "caption": "主题插画 + 本批真实音轨波形 · 点击下方试听",
+        "caseIds": ["music-history-7b9057ed"],
+        "illustration": {
+          "name": "music-stage",
+          "model": "gpt-image-2.5",
+          "prompt": "output/imagegen/prompts/music-stage.txt",
+          "sourceSha256": "82328fc98eb65d55219f9ca6a8ee93e0d876f022dfde6e9117d334c918ca7377"
+        }
+      },
+      "gallery": [
+        {
+          "caseId": "music-history-7b9057ed",
+          "title": "vocal-v2-pilot",
+          "sourceUrl": "https://benchmark.sidcloud.cn/archive/history/recovered-audio/music-gen-remote-YuE2/adceb847dba043c6946dad7fac241c91/raw_yue2_00001.flac",
+          "reference": false,
+          "originalRoundId": "r3080-vocal-pilot",
+          "mediaLabel": "原始生成音频",
+          "kind": "audio-waveform",
+          "duration": 60.0,
+          "caption": "从这条音轨计算的振幅包络，时间轴覆盖完整音频；波形不代表听感评分。",
+          "playback": {
+            "type": "audio",
+            "src": "https://benchmark.sidcloud.cn/archive/history/recovered-audio/music-gen-remote-YuE2/adceb847dba043c6946dad7fac241c91/raw_yue2_00001.flac"
+          },
+          "src": "/assets/benchmark-visuals/samples/r3080-vocal-pilot-0.webp",
+          "alt": "vocal-v2-pilot · 完整音轨波形"
+        }
+      ]
+    },
+    "r3080-podcast-initial": {
+      "cover": {
+        "hero": "/assets/benchmark-visuals/hero/r3080-podcast-initial.webp",
+        "card": "/assets/benchmark-visuals/card/r3080-podcast-initial.webp",
+        "kind": "audio-waveform",
+        "caption": "主题插画 + 本批真实音轨波形 · 点击下方试听",
+        "caseIds": ["podcast-initial-1", "podcast-initial-2", "podcast-initial-3"],
+        "illustration": {
+          "name": "duo-podcast",
+          "model": "gpt-image-2.5",
+          "prompt": "output/imagegen/prompts/duo-podcast.txt",
+          "sourceSha256": "5f15ee0a52b0cc8a38172cb0f42502376b63d8d1d15e78e8f347c609be0e68f4"
+        }
+      },
+      "gallery": [
+        {
+          "caseId": "podcast-initial-1",
+          "title": "MOSS-TTSD v1.0 · 首次单段语音",
+          "sourceUrl": "https://benchmark.sidcloud.cn/archive/history/podcast-initial-media/01-MOSS-TTSD-v1.0-full_00001.flac",
+          "reference": false,
+          "originalRoundId": "r3080-podcast-initial",
+          "mediaLabel": "完整原始音频",
+          "kind": "audio-waveform",
+          "duration": 33.28,
+          "caption": "从这条音轨计算的振幅包络，时间轴覆盖完整音频；波形不代表听感评分。",
+          "playback": {
+            "type": "audio",
+            "src": "https://benchmark.sidcloud.cn/archive/history/podcast-initial-media/01-MOSS-TTSD-v1.0-full_00001.flac"
+          },
+          "src": "/assets/benchmark-visuals/samples/r3080-podcast-initial-0.webp",
+          "alt": "MOSS-TTSD v1.0 · 首次单段语音 · 完整音轨波形"
+        },
+        {
+          "caseId": "podcast-initial-2",
+          "title": "SoulX-Podcast 1.7B · 首次单段语音",
+          "sourceUrl": "https://benchmark.sidcloud.cn/archive/history/podcast-initial-media/02-SoulX-Podcast-1.7B-full_00001.flac",
+          "reference": false,
+          "originalRoundId": "r3080-podcast-initial",
+          "mediaLabel": "完整原始音频",
+          "kind": "audio-waveform",
+          "duration": 33.2,
+          "caption": "从这条音轨计算的振幅包络，时间轴覆盖完整音频；波形不代表听感评分。",
+          "playback": {
+            "type": "audio",
+            "src": "https://benchmark.sidcloud.cn/archive/history/podcast-initial-media/02-SoulX-Podcast-1.7B-full_00001.flac"
+          },
+          "src": "/assets/benchmark-visuals/samples/r3080-podcast-initial-1.webp",
+          "alt": "SoulX-Podcast 1.7B · 首次单段语音 · 完整音轨波形"
+        },
+        {
+          "caseId": "podcast-initial-3",
+          "title": "FireRedTTS2 · 首次单段语音",
+          "sourceUrl": "https://benchmark.sidcloud.cn/archive/history/podcast-initial-media/03-FireRedTTS2-full_00001.flac",
+          "reference": false,
+          "originalRoundId": "r3080-podcast-initial",
+          "mediaLabel": "完整原始音频",
+          "kind": "audio-waveform",
+          "duration": 37.92,
+          "caption": "从这条音轨计算的振幅包络，时间轴覆盖完整音频；波形不代表听感评分。",
+          "playback": {
+            "type": "audio",
+            "src": "https://benchmark.sidcloud.cn/archive/history/podcast-initial-media/03-FireRedTTS2-full_00001.flac"
+          },
+          "src": "/assets/benchmark-visuals/samples/r3080-podcast-initial-2.webp",
+          "alt": "FireRedTTS2 · 首次单段语音 · 完整音轨波形"
+        }
+      ]
+    },
+    "r3080-podcast": {
+      "cover": {
+        "hero": "/assets/benchmark-visuals/hero/r3080-podcast.webp",
+        "card": "/assets/benchmark-visuals/card/r3080-podcast.webp",
+        "kind": "audio-waveform",
+        "caption": "主题插画 + 本批真实音轨波形 · 点击下方试听",
+        "caseIds": [
+          "podcast-scenes5-01-MOSS-museum",
+          "podcast-scenes5-02-MOSS-office",
+          "podcast-scenes5-03-MOSS-bookshop"
+        ],
+        "illustration": {
+          "name": "duo-podcast",
+          "model": "gpt-image-2.5",
+          "prompt": "output/imagegen/prompts/duo-podcast.txt",
+          "sourceSha256": "5f15ee0a52b0cc8a38172cb0f42502376b63d8d1d15e78e8f347c609be0e68f4"
+        }
+      },
+      "gallery": [
+        {
+          "caseId": "podcast-scenes5-01-MOSS-museum",
+          "title": "博物馆访谈：一座停走的老钟 · MOSS-TTSD-v1.0",
+          "sourceUrl": "https://benchmark.sidcloud.cn/archive/podcast/audio/scenes5-01-MOSS-museum.mp3",
+          "reference": false,
+          "originalRoundId": "r3080-podcast",
+          "mediaLabel": "完整对话",
+          "kind": "audio-waveform",
+          "duration": 50.96,
+          "caption": "从这条音轨计算的振幅包络，时间轴覆盖完整音频；波形不代表听感评分。",
+          "playback": {
+            "type": "audio",
+            "src": "https://benchmark.sidcloud.cn/archive/podcast/audio/scenes5-01-MOSS-museum.mp3"
+          },
+          "src": "/assets/benchmark-visuals/samples/r3080-podcast-0.webp",
+          "alt": "博物馆访谈：一座停走的老钟 · MOSS-TTSD-v1.0 · 完整音轨波形"
+        },
+        {
+          "caseId": "podcast-scenes5-02-MOSS-office",
+          "title": "办公室日常：值日表上的绿萝 · MOSS-TTSD-v1.0",
+          "sourceUrl": "https://benchmark.sidcloud.cn/archive/podcast/audio/scenes5-02-MOSS-office.mp3",
+          "reference": false,
+          "originalRoundId": "r3080-podcast",
+          "mediaLabel": "完整对话",
+          "kind": "audio-waveform",
+          "duration": 44.24,
+          "caption": "从这条音轨计算的振幅包络，时间轴覆盖完整音频；波形不代表听感评分。",
+          "playback": {
+            "type": "audio",
+            "src": "https://benchmark.sidcloud.cn/archive/podcast/audio/scenes5-02-MOSS-office.mp3"
+          },
+          "src": "/assets/benchmark-visuals/samples/r3080-podcast-1.webp",
+          "alt": "办公室日常：值日表上的绿萝 · MOSS-TTSD-v1.0 · 完整音轨波形"
+        },
+        {
+          "caseId": "podcast-scenes5-03-MOSS-bookshop",
+          "title": "书店广告：给匆忙留一张椅子 · MOSS-TTSD-v1.0",
+          "sourceUrl": "https://benchmark.sidcloud.cn/archive/podcast/audio/scenes5-03-MOSS-bookshop.mp3",
+          "reference": false,
+          "originalRoundId": "r3080-podcast",
+          "mediaLabel": "完整对话",
+          "kind": "audio-waveform",
+          "duration": 46.64,
+          "caption": "从这条音轨计算的振幅包络，时间轴覆盖完整音频；波形不代表听感评分。",
+          "playback": {
+            "type": "audio",
+            "src": "https://benchmark.sidcloud.cn/archive/podcast/audio/scenes5-03-MOSS-bookshop.mp3"
+          },
+          "src": "/assets/benchmark-visuals/samples/r3080-podcast-2.webp",
+          "alt": "书店广告：给匆忙留一张椅子 · MOSS-TTSD-v1.0 · 完整音轨波形"
+        }
+      ]
+    },
+    "r3080-music-v3": {
+      "cover": {
+        "hero": "/assets/benchmark-visuals/hero/r3080-music-v3.webp",
+        "card": "/assets/benchmark-visuals/card/r3080-music-v3.webp",
+        "kind": "audio-waveform",
+        "caption": "主题插画 + 本批真实音轨波形 · 点击下方试听",
+        "caseIds": ["music-history-ef9ec6a1", "music-history-cd98655e", "music-history-6495f742"],
+        "illustration": {
+          "name": "music-stage",
+          "model": "gpt-image-2.5",
+          "prompt": "output/imagegen/prompts/music-stage.txt",
+          "sourceSha256": "82328fc98eb65d55219f9ca6a8ee93e0d876f022dfde6e9117d334c918ca7377"
+        }
+      },
+      "gallery": [
+        {
+          "caseId": "music-history-ef9ec6a1",
+          "title": "08 River in the Backbeat · 原生谱面重做 · ef9ec6a1",
+          "sourceUrl": "https://benchmark.sidcloud.cn/archive/history/recovered-audio/music-gen-remote-YuE2/f2b13c590ef240e29208b5064fd0cbee/raw_yue2_00001.flac",
+          "reference": false,
+          "originalRoundId": "r3080-music-v3",
+          "mediaLabel": "原始生成音频",
+          "kind": "audio-waveform",
+          "duration": 304.0,
+          "caption": "从这条音轨计算的振幅包络，时间轴覆盖完整音频；波形不代表听感评分。",
+          "playback": {
+            "type": "audio",
+            "src": "https://benchmark.sidcloud.cn/archive/history/recovered-audio/music-gen-remote-YuE2/f2b13c590ef240e29208b5064fd0cbee/raw_yue2_00001.flac"
+          },
+          "src": "/assets/benchmark-visuals/samples/r3080-music-v3-0.webp",
+          "alt": "08 River in the Backbeat · 原生谱面重做 · ef9ec6a1 · 完整音轨波形"
+        },
+        {
+          "caseId": "music-history-cd98655e",
+          "title": "08 River in the Backbeat · 原生谱面重做 · cd98655e",
+          "sourceUrl": "https://benchmark.sidcloud.cn/archive/history/recovered-audio/music-gen-remote-YuE2/06aefb452dd9455bbd8dfb273b47df80/raw_yue2_00001.flac",
+          "reference": false,
+          "originalRoundId": "r3080-music-v3",
+          "mediaLabel": "原始生成音频",
+          "kind": "audio-waveform",
+          "duration": 304.0,
+          "caption": "从这条音轨计算的振幅包络，时间轴覆盖完整音频；波形不代表听感评分。",
+          "playback": {
+            "type": "audio",
+            "src": "https://benchmark.sidcloud.cn/archive/history/recovered-audio/music-gen-remote-YuE2/06aefb452dd9455bbd8dfb273b47df80/raw_yue2_00001.flac"
+          },
+          "src": "/assets/benchmark-visuals/samples/r3080-music-v3-1.webp",
+          "alt": "08 River in the Backbeat · 原生谱面重做 · cd98655e · 完整音轨波形"
+        },
+        {
+          "caseId": "music-history-6495f742",
+          "title": "09 Under the Iron Sky · 原生谱面重做 · 6495f742",
+          "sourceUrl": "https://benchmark.sidcloud.cn/archive/history/recovered-audio/music-gen-remote-YuE2/3deb533d1e364e9c9cd33892d872864a/raw_yue2_00001.flac",
+          "reference": false,
+          "originalRoundId": "r3080-music-v3",
+          "mediaLabel": "原始生成音频",
+          "kind": "audio-waveform",
+          "duration": 304.0,
+          "caption": "从这条音轨计算的振幅包络，时间轴覆盖完整音频；波形不代表听感评分。",
+          "playback": {
+            "type": "audio",
+            "src": "https://benchmark.sidcloud.cn/archive/history/recovered-audio/music-gen-remote-YuE2/3deb533d1e364e9c9cd33892d872864a/raw_yue2_00001.flac"
+          },
+          "src": "/assets/benchmark-visuals/samples/r3080-music-v3-2.webp",
+          "alt": "09 Under the Iron Sky · 原生谱面重做 · 6495f742 · 完整音轨波形"
+        }
+      ]
+    },
+    "r3080-music-v2": {
+      "cover": {
+        "hero": "/assets/benchmark-visuals/hero/r3080-music-v2.webp",
+        "card": "/assets/benchmark-visuals/card/r3080-music-v2.webp",
+        "kind": "audio-waveform",
+        "caption": "主题插画 + 本批真实音轨波形 · 点击下方试听",
+        "caseIds": ["music-history-2f5d9e57", "music-history-d1cae145"],
+        "illustration": {
+          "name": "music-score",
+          "model": "gpt-image-2.5",
+          "prompt": "output/imagegen/prompts/music-score.txt",
+          "sourceSha256": "cb640bce12bb13a24362cd98ecee778412d6af8ebea59d25a57298b91f639282"
+        }
+      },
+      "gallery": [
+        {
+          "caseId": "music-history-2f5d9e57",
+          "title": "05 Lights They Forgot to Count · 歌词重做 · 2f5d9e57",
+          "sourceUrl": "https://benchmark.sidcloud.cn/archive/history/recovered-audio/music-gen-remote-YuE2/3683aabfc0d04ae496ca74f180a4db7b/raw_yue2_00001.flac",
+          "reference": false,
+          "originalRoundId": "r3080-music-v2",
+          "mediaLabel": "原始生成音频",
+          "kind": "audio-waveform",
+          "duration": 268.04,
+          "caption": "从这条音轨计算的振幅包络，时间轴覆盖完整音频；波形不代表听感评分。",
+          "playback": {
+            "type": "audio",
+            "src": "https://benchmark.sidcloud.cn/archive/history/recovered-audio/music-gen-remote-YuE2/3683aabfc0d04ae496ca74f180a4db7b/raw_yue2_00001.flac"
+          },
+          "src": "/assets/benchmark-visuals/samples/r3080-music-v2-0.webp",
+          "alt": "05 Lights They Forgot to Count · 歌词重做 · 2f5d9e57 · 完整音轨波形"
+        },
+        {
+          "caseId": "music-history-d1cae145",
+          "title": "12 Свет у окна · 歌词重做 · d1cae145",
+          "sourceUrl": "https://benchmark.sidcloud.cn/archive/history/recovered-audio/music-gen-remote-YuE2/9896f528001b45f9aafe4d7ba5dd21da/raw_yue2_00001.flac",
+          "reference": false,
+          "originalRoundId": "r3080-music-v2",
+          "mediaLabel": "原始生成音频",
+          "kind": "audio-waveform",
+          "duration": 239.36,
+          "caption": "从这条音轨计算的振幅包络，时间轴覆盖完整音频；波形不代表听感评分。",
+          "playback": {
+            "type": "audio",
+            "src": "https://benchmark.sidcloud.cn/archive/history/recovered-audio/music-gen-remote-YuE2/9896f528001b45f9aafe4d7ba5dd21da/raw_yue2_00001.flac"
+          },
+          "src": "/assets/benchmark-visuals/samples/r3080-music-v2-1.webp",
+          "alt": "12 Свет у окна · 歌词重做 · d1cae145 · 完整音轨波形"
+        }
+      ]
+    },
+    "r3080-music-preparations": {
+      "cover": {
+        "hero": "/assets/benchmark-visuals/hero/r3080-music-preparations.webp",
+        "card": "/assets/benchmark-visuals/card/r3080-music-preparations.webp",
+        "kind": "illustration",
+        "caption": "gpt-image-2.5 主题插画 · 本批资料与原文见下方",
+        "caseIds": [],
+        "illustration": {
+          "name": "music-score",
+          "model": "gpt-image-2.5",
+          "prompt": "output/imagegen/prompts/music-score.txt",
+          "sourceSha256": "cb640bce12bb13a24362cd98ecee778412d6af8ebea59d25a57298b91f639282"
+        }
+      },
+      "gallery": [
+        {
+          "kind": "record-graphic",
+          "caseId": "music-preparation-4114f443b8",
+          "title": "本批记录与原文摘录",
+          "src": "/assets/benchmark-visuals/samples/r3080-music-preparations-records.webp",
+          "alt": "音乐 · 准备稿、撤销与替代的状态分布与记录原文节选",
+          "caption": "由冻结记录整理的资料图，保留原状态与原文；封面为主题插画。",
+          "sourceUrl": "https://benchmark.sidcloud.cn/benchmarks/music-preparation-4114f443b8",
+          "reference": false,
+          "originalRoundId": "r3080-music-preparations"
+        }
+      ]
+    },
+    "r3080-music-plans": {
+      "cover": {
+        "hero": "/assets/benchmark-visuals/hero/r3080-music-plans.webp",
+        "card": "/assets/benchmark-visuals/card/r3080-music-plans.webp",
+        "kind": "illustration",
+        "caption": "gpt-image-2.5 主题插画 · 本批资料与原文见下方",
+        "caseIds": [],
+        "illustration": {
+          "name": "music-score",
+          "model": "gpt-image-2.5",
+          "prompt": "output/imagegen/prompts/music-score.txt",
+          "sourceSha256": "cb640bce12bb13a24362cd98ecee778412d6af8ebea59d25a57298b91f639282"
+        }
+      },
+      "gallery": [
+        {
+          "kind": "record-graphic",
+          "caseId": "music-history-1af12d1d",
+          "title": "本批记录与原文摘录",
+          "src": "/assets/benchmark-visuals/samples/r3080-music-plans-records.webp",
+          "alt": "ABC · 独立乐谱规划的状态分布与记录原文节选",
+          "caption": "由冻结记录整理的资料图，保留原状态与原文；封面为主题插画。",
+          "sourceUrl": "https://benchmark.sidcloud.cn/benchmarks/music-history-1af12d1d",
+          "reference": false,
+          "originalRoundId": "r3080-music-plans"
+        }
+      ]
+    },
+    "r3080-music": {
+      "cover": {
+        "hero": "/assets/benchmark-visuals/hero/r3080-music.webp",
+        "card": "/assets/benchmark-visuals/card/r3080-music.webp",
+        "kind": "audio-waveform",
+        "caption": "主题插画 + 本批真实音轨波形 · 点击下方试听",
+        "caseIds": ["music-church-classical", "music-orchestral-classical", "music-neoclassical"],
+        "illustration": {
+          "name": "music-journey",
+          "model": "gpt-image-2.5",
+          "prompt": "output/imagegen/prompts/music-journey.txt",
+          "sourceSha256": "f57f5ef68b041f00e4c541463a33cb005d989ac3f9f235ada479bfc73bba7b0d"
+        }
+      },
+      "gallery": [
+        {
+          "caseId": "music-church-classical",
+          "title": "教堂古典 · 石穹晨光",
+          "sourceUrl": "https://benchmark.sidcloud.cn/archive/3080/music-20261024/audio/1/01_church-classical.mp3",
+          "reference": false,
+          "originalRoundId": "r3080-music",
+          "mediaLabel": "完整 5 分钟音乐",
+          "kind": "audio-waveform",
+          "duration": 300.0,
+          "caption": "从这条音轨计算的振幅包络，时间轴覆盖完整音频；波形不代表听感评分。",
+          "playback": {
+            "type": "audio",
+            "src": "https://benchmark.sidcloud.cn/archive/3080/music-20261024/audio/1/01_church-classical.mp3"
+          },
+          "src": "/assets/benchmark-visuals/samples/r3080-music-0.webp",
+          "alt": "教堂古典 · 石穹晨光 · 完整音轨波形"
+        },
+        {
+          "caseId": "music-orchestral-classical",
+          "title": "古典乐 · 晨风中的回廊",
+          "sourceUrl": "https://benchmark.sidcloud.cn/archive/3080/music-20261024/audio/1/02_orchestral-classical.mp3",
+          "reference": false,
+          "originalRoundId": "r3080-music",
+          "mediaLabel": "完整 5 分钟音乐",
+          "kind": "audio-waveform",
+          "duration": 300.0,
+          "caption": "从这条音轨计算的振幅包络，时间轴覆盖完整音频；波形不代表听感评分。",
+          "playback": {
+            "type": "audio",
+            "src": "https://benchmark.sidcloud.cn/archive/3080/music-20261024/audio/1/02_orchestral-classical.mp3"
+          },
+          "src": "/assets/benchmark-visuals/samples/r3080-music-1.webp",
+          "alt": "古典乐 · 晨风中的回廊 · 完整音轨波形"
+        },
+        {
+          "caseId": "music-neoclassical",
+          "title": "新古典乐 · 潮汐的几何",
+          "sourceUrl": "https://benchmark.sidcloud.cn/archive/3080/music-20261024/audio/1/03_neoclassical.mp3",
+          "reference": false,
+          "originalRoundId": "r3080-music",
+          "mediaLabel": "完整 5 分钟音乐",
+          "kind": "audio-waveform",
+          "duration": 300.0,
+          "caption": "从这条音轨计算的振幅包络，时间轴覆盖完整音频；波形不代表听感评分。",
+          "playback": {
+            "type": "audio",
+            "src": "https://benchmark.sidcloud.cn/archive/3080/music-20261024/audio/1/03_neoclassical.mp3"
+          },
+          "src": "/assets/benchmark-visuals/samples/r3080-music-2.webp",
+          "alt": "新古典乐 · 潮汐的几何 · 完整音轨波形"
+        }
+      ]
+    },
+    "r3080-yue-prepodcast": {
+      "cover": {
+        "hero": "/assets/benchmark-visuals/hero/r3080-yue-prepodcast.webp",
+        "card": "/assets/benchmark-visuals/card/r3080-yue-prepodcast.webp",
+        "kind": "audio-waveform",
+        "caption": "主题插画 + 本批真实音轨波形 · 点击下方试听",
+        "caseIds": ["music-prepodcast-e6cb5029", "music-prepodcast-ec22ef21"],
+        "illustration": {
+          "name": "repair-bench",
+          "model": "gpt-image-2.5",
+          "prompt": "output/imagegen/prompts/repair-bench.txt",
+          "sourceSha256": "de44ef4a86d786d83730400516595f60ced8db57c64c12bf4ba848fe875e9da8"
+        }
+      },
+      "gallery": [
+        {
+          "caseId": "music-prepodcast-e6cb5029",
+          "title": "YuE2 · 独立作曲 e6cb5029",
+          "sourceUrl": "https://benchmark.sidcloud.cn/archive/history/recovered-media-3080/music-gen-remote-YuE2/1f0dcf9ffc6f464681a4d087a666becb/raw_yue2_00001.flac",
+          "reference": false,
+          "originalRoundId": "r3080-yue-prepodcast",
+          "mediaLabel": "raw_yue2_00001.flac",
+          "kind": "audio-waveform",
+          "duration": 48.0,
+          "caption": "从这条音轨计算的振幅包络，时间轴覆盖完整音频；波形不代表听感评分。",
+          "playback": {
+            "type": "audio",
+            "src": "https://benchmark.sidcloud.cn/archive/history/recovered-media-3080/music-gen-remote-YuE2/1f0dcf9ffc6f464681a4d087a666becb/raw_yue2_00001.flac"
+          },
+          "src": "/assets/benchmark-visuals/samples/r3080-yue-prepodcast-0.webp",
+          "alt": "YuE2 · 独立作曲 e6cb5029 · 完整音轨波形"
+        },
+        {
+          "caseId": "music-prepodcast-ec22ef21",
+          "title": "YuE2 · 独立作曲 ec22ef21",
+          "sourceUrl": "https://benchmark.sidcloud.cn/archive/history/recovered-media-3080/music-gen-remote-YuE2/cbd559df8a484936a53c8baccacef2ec/raw_yue2_00001.flac",
+          "reference": false,
+          "originalRoundId": "r3080-yue-prepodcast",
+          "mediaLabel": "raw_yue2_00001.flac",
+          "kind": "audio-waveform",
+          "duration": 10.68,
+          "caption": "从这条音轨计算的振幅包络，时间轴覆盖完整音频；波形不代表听感评分。",
+          "playback": {
+            "type": "audio",
+            "src": "https://benchmark.sidcloud.cn/archive/history/recovered-media-3080/music-gen-remote-YuE2/cbd559df8a484936a53c8baccacef2ec/raw_yue2_00001.flac"
+          },
+          "src": "/assets/benchmark-visuals/samples/r3080-yue-prepodcast-1.webp",
+          "alt": "YuE2 · 独立作曲 ec22ef21 · 完整音轨波形"
+        }
+      ]
+    },
+    "r3080-music-original": {
+      "cover": {
+        "hero": "/assets/benchmark-visuals/hero/r3080-music-original.webp",
+        "card": "/assets/benchmark-visuals/card/r3080-music-original.webp",
+        "kind": "audio-waveform",
+        "caption": "主题插画 + 本批真实音轨波形 · 点击下方试听",
+        "caseIds": ["music-history-af54bf5e", "music-history-4a09244a", "music-history-b9dc12fc"],
+        "illustration": {
+          "name": "music-journey",
+          "model": "gpt-image-2.5",
+          "prompt": "output/imagegen/prompts/music-journey.txt",
+          "sourceSha256": "f57f5ef68b041f00e4c541463a33cb005d989ac3f9f235ada479bfc73bba7b0d"
+        }
+      },
+      "gallery": [
+        {
+          "caseId": "music-history-af54bf5e",
+          "title": "03 潮汐的几何 · 早期版本 · af54bf5e",
+          "sourceUrl": "https://benchmark.sidcloud.cn/archive/history/recovered-audio/music-gen-remote-YuE2/c05c13b5071c42e994ca3c56ae1f836e/raw_yue2_00001.flac",
+          "reference": false,
+          "originalRoundId": "r3080-music-original",
+          "mediaLabel": "原始生成音频",
+          "kind": "audio-waveform",
+          "duration": 304.0,
+          "caption": "从这条音轨计算的振幅包络，时间轴覆盖完整音频；波形不代表听感评分。",
+          "playback": {
+            "type": "audio",
+            "src": "https://benchmark.sidcloud.cn/archive/history/recovered-audio/music-gen-remote-YuE2/c05c13b5071c42e994ca3c56ae1f836e/raw_yue2_00001.flac"
+          },
+          "src": "/assets/benchmark-visuals/samples/r3080-music-original-0.webp",
+          "alt": "03 潮汐的几何 · 早期版本 · af54bf5e · 完整音轨波形"
+        },
+        {
+          "caseId": "music-history-4a09244a",
+          "title": "05 Lights They Forgot to Count · 早期版本 · 4a09244a",
+          "sourceUrl": "https://benchmark.sidcloud.cn/archive/history/recovered-audio/music-gen-remote-YuE2/33f435c90cf7475bbfdf6b5f394cfe41/raw_yue2_00001.flac",
+          "reference": false,
+          "originalRoundId": "r3080-music-original",
+          "mediaLabel": "原始生成音频",
+          "kind": "audio-waveform",
+          "duration": 303.96,
+          "caption": "从这条音轨计算的振幅包络，时间轴覆盖完整音频；波形不代表听感评分。",
+          "playback": {
+            "type": "audio",
+            "src": "https://benchmark.sidcloud.cn/archive/history/recovered-audio/music-gen-remote-YuE2/33f435c90cf7475bbfdf6b5f394cfe41/raw_yue2_00001.flac"
+          },
+          "src": "/assets/benchmark-visuals/samples/r3080-music-original-1.webp",
+          "alt": "05 Lights They Forgot to Count · 早期版本 · 4a09244a · 完整音轨波形"
+        },
+        {
+          "caseId": "music-history-b9dc12fc",
+          "title": "05 Lights They Forgot to Count · 早期版本 · b9dc12fc",
+          "sourceUrl": "https://benchmark.sidcloud.cn/archive/history/recovered-audio/music-gen-remote-YuE2/e403acd359ef4a5d933e70182609f711/raw_yue2_00001.flac",
+          "reference": false,
+          "originalRoundId": "r3080-music-original",
+          "mediaLabel": "原始生成音频",
+          "kind": "audio-waveform",
+          "duration": 303.96,
+          "caption": "从这条音轨计算的振幅包络，时间轴覆盖完整音频；波形不代表听感评分。",
+          "playback": {
+            "type": "audio",
+            "src": "https://benchmark.sidcloud.cn/archive/history/recovered-audio/music-gen-remote-YuE2/e403acd359ef4a5d933e70182609f711/raw_yue2_00001.flac"
+          },
+          "src": "/assets/benchmark-visuals/samples/r3080-music-original-2.webp",
+          "alt": "05 Lights They Forgot to Count · 早期版本 · b9dc12fc · 完整音轨波形"
+        }
+      ]
+    },
+    "r3080-music-diagnostics": {
+      "cover": {
+        "hero": "/assets/benchmark-visuals/hero/r3080-music-diagnostics.webp",
+        "card": "/assets/benchmark-visuals/card/r3080-music-diagnostics.webp",
+        "kind": "audio-waveform",
+        "caption": "主题插画 + 本批真实音轨波形 · 点击下方试听",
+        "caseIds": ["music-history-13c1bda7", "music-history-bc802a0c"],
+        "illustration": {
+          "name": "repair-bench",
+          "model": "gpt-image-2.5",
+          "prompt": "output/imagegen/prompts/repair-bench.txt",
+          "sourceSha256": "de44ef4a86d786d83730400516595f60ced8db57c64c12bf4ba848fe875e9da8"
+        }
+      },
+      "gallery": [
+        {
+          "caseId": "music-history-13c1bda7",
+          "title": "chain-check",
+          "sourceUrl": "https://benchmark.sidcloud.cn/archive/history/recovered-audio/music-gen-remote-YuE2/1bc16e895d074cd3bb4810ffcc3576f9/raw_yue2_00001.flac",
+          "reference": false,
+          "originalRoundId": "r3080-music-diagnostics",
+          "mediaLabel": "原始生成音频",
+          "kind": "audio-waveform",
+          "duration": 20.0,
+          "caption": "从这条音轨计算的振幅包络，时间轴覆盖完整音频；波形不代表听感评分。",
+          "playback": {
+            "type": "audio",
+            "src": "https://benchmark.sidcloud.cn/archive/history/recovered-audio/music-gen-remote-YuE2/1bc16e895d074cd3bb4810ffcc3576f9/raw_yue2_00001.flac"
+          },
+          "src": "/assets/benchmark-visuals/samples/r3080-music-diagnostics-0.webp",
+          "alt": "chain-check · 完整音轨波形"
+        },
+        {
+          "caseId": "music-history-bc802a0c",
+          "title": "chain-check-gain",
+          "sourceUrl": "https://benchmark.sidcloud.cn/archive/history/recovered-audio/music-gen-remote-YuE2/f64abd943f5a4a2aa2e1186bab26b4de/raw_yue2_00001.flac",
+          "reference": false,
+          "originalRoundId": "r3080-music-diagnostics",
+          "mediaLabel": "原始生成音频",
+          "kind": "audio-waveform",
+          "duration": 20.0,
+          "caption": "从这条音轨计算的振幅包络，时间轴覆盖完整音频；波形不代表听感评分。",
+          "playback": {
+            "type": "audio",
+            "src": "https://benchmark.sidcloud.cn/archive/history/recovered-audio/music-gen-remote-YuE2/f64abd943f5a4a2aa2e1186bab26b4de/raw_yue2_00001.flac"
+          },
+          "src": "/assets/benchmark-visuals/samples/r3080-music-diagnostics-1.webp",
+          "alt": "chain-check-gain · 完整音轨波形"
+        }
+      ]
+    },
+    "r3080-duo": {
+      "cover": {
+        "hero": "/assets/benchmark-visuals/hero/r3080-duo.webp",
+        "card": "/assets/benchmark-visuals/card/r3080-duo.webp",
+        "kind": "audio-waveform",
+        "caption": "主题插画 + 本批真实音轨波形 · 点击下方试听",
+        "caseIds": [
+          "podcast-duo-01-MOSS-tech",
+          "podcast-duo-02-MOSS-travel",
+          "podcast-duo-03-SoulX-cafe"
+        ],
+        "illustration": {
+          "name": "duo-podcast",
+          "model": "gpt-image-2.5",
+          "prompt": "output/imagegen/prompts/duo-podcast.txt",
+          "sourceSha256": "5f15ee0a52b0cc8a38172cb0f42502376b63d8d1d15e78e8f347c609be0e68f4"
+        }
+      },
+      "gallery": [
+        {
+          "caseId": "podcast-duo-01-MOSS-tech",
+          "title": "科技访谈：让人工智能当旅行搭子 · MOSS-TTSD-v1.0",
+          "sourceUrl": "https://benchmark.sidcloud.cn/archive/podcast/audio/duo-01-MOSS-tech.mp3",
+          "reference": false,
+          "originalRoundId": "r3080-duo",
+          "mediaLabel": "完整对话",
+          "kind": "audio-waveform",
+          "duration": 47.92,
+          "caption": "从这条音轨计算的振幅包络，时间轴覆盖完整音频；波形不代表听感评分。",
+          "playback": {
+            "type": "audio",
+            "src": "https://benchmark.sidcloud.cn/archive/podcast/audio/duo-01-MOSS-tech.mp3"
+          },
+          "src": "/assets/benchmark-visuals/samples/r3080-duo-0.webp",
+          "alt": "科技访谈：让人工智能当旅行搭子 · MOSS-TTSD-v1.0 · 完整音轨波形"
+        },
+        {
+          "caseId": "podcast-duo-02-MOSS-travel",
+          "title": "旅行趣谈：山顶日出与便利店早餐 · MOSS-TTSD-v1.0",
+          "sourceUrl": "https://benchmark.sidcloud.cn/archive/podcast/audio/duo-02-MOSS-travel.mp3",
+          "reference": false,
+          "originalRoundId": "r3080-duo",
+          "mediaLabel": "完整对话",
+          "kind": "audio-waveform",
+          "duration": 41.84,
+          "caption": "从这条音轨计算的振幅包络，时间轴覆盖完整音频；波形不代表听感评分。",
+          "playback": {
+            "type": "audio",
+            "src": "https://benchmark.sidcloud.cn/archive/podcast/audio/duo-02-MOSS-travel.mp3"
+          },
+          "src": "/assets/benchmark-visuals/samples/r3080-duo-1.webp",
+          "alt": "旅行趣谈：山顶日出与便利店早餐 · MOSS-TTSD-v1.0 · 完整音轨波形"
+        },
+        {
+          "caseId": "podcast-duo-03-SoulX-cafe",
+          "title": "生活轻辩论：咖啡店究竟买的是什么 · SoulX-Podcast-1.7B",
+          "sourceUrl": "https://benchmark.sidcloud.cn/archive/podcast/audio/duo-03-SoulX-cafe.mp3",
+          "reference": false,
+          "originalRoundId": "r3080-duo",
+          "mediaLabel": "完整对话",
+          "kind": "audio-waveform",
+          "duration": 42.56,
+          "caption": "从这条音轨计算的振幅包络，时间轴覆盖完整音频；波形不代表听感评分。",
+          "playback": {
+            "type": "audio",
+            "src": "https://benchmark.sidcloud.cn/archive/podcast/audio/duo-03-SoulX-cafe.mp3"
+          },
+          "src": "/assets/benchmark-visuals/samples/r3080-duo-2.webp",
+          "alt": "生活轻辩论：咖啡店究竟买的是什么 · SoulX-Podcast-1.7B · 完整音轨波形"
+        }
+      ]
+    },
+    "r-podcast-source-research": {
+      "cover": {
+        "hero": "/assets/benchmark-visuals/hero/r-podcast-source-research.webp",
+        "card": "/assets/benchmark-visuals/card/r-podcast-source-research.webp",
+        "kind": "illustration",
+        "caption": "gpt-image-2.5 主题插画 · 本批资料与原文见下方",
+        "caseIds": [],
+        "illustration": {
+          "name": "duo-podcast",
+          "model": "gpt-image-2.5",
+          "prompt": "output/imagegen/prompts/duo-podcast.txt",
+          "sourceSha256": "5f15ee0a52b0cc8a38172cb0f42502376b63d8d1d15e78e8f347c609be0e68f4"
+        }
+      },
+      "gallery": [
+        {
+          "kind": "record-graphic",
+          "caseId": "research-podcast-source-research-1",
+          "title": "本批记录与原文摘录",
+          "src": "/assets/benchmark-visuals/samples/r-podcast-source-research-records.webp",
+          "alt": "播客模型 · 原始发布与部署筛选的状态分布与记录原文节选",
+          "caption": "由冻结记录整理的资料图，保留原状态与原文；封面为主题插画。",
+          "sourceUrl": "https://benchmark.sidcloud.cn/benchmarks/research-podcast-source-research-1",
+          "reference": false,
+          "originalRoundId": "r-podcast-source-research"
+        }
+      ]
+    },
+    "r4090-swift-20261022": {
+      "cover": {
+        "hero": "/assets/benchmark-visuals/hero/r4090-swift-20261022.webp",
+        "card": "/assets/benchmark-visuals/card/r4090-swift-20261022.webp",
+        "kind": "illustration",
+        "caption": "gpt-image-2.5 主题插画 · 本批资料与原文见下方",
+        "caseIds": [],
+        "illustration": {
+          "name": "context-library",
+          "model": "gpt-image-2.5",
+          "prompt": "output/imagegen/prompts/context-library.txt",
+          "sourceSha256": "37a40a8cae74a2f99ad46152cf7120b6a9106247668c2f782c53543fe6add962"
+        }
+      },
+      "gallery": [
+        {
+          "kind": "record-graphic",
+          "caseId": "swift-7157ad21ca",
+          "title": "本批记录与原文摘录",
+          "src": "/assets/benchmark-visuals/samples/r4090-swift-20261022-records.webp",
+          "alt": "Swift · 逻辑、容量与近满窗口的状态分布与记录原文节选",
+          "caption": "由冻结记录整理的资料图，保留原状态与原文；封面为主题插画。",
+          "sourceUrl": "https://benchmark.sidcloud.cn/benchmarks/swift-7157ad21ca",
+          "reference": false,
+          "originalRoundId": "r4090-swift-20261022"
+        }
+      ]
+    },
+    "r3080-source": {
+      "cover": {
+        "hero": "/assets/benchmark-visuals/hero/r3080-source.webp",
+        "card": "/assets/benchmark-visuals/card/r3080-source.webp",
+        "kind": "illustration",
+        "caption": "gpt-image-2.5 主题插画 · 本批资料与原文见下方",
+        "caseIds": [],
+        "illustration": {
+          "name": "model-archive",
+          "model": "gpt-image-2.5",
+          "prompt": "output/imagegen/prompts/model-archive.txt",
+          "sourceSha256": "eabcfbdd8ed0ab47cdace332845ae1b80499ae65146a366fa1ae4bf8970a17d8"
+        }
+      },
+      "gallery": [
+        {
+          "kind": "record-graphic",
+          "caseId": "source-3013542",
+          "title": "本批记录与原文摘录",
+          "src": "/assets/benchmark-visuals/samples/r3080-source-records.webp",
+          "alt": "社区模型 · 版本核查的状态分布与记录原文节选",
+          "caption": "由冻结记录整理的资料图，保留原状态与原文；封面为主题插画。",
+          "sourceUrl": "https://benchmark.sidcloud.cn/benchmarks/source-3013542",
+          "reference": false,
+          "originalRoundId": "r3080-source"
+        }
+      ]
+    },
+    "r3080-original-install": {
+      "cover": {
+        "hero": "/assets/benchmark-visuals/hero/r3080-original-install.webp",
+        "card": "/assets/benchmark-visuals/card/r3080-original-install.webp",
+        "kind": "image-result",
+        "caption": "实际图像产物 · 含复核引用，归属见图注",
+        "caseIds": ["author-safe-0", "author-safe-6", "author-safe-2"]
+      },
+      "gallery": [
+        {
+          "caseId": "author-safe-0",
+          "title": "Qwen Image 2.1 · EditFlow 指令编辑",
+          "sourceUrl": "https://benchmark.sidcloud.cn/archive/history/author-edit-results/job-0-node-461-Qwen_image_2.1_00001.png",
+          "reference": true,
+          "originalRoundId": "r3080-author-safe",
+          "mediaLabel": "最终保存图",
+          "kind": "image-result",
+          "caption": "本记录的实际保存图；保留完整画面比例，可打开原图查看细节。",
+          "src": "/assets/benchmark-visuals/samples/r3080-original-install-0.webp",
+          "alt": "Qwen Image 2.1 · EditFlow 指令编辑 · 原始结果缩略图"
+        },
+        {
+          "caseId": "author-safe-6",
+          "title": "Qwen Image 2.1 · 自由框选与双参考",
+          "sourceUrl": "https://benchmark.sidcloud.cn/archive/history/author-edit-results/job-6-node-461-Qwen_reference_action_dual_00002.png",
+          "reference": true,
+          "originalRoundId": "r3080-author-safe",
+          "mediaLabel": "最终保存图",
+          "kind": "image-result",
+          "caption": "本记录的实际保存图；保留完整画面比例，可打开原图查看细节。",
+          "src": "/assets/benchmark-visuals/samples/r3080-original-install-1.webp",
+          "alt": "Qwen Image 2.1 · 自由框选与双参考 · 原始结果缩略图"
+        },
+        {
+          "caseId": "author-safe-2",
+          "title": "Anatomy V2 · 作者示例 01",
+          "sourceUrl": "https://benchmark.sidcloud.cn/archive/history/author-edit-results/job-2-node-461-IMG_00001.png",
+          "reference": true,
+          "originalRoundId": "r3080-author-safe",
+          "mediaLabel": "最终保存图",
+          "kind": "image-result",
+          "caption": "本记录的实际保存图；保留完整画面比例，可打开原图查看细节。",
+          "src": "/assets/benchmark-visuals/samples/r3080-original-install-2.webp",
+          "alt": "Anatomy V2 · 作者示例 01 · 原始结果缩略图"
+        }
+      ]
+    },
+    "r3080-lustify-correction": {
+      "cover": {
+        "hero": "/assets/benchmark-visuals/hero/r3080-lustify-correction.webp",
+        "card": "/assets/benchmark-visuals/card/r3080-lustify-correction.webp",
+        "kind": "image-result",
+        "caption": "实际图像产物 · 含复核引用，归属见图注",
+        "caseIds": ["edit-lustify_single", "edit-lustify_multi"]
+      },
+      "gallery": [
+        {
+          "caseId": "edit-lustify_single",
+          "title": "LUSTIFY v10 Krea2 · 单图＋文字",
+          "sourceUrl": "https://benchmark.sidcloud.cn/archive/files/0f89e92fee91cd2e/lustify_single.png",
+          "reference": true,
+          "originalRoundId": "r3080-edit",
+          "mediaLabel": "编辑结果",
+          "kind": "image-result",
+          "caption": "本记录的实际保存图；保留完整画面比例，可打开原图查看细节。",
+          "src": "/assets/benchmark-visuals/samples/r3080-lustify-correction-0.webp",
+          "alt": "LUSTIFY v10 Krea2 · 单图＋文字 · 原始结果缩略图"
+        },
+        {
+          "caseId": "edit-lustify_multi",
+          "title": "LUSTIFY v10 Krea2 · 双图＋文字",
+          "sourceUrl": "https://benchmark.sidcloud.cn/archive/files/304d02fd11a376aa/lustify_multi.png",
+          "reference": true,
+          "originalRoundId": "r3080-edit",
+          "mediaLabel": "编辑结果",
+          "kind": "image-result",
+          "caption": "本记录的实际保存图；保留完整画面比例，可打开原图查看细节。",
+          "src": "/assets/benchmark-visuals/samples/r3080-lustify-correction-1.webp",
+          "alt": "LUSTIFY v10 Krea2 · 双图＋文字 · 原始结果缩略图"
+        }
+      ]
+    },
+    "r3080-image-retries": {
+      "cover": {
+        "hero": "/assets/benchmark-visuals/hero/r3080-image-retries.webp",
+        "card": "/assets/benchmark-visuals/card/r3080-image-retries.webp",
+        "kind": "image-result",
+        "caption": "实际图像产物 · 来源见下方样本",
+        "caseIds": [
+          "image-iteration-ca769ae3",
+          "image-iteration-339e27bf",
+          "image-iteration-4439d422"
+        ]
+      },
+      "gallery": [
+        {
+          "caseId": "image-iteration-ca769ae3",
+          "title": "WAI Illustrious v17 · 单图＋文字 · 早期迭代 00001",
+          "sourceUrl": "https://benchmark.sidcloud.cn/archive/history/recovered-media-3080/reference-validation-20261022/wai_single_00001_.png",
+          "reference": false,
+          "originalRoundId": "r3080-image-retries",
+          "mediaLabel": "wai_single_00001_.png",
+          "kind": "image-result",
+          "caption": "本记录的实际保存图；保留完整画面比例，可打开原图查看细节。",
+          "src": "/assets/benchmark-visuals/samples/r3080-image-retries-0.webp",
+          "alt": "WAI Illustrious v17 · 单图＋文字 · 早期迭代 00001 · 原始结果缩略图"
+        },
+        {
+          "caseId": "image-iteration-339e27bf",
+          "title": "WAI Illustrious v17 · 双图＋文字 · 早期迭代 00001",
+          "sourceUrl": "https://benchmark.sidcloud.cn/archive/history/recovered-media-3080/reference-validation-20261022/wai_multi_00001_.png",
+          "reference": false,
+          "originalRoundId": "r3080-image-retries",
+          "mediaLabel": "wai_multi_00001_.png",
+          "kind": "image-result",
+          "caption": "本记录的实际保存图；保留完整画面比例，可打开原图查看细节。",
+          "src": "/assets/benchmark-visuals/samples/r3080-image-retries-1.webp",
+          "alt": "WAI Illustrious v17 · 双图＋文字 · 早期迭代 00001 · 原始结果缩略图"
+        },
+        {
+          "caseId": "image-iteration-4439d422",
+          "title": "WAI Illustrious v17 · 单图＋文字 · 早期迭代 00002",
+          "sourceUrl": "https://benchmark.sidcloud.cn/archive/history/recovered-media-3080/reference-validation-20261022/wai_single_00002_.png",
+          "reference": false,
+          "originalRoundId": "r3080-image-retries",
+          "mediaLabel": "wai_single_00002_.png",
+          "kind": "image-result",
+          "caption": "本记录的实际保存图；保留完整画面比例，可打开原图查看细节。",
+          "src": "/assets/benchmark-visuals/samples/r3080-image-retries-2.webp",
+          "alt": "WAI Illustrious v17 · 单图＋文字 · 早期迭代 00002 · 原始结果缩略图"
+        }
+      ]
+    },
+    "r3080-edit": {
+      "cover": {
+        "hero": "/assets/benchmark-visuals/hero/r3080-edit.webp",
+        "card": "/assets/benchmark-visuals/card/r3080-edit.webp",
+        "kind": "image-result",
+        "caption": "实际图像产物 · 来源见下方样本",
+        "caseIds": ["edit-noct_single", "edit-noct_multi", "edit-wai_multi"]
+      },
+      "gallery": [
+        {
+          "caseId": "edit-noct_single",
+          "title": "Noct-Q V4 · 单图＋文字",
+          "sourceUrl": "https://benchmark.sidcloud.cn/archive/files/a16598f060a95532/noct_single.png",
+          "reference": false,
+          "originalRoundId": "r3080-edit",
+          "mediaLabel": "编辑结果",
+          "kind": "image-result",
+          "caption": "本记录的实际保存图；保留完整画面比例，可打开原图查看细节。",
+          "src": "/assets/benchmark-visuals/samples/r3080-edit-0.webp",
+          "alt": "Noct-Q V4 · 单图＋文字 · 原始结果缩略图"
+        },
+        {
+          "caseId": "edit-noct_multi",
+          "title": "Noct-Q V4 · 双图＋文字",
+          "sourceUrl": "https://benchmark.sidcloud.cn/archive/files/a71445c783c5d9aa/noct_multi.png",
+          "reference": false,
+          "originalRoundId": "r3080-edit",
+          "mediaLabel": "编辑结果",
+          "kind": "image-result",
+          "caption": "本记录的实际保存图；保留完整画面比例，可打开原图查看细节。",
+          "src": "/assets/benchmark-visuals/samples/r3080-edit-1.webp",
+          "alt": "Noct-Q V4 · 双图＋文字 · 原始结果缩略图"
+        },
+        {
+          "caseId": "edit-wai_multi",
+          "title": "WAI Illustrious v17 · 双图＋文字",
+          "sourceUrl": "https://benchmark.sidcloud.cn/archive/files/9f99913fe4b2f4c4/wai_multi.png",
+          "reference": false,
+          "originalRoundId": "r3080-edit",
+          "mediaLabel": "编辑结果",
+          "kind": "image-result",
+          "caption": "本记录的实际保存图；保留完整画面比例，可打开原图查看细节。",
+          "src": "/assets/benchmark-visuals/samples/r3080-edit-2.webp",
+          "alt": "WAI Illustrious v17 · 双图＋文字 · 原始结果缩略图"
+        }
+      ]
+    },
+    "r3080-author-safe": {
+      "cover": {
+        "hero": "/assets/benchmark-visuals/hero/r3080-author-safe.webp",
+        "card": "/assets/benchmark-visuals/card/r3080-author-safe.webp",
+        "kind": "image-result",
+        "caption": "实际图像产物 · 来源见下方样本",
+        "caseIds": ["author-safe-0", "author-safe-6", "author-roi-initial"]
+      },
+      "gallery": [
+        {
+          "caseId": "author-safe-0",
+          "title": "Qwen Image 2.1 · EditFlow 指令编辑",
+          "sourceUrl": "https://benchmark.sidcloud.cn/archive/history/author-edit-results/job-0-node-461-Qwen_image_2.1_00001.png",
+          "reference": false,
+          "originalRoundId": "r3080-author-safe",
+          "mediaLabel": "最终保存图",
+          "kind": "image-result",
+          "caption": "本记录的实际保存图；保留完整画面比例，可打开原图查看细节。",
+          "src": "/assets/benchmark-visuals/samples/r3080-author-safe-0.webp",
+          "alt": "Qwen Image 2.1 · EditFlow 指令编辑 · 原始结果缩略图"
+        },
+        {
+          "caseId": "author-safe-6",
+          "title": "Qwen Image 2.1 · 自由框选与双参考",
+          "sourceUrl": "https://benchmark.sidcloud.cn/archive/history/author-edit-results/job-6-node-461-Qwen_reference_action_dual_00002.png",
+          "reference": false,
+          "originalRoundId": "r3080-author-safe",
+          "mediaLabel": "最终保存图",
+          "kind": "image-result",
+          "caption": "本记录的实际保存图；保留完整画面比例，可打开原图查看细节。",
+          "src": "/assets/benchmark-visuals/samples/r3080-author-safe-1.webp",
+          "alt": "Qwen Image 2.1 · 自由框选与双参考 · 原始结果缩略图"
+        },
+        {
+          "caseId": "author-roi-initial",
+          "title": "自由框选 · 首次局部试验",
+          "sourceUrl": "https://benchmark.sidcloud.cn/archive/history/author-edit-results/job-1-node-461-Qwen_reference_action_dual_00001.png",
+          "reference": false,
+          "originalRoundId": "r3080-author-safe",
+          "mediaLabel": "首次框选试验输出",
+          "kind": "image-result",
+          "caption": "本记录的实际保存图；保留完整画面比例，可打开原图查看细节。",
+          "src": "/assets/benchmark-visuals/samples/r3080-author-safe-2.webp",
+          "alt": "自由框选 · 首次局部试验 · 原始结果缩略图"
+        }
+      ]
+    },
+    "r3080-3d": {
+      "cover": {
+        "hero": "/assets/benchmark-visuals/hero/r3080-3d.webp",
+        "card": "/assets/benchmark-visuals/card/r3080-3d.webp",
+        "kind": "image-result",
+        "caption": "实际图像产物 · 来源见下方样本",
+        "caseIds": ["3d-TRELLIS2", "3d-Pixal3D", "3d-TripoSG"]
+      },
+      "gallery": [
+        {
+          "caseId": "3d-TRELLIS2",
+          "title": "TRELLIS.2 · 图生 3D",
+          "sourceUrl": "https://benchmark.sidcloud.cn/archive/files/8e66ec671eb1d65f/TRELLIS2-comparison.png",
+          "reference": false,
+          "originalRoundId": "r3080-3d",
+          "mediaLabel": "生成网格预览",
+          "kind": "image-result",
+          "caption": "本记录的实际保存图；保留完整画面比例，可打开原图查看细节。",
+          "src": "/assets/benchmark-visuals/samples/r3080-3d-0.webp",
+          "alt": "TRELLIS.2 · 图生 3D · 原始结果缩略图"
+        },
+        {
+          "caseId": "3d-Pixal3D",
+          "title": "Pixal3D · 图生 3D",
+          "sourceUrl": "https://benchmark.sidcloud.cn/archive/files/97a6257adb0087f1/Pixal3D-comparison.png",
+          "reference": false,
+          "originalRoundId": "r3080-3d",
+          "mediaLabel": "生成网格预览",
+          "kind": "image-result",
+          "caption": "本记录的实际保存图；保留完整画面比例，可打开原图查看细节。",
+          "src": "/assets/benchmark-visuals/samples/r3080-3d-1.webp",
+          "alt": "Pixal3D · 图生 3D · 原始结果缩略图"
+        },
+        {
+          "caseId": "3d-TripoSG",
+          "title": "TripoSG · 图生 3D",
+          "sourceUrl": "https://benchmark.sidcloud.cn/archive/files/ea6c04f6fb6e91a9/TripoSG-comparison.png",
+          "reference": false,
+          "originalRoundId": "r3080-3d",
+          "mediaLabel": "生成网格预览",
+          "kind": "image-result",
+          "caption": "本记录的实际保存图；保留完整画面比例，可打开原图查看细节。",
+          "src": "/assets/benchmark-visuals/samples/r3080-3d-2.webp",
+          "alt": "TripoSG · 图生 3D · 原始结果缩略图"
+        }
+      ]
+    },
+    "r-h3-world-research": {
+      "cover": {
+        "hero": "/assets/benchmark-visuals/hero/r-h3-world-research.webp",
+        "card": "/assets/benchmark-visuals/card/r-h3-world-research.webp",
+        "kind": "illustration",
+        "caption": "gpt-image-2.5 主题插画 · 本批资料与原文见下方",
+        "caseIds": [],
+        "illustration": {
+          "name": "world-portal",
+          "model": "gpt-image-2.5",
+          "prompt": "output/imagegen/prompts/world-portal.txt",
+          "sourceSha256": "4ea7bc67f2abf5553224528e1eefab72d21369c4e72cd79e8ce42f354f122c6b"
+        }
+      },
+      "gallery": [
+        {
+          "kind": "record-graphic",
+          "caseId": "research-h3-world-research-1",
+          "title": "本批记录与原文摘录",
+          "src": "/assets/benchmark-visuals/samples/r-h3-world-research-records.webp",
+          "alt": "H3-World · 源码与部署条件的状态分布与记录原文节选",
+          "caption": "由冻结记录整理的资料图，保留原状态与原文；封面为主题插画。",
+          "sourceUrl": "https://benchmark.sidcloud.cn/benchmarks/research-h3-world-research-1",
+          "reference": false,
+          "originalRoundId": "r-h3-world-research"
+        }
+      ]
+    },
+    "r-3080-input-research": {
+      "cover": {
+        "hero": "/assets/benchmark-visuals/hero/r-3080-input-research.webp",
+        "card": "/assets/benchmark-visuals/card/r-3080-input-research.webp",
+        "kind": "illustration",
+        "caption": "gpt-image-2.5 主题插画 · 本批资料与原文见下方",
+        "caseIds": [],
+        "illustration": {
+          "name": "workflow-lab",
+          "model": "gpt-image-2.5",
+          "prompt": "output/imagegen/prompts/workflow-lab.txt",
+          "sourceSha256": "e81e43c0165d1bae50d1db45e628f82aff8d2a00bc69ef76a7c2996f8677dffa"
+        }
+      },
+      "gallery": [
+        {
+          "kind": "record-graphic",
+          "caseId": "research-3080-input-research-1",
+          "title": "本批记录与原文摘录",
+          "src": "/assets/benchmark-visuals/samples/r-3080-input-research-records.webp",
+          "alt": "图像编辑 · 条件通路核查的状态分布与记录原文节选",
+          "caption": "由冻结记录整理的资料图，保留原状态与原文；封面为主题插画。",
+          "sourceUrl": "https://benchmark.sidcloud.cn/benchmarks/research-3080-input-research-1",
+          "reference": false,
+          "originalRoundId": "r-3080-input-research"
+        }
+      ]
+    },
+    "r4090-lingbot-worlds": {
+      "cover": {
+        "hero": "/assets/benchmark-visuals/hero/r4090-lingbot-worlds.webp",
+        "card": "/assets/benchmark-visuals/card/r4090-lingbot-worlds.webp",
+        "kind": "image-result",
+        "caption": "实际图像产物 · 来源见下方样本",
+        "caseIds": ["lingbot-native720", "lingbot-fast720", "lingbot-native480"]
+      },
+      "gallery": [
+        {
+          "caseId": "lingbot-native720",
+          "title": "原生 720P · 键鼠交互",
+          "sourceUrl": "https://benchmark.sidcloud.cn/archive/history/lingbot-worlds-720p-20261021/native720-fresh-model.jpg",
+          "reference": false,
+          "originalRoundId": "r4090-lingbot-worlds",
+          "mediaLabel": "模型实际生成帧",
+          "kind": "image-result",
+          "caption": "本记录的实际保存图；保留完整画面比例，可打开原图查看细节。",
+          "playback": {
+            "type": "video",
+            "src": "https://benchmark.sidcloud.cn/archive/history/lingbot-worlds-720p-20261021/native720-playtest.webm",
+            "poster": "/assets/benchmark-visuals/samples/r4090-lingbot-worlds-0.webp"
+          },
+          "src": "/assets/benchmark-visuals/samples/r4090-lingbot-worlds-0.webp",
+          "alt": "原生 720P · 键鼠交互 · 原始结果缩略图"
+        },
+        {
+          "caseId": "lingbot-fast720",
+          "title": "流畅模式 · 放大至 720P",
+          "sourceUrl": "https://benchmark.sidcloud.cn/archive/history/lingbot-worlds-720p-20261021/fast720-fresh-model.jpg",
+          "reference": false,
+          "originalRoundId": "r4090-lingbot-worlds",
+          "mediaLabel": "模型实际生成帧",
+          "kind": "image-result",
+          "caption": "本记录的实际保存图；保留完整画面比例，可打开原图查看细节。",
+          "playback": {
+            "type": "video",
+            "src": "https://benchmark.sidcloud.cn/archive/history/lingbot-worlds-720p-20261021/fast720-playtest.webm",
+            "poster": "/assets/benchmark-visuals/samples/r4090-lingbot-worlds-1.webp"
+          },
+          "src": "/assets/benchmark-visuals/samples/r4090-lingbot-worlds-1.webp",
+          "alt": "流畅模式 · 放大至 720P · 原始结果缩略图"
+        },
+        {
+          "caseId": "lingbot-native480",
+          "title": "原生 480P · 键鼠交互",
+          "sourceUrl": "https://benchmark.sidcloud.cn/archive/history/lingbot-native480-20261021/native480-fresh-model.jpg",
+          "reference": false,
+          "originalRoundId": "r4090-lingbot-worlds",
+          "mediaLabel": "模型实际生成帧",
+          "kind": "image-result",
+          "caption": "本记录的实际保存图；保留完整画面比例，可打开原图查看细节。",
+          "src": "/assets/benchmark-visuals/samples/r4090-lingbot-worlds-2.webp",
+          "alt": "原生 480P · 键鼠交互 · 原始结果缩略图"
+        }
+      ]
+    },
+    "r4090-h3": {
+      "cover": {
+        "hero": "/assets/benchmark-visuals/hero/r4090-h3.webp",
+        "card": "/assets/benchmark-visuals/card/r4090-h3.webp",
+        "kind": "video-frame",
+        "caption": "实际视频抽帧 · 来源见下方样本",
+        "caseIds": [
+          "h3-pinkcherry_v15__t2v",
+          "h3-pinkcherry_v15__i2v",
+          "h3-pinkcherry_v15__multi_ref"
+        ]
+      },
+      "gallery": [
+        {
+          "caseId": "h3-pinkcherry_v15__t2v",
+          "title": "PinkCherry FL2VA v1.5 · 文生视频",
+          "sourceUrl": "https://benchmark.sidcloud.cn/archive/4090/h3-all-modes/media/pinkcherry_v15__t2v.mp4",
+          "reference": false,
+          "originalRoundId": "r4090-h3",
+          "mediaLabel": " 5.167 秒视频",
+          "kind": "video-frames",
+          "frames": [0.917, 2.583, 4.208],
+          "duration": 5.166688,
+          "caption": "实际成片的三个时间点；抽帧用于观察画面，运动与口型请播放完整视频。",
+          "playback": {
+            "type": "video",
+            "src": "https://benchmark.sidcloud.cn/archive/4090/h3-all-modes/media/pinkcherry_v15__t2v.mp4",
+            "poster": "/assets/benchmark-visuals/samples/r4090-h3-0-poster.webp"
+          },
+          "poster": "/assets/benchmark-visuals/samples/r4090-h3-0-poster.webp",
+          "src": "/assets/benchmark-visuals/samples/r4090-h3-0.webp",
+          "alt": "PinkCherry FL2VA v1.5 · 文生视频 · 实际样片分镜"
+        },
+        {
+          "caseId": "h3-pinkcherry_v15__i2v",
+          "title": "PinkCherry FL2VA v1.5 · 首帧图＋文字",
+          "sourceUrl": "https://benchmark.sidcloud.cn/archive/4090/h3-all-modes/media/pinkcherry_v15__i2v.mp4",
+          "reference": false,
+          "originalRoundId": "r4090-h3",
+          "mediaLabel": " 5.167 秒视频",
+          "kind": "video-frames",
+          "frames": [0.917, 2.583, 4.208],
+          "duration": 5.166688,
+          "caption": "实际成片的三个时间点；抽帧用于观察画面，运动与口型请播放完整视频。",
+          "playback": {
+            "type": "video",
+            "src": "https://benchmark.sidcloud.cn/archive/4090/h3-all-modes/media/pinkcherry_v15__i2v.mp4",
+            "poster": "/assets/benchmark-visuals/samples/r4090-h3-1-poster.webp"
+          },
+          "poster": "/assets/benchmark-visuals/samples/r4090-h3-1-poster.webp",
+          "src": "/assets/benchmark-visuals/samples/r4090-h3-1.webp",
+          "alt": "PinkCherry FL2VA v1.5 · 首帧图＋文字 · 实际样片分镜"
+        },
+        {
+          "caseId": "h3-pinkcherry_v15__multi_ref",
+          "title": "PinkCherry FL2VA v1.5 · 两图＋视频",
+          "sourceUrl": "https://benchmark.sidcloud.cn/archive/4090/h3-all-modes/media/pinkcherry_v15__multi_ref.mp4",
+          "reference": false,
+          "originalRoundId": "r4090-h3",
+          "mediaLabel": " 5.167 秒视频",
+          "kind": "video-frames",
+          "frames": [0.917, 2.583, 4.208],
+          "duration": 5.166688,
+          "caption": "实际成片的三个时间点；抽帧用于观察画面，运动与口型请播放完整视频。",
+          "playback": {
+            "type": "video",
+            "src": "https://benchmark.sidcloud.cn/archive/4090/h3-all-modes/media/pinkcherry_v15__multi_ref.mp4",
+            "poster": "/assets/benchmark-visuals/samples/r4090-h3-2-poster.webp"
+          },
+          "poster": "/assets/benchmark-visuals/samples/r4090-h3-2-poster.webp",
+          "src": "/assets/benchmark-visuals/samples/r4090-h3-2.webp",
+          "alt": "PinkCherry FL2VA v1.5 · 两图＋视频 · 实际样片分镜"
+        }
+      ]
+    },
+    "r3080-yue-recovery": {
+      "cover": {
+        "hero": "/assets/benchmark-visuals/hero/r3080-yue-recovery.webp",
+        "card": "/assets/benchmark-visuals/card/r3080-yue-recovery.webp",
+        "kind": "audio-waveform",
+        "caption": "主题插画 + 本批真实音轨波形 · 点击下方试听",
+        "caseIds": [
+          "yue-recovery-fault",
+          "yue-recovery-long-dce64229",
+          "yue-recovery-long-2ab2e07f"
+        ],
+        "illustration": {
+          "name": "repair-bench",
+          "model": "gpt-image-2.5",
+          "prompt": "output/imagegen/prompts/repair-bench.txt",
+          "sourceSha256": "de44ef4a86d786d83730400516595f60ced8db57c64c12bf4ba848fe875e9da8"
+        }
+      },
+      "gallery": [
+        {
+          "caseId": "yue-recovery-fault",
+          "title": "故障期对照",
+          "sourceUrl": "https://benchmark.sidcloud.cn/archive/history/recovered-audio/music-gen-remote-YuE2/50c7d7adb98e4d30a2cf93705d0b5849/raw_yue2_00001.flac",
+          "reference": false,
+          "originalRoundId": "r3080-yue-recovery",
+          "mediaLabel": "完整原始生成音频",
+          "kind": "audio-waveform",
+          "duration": 32.0,
+          "caption": "从这条音轨计算的振幅包络，时间轴覆盖完整音频；波形不代表听感评分。",
+          "playback": {
+            "type": "audio",
+            "src": "https://benchmark.sidcloud.cn/archive/history/recovered-audio/music-gen-remote-YuE2/50c7d7adb98e4d30a2cf93705d0b5849/raw_yue2_00001.flac"
+          },
+          "src": "/assets/benchmark-visuals/samples/r3080-yue-recovery-0.webp",
+          "alt": "故障期对照 · 完整音轨波形"
+        },
+        {
+          "caseId": "yue-recovery-long-dce64229",
+          "title": "故障期 · 长曲 dce64229",
+          "sourceUrl": "https://benchmark.sidcloud.cn/archive/history/recovered-audio/music-gen-remote-YuE2/07f44f1e83bf432785de9bf3b9be62fa/raw_yue2_00001.flac",
+          "reference": false,
+          "originalRoundId": "r3080-yue-recovery",
+          "mediaLabel": "完整原始生成音频",
+          "kind": "audio-waveform",
+          "duration": 304.0,
+          "caption": "从这条音轨计算的振幅包络，时间轴覆盖完整音频；波形不代表听感评分。",
+          "playback": {
+            "type": "audio",
+            "src": "https://benchmark.sidcloud.cn/archive/history/recovered-audio/music-gen-remote-YuE2/07f44f1e83bf432785de9bf3b9be62fa/raw_yue2_00001.flac"
+          },
+          "src": "/assets/benchmark-visuals/samples/r3080-yue-recovery-1.webp",
+          "alt": "故障期 · 长曲 dce64229 · 完整音轨波形"
+        },
+        {
+          "caseId": "yue-recovery-long-2ab2e07f",
+          "title": "故障期 · 长曲 2ab2e07f",
+          "sourceUrl": "https://benchmark.sidcloud.cn/archive/history/recovered-audio/music-gen-remote-YuE2/6af25f2daa41420e97840b60cd05a3ea/raw_yue2_00001.flac",
+          "reference": false,
+          "originalRoundId": "r3080-yue-recovery",
+          "mediaLabel": "完整原始生成音频",
+          "kind": "audio-waveform",
+          "duration": 304.0,
+          "caption": "从这条音轨计算的振幅包络，时间轴覆盖完整音频；波形不代表听感评分。",
+          "playback": {
+            "type": "audio",
+            "src": "https://benchmark.sidcloud.cn/archive/history/recovered-audio/music-gen-remote-YuE2/6af25f2daa41420e97840b60cd05a3ea/raw_yue2_00001.flac"
+          },
+          "src": "/assets/benchmark-visuals/samples/r3080-yue-recovery-2.webp",
+          "alt": "故障期 · 长曲 2ab2e07f · 完整音轨波形"
+        }
+      ]
+    },
+    "r3080-lustify-independent": {
+      "cover": {
+        "hero": "/assets/benchmark-visuals/hero/r3080-lustify-independent.webp",
+        "card": "/assets/benchmark-visuals/card/r3080-lustify-independent.webp",
+        "kind": "image-result",
+        "caption": "本批实际产物",
+        "caseIds": ["history-lustify-1963420218"]
+      },
+      "gallery": [
+        {
+          "caseId": "history-lustify-1963420218",
+          "title": "LUSTIFY · 雨后街道与绿色大衣",
+          "sourceUrl": "https://benchmark.sidcloud.cn/archive/history/lustify-independent/3080_LUSTIFY_v10_Krea2_seed_1963420218.png",
+          "reference": false,
+          "originalRoundId": "r3080-lustify-independent",
+          "mediaLabel": "1024×1024 原始生成图",
+          "kind": "image-result",
+          "caption": "本记录的实际保存图；保留完整画面比例，可打开原图查看细节。",
+          "src": "/assets/benchmark-visuals/samples/r3080-lustify-independent-0.webp",
+          "alt": "LUSTIFY · 雨后街道与绿色大衣 · 原始结果缩略图"
+        }
+      ]
+    },
+    "r3080-llm": {
+      "cover": {
+        "hero": "/assets/benchmark-visuals/hero/r3080-llm.webp",
+        "card": "/assets/benchmark-visuals/card/r3080-llm.webp",
+        "kind": "illustration",
+        "caption": "gpt-image-2.5 主题插画 · 本批资料与原文见下方",
+        "caseIds": [],
+        "illustration": {
+          "name": "context-puzzle",
+          "model": "gpt-image-2.5",
+          "prompt": "output/imagegen/prompts/context-puzzle.txt",
+          "sourceSha256": "6acdb9caa8abfdd6dea0fc82667562c42801e2d7bdf1238f197925fd841a5c9e"
+        }
+      },
+      "gallery": [
+        {
+          "kind": "record-graphic",
+          "caseId": "llm-3080-liar",
+          "title": "本批记录与原文摘录",
+          "src": "/assets/benchmark-visuals/samples/r3080-llm-records.webp",
+          "alt": "27B · 逻辑推理与思考模式的状态分布与记录原文节选",
+          "caption": "由冻结记录整理的资料图，保留原状态与原文；封面为主题插画。",
+          "sourceUrl": "https://benchmark.sidcloud.cn/benchmarks/llm-3080-liar",
+          "reference": false,
+          "originalRoundId": "r3080-llm"
+        }
+      ]
+    },
+    "r-h3-input-research": {
+      "cover": {
+        "hero": "/assets/benchmark-visuals/hero/r-h3-input-research.webp",
+        "card": "/assets/benchmark-visuals/card/r-h3-input-research.webp",
+        "kind": "illustration",
+        "caption": "gpt-image-2.5 主题插画 · 本批资料与原文见下方",
+        "caseIds": [],
+        "illustration": {
+          "name": "video-story",
+          "model": "gpt-image-2.5",
+          "prompt": "output/imagegen/prompts/video-story.txt",
+          "sourceSha256": "e5855ee8f6cc387af9e415e1db0773fdef485763c488112854f710c6a76014ea"
+        }
+      },
+      "gallery": [
+        {
+          "kind": "record-graphic",
+          "caseId": "research-h3-input-research-1",
+          "title": "本批记录与原文摘录",
+          "src": "/assets/benchmark-visuals/samples/r-h3-input-research-records.webp",
+          "alt": "H3 · 图像和动作输入合同的状态分布与记录原文节选",
+          "caption": "由冻结记录整理的资料图，保留原状态与原文；封面为主题插画。",
+          "sourceUrl": "https://benchmark.sidcloud.cn/benchmarks/research-h3-input-research-1",
+          "reference": false,
+          "originalRoundId": "r-h3-input-research"
+        }
+      ]
+    },
+    "r4090-llm-initial": {
+      "cover": {
+        "hero": "/assets/benchmark-visuals/hero/r4090-llm-initial.webp",
+        "card": "/assets/benchmark-visuals/card/r4090-llm-initial.webp",
+        "kind": "illustration",
+        "caption": "gpt-image-2.5 主题插画 · 本批资料与原文见下方",
+        "caseIds": [],
+        "illustration": {
+          "name": "context-puzzle",
+          "model": "gpt-image-2.5",
+          "prompt": "output/imagegen/prompts/context-puzzle.txt",
+          "sourceSha256": "6acdb9caa8abfdd6dea0fc82667562c42801e2d7bdf1238f197925fd841a5c9e"
+        }
+      },
+      "gallery": [
+        {
+          "kind": "record-graphic",
+          "caseId": "llm-4090-initial-8k",
+          "title": "本批记录与原文摘录",
+          "src": "/assets/benchmark-visuals/samples/r4090-llm-initial-records.webp",
+          "alt": "27B · 首次 8K 算术验证的状态分布与记录原文节选",
+          "caption": "由冻结记录整理的资料图，保留原状态与原文；封面为主题插画。",
+          "sourceUrl": "https://benchmark.sidcloud.cn/benchmarks/llm-4090-initial-8k",
+          "reference": false,
+          "originalRoundId": "r4090-llm-initial"
+        }
+      ]
+    },
+    "r4090-llm": {
+      "cover": {
+        "hero": "/assets/benchmark-visuals/hero/r4090-llm.webp",
+        "card": "/assets/benchmark-visuals/card/r4090-llm.webp",
+        "kind": "illustration",
+        "caption": "gpt-image-2.5 主题插画 · 本批资料与原文见下方",
+        "caseIds": [],
+        "illustration": {
+          "name": "context-library",
+          "model": "gpt-image-2.5",
+          "prompt": "output/imagegen/prompts/context-library.txt",
+          "sourceSha256": "37a40a8cae74a2f99ad46152cf7120b6a9106247668c2f782c53543fe6add962"
+        }
+      },
+      "gallery": [
+        {
+          "kind": "record-graphic",
+          "caseId": "llm-4090-eight",
+          "title": "本批记录与原文摘录",
+          "src": "/assets/benchmark-visuals/samples/r4090-llm-records.webp",
+          "alt": "27B · 最大窗口逻辑题的状态分布与记录原文节选",
+          "caption": "由冻结记录整理的资料图，保留原状态与原文；封面为主题插画。",
+          "sourceUrl": "https://benchmark.sidcloud.cn/benchmarks/llm-4090-eight",
+          "reference": false,
+          "originalRoundId": "r4090-llm"
+        }
+      ]
+    },
+    "r4090-base": {
+      "cover": {
+        "hero": "/assets/benchmark-visuals/hero/r4090-base.webp",
+        "card": "/assets/benchmark-visuals/card/r4090-base.webp",
+        "kind": "video-frame",
+        "caption": "实际视频抽帧 · 来源见下方样本",
+        "caseIds": ["4090-00_h3_baseline", "4090-02_t8_native_audio", "4090-03_director_t2va"]
+      },
+      "gallery": [
+        {
+          "caseId": "4090-00_h3_baseline",
+          "title": "H3 原生文生音视频",
+          "sourceUrl": "https://benchmark.sidcloud.cn/archive/files/0b0c46362c2989a9/00_h3_baseline_00001_.mp4",
+          "reference": false,
+          "originalRoundId": "r4090-base",
+          "mediaLabel": "生成视频",
+          "kind": "video-frames",
+          "frames": [0.917, 2.583, 4.208],
+          "duration": 5.166688,
+          "caption": "实际成片的三个时间点；抽帧用于观察画面，运动与口型请播放完整视频。",
+          "playback": {
+            "type": "video",
+            "src": "https://benchmark.sidcloud.cn/archive/files/0b0c46362c2989a9/00_h3_baseline_00001_.mp4",
+            "poster": "/assets/benchmark-visuals/samples/r4090-base-0-poster.webp"
+          },
+          "poster": "/assets/benchmark-visuals/samples/r4090-base-0-poster.webp",
+          "src": "/assets/benchmark-visuals/samples/r4090-base-0.webp",
+          "alt": "H3 原生文生音视频 · 实际样片分镜"
+        },
+        {
+          "caseId": "4090-02_t8_native_audio",
+          "title": "T8 原生音视频生成",
+          "sourceUrl": "https://benchmark.sidcloud.cn/archive/files/aa62aebbae6190d0/02_t8_native_audio_00001_.mp4",
+          "reference": false,
+          "originalRoundId": "r4090-base",
+          "mediaLabel": "生成视频",
+          "kind": "video-frames",
+          "frames": [0.917, 2.583, 4.208],
+          "duration": 5.166688,
+          "caption": "实际成片的三个时间点；抽帧用于观察画面，运动与口型请播放完整视频。",
+          "playback": {
+            "type": "video",
+            "src": "https://benchmark.sidcloud.cn/archive/files/aa62aebbae6190d0/02_t8_native_audio_00001_.mp4",
+            "poster": "/assets/benchmark-visuals/samples/r4090-base-1-poster.webp"
+          },
+          "poster": "/assets/benchmark-visuals/samples/r4090-base-1-poster.webp",
+          "src": "/assets/benchmark-visuals/samples/r4090-base-1.webp",
+          "alt": "T8 原生音视频生成 · 实际样片分镜"
+        },
+        {
+          "caseId": "4090-03_director_t2va",
+          "title": "AIMixer Director 时间线生成",
+          "sourceUrl": "https://benchmark.sidcloud.cn/archive/files/b8574ee1fa19043e/03_director_t2va_00001_.mp4",
+          "reference": false,
+          "originalRoundId": "r4090-base",
+          "mediaLabel": "生成视频",
+          "kind": "video-frames",
+          "frames": [0.917, 2.583, 4.208],
+          "duration": 5.166667,
+          "caption": "实际成片的三个时间点；抽帧用于观察画面，运动与口型请播放完整视频。",
+          "playback": {
+            "type": "video",
+            "src": "https://benchmark.sidcloud.cn/archive/files/b8574ee1fa19043e/03_director_t2va_00001_.mp4",
+            "poster": "/assets/benchmark-visuals/samples/r4090-base-2-poster.webp"
+          },
+          "poster": "/assets/benchmark-visuals/samples/r4090-base-2-poster.webp",
+          "src": "/assets/benchmark-visuals/samples/r4090-base-2.webp",
+          "alt": "AIMixer Director 时间线生成 · 实际样片分镜"
+        }
+      ]
+    },
+    "r3080-base": {
+      "cover": {
+        "hero": "/assets/benchmark-visuals/hero/r3080-base.webp",
+        "card": "/assets/benchmark-visuals/card/r3080-base.webp",
+        "kind": "image-result",
+        "caption": "实际图像产物 · 来源见下方样本",
+        "caseIds": [
+          "3080-10_noct_q_v4_qwen_image21",
+          "3080-12_wai_illustrious_v17_exact",
+          "3080-20_soulx_official_voice_tts"
+        ]
+      },
+      "gallery": [
+        {
+          "caseId": "3080-10_noct_q_v4_qwen_image21",
+          "title": "Noct-Q V4 / Qwen Image 2.1",
+          "sourceUrl": "https://benchmark.sidcloud.cn/archive/3080/3080/media/10_noct_q_v4_qwen_image21.png",
+          "reference": false,
+          "originalRoundId": "r3080-base",
+          "mediaLabel": "生成结果",
+          "kind": "image-result",
+          "caption": "本记录的实际保存图；保留完整画面比例，可打开原图查看细节。",
+          "src": "/assets/benchmark-visuals/samples/r3080-base-0.webp",
+          "alt": "Noct-Q V4 / Qwen Image 2.1 · 原始结果缩略图"
+        },
+        {
+          "caseId": "3080-12_wai_illustrious_v17_exact",
+          "title": "WAI illustrious v17 / Civitai 2883731",
+          "sourceUrl": "https://benchmark.sidcloud.cn/archive/3080/3080/media/12_wai_illustrious_v17_exact.png",
+          "reference": false,
+          "originalRoundId": "r3080-base",
+          "mediaLabel": "生成结果",
+          "kind": "image-result",
+          "caption": "本记录的实际保存图；保留完整画面比例，可打开原图查看细节。",
+          "src": "/assets/benchmark-visuals/samples/r3080-base-1.webp",
+          "alt": "WAI illustrious v17 / Civitai 2883731 · 原始结果缩略图"
+        },
+        {
+          "caseId": "3080-20_soulx_official_voice_tts",
+          "title": "SoulX 官方参考声音合成",
+          "sourceUrl": "https://benchmark.sidcloud.cn/archive/3080/3080/media/20_soulx_official_voice_tts.flac",
+          "reference": false,
+          "originalRoundId": "r3080-base",
+          "mediaLabel": "生成结果",
+          "kind": "audio-waveform",
+          "duration": 6.08,
+          "caption": "从这条音轨计算的振幅包络，时间轴覆盖完整音频；波形不代表听感评分。",
+          "playback": {
+            "type": "audio",
+            "src": "https://benchmark.sidcloud.cn/archive/3080/3080/media/20_soulx_official_voice_tts.flac"
+          },
+          "src": "/assets/benchmark-visuals/samples/r3080-base-2.webp",
+          "alt": "SoulX 官方参考声音合成 · 完整音轨波形"
+        }
+      ]
+    },
+    "r-h3-community-research": {
+      "cover": {
+        "hero": "/assets/benchmark-visuals/hero/r-h3-community-research.webp",
+        "card": "/assets/benchmark-visuals/card/r-h3-community-research.webp",
+        "kind": "illustration",
+        "caption": "gpt-image-2.5 主题插画 · 本批资料与原文见下方",
+        "caseIds": [],
+        "illustration": {
+          "name": "workflow-lab",
+          "model": "gpt-image-2.5",
+          "prompt": "output/imagegen/prompts/workflow-lab.txt",
+          "sourceSha256": "e81e43c0165d1bae50d1db45e628f82aff8d2a00bc69ef76a7c2996f8677dffa"
+        }
+      },
+      "gallery": [
+        {
+          "kind": "record-graphic",
+          "caseId": "research-h3-community-research-1",
+          "title": "本批记录与原文摘录",
+          "src": "/assets/benchmark-visuals/samples/r-h3-community-research-records.webp",
+          "alt": "H3 · 社区工作流与动作迁移的状态分布与记录原文节选",
+          "caption": "由冻结记录整理的资料图，保留原状态与原文；封面为主题插画。",
+          "sourceUrl": "https://benchmark.sidcloud.cn/benchmarks/research-h3-community-research-1",
+          "reference": false,
+          "originalRoundId": "r-h3-community-research"
+        }
+      ]
+    }
+  },
+  "research": {
+    "wechat-image-generation-world-models": {
+      "hero": "/assets/benchmark-visuals/hero/wechat-image-generation-world-models.webp",
+      "card": "/assets/benchmark-visuals/card/wechat-image-generation-world-models.webp",
+      "kind": "illustration",
+      "caption": "gpt-image-2.5 主题插画",
+      "illustration": {
+        "name": "video-story",
+        "model": "gpt-image-2.5",
+        "prompt": "output/imagegen/prompts/video-story.txt",
+        "sourceSha256": "e5855ee8f6cc387af9e415e1db0773fdef485763c488112854f710c6a76014ea"
+      }
+    },
+    "subforge-subtitle-research-pipeline": {
+      "hero": "/assets/benchmark-visuals/hero/subforge-subtitle-research-pipeline.webp",
+      "card": "/assets/benchmark-visuals/card/subforge-subtitle-research-pipeline.webp",
+      "kind": "illustration",
+      "caption": "gpt-image-2.5 主题插画",
+      "illustration": {
+        "name": "workflow-lab",
+        "model": "gpt-image-2.5",
+        "prompt": "output/imagegen/prompts/workflow-lab.txt",
+        "sourceSha256": "e81e43c0165d1bae50d1db45e628f82aff8d2a00bc69ef76a7c2996f8677dffa"
+      }
+    }
+  }
+}

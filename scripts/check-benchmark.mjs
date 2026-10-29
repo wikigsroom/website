@@ -1,6 +1,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import assert from 'node:assert/strict';
+import crypto from 'node:crypto';
 import { fileURLToPath } from 'node:url';
 import { readContentModule } from './content-module.mjs';
 
@@ -9,10 +10,15 @@ const data = JSON.parse(
   fs.readFileSync(path.join(root, 'src/data/benchmarkSnapshot.json'), 'utf8'),
 );
 const index = JSON.parse(fs.readFileSync(path.join(root, 'src/data/benchmarkIndex.json'), 'utf8'));
+const visuals = JSON.parse(
+  fs.readFileSync(path.join(root, 'src/data/benchmarkVisuals.json'), 'utf8'),
+);
 const { posts } = readContentModule(path.join(root, 'src/data/posts.ts'));
 const batches = posts.filter((post) => post.section === 'Benchmark');
 assert.equal(data.version, index.version);
 assert.equal(data.sourceSha256, index.sourceSha256);
+assert.equal(visuals.snapshotSha256, data.sourceSha256);
+assert.equal(Object.keys(visuals.rounds).length, data.rounds.length);
 assert.equal(batches.length, data.rounds.length);
 assert.equal(data.rounds.length, 46, 'Review expected batch count before accepting a new snapshot');
 assert.equal(data.cases.length, 681, 'Review expected case count before accepting a new snapshot');
@@ -35,6 +41,53 @@ for (const round of data.rounds) {
       .length >= 2,
   );
   assert.equal(article.content.filter((block) => block.type === 'benchmark-results').length, 1);
+  assert.equal(article.content.filter((block) => block.type === 'benchmark-gallery').length, 1);
+  const visual = visuals.rounds[round.id];
+  assert(visual?.gallery.length > 0, `Missing illustrated content: ${round.id}`);
+  assert.equal(article.cover, visual.cover.hero);
+  assert(article.coverCaption && article.coverLabel, `Missing visual attribution: ${round.id}`);
+  for (const asset of [
+    visual.cover.hero,
+    visual.cover.card,
+    ...visual.gallery.map((figure) => figure.src),
+  ]) {
+    assert(asset.startsWith('/assets/benchmark-visuals/'));
+    assert(fs.statSync(path.join(root, 'public', asset)).size > 500, `Missing visual: ${asset}`);
+  }
+  for (const figure of visual.gallery) {
+    assert(round.caseIds.includes(figure.caseId), `Unrelated visual in ${round.id}`);
+    const source = byId.get(figure.caseId);
+    assert.equal(figure.reference, source.round !== round.id);
+    assert.equal(figure.originalRoundId, source.round);
+    assert(figure.alt && figure.caption && figure.title);
+    assert.equal(new URL(figure.sourceUrl).origin, 'https://benchmark.sidcloud.cn');
+    if (figure.kind !== 'record-graphic')
+      assert(
+        source.media.some((media) => media.url === figure.sourceUrl),
+        `Wrong source asset: ${figure.caseId}`,
+      );
+    if (figure.frames) {
+      assert.equal(figure.frames.length, 3);
+      assert(figure.frames.every((time) => time >= 0 && time < figure.duration));
+    }
+    if (figure.playback) assert(source.media.some((media) => media.url === figure.playback.src));
+  }
+  if (visual.cover.illustration) {
+    assert.equal(visual.cover.illustration.model, 'gpt-image-2.5');
+    assert(fs.existsSync(path.join(root, visual.cover.illustration.prompt)));
+    assert.equal(
+      crypto
+        .createHash('sha256')
+        .update(
+          fs.readFileSync(
+            path.join(root, 'output/imagegen', `${visual.cover.illustration.name}.png`),
+          ),
+        )
+        .digest('hex'),
+      visual.cover.illustration.sourceSha256,
+      `Illustration source changed; regenerate covers: ${round.id}`,
+    );
+  }
   assert(
     article.content.some(
       (block) => block.type === 'benchmark-results' && block.roundId === round.id,

@@ -23,7 +23,11 @@ const digest = crypto.createHash('sha256');
 for (const filename of report.evidenceFiles)
   digest
     .update(filename)
-    .update((await fs.readFile(path.join(root, filename), 'utf8')).replaceAll('\r\n', '\n'));
+    .update(
+      filename.endsWith('.webp')
+        ? await fs.readFile(path.join(root, filename))
+        : (await fs.readFile(path.join(root, filename), 'utf8')).replaceAll('\r\n', '\n'),
+    );
 assert.equal(
   digest.digest('hex'),
   report.implementationSha256,
@@ -36,8 +40,11 @@ for (const filename of [
   'README.zh-CN.md',
   'docs/benchmark-batches.md',
   'docs/benchmark-materials.md',
+  'docs/benchmark-visuals.md',
+  'output/imagegen/README.md',
   'docs/releases/2026-10-29-benchmark-batches.md',
   'docs/releases/2026-10-29-editorial-refresh.md',
+  'docs/releases/2026-10-30-visual-refresh.md',
   'docs/media/README.md',
 ]) {
   const text = await fs.readFile(path.join(root, filename), 'utf8');

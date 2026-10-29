@@ -20,6 +20,9 @@ const { benchmarkEditorial } = readContentModule(path.join(root, 'src/data/bench
 const snapshot = JSON.parse(
   await fs.readFile(path.join(root, 'src/data/benchmarkIndex.json'), 'utf8'),
 );
+const visuals = JSON.parse(
+  await fs.readFile(path.join(root, 'src/data/benchmarkVisuals.json'), 'utf8'),
+);
 const report = {
   url: metadata.productionUrl,
   sourceCommit: execFileSync('git', ['rev-parse', 'HEAD'], {
@@ -48,7 +51,10 @@ try {
   assert(typeof auth.token === 'string' && auth.token.length > 0, 'Isolated login missing');
   const deploymentResponse = await fetch(
     `https://api.vercel.com/v13/deployments/${encodeURIComponent(hostname)}?teamId=${metadata.teamId}`,
-    { headers: { Authorization: `Bearer ${auth.token}` }, signal: AbortSignal.timeout(45000) },
+    {
+      headers: { Authorization: `Bearer ${auth.token}` },
+      signal: AbortSignal.timeout(45000),
+    },
   );
   assert(deploymentResponse.ok, `Deployment metadata HTTP ${deploymentResponse.status}`);
   const deployment = await deploymentResponse.json();
@@ -90,7 +96,11 @@ try {
       hash(Buffer.from(await remote.arrayBuffer())),
       hash(await fs.readFile(path.join(root, 'dist', asset))),
     );
-    report.checks.push({ check: 'production asset matches verified build', asset, passed: true });
+    report.checks.push({
+      check: 'production asset matches verified build',
+      asset,
+      passed: true,
+    });
   }
 
   browser = await chromium.launch({
@@ -107,7 +117,9 @@ try {
   const page = await context.newPage();
   const errors = [];
   page.on('pageerror', (error) => errors.push(error.message));
-  await page.goto(`${metadata.productionUrl}/#/benchmark`, { waitUntil: 'domcontentloaded' });
+  await page.goto(`${metadata.productionUrl}/#/benchmark`, {
+    waitUntil: 'domcontentloaded',
+  });
   assert.equal((await page.locator('.section-head > p').innerText()).trim(), '46 篇匹配');
   for (const round of snapshot.rounds) {
     await page.goto(`${metadata.productionUrl}/#/post/benchmark-${round.id}`, {
@@ -117,22 +129,36 @@ try {
     assert.equal(await page.locator('h1').textContent(), benchmarkEditorial[round.id].title);
     assert.equal(await page.locator('.article-takeaways li').count(), 3);
     assert.equal(await page.locator('.batch-case').count(), round.caseIds.length);
+    const cover = page.locator('.article-cover img');
+    await cover.scrollIntoViewIfNeeded();
+    await cover.evaluate((image) => image.decode());
+    assert.equal(await cover.getAttribute('src'), visuals.rounds[round.id].cover.hero);
+    const figures = page.locator('.benchmark-gallery .experiment-figure img');
+    assert.equal(await figures.count(), visuals.rounds[round.id].gallery.length);
+    for (const image of await figures.all()) {
+      await image.scrollIntoViewIfNeeded();
+      await image.evaluate((item) => item.decode());
+      assert(await image.evaluate((item) => item.naturalWidth >= 300));
+    }
     report.checks.push({
-      check: 'published headline, narrative and evidence',
+      check: 'published headline, raster cover, figures and evidence',
       roundId: round.id,
       records: round.caseIds.length,
+      figures: await figures.count(),
       passed: true,
     });
   }
   await page.goto(`${metadata.productionUrl}/#/post/benchmark-r4090-community-complete-20261029`);
   await page
     .locator('h1')
-    .filter({ hasText: benchmarkEditorial['r4090-community-complete-20261029'].title })
+    .filter({
+      hasText: benchmarkEditorial['r4090-community-complete-20261029'].title,
+    })
     .waitFor();
   await page.evaluate(() => document.fonts.ready);
   await page.evaluate(() => window.scrollTo({ top: 0, behavior: 'instant' }));
   await page.screenshot({
-    path: path.join(root, 'docs/media/benchmark-20261029/production-article-desktop.png'),
+    path: path.join(root, 'docs/media/benchmark-20261029/production-visual-article-desktop.png'),
   });
   assert.deepEqual(errors, []);
   const baseline = JSON.parse(
@@ -163,10 +189,10 @@ try {
     report.browserClosed = true;
   }
   await fs.writeFile(
-    path.join(root, 'docs/releases/2026-10-29-editorial-production.json'),
+    path.join(root, 'docs/releases/2026-10-30-visual-production.json'),
     JSON.stringify(report, null, 2) + '\n',
   );
 }
 console.log(
-  `Production verified: ${report.deployment.id}, all 46 rewritten articles, exact build assets, browser closed; default account files unchanged.`,
+  `Production verified: ${report.deployment.id}, all 46 illustrated articles, exact build assets, browser closed; default account files unchanged.`,
 );

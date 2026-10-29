@@ -1,0 +1,187 @@
+{
+  "providerRoute": "sub2-image-gen",
+  "images": [
+    {
+      "file": "context-library.png",
+      "model": "gpt-image-2.5",
+      "requestedSize": "1536x1024",
+      "quality": "high",
+      "actualDimensions": [
+        1672,
+        941
+      ],
+      "bytes": 2330311,
+      "sha256": "37a40a8cae74a2f99ad46152cf7120b6a9106247668c2f782c53543fe6add962",
+      "prompt": "prompts/context-library.txt",
+      "promptSha256": "c78bd63dd489fd79474741bf580419f2b6d0234651169ba9e93fe90f089ce848"
+    },
+    {
+      "file": "context-puzzle.png",
+      "model": "gpt-image-2.5",
+      "requestedSize": "1536x1024",
+      "quality": "high",
+      "actualDimensions": [
+        1672,
+        941
+      ],
+      "bytes": 2298457,
+      "sha256": "6acdb9caa8abfdd6dea0fc82667562c42801e2d7bdf1238f197925fd841a5c9e",
+      "prompt": "prompts/context-puzzle.txt",
+      "promptSha256": "66d09d211ef10369a2ddae37256ab4b02ada607c09a1a90a453d5612bfd87a01"
+    },
+    {
+      "file": "duo-podcast.png",
+      "model": "gpt-image-2.5",
+      "requestedSize": "1536x1024",
+      "quality": "high",
+      "actualDimensions": [
+        1672,
+        941
+      ],
+      "bytes": 2232211,
+      "sha256": "5f15ee0a52b0cc8a38172cb0f42502376b63d8d1d15e78e8f347c609be0e68f4",
+      "prompt": "prompts/duo-podcast.txt",
+      "promptSha256": "b28b8a37da489920770c8850c08fa62d461ae0e15f8bd46462b537b06e830d96"
+    },
+    {
+      "file": "model-archive.png",
+      "model": "gpt-image-2.5",
+      "requestedSize": "1536x1024",
+      "quality": "high",
+      "actualDimensions": [
+        1672,
+        941
+      ],
+      "bytes": 2591231,
+      "sha256": "eabcfbdd8ed0ab47cdace332845ae1b80499ae65146a366fa1ae4bf8970a17d8",
+      "prompt": "prompts/model-archive.txt",
+      "promptSha256": "ddfddf477e0ab4ba603a02bcde7828725b1e3b37ce4b197f005a69bf06b3d8c2"
+    },
+    {
+      "file": "music-journey.png",
+      "model": "gpt-image-2.5",
+      "requestedSize": "1536x1024",
+      "quality": "high",
+      "actualDimensions": [
+        1672,
+        941
+      ],
+      "bytes": 2545588,
+      "sha256": "f57f5ef68b041f00e4c541463a33cb005d989ac3f9f235ada479bfc73bba7b0d",
+      "prompt": "prompts/music-journey.txt",
+      "promptSha256": "d9b23500d57bd48c3e9d218ae3ca0d118a91e83eea72a29c1d1e29646258fd78"
+    },
+    {
+      "file": "music-score.png",
+      "model": "gpt-image-2.5",
+      "requestedSize": "1536x1024",
+      "quality": "high",
+      "actualDimensions": [
+        1672,
+        941
+      ],
+      "bytes": 2131742,
+      "sha256": "cb640bce12bb13a24362cd98ecee778412d6af8ebea59d25a57298b91f639282",
+      "prompt": "prompts/music-score.txt",
+      "promptSha256": "fe525d3666e9e3d8d5369aa2b77e86f61ea26643c501d53a5652a959928bf9d7"
+    },
+    {
+      "file": "music-stage.png",
+      "model": "gpt-image-2.5",
+      "requestedSize": "1536x1024",
+      "quality": "high",
+      "actualDimensions": [
+        1672,
+        941
+      ],
+      "bytes": 2281981,
+      "sha256": "82328fc98eb65d55219f9ca6a8ee93e0d876f022dfde6e9117d334c918ca7377",
+      "prompt": "prompts/music-stage.txt",
+      "promptSha256": "f278ed017188604ac622a4b5590e8c067684a342145c9db5f8d9397a606f8037"
+    },
+    {
+      "file": "repair-bench.png",
+      "model": "gpt-image-2.5",
+      "requestedSize": "1536x1024",
+      "quality": "high",
+      "actualDimensions": [
+        1672,
+        941
+      ],
+      "bytes": 2426930,
+      "sha256": "de44ef4a86d786d83730400516595f60ced8db57c64c12bf4ba848fe875e9da8",
+      "prompt": "prompts/repair-bench.txt",
+      "promptSha256": "2a0315fb3e87f856be6f09b12546d4ce9ecfab1cf903a1520dd80ac41620f59e"
+    },
+    {
+      "file": "video-story.png",
+      "model": "gpt-image-2.5",
+      "requestedSize": "1536x1024",
+      "quality": "high",
+      "actualDimensions": [
+        1672,
+        941
+      ],
+      "bytes": 2036678,
+      "sha256": "e5855ee8f6cc387af9e415e1db0773fdef485763c488112854f710c6a76014ea",
+      "prompt": "prompts/video-story.txt",
+      "promptSha256": "58fbcc76580e1178f34d73f99f86f8316570a883404a4c9d7d1a0fb0343d13ab"
+    },
+    {
+      "file": "voice-casting.png",
+      "model": "gpt-image-2.5",
+      "requestedSize": "1536x1024",
+      "quality": "high",
+      "actualDimensions": [
+        1672,
+        941
+      ],
+      "bytes": 2291486,
+      "sha256": "9bee1a20e220490c8fe0fa2285042d0b7640416dbcdd40dbfcfd3df046f5a744",
+      "prompt": "prompts/voice-casting.txt",
+      "promptSha256": "819d99bd0eea0baffbde9b0ac7066f3f8420aa0837bbd09239f496d5adf8ddb9"
+    },
+    {
+      "file": "voice-studio.png",
+      "model": "gpt-image-2.5",
+      "requestedSize": "1536x1024",
+      "quality": "high",
+      "actualDimensions": [
+        1672,
+        941
+      ],
+      "bytes": 2238524,
+      "sha256": "08e78692f9f9f7f91df05e4f3a05bc92cc83d6f0f2b0f595ac97082a7b952998",
+      "prompt": "prompts/voice-studio.txt",
+      "promptSha256": "73687c33f8e86594d7c342d4f46e930ff00bc6550136b7750d616cc6f4ebf2fb"
+    },
+    {
+      "file": "workflow-lab.png",
+      "model": "gpt-image-2.5",
+      "requestedSize": "1536x1024",
+      "quality": "high",
+      "actualDimensions": [
+        1672,
+        941
+      ],
+      "bytes": 2324733,
+      "sha256": "e81e43c0165d1bae50d1db45e628f82aff8d2a00bc69ef76a7c2996f8677dffa",
+      "prompt": "prompts/workflow-lab.txt",
+      "promptSha256": "4e9d339179871a76ea387a8b1177a5182b89f35c6a1620d288c708c9815dd67a"
+    },
+    {
+      "file": "world-portal.png",
+      "model": "gpt-image-2.5",
+      "requestedSize": "1536x1024",
+      "quality": "high",
+      "actualDimensions": [
+        1672,
+        941
+      ],
+      "bytes": 2333512,
+      "sha256": "4ea7bc67f2abf5553224528e1eefab72d21369c4e72cd79e8ce42f354f122c6b",
+      "prompt": "prompts/world-portal.txt",
+      "promptSha256": "293d34f7289922f39f21308189c25c00c96654714807c14c928a3e125e92d01c"
+    }
+  ]
+}

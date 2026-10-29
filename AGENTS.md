@@ -15,3 +15,4 @@
 - 测评更新运行 `npm run check:benchmark`；页面变化运行 `npm run docs:media`，核对报告与截图后再提交。录制脚本必须在结束或失败时释放自己的浏览器和预览服务。
 - 测评文章使用独立的 `title`、`subtitle`、`topic`、三点提要、两个专题分析章节和结论；日期与来源批次另列，不把日期拼进展示标题。封面、列表、推荐位、关联链接和批次目录统一使用人工标题。
 - 博客独立部署入口为 `scripts/vercel.ps1`，目标固定在 `operations/vercel-project.json`；上线后用 `npm run verify:production -- "<部署主机名>"` 核对生产域名、构建文件及全部测评文章，并保存发布记录。
+- 测评封面与正文可视化由 `benchmarkVisuals.json` 和人工素材清单维护；允许提交从公开产物提取的小型 WebP 抽帧、截图、波形与资料图，不提交完整测评影音。插画标明模型与用途，保留提示词；复核画面标出原批次归属。

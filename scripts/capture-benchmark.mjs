@@ -16,6 +16,9 @@ const rawDirectory = path.join(root, 'docs/media/.raw/benchmark-20261029');
 await fs.mkdir(directory, { recursive: true });
 await fs.mkdir(rawDirectory, { recursive: true });
 const data = JSON.parse(await fs.readFile(path.join(root, 'src/data/benchmarkIndex.json'), 'utf8'));
+const visuals = JSON.parse(
+  await fs.readFile(path.join(root, 'src/data/benchmarkVisuals.json'), 'utf8'),
+);
 const { benchmarkEditorial } = readContentModule(path.join(root, 'src/data/benchmarkEditorial.ts'));
 const ffmpeg = process.env.FFMPEG_PATH || 'ffmpeg';
 const ffprobe = process.env.FFPROBE_PATH || 'ffprobe';
@@ -32,16 +35,32 @@ const evidenceFiles = [
   'src/data/benchmarkSnapshot.json',
   'src/components/BenchmarkResults.tsx',
   'src/components/ArticleMedia.tsx',
-  ...data.rounds.map((round) => `public/assets/batch-covers/${round.id}.svg`),
-  'public/assets/batch-covers/wechat-image-generation-world-models.svg',
-  'public/assets/batch-covers/subforge-subtitle-research-pipeline.svg',
+  'src/components/BenchmarkGallery.tsx',
+  'src/data/benchmarkVisuals.ts',
+  'src/data/benchmarkVisuals.json',
+  ...Object.values(visuals.rounds)
+    .flatMap((entry) => [
+      entry.cover.hero,
+      entry.cover.card,
+      ...entry.gallery.map((figure) => figure.src),
+      ...entry.gallery.filter((figure) => figure.poster).map((figure) => figure.poster),
+    ])
+    .map((src) => `public${src}`),
+  ...Object.values(visuals.research)
+    .flatMap((cover) => [cover.hero, cover.card])
+    .map((src) => `public${src}`),
 ];
 const digest = crypto.createHash('sha256');
 for (const filename of evidenceFiles)
   digest
     .update(filename)
-    .update((await fs.readFile(path.join(root, filename), 'utf8')).replaceAll('\r\n', '\n'));
+    .update(
+      filename.endsWith('.webp')
+        ? await fs.readFile(path.join(root, filename))
+        : (await fs.readFile(path.join(root, filename), 'utf8')).replaceAll('\r\n', '\n'),
+    );
 const report = {
+  checkedAt: new Date().toISOString(),
   snapshot: data.version,
   snapshotDate: data.snapshotDate,
   sourceCatalogSha256: data.sourceSha256,
@@ -67,7 +86,9 @@ async function contextFor(viewport, recording = false) {
 }
 
 async function open(page, hash) {
-  await page.goto(`${report.localOrigin}${hash}`, { waitUntil: 'domcontentloaded' });
+  await page.goto(`${report.localOrigin}${hash}`, {
+    waitUntil: 'domcontentloaded',
+  });
   await page.locator('main').waitFor();
   if (hash.startsWith('#/post/benchmark-'))
     await page
@@ -89,11 +110,15 @@ async function checkLayout(page, description, width) {
     documentWidth: document.documentElement.scrollWidth,
     links: [...document.querySelectorAll('header.site-header a')].map((link) => {
       const box = link.getBoundingClientRect();
-      return { href: link.getAttribute('href'), left: box.left, right: box.right };
+      return {
+        href: link.getAttribute('href'),
+        left: box.left,
+        right: box.right,
+      };
     }),
     content: [
       ...document.querySelectorAll(
-        '.article-shell, .batch-results, .batch-case > summary, .batch-board, .control-panel',
+        '.article-shell, .batch-results, .batch-case > summary, .batch-board, .control-panel, .experiment-figure, .article-cover',
       ),
     ].map((item) => {
       const box = item.getBoundingClientRect();
@@ -106,7 +131,12 @@ async function checkLayout(page, description, width) {
       box.left >= -1 && box.right <= width + 1,
       `${description}: element outside ${width}px viewport`,
     );
-  report.checks.push({ check: 'responsive layout', description, width, passed: true });
+  report.checks.push({
+    check: 'responsive layout',
+    description,
+    width,
+    passed: true,
+  });
 }
 
 function encode(video, mp4, gif, width) {
@@ -224,34 +254,23 @@ try {
       round.caseIds.filter((id) => data.cases.find((item) => item.id === id).round !== round.id)
         .length,
     );
-    assert(
-      (await page.request.get(`${report.localOrigin}assets/batch-covers/${round.id}.svg`)).ok(),
-    );
-    const media = page.locator('.article-media img, .article-media video, .article-media audio');
-    if (await media.count()) {
-      await media.scrollIntoViewIfNeeded();
-      await page.waitForFunction(
-        () => {
-          const asset = document.querySelector(
-            '.article-media img, .article-media video, .article-media audio',
-          );
-          return (
-            asset &&
-            (asset.tagName === 'IMG'
-              ? asset.complete && asset.naturalWidth > 0
-              : asset.readyState >= 1 && asset.duration > 0)
-          );
-        },
-        null,
-        { timeout: 45000 },
-      );
-      report.checks.push({
-        check: 'reused public media loaded',
-        roundId: round.id,
-        src: await media.getAttribute('src'),
-        passed: true,
-      });
+    const cover = page.locator('.article-cover img');
+    await cover.scrollIntoViewIfNeeded();
+    await cover.evaluate((image) => image.decode());
+    assert.equal(await cover.getAttribute('src'), visuals.rounds[round.id].cover.hero);
+    const figures = page.locator('.benchmark-gallery .experiment-figure img');
+    assert.equal(await figures.count(), visuals.rounds[round.id].gallery.length);
+    for (const figure of await figures.all()) {
+      await figure.scrollIntoViewIfNeeded();
+      await figure.evaluate((image) => image.decode());
+      assert(await figure.evaluate((image) => image.naturalWidth >= 300));
     }
+    report.checks.push({
+      check: 'raster cover and inline visual figures',
+      roundId: round.id,
+      figures: await figures.count(),
+      passed: true,
+    });
     report.checks.push({
       check: 'batch article and all expanded records',
       roundId: round.id,
@@ -279,6 +298,26 @@ try {
   });
   await page.getByRole('button', { name: '清除筛选', exact: false }).click();
   assert.equal((await page.locator('.section-head > p').innerText()).trim(), '70 篇匹配');
+  const more = page.getByRole('button', { name: '加载更多', exact: false });
+  for (let i = 0; i < 12 && (await more.count()); i++) await more.click();
+  assert.equal(await page.locator('.post-card').count(), 70);
+  await page.locator('.post-card img').evaluateAll(async (images) => {
+    images.forEach((image) => {
+      image.loading = 'eager';
+    });
+    await Promise.all(images.map((image) => image.decode()));
+  });
+  assert(
+    await page
+      .locator('.post-card img')
+      .evaluateAll((images) =>
+        images.every((image) => image.naturalWidth >= 600 && !image.src.endsWith('.svg')),
+      ),
+  );
+  report.checks.push({
+    check: 'all 70 article covers decode as raster images',
+    passed: true,
+  });
   await page.getByRole('button', { name: 'Notes', exact: true }).click();
   await page.waitForURL('**/#/notes');
   assert.equal((await page.locator('.section-head > p').innerText()).trim(), '6 篇匹配');
@@ -299,6 +338,18 @@ try {
 
   await open(page, '#/post/benchmark-r4090-community-complete-20261029');
   await shot(page, 'batch-article-desktop.png');
+  await page.locator('#visuals').scrollIntoViewIfNeeded();
+  await shot(page, 'batch-gallery-desktop.png', page.locator('.experiment-figure').first());
+  await page.locator('.sample-player summary').first().click();
+  const sampleVideo = page.locator('.sample-player video').first();
+  await sampleVideo.evaluate(async (video) => {
+    video.muted = true;
+    await video.play();
+  });
+  await delay(500);
+  assert(await sampleVideo.evaluate((video) => video.currentTime > 0 && video.videoWidth > 0));
+  await sampleVideo.evaluate((video) => video.pause());
+  report.checks.push({ check: 'original public video plays', passed: true });
   await page.locator('#results').scrollIntoViewIfNeeded();
   await page.locator('.batch-case > summary').first().click();
   await shot(page, 'batch-record-desktop.png');
@@ -306,10 +357,30 @@ try {
   assert.equal(await page.locator('.reader-large').count(), 1);
   await page.getByRole('button', { name: '返回列表', exact: false }).click();
   await page.waitForURL('**/#/benchmark');
-  report.checks.push({ check: 'reader controls and return to batch index', passed: true });
+  report.checks.push({
+    check: 'reader controls and return to batch index',
+    passed: true,
+  });
   await open(page, '#/post/benchmark-r4090-quality');
   await page.locator('#scope').scrollIntoViewIfNeeded();
   await shot(page, 'review-batch-desktop.png');
+  await open(page, '#/post/benchmark-r4090-tts');
+  await page.locator('#visuals').scrollIntoViewIfNeeded();
+  const sampleAudio = page.locator('.experiment-figure audio').first();
+  await sampleAudio.evaluate(async (audio) => {
+    audio.muted = true;
+    await audio.play();
+  });
+  await delay(400);
+  assert(await sampleAudio.evaluate((audio) => audio.currentTime > 0 && audio.duration > 0));
+  await sampleAudio.evaluate((audio) => audio.pause());
+  await shot(page, 'audio-gallery-desktop.png', page.locator('.experiment-figure').first());
+  report.checks.push({ check: 'original public audio plays', passed: true });
+  await open(page, '#/post/benchmark-r3080-3d');
+  await page.locator('#visuals').scrollIntoViewIfNeeded();
+  await shot(page, 'image-gallery-desktop.png', page.locator('.experiment-figure').first());
+  await open(page, '#/post/benchmark-r4090-swift-20261022');
+  await shot(page, 'illustrated-article-desktop.png');
 
   for (const width of [320, 390, 768, 1440]) {
     await page.setViewportSize({ width, height: 960 });
@@ -332,6 +403,10 @@ try {
   await recorded.locator('.post-card .open-link').first().click();
   await recorded.locator('.batch-results').waitFor();
   await delay(1600);
+  await recorded.locator('#visuals').scrollIntoViewIfNeeded();
+  await delay(2000);
+  await recorded.locator('.experiment-figure').nth(1).scrollIntoViewIfNeeded();
+  await delay(1600);
   await recorded.locator('#results').scrollIntoViewIfNeeded();
   await delay(1200);
   await recorded.locator('.batch-case > summary').first().click();
@@ -347,6 +422,9 @@ try {
   await open(phone, '#/post/benchmark-r4090-quality');
   await delay(1800);
   await shot(phone, 'batch-article-mobile.png');
+  await phone.locator('#visuals').scrollIntoViewIfNeeded();
+  await delay(1800);
+  await shot(phone, 'batch-gallery-mobile.png', phone.locator('.experiment-figure').first());
   await phone.locator('#scope').scrollIntoViewIfNeeded();
   await delay(1600);
   await phone.locator('#results').scrollIntoViewIfNeeded();

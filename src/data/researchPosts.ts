@@ -13,7 +13,8 @@ export const researchPosts: Post[] = [
     pinned: true,
     section: 'Research',
     priority: 'P0',
-    sourcePath: 'research/04_market_research/reports/open_source_projects/2026-05-28-open-source-projects-index.md',
+    sourcePath:
+      'research/04_market_research/reports/open_source_projects/2026-05-28-open-source-projects-index.md',
     excerpt:
       '这批项目共同指向一个方向：AI 工具链正在从单点模型评测，转向本地运行、工具协议、多模态输入输出和可组合工作流。',
     content: [
@@ -63,15 +64,27 @@ export const researchPosts: Post[] = [
   {
     slug: 'wechat-image-generation-world-models',
     title: 'World-R1、ERNIE-Image 8B、Ideogram 4 与 Lens：生成模型正在转向结构可控',
-    subtitle: '6/4 简报显示，图像和视频生成的竞争点正在从单张好看图，转向 3D 几何、文字渲染、版式控制和训练效率。',
+    subtitle:
+      '6/4 简报显示，图像和视频生成的竞争点正在从单张好看图，转向 3D 几何、文字渲染、版式控制和训练效率。',
     date: '2026-06-04',
     category: 'Image & World Model Briefing',
-    tags: ['World-R1', 'ERNIE-Image', 'Ideogram 4', 'Lens', 'Image Generation', 'World Model', 'Training Efficiency'],
-    cover: '/assets/batch-covers/wechat-image-generation-world-models.svg',
+    tags: [
+      'World-R1',
+      'ERNIE-Image',
+      'Ideogram 4',
+      'Lens',
+      'Image Generation',
+      'World Model',
+      'Training Efficiency',
+    ],
+    cover: '/assets/benchmark-visuals/hero/wechat-image-generation-world-models.webp',
+    coverCaption: 'gpt-image-2.5 主题插画 · 视频与世界模型研究',
+    coverLabel: '主题插画',
     readMins: 10,
     section: 'Research',
     priority: 'P1',
-    sourcePath: 'research/10_outputs/briefings/2026-06-04-wechat-image-generation-world-model-briefing.md',
+    sourcePath:
+      'research/10_outputs/briefings/2026-06-04-wechat-image-generation-world-model-briefing.md',
     excerpt:
       'World-R1 把视频生成拉向 3D-aware reward，ERNIE-Image 8B 和 Ideogram 4 把图像生成拉向文字与版式控制，Lens 则把训练效率拆成可复用工程清单。',
     content: [
@@ -99,7 +112,7 @@ export const researchPosts: Post[] = [
         items: [
           '图像 prompt 集需要加入中文长文本、英文长文本、UI mock、商品包装、海报版式、透明素材和 bbox 约束。',
           '视频 prompt 集需要加入相机运动、遮挡、长镜头、场景回看和多物体几何一致性。',
-          '每次实验都要保存原始 prompt、改写后 prompt、seed、分辨率、推理框架、权重许可和输出图。'
+          '每次实验都要保存原始 prompt、改写后 prompt、seed、分辨率、推理框架、权重许可和输出图。',
         ],
       },
       { type: 'h2', id: 'license', text: '许可先于试用' },
@@ -154,15 +167,19 @@ export const researchPosts: Post[] = [
   {
     slug: 'subforge-subtitle-research-pipeline',
     title: 'SubForge：把视频字幕生产变成个人研究系统的入口层',
-    subtitle: '转录、分段、翻译、质检和字幕合成被收敛成 CLI 管线后，视频资料就能更稳定地进入知识库。',
+    subtitle:
+      '转录、分段、翻译、质检和字幕合成被收敛成 CLI 管线后，视频资料就能更稳定地进入知识库。',
     date: '2026-06-02',
     category: 'Creator Toolchain',
     tags: ['SubForge', 'Subtitle', 'Video Localization', 'CLI', 'Research Workflow', 'FFmpeg'],
-    cover: '/assets/batch-covers/subforge-subtitle-research-pipeline.svg',
+    cover: '/assets/benchmark-visuals/hero/subforge-subtitle-research-pipeline.webp',
+    coverCaption: 'gpt-image-2.5 主题插画 · 视频资料与字幕制作流程',
+    coverLabel: '主题插画',
     readMins: 8,
     section: 'Research',
     priority: 'P1',
-    sourcePath: 'research/10_outputs/briefings/2026-06-02-wechat-subtitle-restricted-sources-briefing.md',
+    sourcePath:
+      'research/10_outputs/briefings/2026-06-02-wechat-subtitle-restricted-sources-briefing.md',
     excerpt:
       'SubForge 的价值不只是自动生成字幕，而是把视频资料先转成可检索、可翻译、可复核的文本层，让技术课程、访谈和播客进入长期 research/ 归档。',
     content: [
@@ -244,7 +261,14 @@ export const researchPosts: Post[] = [
     subtitle: '把 2 篇微信新信号整理成一篇简报：高吞吐多模态 Agent 与真实世界图像修复。',
     date: '2026-05-30',
     category: 'AI Model Briefing',
-    tags: ['Step 3.7 Flash', 'RealRestorer', 'Multimodal', 'Image Restoration', 'Agent', 'Open Source'],
+    tags: [
+      'Step 3.7 Flash',
+      'RealRestorer',
+      'Multimodal',
+      'Image Restoration',
+      'Agent',
+      'Open Source',
+    ],
     cover: '/assets/generated-covers/wechat-ai-models-restoration-flash-agents.png',
     readMins: 8,
     section: 'Research',
@@ -421,7 +445,8 @@ export const researchPosts: Post[] = [
     readMins: 8,
     section: 'Research',
     priority: 'P1',
-    sourcePath: 'research/10_outputs/briefings/2026-05-31-wechat-local-ai-safety-avatar-briefing.md',
+    sourcePath:
+      'research/10_outputs/briefings/2026-05-31-wechat-local-ai-safety-avatar-briefing.md',
     excerpt:
       'Gemma 4 / Unsloth、Heretic 和 SoulX-FlashTalk 共同指出：本地 AI 的产品入口正在形成，但安全约束、可变行为和数字人输出都需要更严格的实验记录。',
     content: [
@@ -503,15 +528,24 @@ export const researchPosts: Post[] = [
   {
     slug: 'wechat-video-image-audio-models',
     title: '视频、图像与音频模型同时加速：从长视频基础设施到实时同传',
-    subtitle: 'LongLive 2.0、SANA-WM、ERNIE-Image、HiDream-O1、NAVA、UniVidX 与 Qwen3.5-LiveTranslate 的多模态简报。',
+    subtitle:
+      'LongLive 2.0、SANA-WM、ERNIE-Image、HiDream-O1、NAVA、UniVidX 与 Qwen3.5-LiveTranslate 的多模态简报。',
     date: '2026-05-31',
     category: 'Multimodal Model Briefing',
-    tags: ['Video Generation', 'Image Generation', 'Audio AI', 'World Model', 'Live Translation', 'ComfyUI'],
+    tags: [
+      'Video Generation',
+      'Image Generation',
+      'Audio AI',
+      'World Model',
+      'Live Translation',
+      'ComfyUI',
+    ],
     cover: '/assets/generated-covers/wechat-video-image-audio-models.png',
     readMins: 10,
     section: 'Research',
     priority: 'P1',
-    sourcePath: 'research/10_outputs/briefings/2026-05-31-wechat-video-image-audio-models-briefing.md',
+    sourcePath:
+      'research/10_outputs/briefings/2026-05-31-wechat-video-image-audio-models-briefing.md',
     excerpt:
       '5/31 的多模态材料显示，长视频、世界模型、开源图像生成、音视频同步、可控编辑和实时翻译正在同时推进，实验体系需要从单模型评测转向固定场景矩阵。',
     content: [
@@ -605,7 +639,8 @@ export const researchPosts: Post[] = [
   {
     slug: 'longcat-video-avatar-1-5-audio-driven-digital-human',
     title: 'LongCat-Video-Avatar-1.5：音频驱动数字人的开源生产线信号',
-    subtitle: '美团 LongCat 把长视频基础模型、Whisper-large-v3 音频编码、多路音频和 MIT 许可组合到数字人视频生成任务里。',
+    subtitle:
+      '美团 LongCat 把长视频基础模型、Whisper-large-v3 音频编码、多路音频和 MIT 许可组合到数字人视频生成任务里。',
     date: '2026-05-29',
     category: 'Video Avatar',
     tags: ['LongCat', 'Avatar', 'Audio To Video', 'Video Generation'],
@@ -613,7 +648,8 @@ export const researchPosts: Post[] = [
     readMins: 9,
     section: 'Research',
     priority: 'P1',
-    sourcePath: 'research/04_market_research/reports/open_source_projects/2026-05-29-longcat-video-avatar-1-5-report.md',
+    sourcePath:
+      'research/04_market_research/reports/open_source_projects/2026-05-29-longcat-video-avatar-1-5-report.md',
     sourceUrl: 'https://huggingface.co/meituan-longcat/LongCat-Video-Avatar-1.5',
     excerpt:
       'LongCat-Video-Avatar-1.5 的价值在于它不是泛化文生视频叙事，而是围绕唇形同步、身份一致性、多人对话和长视频稳定性这些数字人生产指标展开。',
@@ -733,7 +769,8 @@ export const researchPosts: Post[] = [
   {
     slug: 'personal-research-system-operating-model',
     title: '个人 Research 系统：从捕捉、证据到可发布报告',
-    subtitle: '把 research/ 的目录结构、质量等级、标签体系和 PDF 成对规则整理成长期可维护的知识生产流程。',
+    subtitle:
+      '把 research/ 的目录结构、质量等级、标签体系和 PDF 成对规则整理成长期可维护的知识生产流程。',
     date: '2026-05-28',
     category: 'Research System',
     tags: ['Research', 'Knowledge System', 'Workflow', 'PDF Export'],
@@ -807,7 +844,8 @@ export const researchPosts: Post[] = [
   {
     slug: 'qwen3-6-27b-agentic-coding-baseline',
     title: 'Qwen3.6-27B：长上下文 Agentic Coding 的开源基线',
-    subtitle: '27B dense、Apache-2.0、262K 到 1M token 上下文，让它成为私有 AI 工程栈的优先实验对象。',
+    subtitle:
+      '27B dense、Apache-2.0、262K 到 1M token 上下文，让它成为私有 AI 工程栈的优先实验对象。',
     date: '2026-05-28',
     category: 'Model Research',
     tags: ['Qwen', 'Agentic Coding', 'Long Context', 'Open Weight'],
@@ -815,7 +853,8 @@ export const researchPosts: Post[] = [
     readMins: 8,
     section: 'Research',
     priority: 'P0',
-    sourcePath: 'research/04_market_research/reports/open_source_projects/2026-05-28-qwen3-6-27b-report.md',
+    sourcePath:
+      'research/04_market_research/reports/open_source_projects/2026-05-28-qwen3-6-27b-report.md',
     sourceUrl: 'https://huggingface.co/Qwen/Qwen3.6-27B',
     excerpt:
       'Qwen3.6-27B 的价值不在单项跑分，而在长上下文、工具调用、多模态输入与开源商用许可组合成了可实验的 Coding Agent 基线。',
@@ -865,7 +904,8 @@ export const researchPosts: Post[] = [
     readMins: 8,
     section: 'Research',
     priority: 'P0',
-    sourcePath: 'research/04_market_research/reports/open_source_projects/2026-05-28-voicebox-report.md',
+    sourcePath:
+      'research/04_market_research/reports/open_source_projects/2026-05-28-voicebox-report.md',
     sourceUrl: 'https://github.com/jamiepine/voicebox',
     excerpt:
       'Voicebox 不是单纯 TTS 前端。它的 MCP server、REST API、STT dictation 和本地运行路径，让语音可以进入 Agent 工作流。',
@@ -903,7 +943,8 @@ export const researchPosts: Post[] = [
   {
     slug: 'smallcode-small-model-coding-agent',
     title: 'SmallCode：为小模型重写 Coding Agent 的脚手架',
-    subtitle: '当 8B 到 35B 本地模型不擅长稳定工具调用时，Agent 框架本身就要补上预算、解析和任务拆解能力。',
+    subtitle:
+      '当 8B 到 35B 本地模型不擅长稳定工具调用时，Agent 框架本身就要补上预算、解析和任务拆解能力。',
     date: '2026-05-28',
     category: 'Coding Agent',
     tags: ['SmallCode', 'Coding Agent', 'Local LLM', 'MCP'],
@@ -911,7 +952,8 @@ export const researchPosts: Post[] = [
     readMins: 7,
     section: 'Research',
     priority: 'P1',
-    sourcePath: 'research/04_market_research/reports/open_source_projects/2026-05-28-smallcode-report.md',
+    sourcePath:
+      'research/04_market_research/reports/open_source_projects/2026-05-28-smallcode-report.md',
     sourceUrl: 'https://github.com/Doorman11991/smallcode',
     excerpt:
       'SmallCode 的关键观点是：不要假设小模型拥有大模型级别的规划和工具调用能力，Agent scaffold 必须围绕小模型限制设计。',
@@ -948,7 +990,8 @@ export const researchPosts: Post[] = [
   {
     slug: 'mesh-llm-private-distributed-inference',
     title: 'Mesh-LLM：把多台本地机器组织成私有推理网',
-    subtitle: 'OpenAI-compatible API、public/private mesh、stage split 与 Mixture-of-Agents gateway，让它成为本地算力网络的 P1 观察项。',
+    subtitle:
+      'OpenAI-compatible API、public/private mesh、stage split 与 Mixture-of-Agents gateway，让它成为本地算力网络的 P1 观察项。',
     date: '2026-05-28',
     category: 'AI Infra',
     tags: ['Mesh-LLM', 'Distributed Inference', 'OpenAI API', 'Local First'],
@@ -956,7 +999,8 @@ export const researchPosts: Post[] = [
     readMins: 7,
     section: 'Research',
     priority: 'P1',
-    sourcePath: 'research/04_market_research/reports/open_source_projects/2026-05-28-mesh-llm-report.md',
+    sourcePath:
+      'research/04_market_research/reports/open_source_projects/2026-05-28-mesh-llm-report.md',
     sourceUrl: 'https://github.com/Mesh-LLM/mesh-llm',
     excerpt:
       'Mesh-LLM 的价值不是“免费算力”叙事，而是私有团队把多台工作站聚合为一个 OpenAI-compatible 推理端点的可能性。',
@@ -993,7 +1037,8 @@ export const researchPosts: Post[] = [
   {
     slug: 'lance-unified-multimodal-research',
     title: 'Lance：3B active 统一多模态模型的研究信号',
-    subtitle: 'ByteDance 把图像、视频、理解、生成和编辑放入一个 native unified multimodal model，方向值得跟踪，生产使用仍需谨慎。',
+    subtitle:
+      'ByteDance 把图像、视频、理解、生成和编辑放入一个 native unified multimodal model，方向值得跟踪，生产使用仍需谨慎。',
     date: '2026-05-28',
     category: 'Multimodal Research',
     tags: ['Lance', 'Multimodal', 'Video', 'Image Generation'],
@@ -1001,7 +1046,8 @@ export const researchPosts: Post[] = [
     readMins: 7,
     section: 'Research',
     priority: 'P1',
-    sourcePath: 'research/04_market_research/reports/open_source_projects/2026-05-28-lance-report.md',
+    sourcePath:
+      'research/04_market_research/reports/open_source_projects/2026-05-28-lance-report.md',
     sourceUrl: 'https://github.com/bytedance/Lance',
     excerpt:
       'Lance 的研究价值在于统一多模态小模型路线：同一框架覆盖图像/视频理解、生成和编辑，但质量与推理成本还需要真实任务评估。',
@@ -1038,7 +1084,8 @@ export const researchPosts: Post[] = [
   {
     slug: 'dreamlite-on-device-image-generation',
     title: 'DreamLite：端侧统一图像生成与编辑的许可分水岭',
-    subtitle: '0.39B、4-step inference、统一生成编辑模型很有方向感，但权重可用性、非商业许可和端侧实测决定它能走多远。',
+    subtitle:
+      '0.39B、4-step inference、统一生成编辑模型很有方向感，但权重可用性、非商业许可和端侧实测决定它能走多远。',
     date: '2026-05-28',
     category: 'Edge AI',
     tags: ['DreamLite', 'On Device AI', 'Image Editing', 'Diffusion'],
@@ -1046,7 +1093,8 @@ export const researchPosts: Post[] = [
     readMins: 7,
     section: 'Research',
     priority: 'P2',
-    sourcePath: 'research/04_market_research/reports/open_source_projects/2026-05-28-dreamlite-report.md',
+    sourcePath:
+      'research/04_market_research/reports/open_source_projects/2026-05-28-dreamlite-report.md',
     sourceUrl: 'https://github.com/ByteVisionLab/DreamLite',
     excerpt:
       'DreamLite 代表端侧生成式 AI 的前沿方向：同一 0.39B 扩散模型做 text-to-image 和 text-guided image editing。',
@@ -1080,7 +1128,8 @@ export const researchPosts: Post[] = [
   {
     slug: 'sulphur-2-gguf-local-video-workflow',
     title: 'Sulphur-2-Base-GGUF：本地视频生成的 ComfyUI 量化路径',
-    subtitle: '多档 GGUF 量化降低本地视频生成门槛，但 LTX-2 许可、内容安全和工作流复现必须先被记录清楚。',
+    subtitle:
+      '多档 GGUF 量化降低本地视频生成门槛，但 LTX-2 许可、内容安全和工作流复现必须先被记录清楚。',
     date: '2026-05-28',
     category: 'Video AI',
     tags: ['Sulphur', 'GGUF', 'ComfyUI', 'Video Generation'],
@@ -1088,7 +1137,8 @@ export const researchPosts: Post[] = [
     readMins: 8,
     section: 'Research',
     priority: 'P2',
-    sourcePath: 'research/04_market_research/reports/open_source_projects/2026-05-28-sulphur-2-base-gguf-report.md',
+    sourcePath:
+      'research/04_market_research/reports/open_source_projects/2026-05-28-sulphur-2-base-gguf-report.md',
     sourceUrl: 'https://huggingface.co/vantagewithai/Sulphur-2-Base-GGUF',
     excerpt:
       '这个仓库的重点是把 Sulphur 2 量化成 GGUF 并接入 ComfyUI，适合作为本地视频生成实验卡，而不是商业基座。',
@@ -1125,7 +1175,8 @@ export const researchPosts: Post[] = [
   {
     slug: 'idmvton-cn-virtual-try-on-baseline',
     title: 'IDMVTON_CN：中文虚拟试衣工具的历史基线',
-    subtitle: '它的长期价值不在继续维护，而在记录 2024-2025 年中文 AI 换装工具的传播路径与应用形态。',
+    subtitle:
+      '它的长期价值不在继续维护，而在记录 2024-2025 年中文 AI 换装工具的传播路径与应用形态。',
     date: '2026-05-28',
     category: 'Product Research',
     tags: ['VTON', 'ComfyUI', 'Chinese Localization', 'Product Baseline'],
@@ -1133,7 +1184,8 @@ export const researchPosts: Post[] = [
     readMins: 6,
     section: 'Research',
     priority: 'P3',
-    sourcePath: 'research/04_market_research/reports/open_source_projects/2026-05-28-idmvton-cn-report.md',
+    sourcePath:
+      'research/04_market_research/reports/open_source_projects/2026-05-28-idmvton-cn-report.md',
     sourceUrl: 'https://github.com/MoJIeAIGC/IDMVTON_CN',
     excerpt:
       'IDMVTON_CN 是 IDM-VTON 的中文本地化和 Windows 一键安装封装，适合作为虚拟试衣专题里的早期对照组。',

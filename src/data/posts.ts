@@ -12,7 +12,11 @@ export type ContentBlock =
   | { type: 'image'; src: string; alt: string; text: string }
   | { type: 'video' | 'audio'; src: string; poster?: string; text: string }
   | { type: 'link'; href: string; text: string }
-  | { type: 'benchmark-results'; roundId: string; text: string };
+  | {
+      type: 'benchmark-results' | 'benchmark-gallery';
+      roundId: string;
+      text: string;
+    };
 
 export type Post = {
   slug: string;
@@ -22,6 +26,8 @@ export type Post = {
   category: string;
   tags: string[];
   cover: string;
+  coverCaption?: string;
+  coverLabel?: string;
   readMins: number;
   pinned?: boolean;
   section?: 'Blog' | 'Research' | 'Benchmark';
@@ -48,7 +54,10 @@ const blogPosts: Post[] = [
     excerpt:
       'Agent 系统不是把模型接上工具就结束。可靠闭环需要可观测的状态、可回放的执行、可比较的评测，以及清晰的人类接管点。',
     content: [
-      { type: 'p', text: '一个能上线的 Agent Runtime，核心不是复杂，而是每次行动都能解释、复现和修正。' },
+      {
+        type: 'p',
+        text: '一个能上线的 Agent Runtime，核心不是复杂，而是每次行动都能解释、复现和修正。',
+      },
       { type: 'h2', id: 'contract', text: '先定义运行契约' },
       {
         type: 'p',
@@ -67,7 +76,10 @@ const blogPosts: Post[] = [
         type: 'p',
         text: '长期记忆应该是可检索的事实、偏好和决策记录。短期上下文才是当前任务的执行状态。把两者混在一起，会让系统难以调试，也会放大幻觉。',
       },
-      { type: 'quote', text: '可靠 Agent 的第一原则：少给模型隐式权力，多给系统显式边界。' },
+      {
+        type: 'quote',
+        text: '可靠 Agent 的第一原则：少给模型隐式权力，多给系统显式边界。',
+      },
       { type: 'h2', id: 'eval', text: '评测要跟任务形态对齐' },
       {
         type: 'p',
@@ -100,8 +112,15 @@ const blogPosts: Post[] = [
     excerpt:
       'MPC 钱包不是单纯的签名技术展示。产品需要把安全边界、恢复体验和交易确认拆成三个可验证层。',
     content: [
-      { type: 'p', text: 'MPC 钱包的难点在于，用户感受到的是登录和转账，工程侧处理的是密钥份额、策略和恢复。' },
-      { type: 'h2', id: 'security-layer', text: '安全层：不要把策略写死在界面里' },
+      {
+        type: 'p',
+        text: 'MPC 钱包的难点在于，用户感受到的是登录和转账，工程侧处理的是密钥份额、策略和恢复。',
+      },
+      {
+        type: 'h2',
+        id: 'security-layer',
+        text: '安全层：不要把策略写死在界面里',
+      },
       {
         type: 'p',
         text: '策略应该由服务端、设备端和合约端共同表达。前端只负责解释风险和收集确认，不应该成为安全判断的唯一来源。',
@@ -115,7 +134,11 @@ const blogPosts: Post[] = [
           '恢复完成后要触发风险窗口，而不是立刻开放全部权限。',
         ],
       },
-      { type: 'h2', id: 'experience-layer', text: '体验层：降低签名前的认知成本' },
+      {
+        type: 'h2',
+        id: 'experience-layer',
+        text: '体验层：降低签名前的认知成本',
+      },
       {
         type: 'p',
         text: '用户不需要理解曲线、份额和阈值，但必须知道这次签名会改变什么。交易摘要、授权范围和可撤销性，比技术术语更重要。',
@@ -134,7 +157,10 @@ const blogPosts: Post[] = [
     excerpt:
       '去中心化社交客户端不能只展示协议能力。用户真正需要的是稳定的身份感、可理解的关系流和可恢复的同步状态。',
     content: [
-      { type: 'p', text: 'Nostr 的协议简洁，但产品复杂度会转移到客户端：密钥、Relay、内容发现和关系网络都需要被解释。' },
+      {
+        type: 'p',
+        text: 'Nostr 的协议简洁，但产品复杂度会转移到客户端：密钥、Relay、内容发现和关系网络都需要被解释。',
+      },
       { type: 'h2', id: 'identity', text: '身份先于内容' },
       {
         type: 'p',
@@ -145,11 +171,18 @@ const blogPosts: Post[] = [
         type: 'p',
         text: '连接失败、延迟、写入拒绝和读取不完整都应该体现在 UI 中。否则用户会把协议同步问题理解成产品坏了。',
       },
-      { type: 'quote', text: '去中心化产品不能把复杂度藏起来，只能把复杂度翻译成人能理解的状态。' },
+      {
+        type: 'quote',
+        text: '去中心化产品不能把复杂度藏起来，只能把复杂度翻译成人能理解的状态。',
+      },
       { type: 'h2', id: 'loop', text: '形成轻量循环' },
       {
         type: 'list',
-        items: ['身份可见：当前身份、备份状态、权限边界。', '关系可见：关注、回复、收藏和引用。', '同步可见：Relay 健康、最后同步时间、失败重试。'],
+        items: [
+          '身份可见：当前身份、备份状态、权限边界。',
+          '关系可见：关注、回复、收藏和引用。',
+          '同步可见：Relay 健康、最后同步时间、失败重试。',
+        ],
       },
     ],
   },
@@ -165,7 +198,10 @@ const blogPosts: Post[] = [
     excerpt:
       '静态站发布看起来简单，但资源路径、SPA 路由回退、图片尺寸和缓存头很容易在部署后暴露问题。',
     content: [
-      { type: 'p', text: 'Vite 项目本地能跑，不代表部署就完整。静态托管最常见的问题来自资源路径和路由回退。' },
+      {
+        type: 'p',
+        text: 'Vite 项目本地能跑，不代表部署就完整。静态托管最常见的问题来自资源路径和路由回退。',
+      },
       { type: 'h2', id: 'routing', text: '先确认路由模式' },
       {
         type: 'p',
@@ -174,9 +210,17 @@ const blogPosts: Post[] = [
       { type: 'h2', id: 'assets', text: '资源要有稳定路径' },
       {
         type: 'list',
-        items: ['public 目录资源用绝对路径时，要确认部署 base。', '大图需要压缩版本，首屏图片要控制尺寸。', '外部 CDN 脚本需要有失败降级，不要阻塞主内容。'],
+        items: [
+          'public 目录资源用绝对路径时，要确认部署 base。',
+          '大图需要压缩版本，首屏图片要控制尺寸。',
+          '外部 CDN 脚本需要有失败降级，不要阻塞主内容。',
+        ],
       },
-      { type: 'code', language: 'bash', text: 'npm run build\nnpm run preview\n# open /, /post/agent-runtime-notes' },
+      {
+        type: 'code',
+        language: 'bash',
+        text: 'npm run build\nnpm run preview\n# open /, /post/agent-runtime-notes',
+      },
       { type: 'h2', id: 'seo', text: 'SEO 不只是一组 meta' },
       {
         type: 'p',
@@ -196,7 +240,10 @@ const blogPosts: Post[] = [
     excerpt:
       '扩展项目一旦涉及内容脚本、后台任务和页面注入，就需要一个统一控制面板来观察状态和复现实验。',
     content: [
-      { type: 'p', text: '扩展自动化的复杂度来自多上下文通信：popup、background、content script 和目标网页都可能改变状态。' },
+      {
+        type: 'p',
+        text: '扩展自动化的复杂度来自多上下文通信：popup、background、content script 和目标网页都可能改变状态。',
+      },
       { type: 'h2', id: 'control-page', text: '控制页是调试入口' },
       {
         type: 'p',
@@ -205,7 +252,11 @@ const blogPosts: Post[] = [
       { type: 'h2', id: 'replay', text: '任务要能回放' },
       {
         type: 'list',
-        items: ['每次自动点击、输入和读取都记录目标、时间和结果。', '失败步骤保留 DOM 线索和错误信息。', '危险动作默认进入人工确认。'],
+        items: [
+          '每次自动点击、输入和读取都记录目标、时间和结果。',
+          '失败步骤保留 DOM 线索和错误信息。',
+          '危险动作默认进入人工确认。',
+        ],
       },
       { type: 'h2', id: 'privacy', text: '本地优先处理隐私数据' },
       {
@@ -226,7 +277,10 @@ const blogPosts: Post[] = [
     excerpt:
       '一个工具箱页面如果只堆卡片，很快会变成视觉噪音。维护分类、标签和来源，才能让目录长期有用。',
     content: [
-      { type: 'p', text: '工具箱的价值不是收集数量，而是用户能否快速判断一个工具适不适合当前任务。' },
+      {
+        type: 'p',
+        text: '工具箱的价值不是收集数量，而是用户能否快速判断一个工具适不适合当前任务。',
+      },
       { type: 'h2', id: 'schema', text: '先稳定数据结构' },
       {
         type: 'p',
@@ -240,7 +294,11 @@ const blogPosts: Post[] = [
       { type: 'h2', id: 'maintenance', text: '维护入口要简单' },
       {
         type: 'list',
-        items: ['数据文件和页面组件解耦。', 'README 自动或半自动列出分类。', '失效链接和重复条目定期检查。'],
+        items: [
+          '数据文件和页面组件解耦。',
+          'README 自动或半自动列出分类。',
+          '失效链接和重复条目定期检查。',
+        ],
       },
     ],
   },

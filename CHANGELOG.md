@@ -1,5 +1,15 @@
 # Changelog / 更新记录
 
+## 2026-10-30 — Visual edition / 图像封面与实际产物
+
+- 中文：替换 46 篇测评与两篇 Research 的文字封面，全部 70 篇文章均有图像封面。
+- English: Replaced textual covers for 46 batch journals and two Research posts; all 70 articles now have raster covers.
+- 中文：新增 103 张正文配图，覆盖实际视频分镜、图像/3D 截图、完整音轨波形与记录摘录，并可按需播放原样本。
+- English: Added 103 inline figures with real frames, image/3D screenshots, full-track amplitude envelopes, record excerpts and original playback.
+- 中文：使用指定技能与 gpt-image-2.5 生成 13 组主题插画，保留提示词、原图和来源；旧文字封面及旧生成脚本已替换。
+- English: Generated 13 labeled thematic illustrations through the requested skill/model, retaining prompts, originals and provenance.
+- [实现与发布 / Implementation and release](docs/releases/2026-10-30-visual-refresh.md) · [素材方案 / Material design](docs/benchmark-visuals.md)。
+
 ## 2026-10-29 — Editorial refresh / 标题与正文重写
 
 - 中文：逐篇重写 46 篇测评标题、独立摘要与正文，新增三点提要与两个分析章节；日期单列，681 条证据与 89 次引用归属不变。
