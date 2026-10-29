@@ -1,6 +1,7 @@
 import fs from 'node:fs/promises';
 import path from 'node:path';
 import net from 'node:net';
+import assert from 'node:assert/strict';
 import { spawn, execFileSync } from 'node:child_process';
 import { setTimeout as delay } from 'node:timers/promises';
 import { chromium } from 'playwright';
@@ -12,7 +13,10 @@ const ffmpeg = process.env.FFMPEG_PATH || 'ffmpeg';
 const ffprobe = process.env.FFPROBE_PATH || 'ffprobe';
 execFileSync(ffmpeg, ['-version'], { stdio: 'ignore' });
 execFileSync(ffprobe, ['-version'], { stdio: 'ignore' });
-execFileSync(process.execPath, [path.join(root, 'node_modules/vite/bin/vite.js'), 'build'], { cwd: root, stdio: 'inherit' });
+execFileSync(process.execPath, [path.join(root, 'node_modules/vite/bin/vite.js'), 'build'], {
+  cwd: root,
+  stdio: 'inherit',
+});
 
 const port = await new Promise((resolve, reject) => {
   const server = net.createServer();
@@ -22,9 +26,23 @@ const port = await new Promise((resolve, reject) => {
     server.close(() => resolve(selected));
   });
 });
-const preview = spawn(process.execPath, [path.join(root, 'node_modules/vite/bin/vite.js'), 'preview', '--host', '127.0.0.1', '--port', String(port), '--strictPort'], {
-  cwd: root, windowsHide: true, stdio: 'ignore',
-});
+const preview = spawn(
+  process.execPath,
+  [
+    path.join(root, 'node_modules/vite/bin/vite.js'),
+    'preview',
+    '--host',
+    '127.0.0.1',
+    '--port',
+    String(port),
+    '--strictPort',
+  ],
+  {
+    cwd: root,
+    windowsHide: true,
+    stdio: 'ignore',
+  },
+);
 const baseUrl = `http://127.0.0.1:${port}`;
 let browser;
 const checks = [];
@@ -38,9 +56,9 @@ async function contextFor(viewport, recordVideo = false) {
   });
   await context.addInitScript(() => localStorage.setItem('sidcloud-lang', 'en-US'));
   // The external decorative widget is excluded from documentation captures only.
-  await context.route('**/live2d-widgets@*/**', route => route.abort());
+  await context.route('**/live2d-widgets@*/**', (route) => route.abort());
   // Use native fallback fonts so a delayed third-party font never stalls a capture.
-  await context.route(/https:\/\/fonts\.(googleapis|gstatic)\.com\//, route => route.abort());
+  await context.route(/https:\/\/fonts\.(googleapis|gstatic)\.com\//, (route) => route.abort());
   return context;
 }
 
@@ -69,7 +87,7 @@ async function screenshot(page, filename, options = {}) {
 
 async function settleFullPage(page) {
   await page.evaluate(async () => {
-    const wait = ms => new Promise(resolve => setTimeout(resolve, ms));
+    const wait = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
     for (let y = 0; y < document.documentElement.scrollHeight; y += innerHeight * 0.7) {
       window.scrollTo(0, y);
       await wait(140);
@@ -80,46 +98,141 @@ async function settleFullPage(page) {
 }
 
 async function scroll(page, top) {
-  await page.evaluate(top => window.scrollTo({ top, behavior: 'smooth' }), top);
+  await page.evaluate((top) => window.scrollTo({ top, behavior: 'smooth' }), top);
   await delay(1000);
+}
+
+async function checkNavigation(page, locale) {
+  const expected = [
+    '/',
+    'https://blog.sidcloud.cn/',
+    'https://benchmark.sidcloud.cn/',
+    '/mybox',
+    '/aitoolbox',
+    '/devtoolbox',
+  ];
+  for (const width of [320, 390, 768, 1024, 1280, 1440]) {
+    await page.setViewportSize({ width, height: 960 });
+    const links = await page.locator('header a:visible').evaluateAll((elements) =>
+      elements.map((element) => {
+        const bounds = element.getBoundingClientRect();
+        return {
+          href: element.getAttribute('href'),
+          target: element.target,
+          rel: element.rel,
+          left: bounds.left,
+          right: bounds.right,
+        };
+      }),
+    );
+    assert.deepEqual(
+      links.map((link) => link.href),
+      expected,
+      `Navigation order at ${width}px (${locale})`,
+    );
+    for (const link of links)
+      assert(link.left >= 0 && link.right <= width, `Navigation leaves the viewport at ${width}px`);
+    for (const link of links.slice(1, 3)) {
+      assert.equal(link.target, '_blank');
+      assert(
+        link.rel.split(' ').includes('noopener') && link.rel.split(' ').includes('noreferrer'),
+      );
+    }
+    const overflow = await page
+      .locator('header')
+      .evaluate((header) => header.scrollWidth > innerWidth);
+    assert.equal(overflow, false, `Header overflow at ${width}px (${locale})`);
+    checks.push({
+      check: 'primary navigation',
+      locale,
+      viewportWidth: width,
+      hrefs: expected,
+      overflow,
+    });
+  }
+  await page.setViewportSize({ width: 1440, height: 960 });
 }
 
 function convertRecording(input, filename, gifFilename, gifWidth) {
   const destination = path.join(mediaDirectory, filename);
-  execFileSync(ffmpeg, ['-hide_banner', '-loglevel', 'error', '-y', '-i', input, '-an', '-c:v', 'libx264', '-crf', '24', '-preset', 'medium', '-pix_fmt', 'yuv420p', '-movflags', '+faststart', destination]);
+  execFileSync(ffmpeg, [
+    '-hide_banner',
+    '-loglevel',
+    'error',
+    '-y',
+    '-i',
+    input,
+    '-an',
+    '-c:v',
+    'libx264',
+    '-crf',
+    '24',
+    '-preset',
+    'medium',
+    '-pix_fmt',
+    'yuv420p',
+    '-movflags',
+    '+faststart',
+    destination,
+  ]);
   assets.push(filename);
   const filter = `setpts=0.65*PTS,fps=10,scale=${gifWidth}:-2:flags=lanczos,split[a][b];[a]palettegen=max_colors=128:stats_mode=diff[p];[b][p]paletteuse=dither=bayer:bayer_scale=3:diff_mode=rectangle`;
-  execFileSync(ffmpeg, ['-hide_banner', '-loglevel', 'error', '-y', '-i', destination, '-filter_complex', filter, '-loop', '0', path.join(mediaDirectory, gifFilename)]);
+  execFileSync(ffmpeg, [
+    '-hide_banner',
+    '-loglevel',
+    'error',
+    '-y',
+    '-i',
+    destination,
+    '-filter_complex',
+    filter,
+    '-loop',
+    '0',
+    path.join(mediaDirectory, gifFilename),
+  ]);
   assets.push(gifFilename);
 }
 
 try {
   let ready = false;
   for (let attempt = 0; attempt < 60; attempt++) {
-    try { if ((await fetch(baseUrl)).ok) { ready = true; break; } } catch {}
+    try {
+      if ((await fetch(baseUrl)).ok) {
+        ready = true;
+        break;
+      }
+    } catch {}
     if (preview.exitCode !== null) throw new Error('The local preview process exited');
     await delay(250);
   }
   if (!ready) throw new Error('Local preview did not start');
   browser = await chromium.launch({
     headless: true,
-    ...(process.env.PLAYWRIGHT_CHROMIUM_EXECUTABLE_PATH ? { executablePath: process.env.PLAYWRIGHT_CHROMIUM_EXECUTABLE_PATH } : {}),
+    ...(process.env.PLAYWRIGHT_CHROMIUM_EXECUTABLE_PATH
+      ? { executablePath: process.env.PLAYWRIGHT_CHROMIUM_EXECUTABLE_PATH }
+      : {}),
   });
 
   const desktop = await contextFor({ width: 1440, height: 960 });
   const page = await desktop.newPage();
   await open(page);
+  await checkNavigation(page, 'en-US');
   await screenshot(page, 'home-desktop.png');
   await settleFullPage(page);
   await screenshot(page, 'home-full.png', { fullPage: true });
   await page.locator('footer').screenshot({ path: path.join(mediaDirectory, 'footer.png') });
   assets.push('footer.png');
   await page.getByRole('button', { name: '中文', exact: true }).click();
+  await checkNavigation(page, 'zh-CN');
   await scroll(page, 0);
   await screenshot(page, 'home-zh-CN.png');
   await page.getByRole('button', { name: 'EN', exact: true }).click();
 
-  for (const [route, filename] of [['/aitoolbox', 'ai-toolbox.png'], ['/mybox', 'my-box.png'], ['/devtoolbox', 'dev-toolbox.png']]) {
+  for (const [route, filename] of [
+    ['/aitoolbox', 'ai-toolbox.png'],
+    ['/mybox', 'my-box.png'],
+    ['/devtoolbox', 'dev-toolbox.png'],
+  ]) {
     await open(page, route);
     await screenshot(page, filename);
     checks.push({ route, cards: await page.locator('main .glass-card').count() });
@@ -141,13 +254,21 @@ try {
   await open(mobilePage);
   await mobilePage.getByRole('button', { name: '中文', exact: true }).click();
   await screenshot(mobilePage, 'home-mobile.png');
-  checks.push({ check: 'mobile overflow', overflow: await mobilePage.evaluate(() => document.documentElement.scrollWidth > innerWidth + 1) });
+  checks.push({
+    check: 'mobile overflow',
+    overflow: await mobilePage.evaluate(
+      () => document.documentElement.scrollWidth > innerWidth + 1,
+    ),
+  });
   await mobile.close();
 
   console.log('Screenshots captured. Recording the desktop walkthrough.');
   const recording = await contextFor({ width: 1280, height: 800 }, true);
   const tour = await recording.newPage();
   await open(tour);
+  await tour.locator('header a[href="https://blog.sidcloud.cn/"]:visible').hover();
+  await delay(650);
+  await tour.locator('header a[href="https://benchmark.sidcloud.cn/"]:visible').hover();
   await delay(1100);
   await scroll(tour, 850);
   await delay(700);
@@ -194,7 +315,8 @@ try {
       source: 'local Vite production preview',
       desktopViewport: { width: 1440, height: 960 },
       mobileViewport: { width: 390, height: 844 },
-      recording: 'real browser interactions; GIF playback accelerated to 0.65 of the original duration',
+      recording:
+        'real browser interactions; GIF playback accelerated to 0.65 of the original duration',
       externalLive2DWidget: 'blocked during documentation capture; application source unchanged',
       fonts: 'Google Fonts blocked during capture; CSS system-font fallback used',
       audio: 'none',
@@ -204,11 +326,55 @@ try {
   };
   for (const file of assets) {
     const target = path.join(mediaDirectory, file);
-    const probe = JSON.parse(execFileSync(ffprobe, ['-v', 'error', '-show_entries', 'format=duration:stream=codec_name,width,height', '-of', 'json', target], { encoding: 'utf8' }));
-    manifest.assets.push({ file, bytes: (await fs.stat(target)).size, sha256: await sha256(target), width: probe.streams[0].width, height: probe.streams[0].height, ...(probe.format.duration ? { durationSeconds: Number(probe.format.duration) } : {}) });
+    const probe = JSON.parse(
+      execFileSync(
+        ffprobe,
+        [
+          '-v',
+          'error',
+          '-show_entries',
+          'format=duration:stream=codec_name,width,height',
+          '-of',
+          'json',
+          target,
+        ],
+        { encoding: 'utf8' },
+      ),
+    );
+    manifest.assets.push({
+      file,
+      bytes: (await fs.stat(target)).size,
+      sha256: await sha256(target),
+      width: probe.streams[0].width,
+      height: probe.streams[0].height,
+      ...(probe.format.duration ? { durationSeconds: Number(probe.format.duration) } : {}),
+    });
   }
-  await fs.writeFile(path.join(mediaDirectory, 'manifest.json'), `${JSON.stringify(manifest, null, 2)}\n`);
-  console.log(JSON.stringify({ screenshots: assets.filter(file => file.endsWith('.png')).length, videos: 2, gifs: 2, assets: manifest.assets.map(({ file, bytes, durationSeconds }) => ({ file, bytes, durationSeconds })), checks }, null, 2));
+  await fs.writeFile(
+    path.join(mediaDirectory, 'manifest.json'),
+    `${JSON.stringify(manifest, null, 2)}\n`,
+  );
+  console.log(
+    JSON.stringify(
+      {
+        screenshots: assets.filter((file) => file.endsWith('.png')).length,
+        videos: 2,
+        gifs: 2,
+        assets: manifest.assets.map(({ file, bytes, durationSeconds }) => ({
+          file,
+          bytes,
+          durationSeconds,
+        })),
+        checks,
+      },
+      null,
+      2,
+    ),
+  );
 } finally {
-  try { await browser?.close(); } finally { preview.kill(); }
+  try {
+    await browser?.close();
+  } finally {
+    preview.kill();
+  }
 }

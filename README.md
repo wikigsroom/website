@@ -23,7 +23,9 @@ The recordings show actual local production-build interactions. Documentation ca
 | My Box | `/mybox` | 18 personal products/projects in ten categories, with localized descriptions and search |
 | Dev Toolbox | `/devtoolbox` | Five demonstration entries and five category filters; the links are currently placeholders |
 | Unknown route | `*` | Client-side “Signal Lost” page with a home link |
-| Shared navigation/footer | All routes | Chinese/English switch, persisted language, Telegram, struck-through former GitHub link and the current GitHub profile |
+| Shared navigation/footer | All routes | BLOG and Benchmark after Home, Chinese/English switch, persisted language, Telegram, struck-through former GitHub link and the current GitHub profile |
+
+The header places `BLOG` → `Benchmark` immediately after Home in both languages: [blog.sidcloud.cn](https://blog.sidcloud.cn/) and [benchmark.sidcloud.cn](https://benchmark.sidcloud.cn/). Both links open in new tabs. Navigation wraps on smaller screens and uses the desktop row from 1024 px. Details and deployment evidence are recorded in the [navigation release note](docs/releases/2026-10-29-navigation.md).
 
 The footer deliberately keeps `Github(惨遭封禁)` struck through and places a GitHub icon plus `现任仓库` immediately to its right, linking to `https://github.com/wikigsroom`.
 

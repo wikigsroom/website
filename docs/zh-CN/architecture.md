@@ -26,6 +26,8 @@
 
 首页由介绍区、三大研究方向、六个精选项目、日期动态、图片画廊及开发者信息组成。项目卡片展示并链接到外部服务，这些外部服务的业务逻辑不在本站内实现。
 
+公共导航按 `siteConfig.nav` 的顺序渲染。HOME（首页）右侧依次是指向 `https://blog.sidcloud.cn/` 的 BLOG 和指向 `https://benchmark.sidcloud.cn/` 的 Benchmark；两种语言均保留这两个入口名称。`external: true` 条目使用原生 `<a>`，设置 `target="_blank"` 和 `rel="noopener noreferrer"`；站内入口使用 React Router `NavLink`。1024 px 以下导航位于品牌和语言按钮下方并自动换行，较宽屏幕使用桌面导航行。
+
 ## 目录加载、筛选与外链
 
 ```mermaid

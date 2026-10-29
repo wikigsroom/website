@@ -35,21 +35,33 @@ const Layout = () => {
               <p className="text-xs uppercase tracking-[0.3em] text-white/60">studio</p>
             </div>
           </div>
-          <nav className="hidden items-center gap-6 text-sm uppercase tracking-[0.2em] md:flex">
-            {siteConfig.nav.map((item) => (
-              <NavLink
-                key={item.path}
-                to={item.path}
-                className={({ isActive }) =>
-                  clsx(
-                    'transition hover:text-neon-cyan',
-                    isActive ? 'text-neon-cyan' : 'text-white/70',
-                  )
-                }
-              >
-                {t(item.labelKey)}
-              </NavLink>
-            ))}
+          <nav className="hidden items-center gap-6 text-sm uppercase tracking-[0.2em] lg:flex">
+            {siteConfig.nav.map((item) =>
+              item.external ? (
+                <a
+                  key={item.path}
+                  href={item.path}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-white/70 transition hover:text-neon-cyan"
+                >
+                  {t(item.labelKey)}
+                </a>
+              ) : (
+                <NavLink
+                  key={item.path}
+                  to={item.path}
+                  className={({ isActive }) =>
+                    clsx(
+                      'transition hover:text-neon-cyan',
+                      isActive ? 'text-neon-cyan' : 'text-white/70',
+                    )
+                  }
+                >
+                  {t(item.labelKey)}
+                </NavLink>
+              ),
+            )}
           </nav>
           <button
             type="button"
@@ -60,12 +72,24 @@ const Layout = () => {
             {i18n.language === 'zh-CN' ? 'EN' : '中文'}
           </button>
         </div>
-        <div className="mx-auto flex max-w-6xl items-center gap-4 px-6 pb-4 text-xs uppercase tracking-[0.2em] text-white/60 md:hidden">
-          {siteConfig.nav.map((item) => (
-            <NavLink key={item.path} to={item.path} className="transition hover:text-neon-cyan">
-              {t(item.labelKey)}
-            </NavLink>
-          ))}
+        <div className="mx-auto flex max-w-6xl flex-wrap items-center gap-x-4 gap-y-3 px-6 pb-4 text-xs uppercase tracking-[0.2em] text-white/60 lg:hidden">
+          {siteConfig.nav.map((item) =>
+            item.external ? (
+              <a
+                key={item.path}
+                href={item.path}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="transition hover:text-neon-cyan"
+              >
+                {t(item.labelKey)}
+              </a>
+            ) : (
+              <NavLink key={item.path} to={item.path} className="transition hover:text-neon-cyan">
+                {t(item.labelKey)}
+              </NavLink>
+            ),
+          )}
         </div>
       </header>
 

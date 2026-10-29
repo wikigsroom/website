@@ -2,6 +2,22 @@
 
 Changes are recorded in both languages, newest first. / 以下按时间倒序记录中英双语更新。
 
+## 2026-10-29 — Blog and Benchmark navigation / 博客与测评导航
+
+### English
+
+- Added BLOG and Benchmark immediately after Home, linking to `https://blog.sidcloud.cn/` and `https://benchmark.sidcloud.cn/` in new tabs.
+- Kept the same link order in both languages and on desktop/mobile. Small-screen navigation wraps; the desktop navigation starts at 1024 px.
+- Updated bilingual usage/architecture documentation and refreshed screenshots, recordings and GIFs, including checks across six widths and both languages.
+- Production deployment and public verification are recorded in the [release note](docs/releases/2026-10-29-navigation.md).
+
+### 简体中文
+
+- 在 HOME（首页）右侧依次增加 BLOG 和 Benchmark，分别以新标签页打开 `https://blog.sidcloud.cn/` 与 `https://benchmark.sidcloud.cn/`。
+- 中英文、桌面与手机保持相同入口顺序；小屏导航自动换行，1024 px 起使用桌面导航。
+- 同步双语使用说明、架构文档、截图、录屏和 GIF，并核对六种宽度及两种语言下的导航布局。
+- 正式部署与公开访问验证记录于[本次发布说明](docs/releases/2026-10-29-navigation.md)。
+
 ## 2026-10-29 — Additional domain verification file / 新增域名验证文件
 
 ### English

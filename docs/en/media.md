@@ -45,7 +45,7 @@ Remove-Item Env:PLAYWRIGHT_CHROMIUM_EXECUTABLE_PATH
 1. Check codec executables, build the site, allocate a free loopback port and start a native Vite preview child process.
 2. Open an isolated browser context with a deterministic English language preference; toggle Chinese for its dedicated homepage captures.
 3. Capture desktop pages at 1440×960 and a Chinese mobile homepage at 390×844. Scroll all homepage sections into view before taking its full-page screenshot.
-4. Exercise `codex` search, unmatched search and route navigation; collect actual card counts and mobile overflow status.
+4. Verify navigation order, external-link attributes and header fit at 320/390/768/1024/1280/1440 px in both languages. Exercise `codex` search, unmatched search and route navigation; collect actual card counts and mobile overflow status.
 5. Record real desktop interactions at 1280×800 and mobile interactions at 390×844 into ignored raw WebM files.
 6. Encode silent H.264 MP4s using CRF 24, `yuv420p` and `+faststart`. Produce looping palette-based GIFs at 10 fps, 128 colors, widths 880/312, using `setpts=0.65*PTS`.
 7. Probe outputs and write [`manifest.json`](../media/manifest.json) with capture conditions, source digest, verification observations, dimensions, durations, byte sizes and SHA-256 hashes.

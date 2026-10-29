@@ -3,6 +3,8 @@
     translation: {
       nav: {
         home: 'Home',
+        blog: 'BLOG',
+        benchmark: 'Benchmark',
         aiToolbox: 'AI Toolbox',
         mybox: 'My box',
         devToolbox: 'Dev Toolbox',
@@ -25,11 +27,13 @@
       home: {
         core: {
           title: 'Core Labs',
-          subtitle: 'Three lanes powering sidcloud: agent intelligence, on-chain infrastructure, and developer velocity.',
+          subtitle:
+            'Three lanes powering sidcloud: agent intelligence, on-chain infrastructure, and developer velocity.',
           cards: {
             agent: {
               title: 'AI Agent Lab',
-              description: 'Orchestration, memory, tool calling, and eval workflows for autonomous teams.',
+              description:
+                'Orchestration, memory, tool calling, and eval workflows for autonomous teams.',
             },
             web3: {
               title: 'Web3 Protocol & Infra',
@@ -37,7 +41,8 @@
             },
             dev: {
               title: 'Dev Tooling',
-              description: 'CLI, templates, deploy pipelines, and automation for shipping at speed.',
+              description:
+                'CLI, templates, deploy pipelines, and automation for shipping at speed.',
             },
           },
         },
@@ -55,7 +60,8 @@
         },
         founder: {
           title: 'Builder Signal',
-          subtitle: 'Profile-aligned with carzygod GitHub. Data-driven, multilingual, no hardcoded drift.',
+          subtitle:
+            'Profile-aligned with carzygod GitHub. Data-driven, multilingual, no hardcoded drift.',
         },
       },
       toolbox: {
@@ -317,6 +323,8 @@
     translation: {
       nav: {
         home: '首页',
+        blog: 'BLOG',
+        benchmark: 'Benchmark',
         aiToolbox: 'AI 工具箱',
         mybox: '俺做的',
         devToolbox: 'Dev 工具箱',

@@ -26,6 +26,8 @@ The application reads public JSON and local images; it has no application server
 
 The homepage contains a hero, three studio focus areas, six featured projects, dated update cards, image gallery and builder information. Its content is a showcase; project links navigate to external services rather than implementing those services here.
 
+The shared navigation reads `siteConfig.nav` in order. Immediately after Home, BLOG opens `https://blog.sidcloud.cn/` and Benchmark opens `https://benchmark.sidcloud.cn/`. Entries marked `external: true` render native anchors with `target="_blank"` and `rel="noopener noreferrer"`; internal entries use React Router `NavLink`. Both locales retain the BLOG/Benchmark labels. Below 1024 px the navigation appears in a wrapping row beneath the brand and language control; wider screens use the desktop row.
+
 ## Catalog loading, filtering and outbound links
 
 ```mermaid

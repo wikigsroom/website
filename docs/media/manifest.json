@@ -1,6 +1,6 @@
 {
-  "capturedAt": "2026-10-28T00:25:10.306Z",
-  "sourceDigest": "ed24ee8f76467ac813a6885f4b74065dfe62785303d2bb4608872611ab550278",
+  "capturedAt": "2026-10-29T12:53:38.434Z",
+  "sourceDigest": "bf40641abc44634b826bd336b58b656808bef9b55252459ba11f8c0e7e18bd2e",
   "capture": {
     "source": "local Vite production preview",
     "desktopViewport": {
@@ -17,6 +17,174 @@
     "audio": "none"
   },
   "checks": [
+    {
+      "check": "primary navigation",
+      "locale": "en-US",
+      "viewportWidth": 320,
+      "hrefs": [
+        "/",
+        "https://blog.sidcloud.cn/",
+        "https://benchmark.sidcloud.cn/",
+        "/mybox",
+        "/aitoolbox",
+        "/devtoolbox"
+      ],
+      "overflow": false
+    },
+    {
+      "check": "primary navigation",
+      "locale": "en-US",
+      "viewportWidth": 390,
+      "hrefs": [
+        "/",
+        "https://blog.sidcloud.cn/",
+        "https://benchmark.sidcloud.cn/",
+        "/mybox",
+        "/aitoolbox",
+        "/devtoolbox"
+      ],
+      "overflow": false
+    },
+    {
+      "check": "primary navigation",
+      "locale": "en-US",
+      "viewportWidth": 768,
+      "hrefs": [
+        "/",
+        "https://blog.sidcloud.cn/",
+        "https://benchmark.sidcloud.cn/",
+        "/mybox",
+        "/aitoolbox",
+        "/devtoolbox"
+      ],
+      "overflow": false
+    },
+    {
+      "check": "primary navigation",
+      "locale": "en-US",
+      "viewportWidth": 1024,
+      "hrefs": [
+        "/",
+        "https://blog.sidcloud.cn/",
+        "https://benchmark.sidcloud.cn/",
+        "/mybox",
+        "/aitoolbox",
+        "/devtoolbox"
+      ],
+      "overflow": false
+    },
+    {
+      "check": "primary navigation",
+      "locale": "en-US",
+      "viewportWidth": 1280,
+      "hrefs": [
+        "/",
+        "https://blog.sidcloud.cn/",
+        "https://benchmark.sidcloud.cn/",
+        "/mybox",
+        "/aitoolbox",
+        "/devtoolbox"
+      ],
+      "overflow": false
+    },
+    {
+      "check": "primary navigation",
+      "locale": "en-US",
+      "viewportWidth": 1440,
+      "hrefs": [
+        "/",
+        "https://blog.sidcloud.cn/",
+        "https://benchmark.sidcloud.cn/",
+        "/mybox",
+        "/aitoolbox",
+        "/devtoolbox"
+      ],
+      "overflow": false
+    },
+    {
+      "check": "primary navigation",
+      "locale": "zh-CN",
+      "viewportWidth": 320,
+      "hrefs": [
+        "/",
+        "https://blog.sidcloud.cn/",
+        "https://benchmark.sidcloud.cn/",
+        "/mybox",
+        "/aitoolbox",
+        "/devtoolbox"
+      ],
+      "overflow": false
+    },
+    {
+      "check": "primary navigation",
+      "locale": "zh-CN",
+      "viewportWidth": 390,
+      "hrefs": [
+        "/",
+        "https://blog.sidcloud.cn/",
+        "https://benchmark.sidcloud.cn/",
+        "/mybox",
+        "/aitoolbox",
+        "/devtoolbox"
+      ],
+      "overflow": false
+    },
+    {
+      "check": "primary navigation",
+      "locale": "zh-CN",
+      "viewportWidth": 768,
+      "hrefs": [
+        "/",
+        "https://blog.sidcloud.cn/",
+        "https://benchmark.sidcloud.cn/",
+        "/mybox",
+        "/aitoolbox",
+        "/devtoolbox"
+      ],
+      "overflow": false
+    },
+    {
+      "check": "primary navigation",
+      "locale": "zh-CN",
+      "viewportWidth": 1024,
+      "hrefs": [
+        "/",
+        "https://blog.sidcloud.cn/",
+        "https://benchmark.sidcloud.cn/",
+        "/mybox",
+        "/aitoolbox",
+        "/devtoolbox"
+      ],
+      "overflow": false
+    },
+    {
+      "check": "primary navigation",
+      "locale": "zh-CN",
+      "viewportWidth": 1280,
+      "hrefs": [
+        "/",
+        "https://blog.sidcloud.cn/",
+        "https://benchmark.sidcloud.cn/",
+        "/mybox",
+        "/aitoolbox",
+        "/devtoolbox"
+      ],
+      "overflow": false
+    },
+    {
+      "check": "primary navigation",
+      "locale": "zh-CN",
+      "viewportWidth": 1440,
+      "hrefs": [
+        "/",
+        "https://blog.sidcloud.cn/",
+        "https://benchmark.sidcloud.cn/",
+        "/mybox",
+        "/aitoolbox",
+        "/devtoolbox"
+      ],
+      "overflow": false
+    },
     {
       "route": "/aitoolbox",
       "cards": 76
@@ -47,105 +215,105 @@
   "assets": [
     {
       "file": "home-desktop.png",
-      "bytes": 921481,
-      "sha256": "8461194b2945f66a5bd454d127e6ca9b3c0b87286b607c2056eb722012d483da",
+      "bytes": 899169,
+      "sha256": "1ee508d0c4cd735cc27a364a3f336c66228cb2a169906df780b094b339425276",
       "width": 1440,
       "height": 960
     },
     {
       "file": "home-full.png",
-      "bytes": 2516610,
-      "sha256": "d8515e1cc70a9d2bc909cfc61d333f32b2f07fe3f58af4ed44714ddfd893ad6a",
+      "bytes": 2503174,
+      "sha256": "0296246d6cc7e9a4f68cfc7b6e56c9e190fe87c4022573e5db543acabe7fb704",
       "width": 1440,
       "height": 3364
     },
     {
       "file": "footer.png",
-      "bytes": 8549,
-      "sha256": "719b8d5f77e29961eceb48611ef15fb7873c8727a714ea7ba5187379f374ca63",
+      "bytes": 8657,
+      "sha256": "9f789e1d5b61b6221bd38b613b1c65a57e76b6be7f73fa2293cbedec0eb8b3e1",
       "width": 1440,
       "height": 86
     },
     {
       "file": "home-zh-CN.png",
-      "bytes": 921037,
-      "sha256": "84b77477e04daed7fba6dd8ab0dea4e9091db07ff0629957d759c272fef0a37e",
+      "bytes": 909835,
+      "sha256": "41ce05e9a1f0d8389a5df98bd74699a2f260e574a1e0854612a5c1186b7a384f",
       "width": 1440,
       "height": 960
     },
     {
       "file": "ai-toolbox.png",
-      "bytes": 743887,
-      "sha256": "30a2252e3e0c6a0150d9d8fa811cd673427217eb41443b8f8528ff4ee30892ea",
+      "bytes": 752581,
+      "sha256": "9633f838f3088ee2654810af94b30f070acb0370d6b449b8d23d7753d8042a44",
       "width": 1440,
       "height": 960
     },
     {
       "file": "my-box.png",
-      "bytes": 858353,
-      "sha256": "832fc9b090bc79dd500b5ac79116291cf49b7185e70aa90f5557f2f1517a7f2e",
+      "bytes": 862038,
+      "sha256": "37f5bc2ddeb17a9b64b0423b71f1c111145f76033605a7f6564bade786fcb367",
       "width": 1440,
       "height": 960
     },
     {
       "file": "dev-toolbox.png",
-      "bytes": 831466,
-      "sha256": "aa431c68bb0939759f233d362d1b6a2e92a07c89c8f157364f8f5055c7f620ce",
+      "bytes": 829701,
+      "sha256": "ed7cfdc70ba2ee9fb3ff927b50094c7f238993c24997836beda861dbec879950",
       "width": 1440,
       "height": 960
     },
     {
       "file": "ai-search.png",
-      "bytes": 822245,
-      "sha256": "f021d2f898269bb6df11bbf54a7d9796828377033de5eff8e5b69da46ed56a16",
+      "bytes": 824120,
+      "sha256": "ba499bedb70c61cb92fa165732c0fb378588b46853701821331031ad1af41ec3",
       "width": 1440,
       "height": 960
     },
     {
       "file": "not-found.png",
-      "bytes": 648351,
-      "sha256": "69562488bb2a787d5db0bcfdf96ea2ff33d3e350e4e764e26796792f1bac4750",
+      "bytes": 638643,
+      "sha256": "d829192873659d573ce44ecab1e20d9b29a5d610556d723d85f03417e80c664d",
       "width": 1440,
       "height": 960
     },
     {
       "file": "home-mobile.png",
-      "bytes": 297670,
-      "sha256": "0d5655773418819e5f824060b5d0804df672e185d9c0106769c5d3a08dec0b22",
+      "bytes": 291166,
+      "sha256": "2ae1610b7829922cd09ce93dc17b611febb6ea884d1123a76d0be2daa0d258ee",
       "width": 390,
       "height": 844
     },
     {
       "file": "desktop-tour.mp4",
-      "bytes": 2313472,
-      "sha256": "8984e4b80acfd32ba45b99d0dc3eb9adaa50b243cec7f3a113a75ba22b50303a",
+      "bytes": 2510375,
+      "sha256": "0ff0ed601c026f1f2cee005bd529e377ef9bc96641d19d69eba50d1076a31f7d",
       "width": 1280,
       "height": 800,
-      "durationSeconds": 18.32
+      "durationSeconds": 20.88
     },
     {
       "file": "website-tour.gif",
-      "bytes": 10769898,
-      "sha256": "179987d8075445624a6faab33f21ebad2faab91213347c9a61f743549ecdad19",
+      "bytes": 11386387,
+      "sha256": "48103d2a865a2ee96280e783879ee963b2bd7d983e3949f00116d0aa7f10743f",
       "width": 880,
       "height": 550,
-      "durationSeconds": 11.9
+      "durationSeconds": 13.6
     },
     {
       "file": "mobile-tour.mp4",
-      "bytes": 628150,
-      "sha256": "7b615dfaaac796d7f23e29dc78eba99b059ba914a9c010dad35a43926c83cf78",
+      "bytes": 597795,
+      "sha256": "3c3f40d14e2512f660bc16463dec23cb7474612e43dabf15622269d00baf66d9",
       "width": 390,
       "height": 844,
-      "durationSeconds": 9.48
+      "durationSeconds": 9.92
     },
     {
       "file": "mobile-tour.gif",
-      "bytes": 2494563,
-      "sha256": "df0b7881aad41beaf6521c3a9cda54903ae41886e8337aa77e43dd2abdd1e941",
+      "bytes": 2543859,
+      "sha256": "877c03929d1c6a62efaf2799f7eec2d3da9cffb8fa5e7b7d1d5fdaa907d58ab1",
       "width": 312,
       "height": 676,
-      "durationSeconds": 6.2
+      "durationSeconds": 6.4
     }
   ]
 }

@@ -23,7 +23,9 @@
 | 自研作品 My Box | `/mybox` | 18 个作品、十个分类，包含双语简介、标签、搜索和外链 |
 | 开发工具箱 | `/devtoolbox` | 五条演示内容和五个分类；目前使用占位链接 |
 | 未匹配路径 | `*` | 客户端“Signal Lost”页面，可返回首页 |
-| 公共导航与页脚 | 所有页面 | 中英文切换、语言记忆、Telegram、旧 GitHub 封禁标注和现任仓库入口 |
+| 公共导航与页脚 | 所有页面 | HOME 右侧的 BLOG 和 Benchmark、中英文切换、语言记忆、Telegram、旧 GitHub 封禁标注和现任仓库入口 |
+
+顶部导航在 HOME（中文为首页）右侧依次提供 `BLOG` → `Benchmark`，分别指向 [blog.sidcloud.cn](https://blog.sidcloud.cn/) 和 [benchmark.sidcloud.cn](https://benchmark.sidcloud.cn/)，在新标签页打开；两种语言均保留这两个入口名称。小屏导航自动换行，1024 px 起使用桌面导航行。改动和部署验收见[导航更新发布说明](docs/releases/2026-10-29-navigation.md)。
 
 页脚按要求保留带删除线的 `Github(惨遭封禁)`，右侧放置 GitHub 图标和 `现任仓库`，指向 `https://github.com/wikigsroom`。
 
