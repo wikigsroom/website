@@ -1,0 +1,451 @@
+{
+  "snapshot": "1.9.0",
+  "snapshotDate": "2026-10-29",
+  "sourceCatalogSha256": "81c20e4eece8e2280df46d76b8f09cab8eab7bdab3da2053e8700258438a7ed5",
+  "implementationSha256": "b6bb971bd839affa59d8ec016cb0a83c86d448d44241a59bf16927aa7af030c6",
+  "evidenceFiles": [
+    "src/App.tsx",
+    "src/styles.css",
+    "src/data/posts.ts",
+    "src/data/researchPosts.ts",
+    "src/data/benchmark.ts",
+    "src/data/benchmarkPosts.ts",
+    "src/data/benchmarkEditorial.ts",
+    "src/data/benchmarkIndex.json",
+    "src/data/benchmarkSnapshot.json",
+    "src/components/BenchmarkResults.tsx",
+    "src/components/ArticleMedia.tsx"
+  ],
+  "checks": [
+    {
+      "check": "batch article and all expanded records",
+      "roundId": "r4090-community-complete-20261029",
+      "records": 10,
+      "passed": true
+    },
+    {
+      "check": "reused public media loaded",
+      "roundId": "r4090-lipsync-complete-20261029",
+      "src": "https://benchmark.sidcloud.cn/archive/history/4090-lipsync-20261029/K03/K03-60s.mp4",
+      "passed": true
+    },
+    {
+      "check": "batch article and all expanded records",
+      "roundId": "r4090-lipsync-complete-20261029",
+      "records": 2,
+      "passed": true
+    },
+    {
+      "check": "batch article and all expanded records",
+      "roundId": "r4090-voice-casting",
+      "records": 40,
+      "passed": true
+    },
+    {
+      "check": "reused public media loaded",
+      "roundId": "r4090-tts",
+      "src": "https://benchmark.sidcloud.cn/archive/tts/audio/gpt-sovits-v2proplus-original.lossless.flac",
+      "passed": true
+    },
+    {
+      "check": "batch article and all expanded records",
+      "roundId": "r4090-tts",
+      "records": 67,
+      "passed": true
+    },
+    {
+      "check": "reused public media loaded",
+      "roundId": "r4090-lipsync",
+      "src": "https://benchmark.sidcloud.cn/archive/history/4090-lipsync/K01/K01-60s.mp4",
+      "passed": true
+    },
+    {
+      "check": "batch article and all expanded records",
+      "roundId": "r4090-lipsync",
+      "records": 5,
+      "passed": true
+    },
+    {
+      "check": "batch article and all expanded records",
+      "roundId": "r4090-community-install",
+      "records": 39,
+      "passed": true
+    },
+    {
+      "check": "reused public media loaded",
+      "roundId": "r4090-community-defaults",
+      "src": "https://benchmark.sidcloud.cn/archive/history/4090-community-complete-20261029/%E6%9C%AC%E6%AC%A1%E7%94%9F%E6%88%90/01a/%E8%8A%82%E7%82%B9214_214_%E4%BD%9C%E8%80%85%E6%A0%B7%E7%89%87%E9%87%8D%E5%BB%BA_15%E7%A7%92_00001-audio.mp4",
+      "passed": true
+    },
+    {
+      "check": "batch article and all expanded records",
+      "roundId": "r4090-community-defaults",
+      "records": 22,
+      "passed": true
+    },
+    {
+      "check": "batch article and all expanded records",
+      "roundId": "r4090-app",
+      "records": 3,
+      "passed": true
+    },
+    {
+      "check": "batch article and all expanded records",
+      "roundId": "r4090-tts-earlier",
+      "records": 130,
+      "passed": true
+    },
+    {
+      "check": "batch article and all expanded records",
+      "roundId": "r4090-quality",
+      "records": 34,
+      "passed": true
+    },
+    {
+      "check": "batch article and all expanded records",
+      "roundId": "r4090-docs",
+      "records": 29,
+      "passed": true
+    },
+    {
+      "check": "batch article and all expanded records",
+      "roundId": "r3080-voice-selection",
+      "records": 21,
+      "passed": true
+    },
+    {
+      "check": "batch article and all expanded records",
+      "roundId": "r3080-vocal-pilot",
+      "records": 1,
+      "passed": true
+    },
+    {
+      "check": "batch article and all expanded records",
+      "roundId": "r3080-podcast-initial",
+      "records": 3,
+      "passed": true
+    },
+    {
+      "check": "batch article and all expanded records",
+      "roundId": "r3080-podcast",
+      "records": 15,
+      "passed": true
+    },
+    {
+      "check": "batch article and all expanded records",
+      "roundId": "r3080-music-v3",
+      "records": 17,
+      "passed": true
+    },
+    {
+      "check": "batch article and all expanded records",
+      "roundId": "r3080-music-v2",
+      "records": 3,
+      "passed": true
+    },
+    {
+      "check": "batch article and all expanded records",
+      "roundId": "r3080-music-preparations",
+      "records": 26,
+      "passed": true
+    },
+    {
+      "check": "batch article and all expanded records",
+      "roundId": "r3080-music-plans",
+      "records": 8,
+      "passed": true
+    },
+    {
+      "check": "reused public media loaded",
+      "roundId": "r3080-music",
+      "src": "https://benchmark.sidcloud.cn/archive/3080/music-20261024/audio/1/01_church-classical.mp3",
+      "passed": true
+    },
+    {
+      "check": "batch article and all expanded records",
+      "roundId": "r3080-music",
+      "records": 18,
+      "passed": true
+    },
+    {
+      "check": "batch article and all expanded records",
+      "roundId": "r3080-yue-prepodcast",
+      "records": 2,
+      "passed": true
+    },
+    {
+      "check": "batch article and all expanded records",
+      "roundId": "r3080-music-original",
+      "records": 17,
+      "passed": true
+    },
+    {
+      "check": "batch article and all expanded records",
+      "roundId": "r3080-music-diagnostics",
+      "records": 2,
+      "passed": true
+    },
+    {
+      "check": "batch article and all expanded records",
+      "roundId": "r3080-duo",
+      "records": 6,
+      "passed": true
+    },
+    {
+      "check": "batch article and all expanded records",
+      "roundId": "r-podcast-source-research",
+      "records": 1,
+      "passed": true
+    },
+    {
+      "check": "batch article and all expanded records",
+      "roundId": "r4090-swift-20261022",
+      "records": 28,
+      "passed": true
+    },
+    {
+      "check": "batch article and all expanded records",
+      "roundId": "r3080-source",
+      "records": 4,
+      "passed": true
+    },
+    {
+      "check": "batch article and all expanded records",
+      "roundId": "r3080-original-install",
+      "records": 6,
+      "passed": true
+    },
+    {
+      "check": "batch article and all expanded records",
+      "roundId": "r3080-lustify-correction",
+      "records": 2,
+      "passed": true
+    },
+    {
+      "check": "batch article and all expanded records",
+      "roundId": "r3080-image-retries",
+      "records": 14,
+      "passed": true
+    },
+    {
+      "check": "batch article and all expanded records",
+      "roundId": "r3080-edit",
+      "records": 6,
+      "passed": true
+    },
+    {
+      "check": "batch article and all expanded records",
+      "roundId": "r3080-author-safe",
+      "records": 7,
+      "passed": true
+    },
+    {
+      "check": "reused public media loaded",
+      "roundId": "r3080-3d",
+      "src": "https://benchmark.sidcloud.cn/archive/files/8e66ec671eb1d65f/TRELLIS2-comparison.png",
+      "passed": true
+    },
+    {
+      "check": "batch article and all expanded records",
+      "roundId": "r3080-3d",
+      "records": 4,
+      "passed": true
+    },
+    {
+      "check": "batch article and all expanded records",
+      "roundId": "r-h3-world-research",
+      "records": 2,
+      "passed": true
+    },
+    {
+      "check": "batch article and all expanded records",
+      "roundId": "r-3080-input-research",
+      "records": 1,
+      "passed": true
+    },
+    {
+      "check": "batch article and all expanded records",
+      "roundId": "r4090-lingbot-worlds",
+      "records": 9,
+      "passed": true
+    },
+    {
+      "check": "batch article and all expanded records",
+      "roundId": "r4090-h3",
+      "records": 102,
+      "passed": true
+    },
+    {
+      "check": "batch article and all expanded records",
+      "roundId": "r3080-yue-recovery",
+      "records": 20,
+      "passed": true
+    },
+    {
+      "check": "batch article and all expanded records",
+      "roundId": "r3080-lustify-independent",
+      "records": 1,
+      "passed": true
+    },
+    {
+      "check": "batch article and all expanded records",
+      "roundId": "r3080-llm",
+      "records": 2,
+      "passed": true
+    },
+    {
+      "check": "batch article and all expanded records",
+      "roundId": "r-h3-input-research",
+      "records": 1,
+      "passed": true
+    },
+    {
+      "check": "batch article and all expanded records",
+      "roundId": "r4090-llm-initial",
+      "records": 1,
+      "passed": true
+    },
+    {
+      "check": "batch article and all expanded records",
+      "roundId": "r4090-llm",
+      "records": 1,
+      "passed": true
+    },
+    {
+      "check": "batch article and all expanded records",
+      "roundId": "r4090-base",
+      "records": 29,
+      "passed": true
+    },
+    {
+      "check": "batch article and all expanded records",
+      "roundId": "r3080-base",
+      "records": 7,
+      "passed": true
+    },
+    {
+      "check": "batch article and all expanded records",
+      "roundId": "r-h3-community-research",
+      "records": 2,
+      "passed": true
+    },
+    {
+      "check": "search record ID across batches",
+      "query": "community-default-02b",
+      "expected": 2,
+      "passed": true
+    },
+    {
+      "check": "70 total / 46 Benchmark / 18 Research / 6 Notes; bookmarks persist",
+      "passed": true
+    },
+    {
+      "check": "reader controls and return to batch index",
+      "passed": true
+    },
+    {
+      "check": "responsive layout",
+      "description": "batch index",
+      "width": 320,
+      "passed": true
+    },
+    {
+      "check": "responsive layout",
+      "description": "130-record historical TTS article, first record expanded",
+      "width": 320,
+      "passed": true
+    },
+    {
+      "check": "responsive layout",
+      "description": "batch index",
+      "width": 390,
+      "passed": true
+    },
+    {
+      "check": "responsive layout",
+      "description": "130-record historical TTS article, first record expanded",
+      "width": 390,
+      "passed": true
+    },
+    {
+      "check": "responsive layout",
+      "description": "batch index",
+      "width": 768,
+      "passed": true
+    },
+    {
+      "check": "responsive layout",
+      "description": "130-record historical TTS article, first record expanded",
+      "width": 768,
+      "passed": true
+    },
+    {
+      "check": "responsive layout",
+      "description": "batch index",
+      "width": 1440,
+      "passed": true
+    },
+    {
+      "check": "responsive layout",
+      "description": "130-record historical TTS article, first record expanded",
+      "width": 1440,
+      "passed": true
+    },
+    {
+      "check": "recording encoded",
+      "filename": "batch-walkthrough.mp4",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "width": 1280,
+            "height": 800
+          }
+        ],
+        "format": {
+          "duration": "12.560000"
+        }
+      }
+    },
+    {
+      "check": "recording encoded",
+      "filename": "batch-mobile.mp4",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "width": 390,
+            "height": 844
+          }
+        ],
+        "format": {
+          "duration": "10.040000"
+        }
+      }
+    },
+    {
+      "check": "no browser runtime errors",
+      "passed": true
+    }
+  ],
+  "assets": [
+    "batch-index-desktop.png",
+    "batch-overview-desktop.png",
+    "batch-article-desktop.png",
+    "batch-record-desktop.png",
+    "review-batch-desktop.png",
+    "batch-record-mobile.png",
+    "batch-walkthrough.mp4",
+    "batch-walkthrough.gif",
+    "batch-article-mobile.png",
+    "batch-mobile.mp4",
+    "batch-mobile.gif"
+  ],
+  "browserClosed": true,
+  "previewClosed": true,
+  "passed": true
+}

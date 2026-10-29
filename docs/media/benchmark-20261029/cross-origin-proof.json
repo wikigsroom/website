@@ -1,0 +1,59 @@
+{
+  "checkedAt": "2026-10-29T13:45:37.267Z",
+  "origin": "https://blog.sidcloud.cn",
+  "assetOrigin": "https://benchmark.sidcloud.cn",
+  "scope": "Transient image/audio/video embedding and JSON access from the live blog origin; no deployed content changed.",
+  "checks": [
+    {
+      "kind": "catalog-cross-origin",
+      "status": 200,
+      "version": "1.9.0",
+      "cases": 681,
+      "reports": 40,
+      "passed": true
+    },
+    {
+      "kind": "image",
+      "url": "https://benchmark.sidcloud.cn/archive/files/8e66ec671eb1d65f/TRELLIS2-comparison.png",
+      "passed": true,
+      "width": 1260,
+      "height": 590,
+      "duration": null
+    },
+    {
+      "kind": "video",
+      "url": "https://benchmark.sidcloud.cn/archive/history/4090-community-complete-20261029/%E6%92%AD%E6%94%BE%E7%89%88/01a.mp4",
+      "passed": true,
+      "width": 1280,
+      "height": 708,
+      "duration": 15.083333
+    },
+    {
+      "kind": "video",
+      "url": "https://benchmark.sidcloud.cn/archive/history/4090-lipsync/K01/K01-60s.mp4",
+      "passed": true,
+      "width": 720,
+      "height": 1280,
+      "duration": 60
+    },
+    {
+      "kind": "audio",
+      "url": "https://benchmark.sidcloud.cn/archive/tts/audio/gpt-sovits-v2proplus-original.lossless.flac",
+      "passed": true,
+      "width": null,
+      "height": null,
+      "duration": 31.574375
+    },
+    {
+      "kind": "audio",
+      "url": "https://benchmark.sidcloud.cn/archive/3080/music-20261024/audio/1/01_church-classical.mp3",
+      "passed": true,
+      "width": null,
+      "height": null,
+      "duration": 300
+    }
+  ],
+  "browserClosed": true,
+  "blogStats": "22 posts\n16 research\n6 notes\n79 tags\nReact Vite",
+  "passed": true
+}

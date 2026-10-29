@@ -5,3 +5,6 @@ dist
 *.log
 .env
 .env.*
+docs/media/.raw/
+playwright-report/
+test-results/

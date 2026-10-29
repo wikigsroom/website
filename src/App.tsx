@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from 'react';
+import { lazy, Suspense, useEffect, useMemo, useState } from 'react';
 import {
   ArrowLeft,
   ArrowUpRight,
@@ -11,6 +11,10 @@ import {
   Type,
 } from 'lucide-react';
 import { posts, type ContentBlock, type Post } from './data/posts';
+import { benchmark } from './data/benchmark';
+import ArticleMedia from './components/ArticleMedia';
+
+const BenchmarkResults = lazy(() => import('./components/BenchmarkResults'));
 
 const bookmarkKey = 'sidcloud-blog-bookmarks';
 const allValue = 'all';
@@ -20,7 +24,7 @@ const generatedCoverRoot = '/assets/generated-covers/';
 const optimizedCoverRoot = `${generatedCoverRoot}optimized/`;
 
 type SortMode = 'latest' | 'reading' | 'title';
-type SectionFilter = typeof allValue | 'Blog' | 'Research';
+type SectionFilter = typeof allValue | 'Blog' | 'Research' | 'Benchmark';
 type CoverVariant = 'card' | 'hero';
 
 const formatDate = (date: string) =>
@@ -68,7 +72,12 @@ const getSlugFromHash = () => {
   return hash.startsWith('#/post/') ? hash.replace('#/post/', '') : null;
 };
 
-const getSectionFromHash = (): SectionFilter => (window.location.hash === '#/research' ? 'Research' : allValue);
+const sectionRoutes: Record<string, SectionFilter> = {
+  '#/research': 'Research',
+  '#/benchmark': 'Benchmark',
+  '#/notes': 'Blog',
+};
+const getSectionFromHash = (): SectionFilter => sectionRoutes[window.location.hash] || allValue;
 
 const getPostSection = (post: Post) => post.section || 'Blog';
 
@@ -89,6 +98,59 @@ const getArchive = (items: Post[]) => {
 };
 
 const ContentRenderer = ({ block }: { block: ContentBlock }) => {
+  if (block.type === 'benchmark-results')
+    return (
+      <Suspense fallback={<p role="status">正在读取本批测评记录…</p>}>
+        <BenchmarkResults roundId={block.roundId} />
+      </Suspense>
+    );
+  if (block.type === 'image' || block.type === 'video' || block.type === 'audio')
+    return <ArticleMedia key={block.src} block={block} />;
+  if (block.type === 'link')
+    return (
+      <p className="article-source-link">
+        <a
+          href={block.href}
+          {...(block.href.startsWith('https://')
+            ? { target: '_blank', rel: 'noopener noreferrer' }
+            : {})}
+        >
+          {block.text} ↗
+        </a>
+      </p>
+    );
+  if (block.type === 'table')
+    return (
+      <div className="article-table-wrap" tabIndex={0} aria-label={`${block.text}，横向滚动`}>
+        <table>
+          <caption>{block.text}</caption>
+          <thead>
+            <tr>
+              {block.headers.map((label) => (
+                <th key={label} scope="col">
+                  {label}
+                </th>
+              ))}
+            </tr>
+          </thead>
+          <tbody>
+            {block.rows.map((row, i) => (
+              <tr key={i}>
+                {row.map((cell, j) =>
+                  j === 0 ? (
+                    <th scope="row" key={j}>
+                      {cell}
+                    </th>
+                  ) : (
+                    <td key={j}>{cell}</td>
+                  ),
+                )}
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    );
   if (block.type === 'h2') return <h2 id={block.id}>{block.text}</h2>;
   if (block.type === 'list') {
     return (
@@ -121,6 +183,7 @@ const Header = () => (
     </a>
     <nav className="header-nav" aria-label="Primary">
       <a href="#/">文章</a>
+      <a href="#/benchmark">测评日志</a>
       <a href="https://www.sidcloud.cn/">关于</a>
       <a href="https://github.com/carzygod" target="_blank" rel="noreferrer">
         GitHub
@@ -142,7 +205,10 @@ const SiteFooter = () => (
 );
 
 const Spotlight = ({ post }: { post: Post }) => (
-  <section className="spotlight-panel" aria-label="Pinned article">
+  <section
+    className={`spotlight-panel${post.benchmarkRoundId ? ' is-batch-spotlight' : ''}`}
+    aria-label="Pinned article"
+  >
     <div className="spotlight-copy">
       <div>
         <p className="kicker">Pinned Dispatch</p>
@@ -153,8 +219,12 @@ const Spotlight = ({ post }: { post: Post }) => (
           <span>{formatDate(post.date)}</span>
           <span>{post.readMins} min read</span>
         </div>
-        <h2>{post.title}</h2>
-        <p>{post.excerpt}</p>
+        <h2>
+          {post.benchmarkRoundId
+            ? benchmark.rounds.find((round) => round.id === post.benchmarkRoundId)?.title
+            : post.title}
+        </h2>
+        <p>{post.benchmarkRoundId ? post.subtitle : post.excerpt}</p>
       </div>
       <a className="open-link" href={`#/post/${post.slug}`}>
         阅读全文 <ArrowUpRight aria-hidden="true" />
@@ -186,7 +256,7 @@ const PostCard = ({
   onTag: (tag: string) => void;
 }) => (
   <article className="post-card">
-    <figure>
+    <figure className={post.cover.startsWith('/assets/batch-covers/') ? 'batch-cover' : undefined}>
       <img
         src={getOptimizedCover(post.cover, 'card')}
         alt={post.title}
@@ -253,7 +323,8 @@ const ResearchBrief = () => {
         <p className="kicker">Research Board</p>
         <h2>当前研究板块：开源 AI 项目雷达与研究系统</h2>
         <p>
-          本轮内容来自 <code>research/</code> 下的系统文档和开源项目报告，整理为可持续追加的技术博客。当前主线是研究工作流、
+          本轮内容来自 <code>research/</code>{' '}
+          下的系统文档和开源项目报告，整理为可持续追加的技术博客。当前主线是研究工作流、
           本地优先、Agent 协议化、统一多模态、端侧生成与许可风险。
         </p>
       </div>
@@ -301,9 +372,10 @@ const HomeView = ({
   onBookmark: (slug: string) => void;
   onReset: () => void;
 }) => {
-  const sectionPosts = section === allValue ? posts : posts.filter((post) => getPostSection(post) === section);
+  const sectionPosts =
+    section === allValue ? posts : posts.filter((post) => getPostSection(post) === section);
   const researchCount = posts.filter((post) => getPostSection(post) === 'Research').length;
-  const blogCount = posts.length - researchCount;
+  const blogCount = posts.filter((post) => getPostSection(post) === 'Blog').length;
   const categories = [allValue, ...unique(sectionPosts.map((post) => post.category))];
   const tags = [allValue, ...unique(sectionPosts.flatMap((post) => post.tags))];
   const pinned = sectionPosts.find((post) => post.pinned) || sectionPosts[0] || posts[0];
@@ -327,7 +399,9 @@ const HomeView = ({
         <section className="intro-panel" aria-labelledby="blogTitle">
           <p className="kicker">Web3 x AI Agents Studio</p>
           <h1 id="blogTitle">sidcloud Notes</h1>
-          <p className="intro-copy">记录协议基础设施、AI Agent 工作流、浏览器扩展、产品发布与工程复盘。</p>
+          <p className="intro-copy">
+            记录协议基础设施、AI Agent 工作流、浏览器扩展、产品发布与工程复盘。
+          </p>
           <div className="stats-strip" aria-label="Blog stats">
             <span>
               <strong>{posts.length}</strong> posts
@@ -337,6 +411,9 @@ const HomeView = ({
             </span>
             <span>
               <strong>{blogCount}</strong> notes
+            </span>
+            <span>
+              <strong>{benchmark.rounds.length}</strong> batches
             </span>
             <span>
               <strong>{tags.length - 1}</strong> tags
@@ -379,6 +456,24 @@ const HomeView = ({
       </section>
 
       {section === 'Research' ? <ResearchBrief /> : null}
+      {section === 'Benchmark' ? (
+        <section className="batch-board" aria-label="测评批次总览">
+          <p className="kicker">Benchmark Journal</p>
+          <h2>按批次读完整测评过程</h2>
+          <p>
+            {benchmark.rounds.length} 篇日志覆盖 {benchmark.cases.length}{' '}
+            项独立记录，含生成、失败、准备、复核与更正。点击文章展开逐项证据，原素材继续由{' '}
+            <a href="https://benchmark.sidcloud.cn/" target="_blank" rel="noopener noreferrer">
+              Benchmark
+            </a>{' '}
+            提供。
+          </p>
+          <p>
+            数据快照 {benchmark.version} · {benchmark.snapshotDate}
+            ；文章日期为测评批次日期，整理日期另列。
+          </p>
+        </section>
+      ) : null}
 
       <section className="content-grid">
         <aside className="side-rail" aria-label="Blog taxonomy">
@@ -388,6 +483,7 @@ const HomeView = ({
               {[
                 [allValue, '全部'],
                 ['Research', 'Research'],
+                ['Benchmark', '测评日志'],
                 ['Blog', 'Notes'],
               ].map(([value, label]) => (
                 <button
@@ -473,7 +569,9 @@ const HomeView = ({
                   <button
                     className="ghost-button"
                     type="button"
-                    onClick={() => setVisibleCount((count) => Math.min(count + visiblePostStep, result.length))}
+                    onClick={() =>
+                      setVisibleCount((count) => Math.min(count + visiblePostStep, result.length))
+                    }
                   >
                     加载更多
                   </button>
@@ -512,15 +610,21 @@ const ArticleView = ({
   onCopy: () => void;
   onToggleReader: () => void;
 }) => {
-  const toc = post.content.filter((block): block is Extract<ContentBlock, { type: 'h2' }> => block.type === 'h2');
+  const toc = post.content.filter(
+    (block): block is Extract<ContentBlock, { type: 'h2' }> => block.type === 'h2',
+  );
   const related = posts
-    .filter((item) => item.slug !== post.slug && item.tags.some((itemTag) => post.tags.includes(itemTag)))
+    .filter(
+      (item) => item.slug !== post.slug && item.tags.some((itemTag) => post.tags.includes(itemTag)),
+    )
     .slice(0, 3);
 
   return (
     <main className="article-view">
       <article className="article-shell">
-        <div className="article-cover">
+        <div
+          className={`article-cover${post.cover.startsWith('/assets/batch-covers/') ? ' batch-cover' : ''}`}
+        >
           <img
             src={getOptimizedCover(post.cover, 'hero')}
             alt={post.title}
@@ -541,6 +645,11 @@ const ArticleView = ({
             <span>{post.tags.map((item) => `#${item}`).join(' ')}</span>
           </div>
           <h1>{post.title}</h1>
+          {post.benchmarkRoundId && (
+            <p className="batch-date">
+              测评日期 {post.date} · 整理日期 {post.publishedAt} · 来源快照 {benchmark.version}
+            </p>
+          )}
           <p>{post.subtitle}</p>
         </header>
         <section className="article-content">
@@ -553,7 +662,7 @@ const ArticleView = ({
               {post.sourcePath ? <p>{post.sourcePath}</p> : null}
               {post.sourceUrl ? (
                 <a href={post.sourceUrl} target="_blank" rel="noreferrer">
-                  打开原始项目 <ArrowUpRight aria-hidden="true" />
+                  查看原始来源 <ArrowUpRight aria-hidden="true" />
                 </a>
               ) : null}
             </aside>
@@ -579,7 +688,11 @@ const ArticleView = ({
               <button
                 key={item.id}
                 type="button"
-                onClick={() => document.getElementById(item.id)?.scrollIntoView({ behavior: 'smooth', block: 'start' })}
+                onClick={() =>
+                  document
+                    .getElementById(item.id)
+                    ?.scrollIntoView({ behavior: 'smooth', block: 'start' })
+                }
               >
                 {item.text}
               </button>
@@ -616,7 +729,10 @@ const App = () => {
   const [toast, setToast] = useState('');
   const [readerLarge, setReaderLarge] = useState(false);
   const [progress, setProgress] = useState(0);
-  const searchIndex = useMemo(() => new Map(posts.map((post) => [post.slug, postSearchText(post)])), []);
+  const searchIndex = useMemo(
+    () => new Map(posts.map((post) => [post.slug, postSearchText(post)])),
+    [],
+  );
 
   const result = useMemo(() => {
     const needle = query.trim().toLowerCase();
@@ -641,8 +757,8 @@ const App = () => {
     const handleHash = () => {
       const nextSlug = getSlugFromHash();
       setActiveSlug(nextSlug);
-      if (window.location.hash === '#/research') {
-        setSection('Research');
+      if (sectionRoutes[window.location.hash]) {
+        setSection(getSectionFromHash());
         setCategory(allValue);
         setTag(allValue);
       }
@@ -651,7 +767,9 @@ const App = () => {
       }
       if (!nextSlug && window.location.hash === '#archive') {
         window.setTimeout(() => {
-          document.querySelector(window.location.hash)?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          document
+            .querySelector(window.location.hash)
+            ?.scrollIntoView({ behavior: 'smooth', block: 'start' });
         }, 0);
       }
     };
@@ -699,11 +817,12 @@ const App = () => {
     setSection(value);
     setCategory(allValue);
     setTag(allValue);
-    if (value === 'Research') {
-      if (window.location.hash !== '#/research') window.location.hash = '#/research';
+    if (value !== allValue) {
+      const next = Object.keys(sectionRoutes).find((route) => sectionRoutes[route] === value)!;
+      if (window.location.hash !== next) window.location.hash = next;
       return;
     }
-    if (window.location.hash === '#/research') window.location.hash = '#/';
+    if (window.location.hash !== '#/') window.location.hash = '#/';
   };
 
   const toggleBookmark = (slug: string) => {
@@ -739,7 +858,10 @@ const App = () => {
           <ArticleView
             post={activePost}
             onBack={() => {
-              window.location.hash = getPostSection(activePost) === 'Research' ? '#/research' : '#/';
+              window.location.hash =
+                Object.keys(sectionRoutes).find(
+                  (route) => sectionRoutes[route] === getPostSection(activePost),
+                ) || '#/';
             }}
             onCopy={copyLink}
             onToggleReader={() => setReaderLarge((value) => !value)}

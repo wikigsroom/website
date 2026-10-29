@@ -1,11 +1,17 @@
 import { researchPosts } from './researchPosts';
+import { benchmarkPosts } from './benchmarkPosts';
 
 export type ContentBlock =
   | { type: 'p'; text: string }
   | { type: 'h2'; id: string; text: string }
   | { type: 'list'; items: string[] }
   | { type: 'quote'; text: string }
-  | { type: 'code'; language: string; text: string };
+  | { type: 'code'; language: string; text: string }
+  | { type: 'table'; text: string; headers: string[]; rows: string[][] }
+  | { type: 'image'; src: string; alt: string; text: string }
+  | { type: 'video' | 'audio'; src: string; poster?: string; text: string }
+  | { type: 'link'; href: string; text: string }
+  | { type: 'benchmark-results'; roundId: string; text: string };
 
 export type Post = {
   slug: string;
@@ -17,7 +23,9 @@ export type Post = {
   cover: string;
   readMins: number;
   pinned?: boolean;
-  section?: 'Blog' | 'Research';
+  section?: 'Blog' | 'Research' | 'Benchmark';
+  publishedAt?: string;
+  benchmarkRoundId?: string;
   priority?: 'P0' | 'P1' | 'P2' | 'P3';
   sourcePath?: string;
   sourceUrl?: string;
@@ -237,4 +245,4 @@ const blogPosts: Post[] = [
   },
 ];
 
-export const posts: Post[] = [...researchPosts, ...blogPosts];
+export const posts: Post[] = [...benchmarkPosts, ...researchPosts, ...blogPosts];

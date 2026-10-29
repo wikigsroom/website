@@ -8,7 +8,15 @@
     "build": "tsc --noEmit && vite build",
     "preview": "vite preview",
     "optimize:covers": "node scripts/optimize-covers.mjs",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "benchmark:sync": "node scripts/sync-benchmark.mjs",
+    "benchmark:link": "node scripts/link-benchmark-assets.mjs",
+    "benchmark:covers": "node scripts/create-batch-covers.mjs",
+    "benchmark:index": "node scripts/create-batch-index.mjs",
+    "check:benchmark": "node scripts/check-benchmark.mjs",
+    "docs:media": "node scripts/capture-benchmark.mjs",
+    "docs:check": "node scripts/check-docs.mjs",
+    "release:check": "npm run lint && npm run build && npm run check:benchmark && npm run docs:check"
   },
   "dependencies": {
     "lucide-react": "^0.468.0",
@@ -17,13 +25,14 @@
   },
   "devDependencies": {
     "@eslint/js": "^9.17.0",
-    "@vitejs/plugin-react": "^4.3.4",
     "@types/react": "^18.3.18",
     "@types/react-dom": "^18.3.5",
+    "@vitejs/plugin-react": "^4.3.4",
     "eslint": "^9.17.0",
     "eslint-plugin-react-hooks": "^5.1.0",
     "eslint-plugin-react-refresh": "^0.4.16",
     "globals": "^15.14.0",
+    "playwright-core": "1.59.1",
     "typescript": "^5.7.2",
     "typescript-eslint": "^8.18.2",
     "vite": "^6.0.5"

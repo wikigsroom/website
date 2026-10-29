@@ -1,3 +1,9 @@
 public/assets/generated-covers/*.png
 public/assets/generated-covers/*.jpg
 public/assets/generated-covers/*.jpeg
+.git/
+.github/
+docs/
+README*.md
+AGENTS.md
+CHANGELOG.md
