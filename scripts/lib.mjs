@@ -20,9 +20,13 @@ export async function sha256(file) {
 }
 
 export async function sourceDigest() {
+  const publicDirectory = path.join(root, 'public');
+  // Root-level hexadecimal .txt verification files do not affect the rendered UI.
+  const publicFiles = (await filesIn(publicDirectory)).filter(file =>
+    !/^[a-f0-9]{32}\.txt$/i.test(path.relative(publicDirectory, file)));
   const files = [
     ...await filesIn(path.join(root, 'src')),
-    ...await filesIn(path.join(root, 'public')),
+    ...publicFiles,
     ...['index.html', 'tailwind.config.ts', 'vite.config.ts'].map(file => path.join(root, file)),
   ].sort();
   const hash = createHash('sha256');

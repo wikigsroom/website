@@ -65,6 +65,6 @@ ffmpeg -v error -i docs/media/mobile-tour.gif -f null -
 npm run release:check
 ```
 
-`docs:check` validates local documentation links, file existence, bytes and hashes, requires screenshots/video/GIF, and compares a normalized source digest. Changes anywhere in `src/`, `public/`, `index.html`, `tailwind.config.ts` or `vite.config.ts` require a new capture. Dependency-only or tooling changes may also affect rendering, so regenerate when their output changes even if the digest does not detect it. CI checks committed evidence without launching a browser or regenerating recordings.
+`docs:check` validates local documentation links, file existence, bytes and hashes, requires screenshots/video/GIF, and compares a normalized source digest. Changes in `src/`, `public/`, `index.html`, `tailwind.config.ts` or `vite.config.ts` require a new capture, except root-level `public/<32 hexadecimal characters>.txt` domain-verification files, which do not affect the rendered UI and are excluded from that digest. Verify those files through exact build-output and public HTTP body checks instead. Dependency-only or tooling changes may also affect rendering, so regenerate when their output changes even if the digest does not detect it. CI checks committed evidence without launching a browser or regenerating recordings.
 
 If capture fails, resolve the cause and rerun it before committing. A partially refreshed directory should not be published with an old manifest; the hash checks will reject it. Close any browser created outside the script manually after inspection.

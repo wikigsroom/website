@@ -2,6 +2,20 @@
 
 Changes are recorded in both languages, newest first. / 以下按时间倒序记录中英双语更新。
 
+## 2026-10-29 — Domain verification / 域名验证
+
+### English
+
+- Added `/17df1b98016e4dce51cf8d4080665747.txt` with the exact public verification body `ce49460b29a0a3d3fbf87ef530c8954f96e0258c`, served from Vite's `public/` directory.
+- Documented file retention and exact-body verification in both languages. Root-level hexadecimal `.txt` verification files are excluded from the visual-source digest; the existing screenshots and recordings remain applicable.
+- Deployment and verification results are tracked in the [release note](docs/releases/2026-10-29-domain-verification.md).
+
+### 简体中文
+
+- 新增 `/17df1b98016e4dce51cf8d4080665747.txt`，正文严格为 `ce49460b29a0a3d3fbf87ef530c8954f96e0258c`，由 Vite 的 `public/` 目录提供根路径静态访问。
+- 同步双语文件保留与精确正文检查说明。根目录十六进制文件名的 `.txt` 验证文件不纳入视觉源码指纹，现有截图和录屏继续适用。
+- 部署与验证结果记录于[发布说明](docs/releases/2026-10-29-domain-verification.md)。
+
 ## 2026-10-28 — Initial maintained repository / 首次规范化入库
 
 ### English

@@ -116,6 +116,8 @@ pwsh -File scripts/vercel.ps1 Production
 
 [`vercel.json`](vercel.json) 明确指定 Vite、`npm run build` 和 `dist/`，避免项目历史默认配置选错输出目录。GitHub 推送与 Vercel 部署是两个操作；当前仓库没有设置“每次 push 自动发布正式站”。详细操作、恢复步骤见[部署与更新](docs/zh-CN/operations.md)。
 
+域名验证使用公开静态文件：[`public/17df1b98016e4dce51cf8d4080665747.txt`](public/17df1b98016e4dce51cf8d4080665747.txt) 在构建时复制到产物根目录，上线地址为 [`/17df1b98016e4dce51cf8d4080665747.txt`](https://www.sidcloud.cn/17df1b98016e4dce51cf8d4080665747.txt)。完整正文为 `ce49460b29a0a3d3fbf87ef530c8954f96e0258c`。域名验证仍依赖它时应持续保留，详见[本次发布说明](docs/releases/2026-10-29-domain-verification.md)。
+
 ## 截图、录屏和 GIF
 
 生成媒体还需要 Playwright Chromium，以及 `PATH` 上的原生 `ffmpeg`、`ffprobe`：

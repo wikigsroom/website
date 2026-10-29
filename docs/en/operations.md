@@ -73,6 +73,14 @@ The `.vercelignore` excludes documentation/media, dependency and build directori
 
 ## Verify and synchronize the result
 
+### Domain verification file
+
+The verification file is maintained at [`public/17df1b98016e4dce51cf8d4080665747.txt`](../../public/17df1b98016e4dce51cf8d4080665747.txt). Vite copies it unchanged to `dist/17df1b98016e4dce51cf8d4080665747.txt`, so it is served directly from the domain root, before React routing. The exact 40-byte ASCII body is `ce49460b29a0a3d3fbf87ef530c8954f96e0258c`, without a BOM or trailing newline.
+
+After deployment, request [the public verification URL](https://www.sidcloud.cn/17df1b98016e4dce51cf8d4080665747.txt) without authentication and confirm HTTP 200, a plain-text response and an exact body match. Check the apex domain separately for its existing redirect behavior. Keep the file in subsequent builds while verification depends on it. The value is intentionally public domain-verification content; account credentials remain in the isolated profile.
+
+### Release verification
+
 After publishing, verify the public domain, the requested visual behavior, correct footer destinations, both languages, catalog JSON and representative search/category behavior. Test internal-page direct requests and refreshes separately from client-side navigation; the current deep-link 404 issue is documented in [known issues](known-issues.md).
 
 Record the deployment URL/ID, date, checks and any remaining limitation in the release note. Commit and push that result so GitHub includes what actually reached production. Compare local `HEAD` with `git ls-remote origin refs/heads/main` and leave the checkout clean. Close temporary browser tabs/contexts and stop local preview servers.
