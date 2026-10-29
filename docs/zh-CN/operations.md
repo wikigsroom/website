@@ -75,9 +75,14 @@ Preview 生成预览部署地址，Production 为固定的 `sidcloud` 项目传�
 
 ### 域名验证文件
 
-验证文件维护在 [`public/17df1b98016e4dce51cf8d4080665747.txt`](../../public/17df1b98016e4dce51cf8d4080665747.txt)。Vite 将其原样复制到 `dist/17df1b98016e4dce51cf8d4080665747.txt`，由域名根路径直接提供，不经过 React 路由。正文严格为 40 字节 ASCII：`ce49460b29a0a3d3fbf87ef530c8954f96e0258c`，没有 BOM 或末尾换行。
+Vite 将 `public/` 中的验证文件原样复制到 `dist/` 根目录，由域名根路径直接提供，不经过 React 路由。每个文件的正文严格为 40 字节 ASCII，没有 BOM 或末尾换行：
 
-上线后匿名请求[公开验证地址](https://www.sidcloud.cn/17df1b98016e4dce51cf8d4080665747.txt)，确认 HTTP 200、纯文本响应及正文完全一致；另外检查裸域名现有的跳转行为。后续构建应持续保留该文件，直到域名验证不再需要。此内容是有意公开的域名验证值，账户凭证仍保存在独立配置目录。
+| 源码文件 | 公开地址 | 完整正文 |
+| --- | --- | --- |
+| [`public/17df1b98016e4dce51cf8d4080665747.txt`](../../public/17df1b98016e4dce51cf8d4080665747.txt) | [验证地址](https://www.sidcloud.cn/17df1b98016e4dce51cf8d4080665747.txt) | `ce49460b29a0a3d3fbf87ef530c8954f96e0258c` |
+| [`public/b8261e943cb1290db1a42a32c0ee9566.txt`](../../public/b8261e943cb1290db1a42a32c0ee9566.txt) | [验证地址](https://www.sidcloud.cn/b8261e943cb1290db1a42a32c0ee9566.txt) | `ec8ff0c82edb079d74fc8fc19d6c709828a0650a` |
+
+上线后匿名请求两个公开验证地址，确认 HTTP 200、纯文本响应及正文完全一致；另外检查裸域名现有的跳转行为。后续构建应持续保留这些文件，直到域名验证不再需要。这些内容是有意公开的域名验证值，账户凭证仍保存在独立配置目录。
 
 ### 发布检查
 

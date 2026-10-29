@@ -73,11 +73,16 @@ The `.vercelignore` excludes documentation/media, dependency and build directori
 
 ## Verify and synchronize the result
 
-### Domain verification file
+### Domain verification files
 
-The verification file is maintained at [`public/17df1b98016e4dce51cf8d4080665747.txt`](../../public/17df1b98016e4dce51cf8d4080665747.txt). Vite copies it unchanged to `dist/17df1b98016e4dce51cf8d4080665747.txt`, so it is served directly from the domain root, before React routing. The exact 40-byte ASCII body is `ce49460b29a0a3d3fbf87ef530c8954f96e0258c`, without a BOM or trailing newline.
+Vite copies each verification file from `public/` unchanged to the root of `dist/`, so it is served directly from the domain root, before React routing. Each file has an exact 40-byte ASCII body without a BOM or trailing newline:
 
-After deployment, request [the public verification URL](https://www.sidcloud.cn/17df1b98016e4dce51cf8d4080665747.txt) without authentication and confirm HTTP 200, a plain-text response and an exact body match. Check the apex domain separately for its existing redirect behavior. Keep the file in subsequent builds while verification depends on it. The value is intentionally public domain-verification content; account credentials remain in the isolated profile.
+| Source file | Public URL | Exact body |
+| --- | --- | --- |
+| [`public/17df1b98016e4dce51cf8d4080665747.txt`](../../public/17df1b98016e4dce51cf8d4080665747.txt) | [Verify](https://www.sidcloud.cn/17df1b98016e4dce51cf8d4080665747.txt) | `ce49460b29a0a3d3fbf87ef530c8954f96e0258c` |
+| [`public/b8261e943cb1290db1a42a32c0ee9566.txt`](../../public/b8261e943cb1290db1a42a32c0ee9566.txt) | [Verify](https://www.sidcloud.cn/b8261e943cb1290db1a42a32c0ee9566.txt) | `ec8ff0c82edb079d74fc8fc19d6c709828a0650a` |
+
+After deployment, request both public URLs without authentication and confirm HTTP 200, a plain-text response and an exact body match. Check the apex domain separately for its existing redirect behavior. Keep the files in subsequent builds while verification depends on them. The values are intentionally public domain-verification content; account credentials remain in the isolated profile.
 
 ### Release verification
 

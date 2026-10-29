@@ -116,7 +116,14 @@ Every account operation fixes `--global-config` to `%LOCALAPPDATA%\sidcloud\verc
 
 [`vercel.json`](vercel.json) declares Vite, `npm run build` and output `dist/`, avoiding the existing project's generic output defaults. GitHub push and Vercel deployment are separate actions; this repository does not configure an automatic production deployment on every push. Details and recovery instructions are in [operations](docs/en/operations.md).
 
-Domain verification is served as a public static file: [`public/17df1b98016e4dce51cf8d4080665747.txt`](public/17df1b98016e4dce51cf8d4080665747.txt) is copied to the build root and published at [`/17df1b98016e4dce51cf8d4080665747.txt`](https://www.sidcloud.cn/17df1b98016e4dce51cf8d4080665747.txt). Its complete body is `ce49460b29a0a3d3fbf87ef530c8954f96e0258c`. Keep it deployed while domain verification depends on it; see the [release note](docs/releases/2026-10-29-domain-verification.md).
+Domain verification files in `public/` are copied unchanged to the build root. Keep each file deployed while domain verification depends on it:
+
+| Public verification URL | Exact body |
+| --- | --- |
+| [`/17df1b98016e4dce51cf8d4080665747.txt`](https://www.sidcloud.cn/17df1b98016e4dce51cf8d4080665747.txt) | `ce49460b29a0a3d3fbf87ef530c8954f96e0258c` |
+| [`/b8261e943cb1290db1a42a32c0ee9566.txt`](https://www.sidcloud.cn/b8261e943cb1290db1a42a32c0ee9566.txt) | `ec8ff0c82edb079d74fc8fc19d6c709828a0650a` |
+
+Source files and verification steps are listed in [operations](docs/en/operations.md). See the [initial verification release](docs/releases/2026-10-29-domain-verification.md) and [additional-file release](docs/releases/2026-10-29-domain-verification-b8261e94.md).
 
 ## Documentation media
 

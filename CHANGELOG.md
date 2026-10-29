@@ -2,6 +2,20 @@
 
 Changes are recorded in both languages, newest first. / 以下按时间倒序记录中英双语更新。
 
+## 2026-10-29 — Additional domain verification file / 新增域名验证文件
+
+### English
+
+- Added `/b8261e943cb1290db1a42a32c0ee9566.txt` with the exact 40-byte body `ec8ff0c82edb079d74fc8fc19d6c709828a0650a` as a root-level static verification file.
+- Listed both verification files in the English/Chinese READMEs and operations guides, preserving the previously published file. Existing UI screenshots and recordings remain applicable.
+- Deployment and HTTP verification results are tracked in the [release note](docs/releases/2026-10-29-domain-verification-b8261e94.md).
+
+### 简体中文
+
+- 新增根路径静态验证文件 `/b8261e943cb1290db1a42a32c0ee9566.txt`，正文严格为 40 字节：`ec8ff0c82edb079d74fc8fc19d6c709828a0650a`。
+- 中英 README 和部署文档列出两个验证文件，持续保留此前已发布的文件。现有界面截图和录屏继续适用。
+- 部署与 HTTP 验证结果记录于[本次发布说明](docs/releases/2026-10-29-domain-verification-b8261e94.md)。
+
 ## 2026-10-29 — Domain verification / 域名验证
 
 ### English
