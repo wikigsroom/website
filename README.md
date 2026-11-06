@@ -24,6 +24,8 @@ All eleven reading covers were generated through the user-selected **sub2-image-
 
 [Article index and ongoing workflow](docs/wechat-reading.md) · [Release notes](docs/releases/2026-11-06-wechat-reading.md). Raw source HTML/text stays in an ignored cache. Reviewed batch scripts append records and reject duplicate source URLs. Future readings follow the same review, documentation, Git push and isolated production-deployment process.
 
+Published on 2026-11-06: all eleven readings, 46 existing journals and 283 image files are verified on the production domain. All ten default-account file hashes are unchanged. [Production proof](docs/releases/2026-11-06-wechat-production.json) · [CI passed](https://github.com/wikigsroom/website/actions/runs/42195084404).
+
 ![Source-attributed reading walkthrough](docs/media/wechat-20261106/reading-walkthrough.gif)
 
 ## Run locally

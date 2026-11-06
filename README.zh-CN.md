@@ -24,6 +24,8 @@
 
 [首批目录与后续维护流程](docs/wechat-reading.md) · [更新记录](docs/releases/2026-11-06-wechat-reading.md)。原始 HTML/正文不进入公开仓库；批次脚本按来源去重并追加历史。后续用户提供链接后继续按相同标准整理、同步双语文档与媒体、推送 `origin/blog`，再通过独立账户发布服务器。
 
+本批已于 2026-11-06 上线，正式域名的全部 11 篇精读、46 篇测评及 283 个图片文件均通过核验，全局账户的 10 个配置文件哈希未变化。[生产验收](docs/releases/2026-11-06-wechat-production.json) · [GitHub 检查通过](https://github.com/wikigsroom/website/actions/runs/42195084404)。
+
 ![公众号精读演示](docs/media/wechat-20261106/reading-walkthrough.gif)
 
 ## 本地运行

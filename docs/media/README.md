@@ -20,6 +20,10 @@ Eleven readings combine generated covers with 36 attributed source figures/video
 | [reading-walkthrough.mp4](wechat-20261106/reading-walkthrough.mp4) · [GIF](wechat-20261106/reading-walkthrough.gif) | 桌面精读演示 / Desktop reading walkthrough |
 | [reading-mobile.mp4](wechat-20261106/reading-mobile.mp4) · [GIF](wechat-20261106/reading-mobile.gif) | 手机精读演示 / Mobile reading walkthrough |
 | [verification.json](wechat-20261106/verification.json) | 全部 11 篇、36 项图示、来源/表格搜索、四档宽度与资源释放 / Articles, figures, search, layouts and cleanup |
+| [production-reading-index-desktop.png](wechat-20261106/production-reading-index-desktop.png) | 正式域名的精读入口 / Production reading collection |
+| [production-reading-article-desktop.png](wechat-20261106/production-reading-article-desktop.png) | 正式域名的精读文章 / Production reading article |
+| [production-benchmark-article-desktop.png](wechat-20261106/production-benchmark-article-desktop.png) | 同次发布的测评回归 / Benchmark regression on the same release |
+| [production proof](../releases/2026-11-06-wechat-production.json) | 部署、283 个图片文件与全局账户保持不变的验收 / Deployment, all visual bytes and isolated-account proof |
 
 ![精读集合 / Reading collection](wechat-20261106/reading-index-desktop.png)
 
@@ -52,7 +56,7 @@ Captured from the visual edition built on the frozen 2026-10-29 benchmark data: 
 | [verification.json](benchmark-20261029/verification.json) | 46 路由、770 次展开、筛选、阅读和布局检查 / Route, coverage and interaction checks |
 | [cross-origin-proof.json](benchmark-20261029/cross-origin-proof.json) | 真实博客域名下的原素材加载验证 / Original media loading from the real blog origin |
 | [production-visual-article-desktop.png](benchmark-20261029/production-visual-article-desktop.png) | 2026-10-30 可视化版正式域名截图 / Visual edition on the production domain |
-| [可视化版生产验收 / Visual production proof](../releases/2026-10-30-visual-production.json) | 当前部署、构建文件与 46 篇图文测评验收 / Current deployment, exact build files and 46 illustrated journals |
+| [可视化版生产验收 / Visual production proof](../releases/2026-10-30-visual-production.json) | 2026-10-30 历史部署、构建文件与 46 篇图文测评验收 / Historical deployment, exact build files and 46 illustrated journals |
 | [production-article-desktop.png](benchmark-20261029/production-article-desktop.png) | 2026-10-29 标题版本历史截图 / Historical editorial release screenshot |
 | [标题版生产验收 / Editorial production proof](../releases/2026-10-29-editorial-production.json) | 上一版部署记录 / Previous production release record |
 

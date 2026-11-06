@@ -1,8 +1,8 @@
 # 2026-11-06 — WeChat reading library / 公众号精读
 
-发布状态：文章、封面与来源素材已整理，本地验收通过，待推送和生产发布。
+发布状态：已推送 `origin/blog`，通过独立账户发布并验证 [公众号精读](https://blog.sidcloud.cn/#/wechat)。
 
-Publication status: articles, generated covers and source material are prepared and locally verified; Git publication and production deployment are pending.
+Publication status: pushed to `origin/blog`, deployed through the isolated account and verified on the production reading collection.
 
 本批使用用户明确批准的 `gpt-image-2.5-flare`，通过同一 `sub2-image-gen` 技能和网关生成全部 11 张封面。原始 PNG 共 26,865,272 字节；22 张网页封面 WebP 共 1,264,398 字节。准确模型、实际尺寸及原图/提示词哈希保存在 [生成台账](../../output/imagegen/wechat-2026-11-06/manifest.json)。
 
@@ -30,3 +30,14 @@ Thirty-six selected source figures include two timed animations and all twelve o
 Editorial checks distinguish model versions, repository workflow changes, local/hosted capabilities, hardware measurement scopes and third-party packaging. New batch scripts append content and reject duplicate sources while keeping raw full text and HTML out of the public repository. Publication uses the existing isolated blog profile after content, build and visual verification.
 
 [阅读与维护方案 / Reading and maintenance](../wechat-reading.md)
+
+## 生产验收 / Production verification
+
+- 应用源码 / Application source: `07cca8c0915b585e3a609288c7b2b8f7c61e61c3`。
+- 部署 / Deployment: `dpl_AbJovBAVuj4N8R6e6RJy7dhRRkZs`，`READY` / `production`，正式域名 `blog.sidcloud.cn`。
+- 核对全部 46 篇测评和 11 篇新精读；线上 283 个图片文件及构建入口文件与本地字节一致。/ All 46 journals and eleven readings are verified; all 283 visual files and entry build assets match the local bytes.
+- 默认全局账户的 10 个配置文件哈希未变化；验收浏览器已关闭。/ All ten default-account file hashes remain unchanged; the owned verification browser is closed.
+- [生产 JSON 验收 / Production proof](2026-11-06-wechat-production.json) · [GitHub 检查 / CI passed](https://github.com/wikigsroom/website/actions/runs/42195084404)。
+- [正式域名栏目截图 / Production index](../media/wechat-20261106/production-reading-index-desktop.png) · [精读截图 / Reading article](../media/wechat-20261106/production-reading-article-desktop.png) · [测评回归截图 / Benchmark regression](../media/wechat-20261106/production-benchmark-article-desktop.png)。
+
+后续证明提交仅补充文档、正式域名截图和验收工具的截图等待，不改变已部署的应用页面。/ The follow-up evidence commit contains documentation, production screenshots and image-wait refinements in the verifier; it does not change the deployed application UI.

@@ -213,6 +213,9 @@ try {
   await page.goto(`${metadata.productionUrl}/#/wechat`, { waitUntil: 'domcontentloaded' });
   await page.locator('.reading-collection').waitFor();
   assert.equal((await page.locator('.section-head > p').innerText()).trim(), `${readings.articles.length} 篇匹配`);
+  await page.locator('.spotlight-image img').evaluate((item) => item.decode());
+  await page.evaluate(() => document.fonts.ready);
+  await page.evaluate(() => window.scrollTo({ top: 0, behavior: 'instant' }));
   await page.screenshot({ path: path.join(mediaDirectory, 'production-reading-index-desktop.png') });
   for (const source of readings.articles) {
     await page.goto(`${metadata.productionUrl}/#/post/${source.slug}`, { waitUntil: 'domcontentloaded' });
@@ -234,6 +237,9 @@ try {
       slug: source.slug, figures: source.materials.length, videoReferences: source.videos.length, passed: true });
   }
   await page.goto(`${metadata.productionUrl}/#/post/${readings.articles[0].slug}`, { waitUntil: 'domcontentloaded' });
+  await page.getByRole('heading', {
+    name: posts.find((item) => item.slug === readings.articles[0].slug).title, exact: true,
+  }).waitFor();
   await page.locator('.article-cover img').evaluate((item) => item.decode());
   await page.evaluate(() => window.scrollTo({ top: 0, behavior: 'instant' }));
   await page.screenshot({ path: path.join(mediaDirectory, 'production-reading-article-desktop.png') });

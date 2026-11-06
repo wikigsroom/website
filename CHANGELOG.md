@@ -12,7 +12,9 @@
 - English: Generated all eleven covers with the requested skill and explicitly approved model, retaining originals, exact prompts and hashes; only 22 WebP cover derivatives are deployed.
 - 中文：本地内容与构建检查通过；精读 22 项浏览器检查和现有测评 109 项检查通过，已补齐截图、MP4/GIF，关闭自己的浏览器及预览服务。
 - English: Local content/build checks pass, along with 22 reading and 109 benchmark browser checks; screenshots, MP4/GIF demos and resource cleanup are recorded.
-- 状态 / Status：待提交推送与生产发布 / Git publication and production deployment pending.
+- 中文：已推送 `origin/blog`，通过独立账户发布到 [公众号精读](https://blog.sidcloud.cn/#/wechat)。正式域名的 46 篇测评与 11 篇精读、283 个图片文件均已核对；默认全局账户 10 个配置文件未变化，浏览器已关闭。
+- English: Pushed and deployed through the isolated profile; 46 journals, eleven readings and all 283 visual files are verified on production. All ten default-account files are unchanged, and the browser is closed.
+- [生产验收 / Production proof](docs/releases/2026-11-06-wechat-production.json) · [GitHub 检查 / CI passed](https://github.com/wikigsroom/website/actions/runs/42195084404)。
 - [方案与文章目录 / Design and article index](docs/wechat-reading.md) · [发布记录 / Release notes](docs/releases/2026-11-06-wechat-reading.md)。
 
 ## 2026-10-30 — Visual edition / 图像封面与实际产物
