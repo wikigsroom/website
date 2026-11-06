@@ -1,6 +1,33 @@
 # 页面截图与演示 / Screenshots and demos
 
-[中文 README](../../README.zh-CN.md) · [English README](../../README.md) · [最新更新 / Latest release](../releases/2026-10-30-visual-refresh.md) · [标题更新 / Editorial release](../releases/2026-10-29-editorial-refresh.md)
+[中文 README](../../README.zh-CN.md) · [English README](../../README.md) · [最新更新 / Latest release](../releases/2026-11-06-wechat-reading.md) · [测评可视化 / Benchmark visuals](../releases/2026-10-30-visual-refresh.md)
+
+## 公众号精读 / WeChat readings — 2026-11-06
+
+11 篇精读、11 张实际生成的主题封面、36 项带出处的原文图示/视频预览。以下截图与演示来自实际生产构建，展示栏目、来源、表格、动画与手机阅读；不表示重新运行了文章介绍的模型。
+
+Eleven readings combine generated covers with 36 attributed source figures/video references. These captures show the actual built collection, article credits, tables, animation and mobile reading. They do not claim fresh execution of the featured tools.
+
+| 文件 / File | 内容 / Content |
+| --- | --- |
+| [reading-index-desktop.png](wechat-20261106/reading-index-desktop.png) | 精读入口与图像封面 / Collection and image covers |
+| [reading-article-desktop.png](wechat-20261106/reading-article-desktop.png) | 主题封面和文章标题 / Cover and headline |
+| [reading-animation-desktop.png](wechat-20261106/reading-animation-desktop.png) | 原文动画的实际显示 / Original animation in the article |
+| [reading-reference-desktop.png](wechat-20261106/reading-reference-desktop.png) | 多视角参考板 / Multiview reference board |
+| [reading-table-desktop.png](wechat-20261106/reading-table-desktop.png) | 资源用量与适用条件表 / Resource table and scope |
+| [reading-article-mobile.png](wechat-20261106/reading-article-mobile.png) | 手机封面、标题与来源 / Mobile cover, headline and source |
+| [reading-figure-mobile.png](wechat-20261106/reading-figure-mobile.png) | 手机原文素材 / Source figure on mobile |
+| [reading-walkthrough.mp4](wechat-20261106/reading-walkthrough.mp4) · [GIF](wechat-20261106/reading-walkthrough.gif) | 桌面精读演示 / Desktop reading walkthrough |
+| [reading-mobile.mp4](wechat-20261106/reading-mobile.mp4) · [GIF](wechat-20261106/reading-mobile.gif) | 手机精读演示 / Mobile reading walkthrough |
+| [verification.json](wechat-20261106/verification.json) | 全部 11 篇、36 项图示、来源/表格搜索、四档宽度与资源释放 / Articles, figures, search, layouts and cleanup |
+
+![精读集合 / Reading collection](wechat-20261106/reading-index-desktop.png)
+
+![精读演示 / Reading walkthrough](wechat-20261106/reading-walkthrough.gif)
+
+复现 / Reproduce: `npm run build` → `npm run docs:wechat` → `npm run docs:media` → `npm run docs:check`。
+
+## 测评日志 / Benchmark journals
 
 基于 2026-10-29 冻结测评数据的可视化版本：46 篇栅格封面、103 张正文图，以及原音视频播放、文章导航和逐项记录。截图和演示录制自实际本地生产构建，不是重新运行模型的录像。
 

@@ -1,0 +1,60 @@
+{
+  "prompt2rig-text-to-motion": [
+    { "id": "01-image-02", "caption": "提示词生成的动作与 Mixamo 角色重定向演示（原文动图）" },
+    { "id": "01-image-03", "caption": "prompt2rig 界面：参考视频、姿态覆盖与角色预览" }
+  ],
+  "ai-image-repair-structure-style": [
+    { "id": "02-image-05", "caption": "原文流程图：外观参考与结构参考的分工" },
+    { "id": "02-image-06", "caption": "原文案例：依据整理后的结构重新生成，再检查细节" }
+  ],
+  "mixamo-mocap-agent-animation": [
+    { "id": "03-image-01", "caption": "原文中的双人参考画面与 Mixamo 重定向对照" }
+  ],
+  "audio8-compact-tts": [
+    { "id": "04-image-01", "caption": "Audio8 原文架构图：语义与声学生成分层" },
+    { "id": "04-poster-01", "caption": "原文 Audio8 TTS 语音演示" }
+  ],
+  "video-to-game-playable-prototype": [
+    { "id": "05-poster-01", "caption": "原文视频：由玩法概念发展出的浏览器游戏演示" }
+  ],
+  "eight-view-ai-3d-blockout": [
+    { "id": "06-image-03", "caption": "作者提供给模型的八视角参考板，含尺寸与配色" },
+    { "id": "06-image-04", "caption": "作者标注为 ChatGPT / GPT-6 Astra / Ultra 的白模结果" },
+    { "id": "06-image-05", "caption": "作者标注为 DeepSeek-4.1-Flash / Harness / 高的结果" },
+    { "id": "06-image-06", "caption": "作者标注为 DeepSeek-4.1-Flash / WorkBuddy / 极高的结果" },
+    { "id": "06-image-07", "caption": "作者标注为 DeepSeek-4.1-Flash / WorkBuddy / 高的结果" },
+    { "id": "06-image-08", "caption": "作者标注为 GLM-5.3-Flash / Zcode / 高的结果" },
+    { "id": "06-poster-01", "caption": "原文视频：舱体的交互与爆炸拆解展示" }
+  ],
+  "qwen-faceswap-identity-transfer": [
+    { "id": "07-image-01", "caption": "原文界面：角色头部迁移示例" },
+    { "id": "07-image-02", "caption": "原文界面：角色全身迁移示例" }
+  ],
+  "mesh-avatar-studio-living-illustration": [
+    { "id": "08-image-04", "caption": "原文 Mesh Avatar 编辑器：角色网格与实时预览" },
+    { "id": "08-image-09", "caption": "作者另行封装的 ComfyUI 工作台，属于第三方集成" },
+    { "id": "08-image-11", "caption": "作者为角色准备的表情与嘴型差分素材" },
+    { "id": "08-poster-01", "caption": "原文视频：预设表情与姿态控制" },
+    { "id": "08-poster-02", "caption": "原文视频：语音驱动口型" },
+    { "id": "08-poster-03", "caption": "原文视频：写实风格角色动画示例" }
+  ],
+  "pika-h3-flex-speed-and-limits": [
+    { "id": "09-image-08", "caption": "原文引用的 ComfyUI 模型文件与工作流说明" },
+    { "id": "09-image-10", "caption": "原文引用的硬件说明；数值仅适用于注明的测试条件" },
+    { "id": "09-poster-01", "caption": "原文视频：Pika H3 Flex 参考示例" },
+    { "id": "09-poster-02", "caption": "原文视频：Pika H3 Flex 动作示例" },
+    { "id": "09-poster-03", "caption": "原文视频：ComfyUI 文生视频示例" },
+    { "id": "09-poster-04", "caption": "原文视频：ComfyUI 参考生视频示例" },
+    { "id": "09-poster-05", "caption": "原文视频：ComfyUI 首尾帧示例" }
+  ],
+  "humanizer-clearer-ai-writing": [
+    { "id": "10-image-01", "caption": "原文保存的 Humanizer 仓库截图；热度为当时快照" },
+    { "id": "10-image-03", "caption": "原文中的 Humanizer Skills 入口" }
+  ],
+  "srt-whiteboard-animation-storytelling": [
+    { "id": "11-image-01", "caption": "原文手绘动画示例：元素随叙事逐步出现（动图）" },
+    { "id": "11-image-02", "caption": "原文线稿示例：先确定整幕的构图与角色关系" },
+    { "id": "11-image-03", "caption": "原文预览台：分区、顺序与字幕时间关联" },
+    { "id": "11-poster-01", "caption": "原文视频：AI 发展简史白板动画成片" }
+  ]
+}

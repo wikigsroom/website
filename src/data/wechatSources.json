@@ -1,0 +1,1261 @@
+{
+  "schemaVersion": 1,
+  "latestBatch": "2026-11-06",
+  "editorialPolicy": "Original summaries with source credit; source illustrations and generated covers are attributed separately. Video posters link to the original article; no video playback is implied.",
+  "articles": [
+    {
+      "index": 1,
+      "slug": "prompt2rig-text-to-motion",
+      "url": "https://mp.weixin.qq.com/s/QcDpAx5wlUJ9TFf_O1cpLQ",
+      "title": "打一句「侧踢」，它给你生成会踢腿的 3D 角色，手指都在动",
+      "account": "晴天的码场",
+      "byline": "晴天的码场",
+      "sourcePublishedAt": "2026-10-29T06:30:00+08:00",
+      "retrievedAt": "2026-11-06T02:55:15.967872+00:00",
+      "htmlSha256": "c747b432e24a915bd02dfbc8e6fc76a6ee74ac60f18bd73d6316f6f589ffc20b",
+      "textSha256": "31179dfdea3a89990999c22ea6468c7a6895c1fadf1f75386923eb346ac9d908",
+      "images": [
+        {
+          "url": "https://mmbiz.qpic.cn/mmbiz_jpg/65c9fHd9mrbhMhJP5Go0BTeWhEY0kxgkJV2ibXHickbSd17SDCLfbCwFtEiclbXC1606o97EvLRxhaloPAqunCgaicVUycL7BfQaA0J3Y6JOxnM/640?from=appmsg",
+          "alt": "",
+          "type": ""
+        },
+        {
+          "url": "https://mmbiz.qpic.cn/sz_mmbiz_gif/65c9fHd9mrY01ibc4XMxib1VJKJw4xpGZzUliaMW3FUFDevPpIrP4QXqx0vLKjNh7Uu22MkN38If3FsKzJHzQK9WCtPTjRC8Lc255S3L47Zp38/640?from=appmsg",
+          "alt": "",
+          "type": ""
+        },
+        {
+          "url": "https://mmbiz.qpic.cn/mmbiz_jpg/65c9fHd9mrZHXEvTicjiaticyUWfrTWJ8eAxM0SPCl2sB6YvYOFaDIBz4dGibPSnH5SdicibRzJ8dkCCjSPdEpHHAm2gtBOUzicia5ebhHS15ialGE1Q/640?from=appmsg",
+          "alt": "",
+          "type": ""
+        }
+      ],
+      "videos": [],
+      "batch": "2026-11-06",
+      "publishedAt": "2026-11-06",
+      "cover": {
+        "model": "gpt-image-2.5-flare",
+        "skill": "sub2-image-gen",
+        "hero": "/assets/wechat/2026-11-06/hero/prompt2rig-text-to-motion.webp",
+        "card": "/assets/wechat/2026-11-06/card/prompt2rig-text-to-motion.webp",
+        "source": "output/imagegen/wechat-2026-11-06/prompt2rig-text-to-motion.png",
+        "prompt": "output/imagegen/wechat-2026-11-06/prompts/prompt2rig-text-to-motion.txt",
+        "heroSha256": "1fe93151ddf6ba0f2d52cbb738a11c0b89efa27c5a07b42d62cbc11df777c814",
+        "cardSha256": "9ff43464b0453c6e16d5ccd3a89149b9421245b4dd090a5cb26c7d62ec019d47",
+        "sourceSha256": "1f08d5eafc1f11bb7f79cc9aa5243987eeddf9db3f6c3c4a376cb30252d3dc94",
+        "promptSha256": "0227d2f4c924521b555f5b0975a86cfac953e8d1bc578e93a61f2b1fc5fd0f54"
+      },
+      "materials": [
+        {
+          "id": "01-image-02",
+          "caption": "提示词生成的动作与 Mixamo 角色重定向演示（原文动图）",
+          "kind": "image",
+          "originalUrl": "https://mmbiz.qpic.cn/sz_mmbiz_gif/65c9fHd9mrY01ibc4XMxib1VJKJw4xpGZzUliaMW3FUFDevPpIrP4QXqx0vLKjNh7Uu22MkN38If3FsKzJHzQK9WCtPTjRC8Lc255S3L47Zp38/640?from=appmsg",
+          "originalSha256": "bdc5d73f2cc2916716e945c8b6a2dfbb6eb1b9eb0d5e94ecc1d57b1861d421ec",
+          "src": "/assets/wechat/2026-11-06/materials/01-image-02.webp",
+          "width": 520,
+          "height": 292,
+          "frames": 27,
+          "durationMs": 3240,
+          "sha256": "87bf4bd17dfe8b96327ddb051341b240fdce36aa52b08843cc60cb250d35b3f3",
+          "bytes": 151008
+        },
+        {
+          "id": "01-image-03",
+          "caption": "prompt2rig 界面：参考视频、姿态覆盖与角色预览",
+          "kind": "image",
+          "originalUrl": "https://mmbiz.qpic.cn/mmbiz_jpg/65c9fHd9mrZHXEvTicjiaticyUWfrTWJ8eAxM0SPCl2sB6YvYOFaDIBz4dGibPSnH5SdicibRzJ8dkCCjSPdEpHHAm2gtBOUzicia5ebhHS15ialGE1Q/640?from=appmsg",
+          "originalSha256": "e0e6a171f62bad601ad84af7a39eb310011b2398a062ddf6b8b367a9e9297303",
+          "src": "/assets/wechat/2026-11-06/materials/01-image-03.webp",
+          "width": 1080,
+          "height": 608,
+          "frames": 1,
+          "durationMs": 0,
+          "sha256": "ccfbbc1da47e0005ad80021182f6cdee3aa3a63acfd928839bedb6e7a3136c85",
+          "bytes": 25310
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "slug": "ai-image-repair-structure-style",
+      "url": "https://mp.weixin.qq.com/s/-8iEwwOuAP4Aj4zXq5tWQw",
+      "title": "AI生图越修越脏？试试这套“洗图”流程",
+      "account": "火玉的田野",
+      "byline": "火玉",
+      "sourcePublishedAt": "2026-10-12T20:49:02+08:00",
+      "retrievedAt": "2026-11-06T02:55:15.987918+00:00",
+      "htmlSha256": "58269601743399bd90b4e26cb73fb3ae411858e91c0ec0bb3e8f1a53af13b3c7",
+      "textSha256": "bcb60a5b77b0cda2bca2a33a95f427b136328e3a04dedecf617e6b3d5c84d5d0",
+      "images": [
+        {
+          "url": "https://mmbiz.qpic.cn/sz_mmbiz_png/CgI6wDargpAD3CDdm2px4ILw4tgBWjBl1Pa2oxLkMBGwBG0Mhp1l5ib5nOOpOX4Sh9PaSo9ia4Hz81icMWnPialbqZLbcmJ0yz8dyxk9PjnWMpo/640?wx_fmt=png&from=appmsg",
+          "alt": "",
+          "type": "png"
+        },
+        {
+          "url": "https://mmbiz.qpic.cn/sz_mmbiz_png/CgI6wDargpAXQncQFWf8EFtJLjg2V9MdTiaIKW93tibrwibEiaZuVB80MxkbPmibAM7OnYx8T6RX3SMSj4vRnywTaicLiaSCQIIuwsrcwCFMA5sQkY/640?wx_fmt=png&from=appmsg",
+          "alt": "图片预览",
+          "type": "png"
+        },
+        {
+          "url": "https://mmbiz.qpic.cn/mmbiz_png/CgI6wDargpCB0ibgjqIiavbHag8JmKhoy0cHicHdZ92Pqzv1v9K5AM6LOCSJgYX8qvkpG8uvE55hQ0dOLAK41TbdXqSiaWUr2YtwFOZQpRfcNH4/640?wx_fmt=png&from=appmsg",
+          "alt": "",
+          "type": "png"
+        },
+        {
+          "url": "https://mmbiz.qpic.cn/mmbiz_png/CgI6wDargpAILnlAg01kPSLoQgibqxfibdGA8ibwKS4enlfkOyDUOReKA93O7mMBicQRErhKcZIxwUxsEhg2vLPtput7A3qFIzTvdE6rLUtFsHI/640?wx_fmt=png&from=appmsg",
+          "alt": "图片预览",
+          "type": "png"
+        },
+        {
+          "url": "https://mmbiz.qpic.cn/mmbiz_png/CgI6wDargpAPrsFkTyfHAv1n5ZoG9ORwSC8kFUndKicQkf5YXaGgubbs84E5cVHv6vLgUVnkGHKGauVDvpobN10u1VWLibxSOMMTTOdHVicfIY/640?wx_fmt=png&from=appmsg",
+          "alt": "图片预览",
+          "type": "png"
+        },
+        {
+          "url": "https://mmbiz.qpic.cn/mmbiz_png/CgI6wDargpCEI4dEP904fZeTX7iaJSE6j7qYL2CqnlSicBLAic26XjkGzwn9pc63CofhsQReiaBO6uWdsoXW22HfKhmMYBbHTd5UicMXD8nEiavpM/640?wx_fmt=png&from=appmsg",
+          "alt": "图片预览",
+          "type": "png"
+        }
+      ],
+      "videos": [],
+      "batch": "2026-11-06",
+      "publishedAt": "2026-11-06",
+      "cover": {
+        "model": "gpt-image-2.5-flare",
+        "skill": "sub2-image-gen",
+        "hero": "/assets/wechat/2026-11-06/hero/ai-image-repair-structure-style.webp",
+        "card": "/assets/wechat/2026-11-06/card/ai-image-repair-structure-style.webp",
+        "source": "output/imagegen/wechat-2026-11-06/ai-image-repair-structure-style.png",
+        "prompt": "output/imagegen/wechat-2026-11-06/prompts/ai-image-repair-structure-style.txt",
+        "heroSha256": "475297337b0d8d60c31393ef304cdacf84e9873c10c270235ad524931b2cf119",
+        "cardSha256": "0f93d0c99fbd3293e8151b6b00e9ea0f205227aa9cb6e44c88dd0e72c91aa539",
+        "sourceSha256": "da265033227915cccde163ddd9a7873410836f7c0f8fcc0f9b7acf37db8ebfa6",
+        "promptSha256": "1947c8cf3b88e73a7d447bbf290cf48101673c7b18baf3e4db541dab70248867"
+      },
+      "materials": [
+        {
+          "id": "02-image-05",
+          "caption": "原文流程图：外观参考与结构参考的分工",
+          "kind": "image",
+          "originalUrl": "https://mmbiz.qpic.cn/mmbiz_png/CgI6wDargpAPrsFkTyfHAv1n5ZoG9ORwSC8kFUndKicQkf5YXaGgubbs84E5cVHv6vLgUVnkGHKGauVDvpobN10u1VWLibxSOMMTTOdHVicfIY/640?wx_fmt=png&from=appmsg",
+          "originalSha256": "cbf6ce82c952d62f47e560fa44fcff9555aeb58752a08fab7917bdf607743a6d",
+          "src": "/assets/wechat/2026-11-06/materials/02-image-05.webp",
+          "width": 1080,
+          "height": 608,
+          "frames": 1,
+          "durationMs": 0,
+          "sha256": "9932c635e0c69170aa14b0f1614974d21056c679c27410fa371266528f184a90",
+          "bytes": 45858
+        },
+        {
+          "id": "02-image-06",
+          "caption": "原文案例：依据整理后的结构重新生成，再检查细节",
+          "kind": "image",
+          "originalUrl": "https://mmbiz.qpic.cn/mmbiz_png/CgI6wDargpCEI4dEP904fZeTX7iaJSE6j7qYL2CqnlSicBLAic26XjkGzwn9pc63CofhsQReiaBO6uWdsoXW22HfKhmMYBbHTd5UicMXD8nEiavpM/640?wx_fmt=png&from=appmsg",
+          "originalSha256": "74c9f11a8704376c92b935e4fa9be65849729411f797f6d9ef1e2506090f06b8",
+          "src": "/assets/wechat/2026-11-06/materials/02-image-06.webp",
+          "width": 1080,
+          "height": 608,
+          "frames": 1,
+          "durationMs": 0,
+          "sha256": "8786fdddee528d079bd23553e095f4c6e936f4d89044f5655bdf949079b0aec7",
+          "bytes": 60858
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "slug": "mixamo-mocap-agent-animation",
+      "url": "https://mp.weixin.qq.com/s/Rk5UTyMM6d2EpTAFZxKo0A",
+      "title": "用 AI 把任意视频变成 Mixamo 角色动画：Mixamo LLM Mocap",
+      "account": "AI for Frontend",
+      "byline": "前端设计大神",
+      "sourcePublishedAt": "2026-09-17T17:30:00+08:00",
+      "retrievedAt": "2026-11-06T02:55:15.962471+00:00",
+      "htmlSha256": "9b4840c25bc92cd8e534dc5dde0518fc14b8a3d86560f45ead0de1f084334440",
+      "textSha256": "8feee7e0f9cc82adca9695fbf09a58d25e3bb603c8c6f588a3f995625ba8db0a",
+      "images": [
+        {
+          "url": "https://mmbiz.qpic.cn/sz_mmbiz_png/p5aKbB9nc5kRCoRmoRczWKLlIuUQbqibzNL9yzicWTJOPYmvZ5ntsRLvhMQI5hWXYcCS9a7cdR0qlZWdDxeZzxicwibCSziaz08Fw6KhymtCgo78/640?wx_fmt=png&from=appmsg",
+          "alt": "",
+          "type": "png"
+        }
+      ],
+      "videos": [],
+      "batch": "2026-11-06",
+      "publishedAt": "2026-11-06",
+      "cover": {
+        "model": "gpt-image-2.5-flare",
+        "skill": "sub2-image-gen",
+        "hero": "/assets/wechat/2026-11-06/hero/mixamo-mocap-agent-animation.webp",
+        "card": "/assets/wechat/2026-11-06/card/mixamo-mocap-agent-animation.webp",
+        "source": "output/imagegen/wechat-2026-11-06/mixamo-mocap-agent-animation.png",
+        "prompt": "output/imagegen/wechat-2026-11-06/prompts/mixamo-mocap-agent-animation.txt",
+        "heroSha256": "34e4282cab988fecddff830815811c3f8e838d87019aac6baf83a0b98afbeb27",
+        "cardSha256": "4b096998d255f6c51142a3f89be401062a210438f82b11553d0c0f32ce6c15c0",
+        "sourceSha256": "e4dbe7803809ce58cf8f19f4c5abdeb12ede3b40f2b2042b0ebaafd9787241fe",
+        "promptSha256": "242ca5cdba8bdcca0ba1f8c9aea69d65f6c4539845d759309106e18c0d827c4c"
+      },
+      "materials": [
+        {
+          "id": "03-image-01",
+          "caption": "原文中的双人参考画面与 Mixamo 重定向对照",
+          "kind": "image",
+          "originalUrl": "https://mmbiz.qpic.cn/sz_mmbiz_png/p5aKbB9nc5kRCoRmoRczWKLlIuUQbqibzNL9yzicWTJOPYmvZ5ntsRLvhMQI5hWXYcCS9a7cdR0qlZWdDxeZzxicwibCSziaz08Fw6KhymtCgo78/640?wx_fmt=png&from=appmsg",
+          "originalSha256": "0dedda422779a57f68d487b821a1d7c4217af3cabaffba98654049100117afc8",
+          "src": "/assets/wechat/2026-11-06/materials/03-image-01.webp",
+          "width": 1080,
+          "height": 305,
+          "frames": 1,
+          "durationMs": 0,
+          "sha256": "e0c0c0b1f5c5dd991a850f95e8c9be08f7b9f9e5ab5090b684a17031dd271461",
+          "bytes": 9368
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "slug": "audio8-compact-tts",
+      "url": "https://mp.weixin.qq.com/s/NfutJY9UGy6tozL37wMysQ",
+      "title": "Audio8 TTS： 又一款小而高质量的TTS，支持声音克隆",
+      "account": "AI for Frontend",
+      "byline": "前端设计大神",
+      "sourcePublishedAt": "2026-10-30T17:00:00+08:00",
+      "retrievedAt": "2026-11-06T02:55:15.940338+00:00",
+      "htmlSha256": "8ebdd60309d16b4615d5d90109027835ec3a1aa0d2f38c4578b1062b0580044b",
+      "textSha256": "8dc7b47d65a6739d3ac8f85e6d5a8391e7e8ee626bad7c8edaef6070bcd25660",
+      "images": [
+        {
+          "url": "https://mmbiz.qpic.cn/mmbiz_png/p5aKbB9nc5mRfw6R5cGbELn5Lpa9phccEMr2u6ac5CPZwd1zVB84PxZ6cKTdFEZGSicxJhvl4c09LEU46qoLGHfg7YA9ficj0fqJgphtiaAKnU/640?wx_fmt=png&from=appmsg",
+          "alt": "",
+          "type": "png"
+        }
+      ],
+      "videos": [
+        {
+          "id": "wxv_4760652859057373188",
+          "playerUrl": "https://mp.weixin.qq.com/mp/readtemplate?t=pages/video_player_tmpl&action=mpvideo&auto=0&vid=wxv_4760652859057373188",
+          "posterUrl": "https://mmbiz.qpic.cn/sz_mmbiz_jpg/p5aKbB9nc5lnU66QibzTcMW815pcmevJLS9txwK2GlWdHHp9aykiaVYtIvlDUKl6sVt75bFYaq4czbjlm04SQSiciav5Ek5g9PLSFS5mFLuibGvg/0?wx_fmt=jpeg"
+        }
+      ],
+      "batch": "2026-11-06",
+      "publishedAt": "2026-11-06",
+      "cover": {
+        "model": "gpt-image-2.5-flare",
+        "skill": "sub2-image-gen",
+        "hero": "/assets/wechat/2026-11-06/hero/audio8-compact-tts.webp",
+        "card": "/assets/wechat/2026-11-06/card/audio8-compact-tts.webp",
+        "source": "output/imagegen/wechat-2026-11-06/audio8-compact-tts.png",
+        "prompt": "output/imagegen/wechat-2026-11-06/prompts/audio8-compact-tts.txt",
+        "heroSha256": "dcbd00912242142a9de1bdc2835cf7b4d304aacd62563d0b6df378496ee6f236",
+        "cardSha256": "9c3f18b605bc4d5de00691cfe03d2a0b4f91102c60d3eb7a09c14f4404e7e8f2",
+        "sourceSha256": "0b1438e8a94b723fb894d1068b47fecdbe1ac840c494f924988a53ea2ff4d3d1",
+        "promptSha256": "d1c55741b1609fe68f5940a97f9e59bb82a521e639a13b641f9b7a3e4b2cb4c5"
+      },
+      "materials": [
+        {
+          "id": "04-image-01",
+          "caption": "Audio8 原文架构图：语义与声学生成分层",
+          "kind": "image",
+          "originalUrl": "https://mmbiz.qpic.cn/mmbiz_png/p5aKbB9nc5mRfw6R5cGbELn5Lpa9phccEMr2u6ac5CPZwd1zVB84PxZ6cKTdFEZGSicxJhvl4c09LEU46qoLGHfg7YA9ficj0fqJgphtiaAKnU/640?wx_fmt=png&from=appmsg",
+          "originalSha256": "c47038bc913087edc618aff5ca8f24d0fecd07de0d6c2e52e9a3f7a9b6c19760",
+          "src": "/assets/wechat/2026-11-06/materials/04-image-01.webp",
+          "width": 1080,
+          "height": 672,
+          "frames": 1,
+          "durationMs": 0,
+          "sha256": "8be3a50dc65c967e6e0e2bc0e1ebf31abe2622662b6818f6999b0686e977c4a0",
+          "bytes": 40588
+        },
+        {
+          "id": "04-poster-01",
+          "caption": "原文 Audio8 TTS 语音演示",
+          "kind": "video-reference",
+          "originalUrl": "https://mmbiz.qpic.cn/sz_mmbiz_jpg/p5aKbB9nc5lnU66QibzTcMW815pcmevJLS9txwK2GlWdHHp9aykiaVYtIvlDUKl6sVt75bFYaq4czbjlm04SQSiciav5Ek5g9PLSFS5mFLuibGvg/0?wx_fmt=jpeg",
+          "originalSha256": "14eec5bf7e328762887e361784360e14c18f41525be3e519a92baf591e8df84b",
+          "src": "/assets/wechat/2026-11-06/materials/04-poster-01.webp",
+          "width": 628,
+          "height": 354,
+          "frames": 1,
+          "durationMs": 0,
+          "sha256": "08ff733bf264fd831c4768644346c05f66a1e83f22effea3199574a236269b98",
+          "bytes": 12242,
+          "videoId": "wxv_4760652859057373188",
+          "playerUrl": "https://mp.weixin.qq.com/mp/readtemplate?t=pages/video_player_tmpl&action=mpvideo&auto=0&vid=wxv_4760652859057373188"
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "slug": "video-to-game-playable-prototype",
+      "url": "https://mp.weixin.qq.com/s/1ECp10_o9BA1I3HPBWkAUA",
+      "title": "Video to Game：把一段视频变成可玩的 Three.js 小游戏",
+      "account": "AI for Frontend",
+      "byline": "前端设计大神",
+      "sourcePublishedAt": "2026-10-29T12:00:00+08:00",
+      "retrievedAt": "2026-11-06T02:55:16.151863+00:00",
+      "htmlSha256": "566813d65874ea19e2d5189480873e8ce3df71a76a3dedf1dc754723f6e8c88a",
+      "textSha256": "6578837710ca5e6cb7fa8095d4396ebfe8e2fdb45a06b84b902b37166bb7ef6f",
+      "images": [],
+      "videos": [
+        {
+          "id": "wxv_4758879967843631109",
+          "playerUrl": "https://mp.weixin.qq.com/mp/readtemplate?t=pages/video_player_tmpl&action=mpvideo&auto=0&vid=wxv_4758879967843631109",
+          "posterUrl": "https://mmbiz.qpic.cn/sz_mmbiz_jpg/p5aKbB9nc5k1CXslPcLpv5wc40nX1ErlbQWTky6BJy3t9RHbb4dOW1WSibfTNhFjKLicfmXMt23sQMwJMAZdjnGKjlRYhIUG6ocMuM2LDulA0/0?wx_fmt=jpeg"
+        }
+      ],
+      "batch": "2026-11-06",
+      "publishedAt": "2026-11-06",
+      "cover": {
+        "model": "gpt-image-2.5-flare",
+        "skill": "sub2-image-gen",
+        "hero": "/assets/wechat/2026-11-06/hero/video-to-game-playable-prototype.webp",
+        "card": "/assets/wechat/2026-11-06/card/video-to-game-playable-prototype.webp",
+        "source": "output/imagegen/wechat-2026-11-06/video-to-game-playable-prototype.png",
+        "prompt": "output/imagegen/wechat-2026-11-06/prompts/video-to-game-playable-prototype.txt",
+        "heroSha256": "7b8e11b1802efe52f016baa7291493638d2e6b4cfb6ee8108d9bb0c4f2e966ba",
+        "cardSha256": "b0e61e440d02f807ba7879abb1a515c18054168d819e16d6c9ea425048e8bff4",
+        "sourceSha256": "bc8dcb9bd8c6dcf3e28e7fd0545a9155e32e3578a0718cc7e53cd86eec74ca90",
+        "promptSha256": "442c82d154fe673eb11a04718b74d66d14e9cefa98279350dae559ced178bf53"
+      },
+      "materials": [
+        {
+          "id": "05-poster-01",
+          "caption": "原文视频：由玩法概念发展出的浏览器游戏演示",
+          "kind": "video-reference",
+          "originalUrl": "https://mmbiz.qpic.cn/sz_mmbiz_jpg/p5aKbB9nc5k1CXslPcLpv5wc40nX1ErlbQWTky6BJy3t9RHbb4dOW1WSibfTNhFjKLicfmXMt23sQMwJMAZdjnGKjlRYhIUG6ocMuM2LDulA0/0?wx_fmt=jpeg",
+          "originalSha256": "7326815f4ac2989b093ee894142c516a20efa83e2f2b0b15821291ddcdb739af",
+          "src": "/assets/wechat/2026-11-06/materials/05-poster-01.webp",
+          "width": 898,
+          "height": 674,
+          "frames": 1,
+          "durationMs": 0,
+          "sha256": "20dffbf9f6b810672a97d48e0723c79904b50b14021d3b49bbedb95442840d4f",
+          "bytes": 21670,
+          "videoId": "wxv_4758879967843631109",
+          "playerUrl": "https://mp.weixin.qq.com/mp/readtemplate?t=pages/video_player_tmpl&action=mpvideo&auto=0&vid=wxv_4758879967843631109"
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "slug": "eight-view-ai-3d-blockout",
+      "url": "https://mp.weixin.qq.com/s/4Cq7hM92Bk8tug1OLhihyw",
+      "title": "AI 建模实测：一张八视角参考图，让 ChatGPT 和 DeepSeek-4.1-Flash 替我搭出 3D 白模",
+      "account": "亦暖筑序",
+      "byline": "亦暖筑序",
+      "sourcePublishedAt": "2026-10-27T21:14:37+08:00",
+      "retrievedAt": "2026-11-06T02:55:16.068286+00:00",
+      "htmlSha256": "6bf614fd93efe2a2ef9a52c184744442554157b07a90c9d040ca1249d151166f",
+      "textSha256": "522fac8980fa01b635a6787edae60b27b8b9be00656f097dde74b816cb2cb858",
+      "images": [
+        {
+          "url": "https://mmbiz.qpic.cn/mmbiz_png/uYSwaSduJuJK98ia2rFXLZjXdBIYMbPW7icVbXWOfmmz0A9r0no2r5bmFRpUiceEZ1wHDBXQpfgT63BiaOTqSFqPgCIJ9wn6z5cASoJkxSGBkA8/640?wx_fmt=png&from=appmsg",
+          "alt": "AI 直接建模的结果",
+          "type": "png"
+        },
+        {
+          "url": "https://mmbiz.qpic.cn/sz_mmbiz_png/uYSwaSduJuI0IHm5z6J2sicUr9N6lFuIibDnJsiapkcSehQkFoJFO8RcYaPZOR17kyebhp1BH3HwXkGgFpuAvT8QlmkWq2cJfKU70vkNjtJ3QI/640?wx_fmt=png&from=appmsg",
+          "alt": "混元 3D 图生 3D 结果",
+          "type": "png"
+        },
+        {
+          "url": "https://mmbiz.qpic.cn/sz_mmbiz_png/uYSwaSduJuJMibZSviaV2h9x8ricNx7iaCkLArjXPgLUCib0WrRjL5DmHc0aictCqFRHxe8BzOzqMdialbtnSSh9UwuM4wajzMkIFbbgVY0WFwibQEE/640?wx_fmt=png&from=appmsg",
+          "alt": "八视角参考图",
+          "type": "png"
+        },
+        {
+          "url": "https://mmbiz.qpic.cn/mmbiz_png/uYSwaSduJuJkUx5CCxIHZiaE3GlRicTfPx7ACLibYIubibxAbbUicahvZibicNVMgFvLzrg2ad3TfGBEMic7mLkQg0T0jiatriaZzUWokx6BcWYXsQYBU/640?wx_fmt=png&from=appmsg",
+          "alt": "GPT-6 Astra 白模",
+          "type": "png"
+        },
+        {
+          "url": "https://mmbiz.qpic.cn/sz_mmbiz_png/uYSwaSduJuI6X06R0KPktHfdhFXA6Xv64NZX6ib5gABC21GMiaoB3tWdwZ0mPicQZgR6TE64gljBxbgIOa33e8wyfpib9ZRXmX2FNT6pXmT9LoA/640?wx_fmt=png&from=appmsg",
+          "alt": "DeepSeek-4.1-Flash 白模（DeepSeek Harness）",
+          "type": "png"
+        },
+        {
+          "url": "https://mmbiz.qpic.cn/sz_mmbiz_png/uYSwaSduJuL1tGePLiaNw86llHAibdeO2RXxaFYRDtLldftwVn9ozO2zwqibWhlDBVp85yZbRtZMMJcjsEIj01ECTLENOQDlmXM7u3Chvvic5Mw/640?wx_fmt=png&from=appmsg",
+          "alt": "DeepSeek-4.1-Flash 白模（WorkBuddy，极高）",
+          "type": "png"
+        },
+        {
+          "url": "https://mmbiz.qpic.cn/sz_mmbiz_png/uYSwaSduJuIR3RYLmL3vBYD3nyt7WpL7pczYw0g8hPfcZSlVL8gYMe1gVaCypThnUIuDIsyQew0Lb1Hnlp2EcM9mxtztyIPm33odYibdL3vs/640?wx_fmt=png&from=appmsg",
+          "alt": "DeepSeek-4.1-Flash 白模（WorkBuddy，高）",
+          "type": "png"
+        },
+        {
+          "url": "https://mmbiz.qpic.cn/mmbiz_png/uYSwaSduJuIHgeas65YmA8fXL3bYfPLmRicDABUxLfTaYy1ibrmrdbCTMw8Dq1QtTbDLrhBR0z1Ds3Ytny5qaqEiaMphXmiasibDeKMVsPJhnWico/640?wx_fmt=png&from=appmsg",
+          "alt": "GLM-5.3-Flash 白模",
+          "type": "png"
+        }
+      ],
+      "videos": [
+        {
+          "id": "wxv_4756581280090374150",
+          "playerUrl": "https://mp.weixin.qq.com/mp/readtemplate?t=pages/video_player_tmpl&action=mpvideo&auto=0&vid=wxv_4756581280090374150",
+          "posterUrl": "https://mmbiz.qpic.cn/mmbiz_jpg/uYSwaSduJuKryEG87YroRF3lbdZKDs3tC05yFxWLcdcZ0KiccCdrDm4DtCV8zK3DSLDibFHWiaL39GVF4GtXBeKJn2m7h0VIaNGyHyYzBQYeM4/0?wx_fmt=jpeg"
+        }
+      ],
+      "batch": "2026-11-06",
+      "publishedAt": "2026-11-06",
+      "cover": {
+        "model": "gpt-image-2.5-flare",
+        "skill": "sub2-image-gen",
+        "hero": "/assets/wechat/2026-11-06/hero/eight-view-ai-3d-blockout.webp",
+        "card": "/assets/wechat/2026-11-06/card/eight-view-ai-3d-blockout.webp",
+        "source": "output/imagegen/wechat-2026-11-06/eight-view-ai-3d-blockout.png",
+        "prompt": "output/imagegen/wechat-2026-11-06/prompts/eight-view-ai-3d-blockout.txt",
+        "heroSha256": "cf5d4785f1bf13f916c6f7d87dd8a4763b27c4bec91284997092416fb0551464",
+        "cardSha256": "bb3279a9da04232a66db4f21d50075f6770d69257a963336e13cf50583a1188a",
+        "sourceSha256": "4232a8c91089be015729f6647cf3106984590f36f99704d37630fc59f75d7daa",
+        "promptSha256": "1875489310920e7eb4ec9d59805f2492a4633f6aae27756f632a9c1b29372d23"
+      },
+      "materials": [
+        {
+          "id": "06-image-03",
+          "caption": "作者提供给模型的八视角参考板，含尺寸与配色",
+          "kind": "image",
+          "originalUrl": "https://mmbiz.qpic.cn/sz_mmbiz_png/uYSwaSduJuJMibZSviaV2h9x8ricNx7iaCkLArjXPgLUCib0WrRjL5DmHc0aictCqFRHxe8BzOzqMdialbtnSSh9UwuM4wajzMkIFbbgVY0WFwibQEE/640?wx_fmt=png&from=appmsg",
+          "originalSha256": "064788063a42c2595f8fcd9a8a7b48f79190d2305480ee7889890e00b55ace3d",
+          "src": "/assets/wechat/2026-11-06/materials/06-image-03.webp",
+          "width": 1080,
+          "height": 720,
+          "frames": 1,
+          "durationMs": 0,
+          "sha256": "87b0718b734c6552354e6c34c0fff0dbfd76cc4e755e2233847365a8918aab9d",
+          "bytes": 99688
+        },
+        {
+          "id": "06-image-04",
+          "caption": "作者标注为 ChatGPT / GPT-6 Astra / Ultra 的白模结果",
+          "kind": "image",
+          "originalUrl": "https://mmbiz.qpic.cn/mmbiz_png/uYSwaSduJuJkUx5CCxIHZiaE3GlRicTfPx7ACLibYIubibxAbbUicahvZibicNVMgFvLzrg2ad3TfGBEMic7mLkQg0T0jiatriaZzUWokx6BcWYXsQYBU/640?wx_fmt=png&from=appmsg",
+          "originalSha256": "c1e5d1c3d62e998d8b77b6316f4ab9eda004c92a8f1400ddd98c786bdb8ff90f",
+          "src": "/assets/wechat/2026-11-06/materials/06-image-04.webp",
+          "width": 1080,
+          "height": 810,
+          "frames": 1,
+          "durationMs": 0,
+          "sha256": "134ba9da6010d080c5aa108693f51c7e646c88268372a2c10a967daebbb3c073",
+          "bytes": 21120
+        },
+        {
+          "id": "06-image-05",
+          "caption": "作者标注为 DeepSeek-4.1-Flash / Harness / 高的结果",
+          "kind": "image",
+          "originalUrl": "https://mmbiz.qpic.cn/sz_mmbiz_png/uYSwaSduJuI6X06R0KPktHfdhFXA6Xv64NZX6ib5gABC21GMiaoB3tWdwZ0mPicQZgR6TE64gljBxbgIOa33e8wyfpib9ZRXmX2FNT6pXmT9LoA/640?wx_fmt=png&from=appmsg",
+          "originalSha256": "89bac5f9f1a8315e427b6424b455877b7bde7fed71b4f9d9b6068ea6a0257e38",
+          "src": "/assets/wechat/2026-11-06/materials/06-image-05.webp",
+          "width": 1080,
+          "height": 739,
+          "frames": 1,
+          "durationMs": 0,
+          "sha256": "5b809f411eb0f7d1c96cd4d5ce9bf1cb9ec792ddcc0250761a1471f58ef74976",
+          "bytes": 30876
+        },
+        {
+          "id": "06-image-06",
+          "caption": "作者标注为 DeepSeek-4.1-Flash / WorkBuddy / 极高的结果",
+          "kind": "image",
+          "originalUrl": "https://mmbiz.qpic.cn/sz_mmbiz_png/uYSwaSduJuL1tGePLiaNw86llHAibdeO2RXxaFYRDtLldftwVn9ozO2zwqibWhlDBVp85yZbRtZMMJcjsEIj01ECTLENOQDlmXM7u3Chvvic5Mw/640?wx_fmt=png&from=appmsg",
+          "originalSha256": "abc2b10f87b8cd2880dd1731cba8c3140050e65ac7465d66659a7251271b3564",
+          "src": "/assets/wechat/2026-11-06/materials/06-image-06.webp",
+          "width": 1080,
+          "height": 723,
+          "frames": 1,
+          "durationMs": 0,
+          "sha256": "b6e7f3bcccf8140b052e184c3f94f9c9e8ac5248d33aee4040f858d92f006bf1",
+          "bytes": 29996
+        },
+        {
+          "id": "06-image-07",
+          "caption": "作者标注为 DeepSeek-4.1-Flash / WorkBuddy / 高的结果",
+          "kind": "image",
+          "originalUrl": "https://mmbiz.qpic.cn/sz_mmbiz_png/uYSwaSduJuIR3RYLmL3vBYD3nyt7WpL7pczYw0g8hPfcZSlVL8gYMe1gVaCypThnUIuDIsyQew0Lb1Hnlp2EcM9mxtztyIPm33odYibdL3vs/640?wx_fmt=png&from=appmsg",
+          "originalSha256": "a33f117a99dd015eb55b88d419d7a7a1feaaa94bd0582dea37131f307446b016",
+          "src": "/assets/wechat/2026-11-06/materials/06-image-07.webp",
+          "width": 1080,
+          "height": 746,
+          "frames": 1,
+          "durationMs": 0,
+          "sha256": "b235550e5602d55347fd6065f16acdceeb1e0052b9b0fcaa81864600b4de2fbc",
+          "bytes": 33900
+        },
+        {
+          "id": "06-image-08",
+          "caption": "作者标注为 GLM-5.3-Flash / Zcode / 高的结果",
+          "kind": "image",
+          "originalUrl": "https://mmbiz.qpic.cn/mmbiz_png/uYSwaSduJuIHgeas65YmA8fXL3bYfPLmRicDABUxLfTaYy1ibrmrdbCTMw8Dq1QtTbDLrhBR0z1Ds3Ytny5qaqEiaMphXmiasibDeKMVsPJhnWico/640?wx_fmt=png&from=appmsg",
+          "originalSha256": "0bed226e668bb6fa14ff04901f7897819aafd5f5af0c3b203a9842855d79c45b",
+          "src": "/assets/wechat/2026-11-06/materials/06-image-08.webp",
+          "width": 1080,
+          "height": 743,
+          "frames": 1,
+          "durationMs": 0,
+          "sha256": "9f0b39c654876cc6fbe4e08c0c08867b756828def40bb2e7dbde41f6ef8383ea",
+          "bytes": 40982
+        },
+        {
+          "id": "06-poster-01",
+          "caption": "原文视频：舱体的交互与爆炸拆解展示",
+          "kind": "video-reference",
+          "originalUrl": "https://mmbiz.qpic.cn/mmbiz_jpg/uYSwaSduJuKryEG87YroRF3lbdZKDs3tC05yFxWLcdcZ0KiccCdrDm4DtCV8zK3DSLDibFHWiaL39GVF4GtXBeKJn2m7h0VIaNGyHyYzBQYeM4/0?wx_fmt=jpeg",
+          "originalSha256": "3e5d70ca1fb28c932c95152bdef9252cc42dcb40fb176a22a3c12cbb61b0d1c6",
+          "src": "/assets/wechat/2026-11-06/materials/06-poster-01.webp",
+          "width": 1076,
+          "height": 606,
+          "frames": 1,
+          "durationMs": 0,
+          "sha256": "1bbdf9ac47af36ec809671532b40e2fad28d17c292f8e3daca5bce596bdb5389",
+          "bytes": 27234,
+          "videoId": "wxv_4756581280090374150",
+          "playerUrl": "https://mp.weixin.qq.com/mp/readtemplate?t=pages/video_player_tmpl&action=mpvideo&auto=0&vid=wxv_4756581280090374150"
+        }
+      ]
+    },
+    {
+      "index": 7,
+      "slug": "qwen-faceswap-identity-transfer",
+      "url": "https://mp.weixin.qq.com/s/PIm1Q_CHKajtWQTsvejErw",
+      "title": "Qwen-FaceSwap：一键换头/换脸/换身体，身份迁移自然，姿势光照完美保留",
+      "account": "前沿AI资讯技术",
+      "byline": "",
+      "sourcePublishedAt": "2026-10-31T09:17:26+08:00",
+      "retrievedAt": "2026-11-06T02:55:16.112863+00:00",
+      "htmlSha256": "1a2141669fb7a10a2a34813bbf482703009c406a1f33e1727bdd129a26f02e73",
+      "textSha256": "3bfdc9f78161ceeef563256e422f04f854a5d9adad3237261a7a52e7d7d85606",
+      "images": [
+        {
+          "url": "https://mmbiz.qpic.cn/mmbiz_jpg/9Vicvhibbzk4y2NMFFHUDMpqyOg3BCrxIJmvkLYU1zMa1zPO9WfKNfKnOP7szoUKyibF6yTMIs3bwnjQdzfVayukstq8oyetlWdZKs1Nu5V2xk/640?wx_fmt=jpeg&from=appmsg",
+          "alt": "",
+          "type": "webp"
+        },
+        {
+          "url": "https://mmbiz.qpic.cn/mmbiz_jpg/9Vicvhibbzk4ynkNXx1lQ9UZrvXpjJIqb9Ox4eCmCQWaTkbb9mqp5iaL6qfflJaBPXDaofWfOXHt25xs0H5hFLqABFEJgiasl5QNUA2PHwYIDLs/640?wx_fmt=jpeg&from=appmsg",
+          "alt": "",
+          "type": "webp"
+        }
+      ],
+      "videos": [],
+      "batch": "2026-11-06",
+      "publishedAt": "2026-11-06",
+      "cover": {
+        "model": "gpt-image-2.5-flare",
+        "skill": "sub2-image-gen",
+        "hero": "/assets/wechat/2026-11-06/hero/qwen-faceswap-identity-transfer.webp",
+        "card": "/assets/wechat/2026-11-06/card/qwen-faceswap-identity-transfer.webp",
+        "source": "output/imagegen/wechat-2026-11-06/qwen-faceswap-identity-transfer.png",
+        "prompt": "output/imagegen/wechat-2026-11-06/prompts/qwen-faceswap-identity-transfer.txt",
+        "heroSha256": "5538b7efd393774d717d37e5c92975845574a437b892dfd681c58e4ef3773850",
+        "cardSha256": "3861f66ef3e22c32712f062ac27393e53897a2f7e8c2afc92e00529f9ae733eb",
+        "sourceSha256": "8b384112a8ab9e4e8f16aef7f0b50c36211c799106ef81d52c917862909447c3",
+        "promptSha256": "1a570e77f41b065ba8116db0e393b173128c6264c2d2cffdd6ad20167728f46c"
+      },
+      "materials": [
+        {
+          "id": "07-image-01",
+          "caption": "原文界面：角色头部迁移示例",
+          "kind": "image",
+          "originalUrl": "https://mmbiz.qpic.cn/mmbiz_jpg/9Vicvhibbzk4y2NMFFHUDMpqyOg3BCrxIJmvkLYU1zMa1zPO9WfKNfKnOP7szoUKyibF6yTMIs3bwnjQdzfVayukstq8oyetlWdZKs1Nu5V2xk/640?wx_fmt=jpeg&from=appmsg",
+          "originalSha256": "8d5a6593c5434a349561d11e911c029a639f18c0910f96fd499f9bab149fad01",
+          "src": "/assets/wechat/2026-11-06/materials/07-image-01.webp",
+          "width": 1080,
+          "height": 561,
+          "frames": 1,
+          "durationMs": 0,
+          "sha256": "12b914c9cfb637b95e657952881c81c9b1a789aa4c900fe18a5a973ef7cec39c",
+          "bytes": 25422
+        },
+        {
+          "id": "07-image-02",
+          "caption": "原文界面：角色全身迁移示例",
+          "kind": "image",
+          "originalUrl": "https://mmbiz.qpic.cn/mmbiz_jpg/9Vicvhibbzk4ynkNXx1lQ9UZrvXpjJIqb9Ox4eCmCQWaTkbb9mqp5iaL6qfflJaBPXDaofWfOXHt25xs0H5hFLqABFEJgiasl5QNUA2PHwYIDLs/640?wx_fmt=jpeg&from=appmsg",
+          "originalSha256": "c1de80804589ea4396aea1efa22ebab92f919d76c6692b14aac90bc3f565d39b",
+          "src": "/assets/wechat/2026-11-06/materials/07-image-02.webp",
+          "width": 1080,
+          "height": 563,
+          "frames": 1,
+          "durationMs": 0,
+          "sha256": "3300aff622d3125609ce13cd8076c7a4c848d797a8ac82acbd73ca036a9cf6cd",
+          "bytes": 27460
+        }
+      ]
+    },
+    {
+      "index": 8,
+      "slug": "mesh-avatar-studio-living-illustration",
+      "url": "https://mp.weixin.qq.com/s/uWMdTmCBFuD_iFrOdf2uEA",
+      "title": "厉害！让一张 AI 角色图变成会说话、会眨眼的动态数字人：Mesh Avatar Studio，轻量级的2D 角色骨骼与网格动画系统！",
+      "account": "产品经理逛世界",
+      "byline": "JimmyMo",
+      "sourcePublishedAt": "2026-10-28T22:18:36+08:00",
+      "retrievedAt": "2026-11-06T02:55:16.204465+00:00",
+      "htmlSha256": "0798b23fe58073070326b79d037ade86a84cbbbec5fbbc4f119b3512fa7f61b5",
+      "textSha256": "c9fc2c8bed503b25ba4ad59b27f4817c706d069bf25b058df5d353f7dc7e6e15",
+      "images": [
+        {
+          "url": "https://mmbiz.qpic.cn/sz_mmbiz_png/Yt2WiaaBD0ibNMzBO1OWukxCP2zrOefYpuBqY7DFN6IliaOu7pbLTiatvxfEDtM2OzTNA9EzyCjn03cEGxHnibyAR4w/640?wx_fmt=png&from=appmsg",
+          "alt": "Generated Image",
+          "type": "png"
+        },
+        {
+          "url": "https://mmbiz.qpic.cn/sz_mmbiz_png/mrjDrTica5PbvGyhvWXk6GL6uZ3Giav5sgws9Bm8QlssthZvWvSHff5k8dU9NeAJBPqhB8ygnmaaHXFjqwLfroCOpSKRhNsvsm45S9cvHaz5k/640?wx_fmt=png&from=appmsg",
+          "alt": "",
+          "type": "png"
+        },
+        {
+          "url": "https://mmbiz.qpic.cn/mmbiz_png/mrjDrTica5PZJp5gUI1iaatNRDiaJ4l0KltRz6ZiatMFNXt4AqXtaUK14TX9UoV9icKD6hXR7REhjiaPzia0qFTGuhCbrFLD7ptk9NVpRtgLZRWIRc/640?wx_fmt=png&from=appmsg",
+          "alt": "",
+          "type": "png"
+        },
+        {
+          "url": "https://mmbiz.qpic.cn/mmbiz_png/mrjDrTica5PaPZrib7aCSq8UawIsLbeH7AnZefrlRKFuibSg1KABicLr8p60EUicO4B46M5hYL3sSy6xopSQu0sJjS6UOgAR4icbnUaicEtqjibaF4Y/640?wx_fmt=png&from=appmsg",
+          "alt": "",
+          "type": "png"
+        },
+        {
+          "url": "https://mmbiz.qpic.cn/mmbiz_png/mrjDrTica5PYBICFibECRfRzOr3V6XkgdYW8AaOVmG1csibNys0hpLStu8eRfJjc653piarBMs4dVcv0gMrGTkfNpSAhx2UvWs3qA921ssXKAUw/640?wx_fmt=png&from=appmsg",
+          "alt": "",
+          "type": "png"
+        },
+        {
+          "url": "https://mmbiz.qpic.cn/mmbiz_png/mrjDrTica5PbiahQjDfibr4tnDbRTqhw4Yiae8amE1py1A80TbUiaIz6Xwz8FY7m7xRQIuOHuWYNJ9ajrmOcfqOrlLtjNIIviclyPXlzoiabF8QHe0/640?wx_fmt=png&from=appmsg",
+          "alt": "",
+          "type": "png"
+        },
+        {
+          "url": "https://mmbiz.qpic.cn/mmbiz_png/mrjDrTica5PZvpDfp5K4UicjiathdGdFqDQdgTnLVDv6Hv0R3ZJyYH4aK1CgbEic4S1HGqZxLro2R36iaNPzanClYFDfgC17F9gib1jHFhAZBkaBA/640?wx_fmt=png&from=appmsg",
+          "alt": "",
+          "type": "png"
+        },
+        {
+          "url": "https://mmbiz.qpic.cn/sz_mmbiz_png/mrjDrTica5PZc1rfHzXF3D7uS8NHe5fic9VoergAV8LFF8Rx2Owc2crN1mrCXapYJOaZ8WicLtY6sGLsfmGNic4aU1HwBDI2ibThIAMbjzGZHxwQ/640?wx_fmt=png&from=appmsg",
+          "alt": "",
+          "type": "png"
+        },
+        {
+          "url": "https://mmbiz.qpic.cn/sz_mmbiz_png/mrjDrTica5PaSNyNlmMQ3wHh4CB4vTfbeLhVJ55iaDr6yMJcyzibbAYicJfpv4WE60YM8Weia9PqBqnWGrqX9y0C4rqlnAJzOKq4XCHciaZdictPicg/640?wx_fmt=png&from=appmsg",
+          "alt": "",
+          "type": "png"
+        },
+        {
+          "url": "https://mmbiz.qpic.cn/sz_mmbiz_png/mrjDrTica5PY9QhlkZkrDm4vPgXreFXwyaV4XbN7dd06clkEb4axrh1Aw6GSBGWWspmjcrRrMKKNwC9ZK063XDuLwpnQ7IAliaVxXN5RQW6kM/640?wx_fmt=png&from=appmsg",
+          "alt": "",
+          "type": "png"
+        },
+        {
+          "url": "https://mmbiz.qpic.cn/mmbiz_png/mrjDrTica5PYL6XXibVprTibYx0YljppLgOQ9960nibeg1WPsr3dCDMicFujCn3D3jZQmNxAHOCoerFeQRLpbcYNq9lcVibZOqLzFQG3K2FPRuhM4/640?wx_fmt=png&from=appmsg",
+          "alt": "",
+          "type": "png"
+        },
+        {
+          "url": "https://mmbiz.qpic.cn/mmbiz_png/mrjDrTica5PbbsNHT47Sqj6b4wiacYDibxE9mibXhibptadG64Cuic2NSibHJzuIKsT4w4icLQhxte2PeuU6JubtuhnEiaVicIEf81iabfUneQiaFSXd8kw/640?wx_fmt=png&from=appmsg",
+          "alt": "",
+          "type": "png"
+        },
+        {
+          "url": "https://mmbiz.qpic.cn/sz_mmbiz_png/mrjDrTica5PZXRtibhyyicicicIIwDslWZthKoGW5g4cFrqFPLjibbujn9nB75DOcgMibqd77W5xkyjQUiacVzErDdygricvBZgtL50lib3y9O4Pf3CJw/640?wx_fmt=png&from=appmsg",
+          "alt": "",
+          "type": "png"
+        },
+        {
+          "url": "https://mmbiz.qpic.cn/sz_mmbiz_png/mrjDrTica5PYdWC1MuKvsbHKEowamibklcXiaFjDb0tOQqfupRk44QibicqYsHchqOOUxFc2qictpYjFq3b3LWvWrz1VAOJnnclgyib1klnztnb4Ww/640?wx_fmt=png&from=appmsg",
+          "alt": "",
+          "type": "png"
+        },
+        {
+          "url": "https://mmbiz.qpic.cn/sz_mmbiz_png/Yt2WiaaBD0ibO6hDCCCDZRiafXGCC8OREPKd68b6ZeRwnc8RbibADLQggSw3p8JZ0lP9WKkOmsSNaUVqDgz7paxuog/640?wx_fmt=png&from=appmsg",
+          "alt": "",
+          "type": "png"
+        }
+      ],
+      "videos": [
+        {
+          "id": "wxv_4758043419883831300",
+          "playerUrl": "https://mp.weixin.qq.com/mp/readtemplate?t=pages/video_player_tmpl&action=mpvideo&auto=0&vid=wxv_4758043419883831300",
+          "posterUrl": "https://mmbiz.qpic.cn/sz_mmbiz_jpg/mrjDrTica5PZ6hv3ZjJGPYRzGj2r3RoH00mPttOmMdHmbxGeNjrPVFmpKSibFI4l1cFibObb0NPtV5uIpib7lUjuJLWsOU1JVWXZEUlDOrEhxibk/0?wx_fmt=jpeg"
+        },
+        {
+          "id": "wxv_4758043995157872645",
+          "playerUrl": "https://mp.weixin.qq.com/mp/readtemplate?t=pages/video_player_tmpl&action=mpvideo&auto=0&vid=wxv_4758043995157872645",
+          "posterUrl": "https://mmbiz.qpic.cn/sz_mmbiz_jpg/mrjDrTica5PZB6zia1e6dxiakvlTqhiaicWeicxdNuFBebxqyicdM10L31T27qwKwO9kz9jICZibEeRbDHNiaAO9dEEdmcRltzxhW9hvHJDhbPsu7qW4/0?wx_fmt=jpeg"
+        },
+        {
+          "id": "wxv_4758080226344140801",
+          "playerUrl": "https://mp.weixin.qq.com/mp/readtemplate?t=pages/video_player_tmpl&action=mpvideo&auto=0&vid=wxv_4758080226344140801",
+          "posterUrl": "https://mmbiz.qpic.cn/sz_mmbiz_jpg/mrjDrTica5PYibCfcET7UYgX2xQR68Qicd577mQTwIQl1eNfyuA6E5PFNQx8lBoEbqy7KALxo93oOS1BNs3iaHvM21pQj1kPo2JEOe4uicBeVoXI/0?wx_fmt=jpeg"
+        }
+      ],
+      "batch": "2026-11-06",
+      "publishedAt": "2026-11-06",
+      "cover": {
+        "model": "gpt-image-2.5-flare",
+        "skill": "sub2-image-gen",
+        "hero": "/assets/wechat/2026-11-06/hero/mesh-avatar-studio-living-illustration.webp",
+        "card": "/assets/wechat/2026-11-06/card/mesh-avatar-studio-living-illustration.webp",
+        "source": "output/imagegen/wechat-2026-11-06/mesh-avatar-studio-living-illustration.png",
+        "prompt": "output/imagegen/wechat-2026-11-06/prompts/mesh-avatar-studio-living-illustration.txt",
+        "heroSha256": "f0f28ad18c9a1efd2fa359e0f8efa8747e2051a184161bb0664b60809424afc0",
+        "cardSha256": "caad92e3c0f38e80935088d10492e09b3dace7849ce4e4bea4af46506cf3eb01",
+        "sourceSha256": "54d72c0e5e1872342ea2df98add03c24805c4b21f98727ca9b9ab2683424ae86",
+        "promptSha256": "42c2cbfa8e59d34a7d74e42a07053caecef089a9fb8d10efd67dcac612ba9856"
+      },
+      "materials": [
+        {
+          "id": "08-image-04",
+          "caption": "原文 Mesh Avatar 编辑器：角色网格与实时预览",
+          "kind": "image",
+          "originalUrl": "https://mmbiz.qpic.cn/mmbiz_png/mrjDrTica5PaPZrib7aCSq8UawIsLbeH7AnZefrlRKFuibSg1KABicLr8p60EUicO4B46M5hYL3sSy6xopSQu0sJjS6UOgAR4icbnUaicEtqjibaF4Y/640?wx_fmt=png&from=appmsg",
+          "originalSha256": "6c9cf08bae5f43e9afaf32f251a75f30bafa6da978231e30902b93564006ff44",
+          "src": "/assets/wechat/2026-11-06/materials/08-image-04.webp",
+          "width": 1080,
+          "height": 629,
+          "frames": 1,
+          "durationMs": 0,
+          "sha256": "dd0fa19c60b974bc7cc2b2716a8199d61b8d7b2954bf0b7a1cc6807732500792",
+          "bytes": 34370
+        },
+        {
+          "id": "08-image-09",
+          "caption": "作者另行封装的 ComfyUI 工作台，属于第三方集成",
+          "kind": "image",
+          "originalUrl": "https://mmbiz.qpic.cn/sz_mmbiz_png/mrjDrTica5PaSNyNlmMQ3wHh4CB4vTfbeLhVJ55iaDr6yMJcyzibbAYicJfpv4WE60YM8Weia9PqBqnWGrqX9y0C4rqlnAJzOKq4XCHciaZdictPicg/640?wx_fmt=png&from=appmsg",
+          "originalSha256": "fff71aa68731aab2904741f5303cb0d83e60e8f4a8a198074d668125ab36de07",
+          "src": "/assets/wechat/2026-11-06/materials/08-image-09.webp",
+          "width": 1080,
+          "height": 682,
+          "frames": 1,
+          "durationMs": 0,
+          "sha256": "9b31d49cbd88fe3137983bc7616956e6f4fab96b0fa5c2d437fa8e1b425fd631",
+          "bytes": 56868
+        },
+        {
+          "id": "08-image-11",
+          "caption": "作者为角色准备的表情与嘴型差分素材",
+          "kind": "image",
+          "originalUrl": "https://mmbiz.qpic.cn/mmbiz_png/mrjDrTica5PYL6XXibVprTibYx0YljppLgOQ9960nibeg1WPsr3dCDMicFujCn3D3jZQmNxAHOCoerFeQRLpbcYNq9lcVibZOqLzFQG3K2FPRuhM4/640?wx_fmt=png&from=appmsg",
+          "originalSha256": "aea49c5623a67c58034ee3ba05d2742812f48551c34c4e9ccd040c9bbdd8aecf",
+          "src": "/assets/wechat/2026-11-06/materials/08-image-11.webp",
+          "width": 1080,
+          "height": 128,
+          "frames": 1,
+          "durationMs": 0,
+          "sha256": "cd903c6018be1c6c82eb30f63304fb8dc71ee20482016806e272c436a7733367",
+          "bytes": 11464
+        },
+        {
+          "id": "08-poster-01",
+          "caption": "原文视频：预设表情与姿态控制",
+          "kind": "video-reference",
+          "originalUrl": "https://mmbiz.qpic.cn/sz_mmbiz_jpg/mrjDrTica5PZ6hv3ZjJGPYRzGj2r3RoH00mPttOmMdHmbxGeNjrPVFmpKSibFI4l1cFibObb0NPtV5uIpib7lUjuJLWsOU1JVWXZEUlDOrEhxibk/0?wx_fmt=jpeg",
+          "originalSha256": "6dae90110055e146e795e61beb752676eaa5bd47a127fee5a0af6ab8f6a9b580",
+          "src": "/assets/wechat/2026-11-06/materials/08-poster-01.webp",
+          "width": 1120,
+          "height": 629,
+          "frames": 1,
+          "durationMs": 0,
+          "sha256": "29ef4bd359b2721c69ca8094993306dc546d2098b7969824fd1e5bf73fd4e98f",
+          "bytes": 43958,
+          "videoId": "wxv_4758043419883831300",
+          "playerUrl": "https://mp.weixin.qq.com/mp/readtemplate?t=pages/video_player_tmpl&action=mpvideo&auto=0&vid=wxv_4758043419883831300"
+        },
+        {
+          "id": "08-poster-02",
+          "caption": "原文视频：语音驱动口型",
+          "kind": "video-reference",
+          "originalUrl": "https://mmbiz.qpic.cn/sz_mmbiz_jpg/mrjDrTica5PZB6zia1e6dxiakvlTqhiaicWeicxdNuFBebxqyicdM10L31T27qwKwO9kz9jICZibEeRbDHNiaAO9dEEdmcRltzxhW9hvHJDhbPsu7qW4/0?wx_fmt=jpeg",
+          "originalSha256": "33d6e8534d9207ac540bc4fa70405b7b1f15624a2410fe0c8afb08fea9202b13",
+          "src": "/assets/wechat/2026-11-06/materials/08-poster-02.webp",
+          "width": 1120,
+          "height": 629,
+          "frames": 1,
+          "durationMs": 0,
+          "sha256": "abb61592fbfe8fd45f028b03287547c8450bab0cd58b02fc00dc7edbf8bbde02",
+          "bytes": 43016,
+          "videoId": "wxv_4758043995157872645",
+          "playerUrl": "https://mp.weixin.qq.com/mp/readtemplate?t=pages/video_player_tmpl&action=mpvideo&auto=0&vid=wxv_4758043995157872645"
+        },
+        {
+          "id": "08-poster-03",
+          "caption": "原文视频：写实风格角色动画示例",
+          "kind": "video-reference",
+          "originalUrl": "https://mmbiz.qpic.cn/sz_mmbiz_jpg/mrjDrTica5PYibCfcET7UYgX2xQR68Qicd577mQTwIQl1eNfyuA6E5PFNQx8lBoEbqy7KALxo93oOS1BNs3iaHvM21pQj1kPo2JEOe4uicBeVoXI/0?wx_fmt=jpeg",
+          "originalSha256": "d7bf91f79a64a96cfcbb64d64d768dc3c1e51df966bf09518351797701d71430",
+          "src": "/assets/wechat/2026-11-06/materials/08-poster-03.webp",
+          "width": 1120,
+          "height": 629,
+          "frames": 1,
+          "durationMs": 0,
+          "sha256": "6cb9dcfdd56981d895fe4559b75638f2c06788df7b12be2dab45bbe44fcadb2e",
+          "bytes": 30436,
+          "videoId": "wxv_4758080226344140801",
+          "playerUrl": "https://mp.weixin.qq.com/mp/readtemplate?t=pages/video_player_tmpl&action=mpvideo&auto=0&vid=wxv_4758080226344140801"
+        }
+      ]
+    },
+    {
+      "index": 9,
+      "slug": "pika-h3-flex-speed-and-limits",
+      "url": "https://mp.weixin.qq.com/s/OlcDdYndokBqKGhzourXBw",
+      "title": "H3 Max一边罚站去！Pika H3 Flex来了，更快更好更便宜！",
+      "account": "动画大丸家",
+      "byline": "精选干货",
+      "sourcePublishedAt": "2026-10-31T00:03:52+08:00",
+      "retrievedAt": "2026-11-06T02:55:16.312764+00:00",
+      "htmlSha256": "eb84d25ac21ffa2752383be8a9bf42d1bd0abfcba3b1682d4e6990dc0ae97498",
+      "textSha256": "b6f58e1ca76733d157f51aabecf05525d2ee6dfa4a19c5cb3ba4a4ca9a3f9f36",
+      "images": [
+        {
+          "url": "https://mmbiz.qpic.cn/sz_mmbiz_png/2Uj9JtpP9LBN0oNcrSe9E3S9iaog755PI7DibdzIXksFskUhlTH8okuCeuxRjI68ExXsmh3vTD2Y1ucbFUc2xJoVKvN8D3ujCaGRicxuevgjZI/640?wx_fmt=png&from=appmsg",
+          "alt": "",
+          "type": "png"
+        },
+        {
+          "url": "https://mmbiz.qpic.cn/mmbiz_png/2Uj9JtpP9LDkwFx1libTEeicN3mz5FO7bAKfICm8NOpbyW64j0OQOlibdLpTPAfxEA5ibcnp0g3BmiccrFJ6Cib6QTY2M2oqeRY3tqibao1sj75ScM/640?wx_fmt=png&from=appmsg",
+          "alt": "",
+          "type": "png"
+        },
+        {
+          "url": "https://mmbiz.qpic.cn/mmbiz_png/2Uj9JtpP9LAickiciaPMRQv20WpXOicJIYjt5iaqcsm4vDxa7sFyicSDRomO4ZMkFhpOaiaZh26ca1SJSFTVDdYbchBFgEKrL7ZIqghf5j1FUz76Aw/640?wx_fmt=png&from=appmsg",
+          "alt": "",
+          "type": "png"
+        },
+        {
+          "url": "https://mmbiz.qpic.cn/sz_mmbiz_png/2Uj9JtpP9LCzNKBCWCoUO5iaCy4JYicjdqeIicxjIYqQicw2ia3iag9xZ322iblQPIN8VnC1lGeLCiaDTMQwmPGJTmTNUTJa0nYkicjNW4OhZ5T7uzy4/640?wx_fmt=png&from=appmsg",
+          "alt": "",
+          "type": "png"
+        },
+        {
+          "url": "https://mmbiz.qpic.cn/sz_mmbiz_png/2Uj9JtpP9LBicTScf8PjtZxhJPUlOy9ryz4rwZ27NqLCmOyaFCyULnibho81KAJ3UYm0dSE2YqZUzzyJxF126yicRXHevr5JxYCsoebLNib4t7w/640?wx_fmt=png&from=appmsg",
+          "alt": "",
+          "type": "png"
+        },
+        {
+          "url": "https://mmbiz.qpic.cn/mmbiz_png/2Uj9JtpP9LDhibz3e5YJDSicibMK9fiav0Z4H0MDpThpq8mMUIPYWLGQnLQ7nVx6yWGe7E84O6qibU72SGpIeJ0PTmIAsw0DCYyWACEcuQWRVBvA/640?wx_fmt=png&from=appmsg",
+          "alt": "",
+          "type": "png"
+        },
+        {
+          "url": "https://mmbiz.qpic.cn/mmbiz_png/2Uj9JtpP9LDLkOHt0jVODgySPgUUicZv0WgpdMbVmlo2hmCMqsib3N9Qa2MY1yHFFBnZI6Iy3oGSRT3XDUvG5yn9BL6v1OGvlGKibSuZoLgz6Q/640?wx_fmt=png&from=appmsg",
+          "alt": "",
+          "type": "png"
+        },
+        {
+          "url": "https://mmbiz.qpic.cn/mmbiz_png/2Uj9JtpP9LBbVFJABiciaM4ibQ0YVB3M2UVD3wz6LDqtb9PEsqo71VEiazx29mrFJfkZzg1kicmHHCuu58OTAPr3OOKJex8d9ZAJictgjVjTAIibl0/640?wx_fmt=png&from=appmsg",
+          "alt": "",
+          "type": "png"
+        },
+        {
+          "url": "https://mmbiz.qpic.cn/mmbiz_png/2Uj9JtpP9LCec6C75CkuTXm1Vic7FlTzQcDicJY782sQoIeetofqKkeLdWAySMbxtcgYcO7Yxw7oIEKiaKlsPictFHFWBM4NnI61I0hsgVAhdzM/640?wx_fmt=png&from=appmsg",
+          "alt": "",
+          "type": "png"
+        },
+        {
+          "url": "https://mmbiz.qpic.cn/sz_mmbiz_png/2Uj9JtpP9LAGnXYlztvRURjlKAwSC9OtFDvQQyI4AXbzIMeS8PsMnID8iaVcwib9MUtSHB2DhoopsfMzlKh8CDEWRI0YEH1yt3qvVVT6zeCZU/640?wx_fmt=png&from=appmsg",
+          "alt": "",
+          "type": "png"
+        }
+      ],
+      "videos": [
+        {
+          "id": "wxv_4761060865280229376",
+          "playerUrl": "https://mp.weixin.qq.com/mp/readtemplate?t=pages/video_player_tmpl&action=mpvideo&auto=0&vid=wxv_4761060865280229376",
+          "posterUrl": "https://mmbiz.qpic.cn/mmbiz_jpg/2Uj9JtpP9LBFl6RL898xfu4n4NWWg2ibR7wR3ibft1onqBolsaqC3fEfdDiawKfJtJRibHU4CmicS2PsiaYJetbYiaTqDKicKfINeSzticZrRLaWKCN0/0?wx_fmt=jpeg"
+        },
+        {
+          "id": "wxv_4761061486691090434",
+          "playerUrl": "https://mp.weixin.qq.com/mp/readtemplate?t=pages/video_player_tmpl&action=mpvideo&auto=0&vid=wxv_4761061486691090434",
+          "posterUrl": "https://mmbiz.qpic.cn/sz_mmbiz_jpg/2Uj9JtpP9LDQlN8tQBAxzDtRS9uMCCT8ZJnnXSeMicxjqibQGQkRntXo0jSia81e5DHceB5Sm86qQibhfrdwzpL9XVu4r6YHLKC8fR4TkLkdq4E/0?wx_fmt=jpeg"
+        },
+        {
+          "id": "wxv_4761075507579011074",
+          "playerUrl": "https://mp.weixin.qq.com/mp/readtemplate?t=pages/video_player_tmpl&action=mpvideo&auto=0&vid=wxv_4761075507579011074",
+          "posterUrl": "https://mmbiz.qpic.cn/mmbiz_jpg/2Uj9JtpP9LBORAuAq4b4M50ZrGq6RT8HyicW2QpWQdMrWyqXWc2kmMk0hlQ7a4oM2HEFSnkemOQOzia6JzNRWQx9ECIQYcPxKJFkQrRSu4a2o/0?wx_fmt=jpeg"
+        },
+        {
+          "id": "wxv_4761077274991493121",
+          "playerUrl": "https://mp.weixin.qq.com/mp/readtemplate?t=pages/video_player_tmpl&action=mpvideo&auto=0&vid=wxv_4761077274991493121",
+          "posterUrl": "https://mmbiz.qpic.cn/sz_mmbiz_jpg/2Uj9JtpP9LAFAUlM5HYauPibmkQArqaooZ0qjcz2MUoNWOib9XAyibUib07QWUGjGTLE20N1mE9JGZvhMywbEB2rVDXE990dFLYxt2Yic89VpUdA/0?wx_fmt=jpeg"
+        },
+        {
+          "id": "wxv_4761078588278145028",
+          "playerUrl": "https://mp.weixin.qq.com/mp/readtemplate?t=pages/video_player_tmpl&action=mpvideo&auto=0&vid=wxv_4761078588278145028",
+          "posterUrl": "https://mmbiz.qpic.cn/mmbiz_jpg/2Uj9JtpP9LCJqicWGAf3fmdFGpXQew0hC7Pb6yoFTP7wt7DhD0q6kIKewhuyQ6Q0NwricVS3ZM1NyT84dOs3ic20kN0MvxaxbtJUuwUYIkWevQ/0?wx_fmt=jpeg"
+        }
+      ],
+      "batch": "2026-11-06",
+      "publishedAt": "2026-11-06",
+      "cover": {
+        "model": "gpt-image-2.5-flare",
+        "skill": "sub2-image-gen",
+        "hero": "/assets/wechat/2026-11-06/hero/pika-h3-flex-speed-and-limits.webp",
+        "card": "/assets/wechat/2026-11-06/card/pika-h3-flex-speed-and-limits.webp",
+        "source": "output/imagegen/wechat-2026-11-06/pika-h3-flex-speed-and-limits.png",
+        "prompt": "output/imagegen/wechat-2026-11-06/prompts/pika-h3-flex-speed-and-limits.txt",
+        "heroSha256": "5125cc9048a687f81f6f394fe5badeb351441daac49c20e742b072e6940e54c6",
+        "cardSha256": "bc3508afa0e437d2a01aca0843858355cd79b93c859a2c93a6155b72d863e476",
+        "sourceSha256": "e19e0672f404e1840b04b280c5e3071b400f8c02951fee5c8cdecb0aafa844bc",
+        "promptSha256": "c2516d5430b83cb5a862eb6f42821d10a90e906052214d1bdbb57a84a5ea4ec8"
+      },
+      "materials": [
+        {
+          "id": "09-image-08",
+          "caption": "原文引用的 ComfyUI 模型文件与工作流说明",
+          "kind": "image",
+          "originalUrl": "https://mmbiz.qpic.cn/mmbiz_png/2Uj9JtpP9LBbVFJABiciaM4ibQ0YVB3M2UVD3wz6LDqtb9PEsqo71VEiazx29mrFJfkZzg1kicmHHCuu58OTAPr3OOKJex8d9ZAJictgjVjTAIibl0/640?wx_fmt=png&from=appmsg",
+          "originalSha256": "f3d1f8f52340ff4c64157e14b2c7d8006acf05c23d00d056a0c1259a7b5384ce",
+          "src": "/assets/wechat/2026-11-06/materials/09-image-08.webp",
+          "width": 1080,
+          "height": 576,
+          "frames": 1,
+          "durationMs": 0,
+          "sha256": "e4412faa03b628ce033c3bf3528d88deda9a7e253bc4388ece5970f100f7875e",
+          "bytes": 45786
+        },
+        {
+          "id": "09-image-10",
+          "caption": "原文引用的硬件说明；数值仅适用于注明的测试条件",
+          "kind": "image",
+          "originalUrl": "https://mmbiz.qpic.cn/sz_mmbiz_png/2Uj9JtpP9LAGnXYlztvRURjlKAwSC9OtFDvQQyI4AXbzIMeS8PsMnID8iaVcwib9MUtSHB2DhoopsfMzlKh8CDEWRI0YEH1yt3qvVVT6zeCZU/640?wx_fmt=png&from=appmsg",
+          "originalSha256": "c15d3841d4e2fe1821e1f746900aa9ca4b7554ba72921108b261689f5c8be66c",
+          "src": "/assets/wechat/2026-11-06/materials/09-image-10.webp",
+          "width": 1080,
+          "height": 362,
+          "frames": 1,
+          "durationMs": 0,
+          "sha256": "369a53ebecbb41624165707c56c37059047fc3a95511500e4a43693e952f60e1",
+          "bytes": 51926
+        },
+        {
+          "id": "09-poster-01",
+          "caption": "原文视频：Pika H3 Flex 参考示例",
+          "kind": "video-reference",
+          "originalUrl": "https://mmbiz.qpic.cn/mmbiz_jpg/2Uj9JtpP9LBFl6RL898xfu4n4NWWg2ibR7wR3ibft1onqBolsaqC3fEfdDiawKfJtJRibHU4CmicS2PsiaYJetbYiaTqDKicKfINeSzticZrRLaWKCN0/0?wx_fmt=jpeg",
+          "originalSha256": "71a020f8c4d3fa64d04e5e73aafbdf0a085ead189414a13ff71da450d288054b",
+          "src": "/assets/wechat/2026-11-06/materials/09-poster-01.webp",
+          "width": 1076,
+          "height": 615,
+          "frames": 1,
+          "durationMs": 0,
+          "sha256": "e16f8572e6432115c6ae67157ec0f607859c7b5d1ce441d609415329f6ad4914",
+          "bytes": 39734,
+          "videoId": "wxv_4761060865280229376",
+          "playerUrl": "https://mp.weixin.qq.com/mp/readtemplate?t=pages/video_player_tmpl&action=mpvideo&auto=0&vid=wxv_4761060865280229376"
+        },
+        {
+          "id": "09-poster-02",
+          "caption": "原文视频：Pika H3 Flex 动作示例",
+          "kind": "video-reference",
+          "originalUrl": "https://mmbiz.qpic.cn/sz_mmbiz_jpg/2Uj9JtpP9LDQlN8tQBAxzDtRS9uMCCT8ZJnnXSeMicxjqibQGQkRntXo0jSia81e5DHceB5Sm86qQibhfrdwzpL9XVu4r6YHLKC8fR4TkLkdq4E/0?wx_fmt=jpeg",
+          "originalSha256": "a4a3f90a2d396ad2947d286012a13aeba111f66dcd8f510523fc8240f0f3a1c3",
+          "src": "/assets/wechat/2026-11-06/materials/09-poster-02.webp",
+          "width": 1076,
+          "height": 615,
+          "frames": 1,
+          "durationMs": 0,
+          "sha256": "c49ce9bdcef4eb08016fdfac77bbaa27b4b877a6c1609a72f0594d5ba231bdae",
+          "bytes": 78304,
+          "videoId": "wxv_4761061486691090434",
+          "playerUrl": "https://mp.weixin.qq.com/mp/readtemplate?t=pages/video_player_tmpl&action=mpvideo&auto=0&vid=wxv_4761061486691090434"
+        },
+        {
+          "id": "09-poster-03",
+          "caption": "原文视频：ComfyUI 文生视频示例",
+          "kind": "video-reference",
+          "originalUrl": "https://mmbiz.qpic.cn/mmbiz_jpg/2Uj9JtpP9LBORAuAq4b4M50ZrGq6RT8HyicW2QpWQdMrWyqXWc2kmMk0hlQ7a4oM2HEFSnkemOQOzia6JzNRWQx9ECIQYcPxKJFkQrRSu4a2o/0?wx_fmt=jpeg",
+          "originalSha256": "aaa629f76dc06362de55361feb0b3148470387702f1b14cc2dd659c4e5bc2553",
+          "src": "/assets/wechat/2026-11-06/materials/09-poster-03.webp",
+          "width": 1076,
+          "height": 615,
+          "frames": 1,
+          "durationMs": 0,
+          "sha256": "8aba300152590866fedde0cef0f95d178ceb7a9a69933e24181c5fee65bb5afd",
+          "bytes": 35544,
+          "videoId": "wxv_4761075507579011074",
+          "playerUrl": "https://mp.weixin.qq.com/mp/readtemplate?t=pages/video_player_tmpl&action=mpvideo&auto=0&vid=wxv_4761075507579011074"
+        },
+        {
+          "id": "09-poster-04",
+          "caption": "原文视频：ComfyUI 参考生视频示例",
+          "kind": "video-reference",
+          "originalUrl": "https://mmbiz.qpic.cn/sz_mmbiz_jpg/2Uj9JtpP9LAFAUlM5HYauPibmkQArqaooZ0qjcz2MUoNWOib9XAyibUib07QWUGjGTLE20N1mE9JGZvhMywbEB2rVDXE990dFLYxt2Yic89VpUdA/0?wx_fmt=jpeg",
+          "originalSha256": "7e1b9e89810bbbc24557f65548c10623f99ee5847e5cc80c075c3e8f822cf249",
+          "src": "/assets/wechat/2026-11-06/materials/09-poster-04.webp",
+          "width": 834,
+          "height": 1074,
+          "frames": 1,
+          "durationMs": 0,
+          "sha256": "63059729d2b986cc6a5309bdae76c3ae5dc9368926048aa4813cb534a0466cf9",
+          "bytes": 47344,
+          "videoId": "wxv_4761077274991493121",
+          "playerUrl": "https://mp.weixin.qq.com/mp/readtemplate?t=pages/video_player_tmpl&action=mpvideo&auto=0&vid=wxv_4761077274991493121"
+        },
+        {
+          "id": "09-poster-05",
+          "caption": "原文视频：ComfyUI 首尾帧示例",
+          "kind": "video-reference",
+          "originalUrl": "https://mmbiz.qpic.cn/mmbiz_jpg/2Uj9JtpP9LCJqicWGAf3fmdFGpXQew0hC7Pb6yoFTP7wt7DhD0q6kIKewhuyQ6Q0NwricVS3ZM1NyT84dOs3ic20kN0MvxaxbtJUuwUYIkWevQ/0?wx_fmt=jpeg",
+          "originalSha256": "e3884840f8c253ea00c66f7eeea45b015b9ba90cf256874c93b3b2ed944aa8a6",
+          "src": "/assets/wechat/2026-11-06/materials/09-poster-05.webp",
+          "width": 614,
+          "height": 1076,
+          "frames": 1,
+          "durationMs": 0,
+          "sha256": "607dc7a39d44a3fca66785a842516d790220046f2399b66a9ff65519d9ef2324",
+          "bytes": 46274,
+          "videoId": "wxv_4761078588278145028",
+          "playerUrl": "https://mp.weixin.qq.com/mp/readtemplate?t=pages/video_player_tmpl&action=mpvideo&auto=0&vid=wxv_4761078588278145028"
+        }
+      ]
+    },
+    {
+      "index": 10,
+      "slug": "humanizer-clearer-ai-writing",
+      "url": "https://mp.weixin.qq.com/s/iAGWmQOcAz1nZt3fsaouGQ",
+      "title": "又一神级Skill，看它如何让你的AI内容充满人味儿",
+      "account": "极客AI开源圈",
+      "byline": "Bite",
+      "sourcePublishedAt": "2026-10-31T21:43:25+08:00",
+      "retrievedAt": "2026-11-06T02:55:16.303167+00:00",
+      "htmlSha256": "5d028429bf19f377c4fbe298468117ca13a15fcf7d491aba3edcc3436e54a1d1",
+      "textSha256": "870ae0a5c3fb02b7ff432f27a6b41579c9d1f4f7c278bef7719905e9825b2817",
+      "images": [
+        {
+          "url": "https://mmbiz.qpic.cn/sz_mmbiz_jpg/arAE014sTgxcxzOCpIUicuxckIMZeBEuDyz002qrkLuChKtonsYmnQUm1tLufqBfhy9HL7lwuQ6u69MC9icQN2bK2WHoTicOTTyLIW4BL0AcRs/640?wx_fmt=webp&from=appmsg",
+          "alt": "",
+          "type": "webp"
+        },
+        {
+          "url": "https://mmbiz.qpic.cn/mmbiz_jpg/arAE014sTgxia0YKrMMfykco7iaIw4JvPtKLjCTVtOwTeVnb04WQVIicick70WtpONWKw6Y9XA5UB12HFqxN0qY6bOmnkXxibxdUEtxVsU4bZtv4/640?wx_fmt=webp&from=appmsg",
+          "alt": "",
+          "type": "webp"
+        },
+        {
+          "url": "https://mmbiz.qpic.cn/mmbiz_jpg/arAE014sTgwWYePGYfSMiaRE48RdxhvmoZJmw2TawPFTvS1FweoibFnWju9ogzk2v6zPRAlAqicuicIPwGlPcpJUJV2nvaia1JIkF2MUojq9rfMA/640?wx_fmt=webp&from=appmsg",
+          "alt": "",
+          "type": "webp"
+        }
+      ],
+      "videos": [],
+      "batch": "2026-11-06",
+      "publishedAt": "2026-11-06",
+      "cover": {
+        "model": "gpt-image-2.5-flare",
+        "skill": "sub2-image-gen",
+        "hero": "/assets/wechat/2026-11-06/hero/humanizer-clearer-ai-writing.webp",
+        "card": "/assets/wechat/2026-11-06/card/humanizer-clearer-ai-writing.webp",
+        "source": "output/imagegen/wechat-2026-11-06/humanizer-clearer-ai-writing.png",
+        "prompt": "output/imagegen/wechat-2026-11-06/prompts/humanizer-clearer-ai-writing.txt",
+        "heroSha256": "8d68dec2e5dab2acac27002fde6be2ba8d418018e85cdae6164833204fb7767d",
+        "cardSha256": "2ce2e32e6385cde72f6969c729ee588745ea82fe941dd3716537890b2389d858",
+        "sourceSha256": "f290ea7ad3d4d62bdc1b9c61bc90ef052d1115a2a8be189598d2bc22d1f47b98",
+        "promptSha256": "2774bef724b7c08e061df27321dbcccbc3f90c6e1bd025dec1e99aa7f24aa28f"
+      },
+      "materials": [
+        {
+          "id": "10-image-01",
+          "caption": "原文保存的 Humanizer 仓库截图；热度为当时快照",
+          "kind": "image",
+          "originalUrl": "https://mmbiz.qpic.cn/sz_mmbiz_jpg/arAE014sTgxcxzOCpIUicuxckIMZeBEuDyz002qrkLuChKtonsYmnQUm1tLufqBfhy9HL7lwuQ6u69MC9icQN2bK2WHoTicOTTyLIW4BL0AcRs/640?wx_fmt=webp&from=appmsg",
+          "originalSha256": "82ca91bdc5e9f240eaa614ce09efe9b7cc7f293b05a2baf2b666f0c812fee921",
+          "src": "/assets/wechat/2026-11-06/materials/10-image-01.webp",
+          "width": 1080,
+          "height": 675,
+          "frames": 1,
+          "durationMs": 0,
+          "sha256": "4b1420bc6299367d0cbf71db3e9284c0c0fe66cc85edd8bd71f4442e214b041c",
+          "bytes": 28228
+        },
+        {
+          "id": "10-image-03",
+          "caption": "原文中的 Humanizer Skills 入口",
+          "kind": "image",
+          "originalUrl": "https://mmbiz.qpic.cn/mmbiz_jpg/arAE014sTgwWYePGYfSMiaRE48RdxhvmoZJmw2TawPFTvS1FweoibFnWju9ogzk2v6zPRAlAqicuicIPwGlPcpJUJV2nvaia1JIkF2MUojq9rfMA/640?wx_fmt=webp&from=appmsg",
+          "originalSha256": "49b6fc54497af6e44868cd0886c5b9313cf687db306d4a658ab02016be270d1f",
+          "src": "/assets/wechat/2026-11-06/materials/10-image-03.webp",
+          "width": 1080,
+          "height": 567,
+          "frames": 1,
+          "durationMs": 0,
+          "sha256": "7a1e46c6afe954f7ac580848b2a62b85c872619db745196ae3359a42676cc995",
+          "bytes": 8870
+        }
+      ]
+    },
+    {
+      "index": 11,
+      "slug": "srt-whiteboard-animation-storytelling",
+      "url": "https://mp.weixin.qq.com/s/I3up8jG30FRFoYakYBz8Kw",
+      "title": "又一个神级Skill：字幕丢进去，AI自动生成手绘动画视频",
+      "account": "极客之家",
+      "byline": "丛林",
+      "sourcePublishedAt": "2026-09-30T14:05:00+08:00",
+      "retrievedAt": "2026-11-06T02:55:16.343178+00:00",
+      "htmlSha256": "bfab9e75cb1ae290d4129e9fb785ceab37e1f922db599f8fa34b2c775616a80a",
+      "textSha256": "46b50d1f79347dfcdefb23cb2ba3b853315e3e23dba0a44f658d4187bbdcb055",
+      "images": [
+        {
+          "url": "https://mmbiz.qpic.cn/sz_mmbiz_gif/38IO1Mnhnaz9y0VPG2ibc6lTSXZEnDp091iaKKIjBFXmcsMdzbVvbfJucIdGCy6V20bSD78Brico9Tr4iauHnW7D2KNvJ4CQDiaoibcGMiaC1JCVvk/640?wx_fmt=gif&from=appmsg",
+          "alt": "",
+          "type": "gif"
+        },
+        {
+          "url": "https://mmbiz.qpic.cn/mmbiz_png/38IO1MnhnazjsF3szXoXX1rlqCYCfC8icA5fOWMibsKM99bBXxzDdwp8iaImbOGCXpGnzYMIMZpFl72NGhYPhibB9CkyCJJY7wEGez4LPibF7cNI/640?wx_fmt=png&from=appmsg",
+          "alt": "",
+          "type": "png"
+        },
+        {
+          "url": "https://mmbiz.qpic.cn/sz_mmbiz_png/38IO1Mnhnawv5ibic8pmctcT1gibyDLW9af96FDWic01pVOvRB3bWQ873ibiaDKT41ib3f1K6cUZNPU7icFaoXXNRsqibJg8iaOUd89HxBhMVqpTYXdts/640?wx_fmt=png&from=appmsg",
+          "alt": "",
+          "type": "png"
+        },
+        {
+          "url": "https://mmbiz.qpic.cn/sz_mmbiz_gif/38IO1MnhnaxxeACiaB3r9JOYZmcR66qfJQWXkjrXUm7y5Hds2xibibe5K9LTRFjt2NMIibOza5Sx1icDgPpqW6GmTqQW2yvXaqeRW3jUWMyF84XE/640?wx_fmt=gif&from=appmsg",
+          "alt": "",
+          "type": "gif"
+        },
+        {
+          "url": "https://mmbiz.qpic.cn/mmbiz_png/38IO1MnhnawHibP7xxhLqCWicTWfgHicDumTGgtvaXBIKaPdpvH1S8H9xxcbrT59nrYbRsPQ3LsgQey0mat8FkbNGLckzZ4kudbKibOic3yYT1G4/640?wx_fmt=png&from=appmsg",
+          "alt": "",
+          "type": "png"
+        },
+        {
+          "url": "https://mmbiz.qpic.cn/sz_mmbiz_png/38IO1Mnhnay73ncZvw6PSj1UmN15aunfkDVJWbKsyoZxmyXqpDR2TR37LumcBH4xfic7jTy1lDhNCXVoaxwRdrTyFAtvPZpm0AqtlZ45m22k/640?wx_fmt=png&from=appmsg",
+          "alt": "",
+          "type": "png"
+        },
+        {
+          "url": "https://mmbiz.qpic.cn/mmbiz_png/38IO1Mnhnaw4PA7pBEFbtAcn3ISMgb3gO4skueeicBcjoEM2kw6rNsGllGWv1nDWZqTNOIEnzDaIMSEx2HzmwpZHyicEqVYufCbJXjpqsBcAg/640?wx_fmt=png&from=appmsg",
+          "alt": "",
+          "type": "png"
+        },
+        {
+          "url": "https://mmbiz.qpic.cn/sz_mmbiz_png/38IO1MnhnawNNjSYAZkj2p5MbibamKXic83LZELuVLkodCxOc6icqd2oUyRuCX38C0WNznmel45CTr6RDyJZlVwLltczHvDW2Zhico6jW1Iz6jI/640?wx_fmt=png&from=appmsg",
+          "alt": "",
+          "type": "png"
+        },
+        {
+          "url": "https://mmbiz.qpic.cn/mmbiz_png/38IO1MnhnawibMibqibzegicPulRicsApAhQlhibHxTxI929iccictiaZ7nDSYqkpO9xz0JX2TMQE7VicbGS2jE2HmL6UAC9yNxxULhJow9gqOxWOqV4o/640?wx_fmt=png&from=appmsg",
+          "alt": "",
+          "type": "png"
+        },
+        {
+          "url": "https://mmbiz.qpic.cn/sz_mmbiz_png/38IO1MnhnayAp1anEpTzO1VMobtwTHF7mcxvY1SkLhlQxCfjwI5le9MwtcruApvuT6brmRCeTJBibqJEJ4syNTnQ2YFXWGBOh6ARFHhPQb1M/640?wx_fmt=png&from=appmsg",
+          "alt": "",
+          "type": "png"
+        },
+        {
+          "url": "https://mmbiz.qpic.cn/mmbiz_png/38IO1Mnhnaxda4mXZMuFhUib315ibuPUt3kicyBGwBeSvTTuqPUsD43AKoooTuJztA3QdEWToHZ7AIKJrzsIEXU8ibna9iaRm2dGibJo7cqQkR1Rg/640?wx_fmt=png&from=appmsg",
+          "alt": "",
+          "type": "png"
+        },
+        {
+          "url": "https://mmbiz.qpic.cn/sz_mmbiz_png/38IO1MnhnayyqcWexKrPZM95MIy02iblEXU7mlNOhYibZvZ3UO13ksh7u64TufzA5g4PfDPjukRibKKibc5SOJqKUMqN44jeXFH85vtiaS8ibZApY/640?wx_fmt=png&from=appmsg",
+          "alt": "",
+          "type": "png"
+        },
+        {
+          "url": "https://mmbiz.qpic.cn/mmbiz_png/38IO1MnhnawcguIuD1iadrz4NdpeaSMbpTC2NQ6yzzWpKQqk1NXqzWI28ggoohaP3QGPopPNx31K28QaEXCuGmiaBsZbvibM2n8IssLn0NcnMM/640?wx_fmt=png&from=appmsg",
+          "alt": "",
+          "type": "png"
+        },
+        {
+          "url": "https://mmbiz.qpic.cn/mmbiz_png/38IO1Mnhnaxkt1EUbWzMmbHVgL8YSeoQYvyV4YNxkDKU7zLlxNaBXGJKZmhIx7KcYvCIAjNfNUbg143eVqTJZcJxhZADic9ppRc1oKDEF5GE/640?wx_fmt=png&from=appmsg",
+          "alt": "",
+          "type": "png"
+        },
+        {
+          "url": "https://mmbiz.qpic.cn/sz_mmbiz_jpg/38IO1Mnhnax4LhUUNtZP6naUanasggFWt4WBVlbecctibhElzkesjjc9RiaVkjKWUxaLyp9oyibDQX7jEtJSoDuyf8NH9QKWlVJ6jKnM1iaZ4uI/640?wx_fmt=jpeg&from=appmsg&watermark=1&wxfrom=5&wx_lazy=1&tp=webp#imgIndex=7",
+          "alt": "图片",
+          "type": "jpeg"
+        }
+      ],
+      "videos": [
+        {
+          "id": "wxv_4716899605450620932",
+          "playerUrl": "https://mp.weixin.qq.com/mp/readtemplate?t=pages/video_player_tmpl&action=mpvideo&auto=0&vid=wxv_4716899605450620932",
+          "posterUrl": "https://mmbiz.qpic.cn/sz_mmbiz_jpg/38IO1MnhnaztgBbtaySLPUJbWZPqjKQHmavsJeCDggbyIIh2sBynyD9oSZa7ApN5RL37J0GI4w68Xs8B10OAz0nz1uPib9Lr0kBI1esyvDl0/0?wx_fmt=jpeg"
+        }
+      ],
+      "batch": "2026-11-06",
+      "publishedAt": "2026-11-06",
+      "cover": {
+        "model": "gpt-image-2.5-flare",
+        "skill": "sub2-image-gen",
+        "hero": "/assets/wechat/2026-11-06/hero/srt-whiteboard-animation-storytelling.webp",
+        "card": "/assets/wechat/2026-11-06/card/srt-whiteboard-animation-storytelling.webp",
+        "source": "output/imagegen/wechat-2026-11-06/srt-whiteboard-animation-storytelling.png",
+        "prompt": "output/imagegen/wechat-2026-11-06/prompts/srt-whiteboard-animation-storytelling.txt",
+        "heroSha256": "029a0b5c8dbe8f516eacdcd61971dd5b57157068f3854c74f5c06b79d5b060a3",
+        "cardSha256": "862979dda932fbb9aad3c5aaafbb4ba13f7283068828173b4236ff7d59a0cef7",
+        "sourceSha256": "a480f20f55f52ee5205c38f94f4d82149418b24908599cccd9463b5f6269d436",
+        "promptSha256": "149a02d937138b21ce51c003102ef4eecac5cd29630dea8a9c7874de452f707b"
+      },
+      "materials": [
+        {
+          "id": "11-image-01",
+          "caption": "原文手绘动画示例：元素随叙事逐步出现（动图）",
+          "kind": "image",
+          "originalUrl": "https://mmbiz.qpic.cn/sz_mmbiz_gif/38IO1Mnhnaz9y0VPG2ibc6lTSXZEnDp091iaKKIjBFXmcsMdzbVvbfJucIdGCy6V20bSD78Brico9Tr4iauHnW7D2KNvJ4CQDiaoibcGMiaC1JCVvk/640?wx_fmt=gif&from=appmsg",
+          "originalSha256": "f2d19b31c1c2b6bbaf8e97126f45369617eaf1a1bb99c08392b4d6f63c9f2d87",
+          "src": "/assets/wechat/2026-11-06/materials/11-image-01.webp",
+          "width": 800,
+          "height": 444,
+          "frames": 232,
+          "durationMs": 19330,
+          "sha256": "4f3b69da7db19c4e6076c5265ea6d1f82b0ebf225d8ebff4f3bdb2f306218b98",
+          "bytes": 2057140
+        },
+        {
+          "id": "11-image-02",
+          "caption": "原文线稿示例：先确定整幕的构图与角色关系",
+          "kind": "image",
+          "originalUrl": "https://mmbiz.qpic.cn/mmbiz_png/38IO1MnhnazjsF3szXoXX1rlqCYCfC8icA5fOWMibsKM99bBXxzDdwp8iaImbOGCXpGnzYMIMZpFl72NGhYPhibB9CkyCJJY7wEGez4LPibF7cNI/640?wx_fmt=png&from=appmsg",
+          "originalSha256": "47cdaeee1c16f7eca61571562f036713af1bc5315dd6ef11548559a1aaf3bd83",
+          "src": "/assets/wechat/2026-11-06/materials/11-image-02.webp",
+          "width": 1080,
+          "height": 608,
+          "frames": 1,
+          "durationMs": 0,
+          "sha256": "fc6b138e75059245fb1b3a3844c37844c7ce13e2893e11223a02e57253e422ad",
+          "bytes": 31436
+        },
+        {
+          "id": "11-image-03",
+          "caption": "原文预览台：分区、顺序与字幕时间关联",
+          "kind": "image",
+          "originalUrl": "https://mmbiz.qpic.cn/sz_mmbiz_png/38IO1Mnhnawv5ibic8pmctcT1gibyDLW9af96FDWic01pVOvRB3bWQ873ibiaDKT41ib3f1K6cUZNPU7icFaoXXNRsqibJg8iaOUd89HxBhMVqpTYXdts/640?wx_fmt=png&from=appmsg",
+          "originalSha256": "eb28c388afcb43e974f05facadff7e8f74264f922cdede55067f5c33970579c4",
+          "src": "/assets/wechat/2026-11-06/materials/11-image-03.webp",
+          "width": 1080,
+          "height": 484,
+          "frames": 1,
+          "durationMs": 0,
+          "sha256": "8227bc64bbd768df334edf4cc693a073f71add953e8276ce773a1119b24486d0",
+          "bytes": 31820
+        },
+        {
+          "id": "11-poster-01",
+          "caption": "原文视频：AI 发展简史白板动画成片",
+          "kind": "video-reference",
+          "originalUrl": "https://mmbiz.qpic.cn/sz_mmbiz_jpg/38IO1MnhnaztgBbtaySLPUJbWZPqjKQHmavsJeCDggbyIIh2sBynyD9oSZa7ApN5RL37J0GI4w68Xs8B10OAz0nz1uPib9Lr0kBI1esyvDl0/0?wx_fmt=jpeg",
+          "originalSha256": "3ef267150389ecc3181dbfc552f6365212a03e5fc0abc2f73deee5de22dfd2ab",
+          "src": "/assets/wechat/2026-11-06/materials/11-poster-01.webp",
+          "width": 1066,
+          "height": 603,
+          "frames": 1,
+          "durationMs": 0,
+          "sha256": "e9682ba3e3544787b05e6aa7a056f9f382cf4b8a74778145801bf488c5c85722",
+          "bytes": 36450,
+          "videoId": "wxv_4716899605450620932",
+          "playerUrl": "https://mp.weixin.qq.com/mp/readtemplate?t=pages/video_player_tmpl&action=mpvideo&auto=0&vid=wxv_4716899605450620932"
+        }
+      ]
+    }
+  ]
+}

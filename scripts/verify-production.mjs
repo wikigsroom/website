@@ -23,6 +23,11 @@ const snapshot = JSON.parse(
 const visuals = JSON.parse(
   await fs.readFile(path.join(root, 'src/data/benchmarkVisuals.json'), 'utf8'),
 );
+const readings = JSON.parse(await fs.readFile(path.join(root, 'src/data/wechatSources.json'), 'utf8'));
+const { posts } = readContentModule(path.join(root, 'src/data/posts.ts'));
+const mediaDirectory = path.join(root, 'docs/media', `wechat-${readings.latestBatch.replaceAll('-', '')}`);
+const reportPath = path.join(root, 'docs/releases', `${readings.latestBatch}-wechat-production.json`);
+await fs.mkdir(mediaDirectory, { recursive: true });
 const report = {
   url: metadata.productionUrl,
   sourceCommit: execFileSync('git', ['rev-parse', 'HEAD'], {
@@ -31,6 +36,8 @@ const report = {
     windowsHide: true,
   }).trim(),
   snapshotSha256: snapshot.sourceSha256,
+  readingBatch: readings.latestBatch,
+  articleCount: posts.length,
   checkedAt: new Date().toISOString(),
   checks: [],
   browserClosed: false,
@@ -116,6 +123,11 @@ try {
     visualPaths.add(cover.hero);
     visualPaths.add(cover.card);
   }
+  for (const source of readings.articles) {
+    visualPaths.add(source.cover.hero);
+    visualPaths.add(source.cover.card);
+    for (const figure of source.materials) visualPaths.add(figure.src);
+  }
   const imagePaths = [...visualPaths].sort();
   const imageHash = (bytes) => crypto.createHash('sha256').update(bytes).digest('hex');
   for (let offset = 0; offset < imagePaths.length; offset += 8) {
@@ -196,8 +208,35 @@ try {
   await page.evaluate(() => document.fonts.ready);
   await page.evaluate(() => window.scrollTo({ top: 0, behavior: 'instant' }));
   await page.screenshot({
-    path: path.join(root, 'docs/media/benchmark-20261029/production-visual-article-desktop.png'),
+    path: path.join(mediaDirectory, 'production-benchmark-article-desktop.png'),
   });
+  await page.goto(`${metadata.productionUrl}/#/wechat`, { waitUntil: 'domcontentloaded' });
+  await page.locator('.reading-collection').waitFor();
+  assert.equal((await page.locator('.section-head > p').innerText()).trim(), `${readings.articles.length} 篇匹配`);
+  await page.screenshot({ path: path.join(mediaDirectory, 'production-reading-index-desktop.png') });
+  for (const source of readings.articles) {
+    await page.goto(`${metadata.productionUrl}/#/post/${source.slug}`, { waitUntil: 'domcontentloaded' });
+    const post = posts.find((item) => item.slug === source.slug);
+    await page.getByRole('heading', { name: post.title, exact: true }).waitFor();
+    assert.equal(await page.locator('.reading-source > a').getAttribute('href'), source.url);
+    assert.match(await page.locator('.reading-source').innerText(), new RegExp(source.sourcePublishedAt.slice(0, 10)));
+    assert.equal(await page.locator('.article-cover img').getAttribute('src'), source.cover.hero);
+    await page.locator('.article-cover img').evaluate((item) => item.decode());
+    assert.equal(await page.locator('.article-media').count(), source.materials.length);
+    for (const image of await page.locator('.article-media img').all()) {
+      await image.scrollIntoViewIfNeeded();
+      await image.evaluate((item) => item.decode());
+      assert(await image.evaluate((item) => item.naturalWidth > 300));
+    }
+    for (const link of await page.locator('.source-video-reference > a').all())
+      assert.equal(await link.getAttribute('href'), source.url);
+    report.checks.push({ check: 'published reading, generated cover and attributed source materials',
+      slug: source.slug, figures: source.materials.length, videoReferences: source.videos.length, passed: true });
+  }
+  await page.goto(`${metadata.productionUrl}/#/post/${readings.articles[0].slug}`, { waitUntil: 'domcontentloaded' });
+  await page.locator('.article-cover img').evaluate((item) => item.decode());
+  await page.evaluate(() => window.scrollTo({ top: 0, behavior: 'instant' }));
+  await page.screenshot({ path: path.join(mediaDirectory, 'production-reading-article-desktop.png') });
   assert.deepEqual(errors, []);
   const baseline = JSON.parse(
     (
@@ -227,10 +266,10 @@ try {
     report.browserClosed = true;
   }
   await fs.writeFile(
-    path.join(root, 'docs/releases/2026-10-30-visual-production.json'),
+    reportPath,
     JSON.stringify(report, null, 2) + '\n',
   );
 }
 console.log(
-  `Production verified: ${report.deployment.id}, all 46 illustrated articles, exact build assets, browser closed; default account files unchanged.`,
+  `Production verified: ${report.deployment.id}, 46 illustrated journals and ${readings.articles.length} readings, ${report.visualAssetsChecked} matching images; browser closed and default account files unchanged.`,
 );

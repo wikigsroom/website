@@ -1,5 +1,20 @@
 # Changelog / 更新记录
 
+## 2026-11-06 — WeChat readings / 公众号精读
+
+- 中文：整理 11 篇公开公众号文章，补充独立标题、提要、流程、表格、原文日期/作者、来源和关联阅读，新增 `#/wechat` 精读集合。
+- English: Prepared eleven original reading articles with focused headlines, takeaways, workflows, tables, source metadata and related links in `#/wechat`.
+- 中文：整理 36 项原文素材，包括 24 项图示/动图和全部 12 段原视频观看入口；两项动画保留原始时序。
+- English: Prepared 36 attributed source figures, including two animations and all twelve original video references.
+- 中文：建立来源去重、按批次追加、原生抓取/生图/压缩、Markdown 阅读稿导出与后续独立账户发布流程。
+- English: Added deduplicated batches, native capture/illustration/derivative tooling, Markdown exports and the ongoing isolated-profile release workflow.
+- 中文：通过指定 `sub2-image-gen` 技能和明确批准的 `gpt-image-2.5-flare` 生成全部 11 张封面，保留原图、实际提示词、模型与哈希，网页仅发布 22 张 WebP 衍生图。
+- English: Generated all eleven covers with the requested skill and explicitly approved model, retaining originals, exact prompts and hashes; only 22 WebP cover derivatives are deployed.
+- 中文：本地内容与构建检查通过；精读 22 项浏览器检查和现有测评 109 项检查通过，已补齐截图、MP4/GIF，关闭自己的浏览器及预览服务。
+- English: Local content/build checks pass, along with 22 reading and 109 benchmark browser checks; screenshots, MP4/GIF demos and resource cleanup are recorded.
+- 状态 / Status：待提交推送与生产发布 / Git publication and production deployment pending.
+- [方案与文章目录 / Design and article index](docs/wechat-reading.md) · [发布记录 / Release notes](docs/releases/2026-11-06-wechat-reading.md)。
+
 ## 2026-10-30 — Visual edition / 图像封面与实际产物
 
 - 中文：替换 46 篇测评与两篇 Research 的文字封面，全部 70 篇文章均有图像封面。

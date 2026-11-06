@@ -14,6 +14,7 @@ const visuals = JSON.parse(
   fs.readFileSync(path.join(root, 'src/data/benchmarkVisuals.json'), 'utf8'),
 );
 const { posts } = readContentModule(path.join(root, 'src/data/posts.ts'));
+const wechatSources = JSON.parse(fs.readFileSync(path.join(root, 'src/data/wechatSources.json'), 'utf8'));
 const batches = posts.filter((post) => post.section === 'Benchmark');
 assert.equal(data.version, index.version);
 assert.equal(data.sourceSha256, index.sourceSha256);
@@ -22,7 +23,7 @@ assert.equal(Object.keys(visuals.rounds).length, data.rounds.length);
 assert.equal(batches.length, data.rounds.length);
 assert.equal(data.rounds.length, 46, 'Review expected batch count before accepting a new snapshot');
 assert.equal(data.cases.length, 681, 'Review expected case count before accepting a new snapshot');
-assert.equal(posts.length, 70);
+assert.equal(posts.length, 70 + wechatSources.articles.length);
 assert.equal(new Set(posts.map((post) => post.slug)).size, posts.length);
 const byId = new Map(data.cases.map((item) => [item.id, item]));
 assert.equal(byId.size, data.cases.length);

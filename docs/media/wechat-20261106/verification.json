@@ -1,0 +1,232 @@
+{
+  "batch": "2026-11-06",
+  "checkedAt": "2026-11-06T09:21:38.494Z",
+  "implementationSha256": "2b597b51f99e642fefd224f8c6c6fd633493798372e86a06bcac626eca564f59",
+  "evidenceFiles": [
+    "src/App.tsx",
+    "src/styles.css",
+    "src/components/ArticleMedia.tsx",
+    "src/data/posts.ts",
+    "src/data/wechatPosts.ts",
+    "src/data/wechatEditorial.ts",
+    "src/data/wechatMaterials.ts",
+    "src/data/wechatSources.json",
+    "public/assets/wechat/2026-11-06/hero/prompt2rig-text-to-motion.webp",
+    "public/assets/wechat/2026-11-06/card/prompt2rig-text-to-motion.webp",
+    "public/assets/wechat/2026-11-06/materials/01-image-02.webp",
+    "public/assets/wechat/2026-11-06/materials/01-image-03.webp",
+    "public/assets/wechat/2026-11-06/hero/ai-image-repair-structure-style.webp",
+    "public/assets/wechat/2026-11-06/card/ai-image-repair-structure-style.webp",
+    "public/assets/wechat/2026-11-06/materials/02-image-05.webp",
+    "public/assets/wechat/2026-11-06/materials/02-image-06.webp",
+    "public/assets/wechat/2026-11-06/hero/mixamo-mocap-agent-animation.webp",
+    "public/assets/wechat/2026-11-06/card/mixamo-mocap-agent-animation.webp",
+    "public/assets/wechat/2026-11-06/materials/03-image-01.webp",
+    "public/assets/wechat/2026-11-06/hero/audio8-compact-tts.webp",
+    "public/assets/wechat/2026-11-06/card/audio8-compact-tts.webp",
+    "public/assets/wechat/2026-11-06/materials/04-image-01.webp",
+    "public/assets/wechat/2026-11-06/materials/04-poster-01.webp",
+    "public/assets/wechat/2026-11-06/hero/video-to-game-playable-prototype.webp",
+    "public/assets/wechat/2026-11-06/card/video-to-game-playable-prototype.webp",
+    "public/assets/wechat/2026-11-06/materials/05-poster-01.webp",
+    "public/assets/wechat/2026-11-06/hero/eight-view-ai-3d-blockout.webp",
+    "public/assets/wechat/2026-11-06/card/eight-view-ai-3d-blockout.webp",
+    "public/assets/wechat/2026-11-06/materials/06-image-03.webp",
+    "public/assets/wechat/2026-11-06/materials/06-image-04.webp",
+    "public/assets/wechat/2026-11-06/materials/06-image-05.webp",
+    "public/assets/wechat/2026-11-06/materials/06-image-06.webp",
+    "public/assets/wechat/2026-11-06/materials/06-image-07.webp",
+    "public/assets/wechat/2026-11-06/materials/06-image-08.webp",
+    "public/assets/wechat/2026-11-06/materials/06-poster-01.webp",
+    "public/assets/wechat/2026-11-06/hero/qwen-faceswap-identity-transfer.webp",
+    "public/assets/wechat/2026-11-06/card/qwen-faceswap-identity-transfer.webp",
+    "public/assets/wechat/2026-11-06/materials/07-image-01.webp",
+    "public/assets/wechat/2026-11-06/materials/07-image-02.webp",
+    "public/assets/wechat/2026-11-06/hero/mesh-avatar-studio-living-illustration.webp",
+    "public/assets/wechat/2026-11-06/card/mesh-avatar-studio-living-illustration.webp",
+    "public/assets/wechat/2026-11-06/materials/08-image-04.webp",
+    "public/assets/wechat/2026-11-06/materials/08-image-09.webp",
+    "public/assets/wechat/2026-11-06/materials/08-image-11.webp",
+    "public/assets/wechat/2026-11-06/materials/08-poster-01.webp",
+    "public/assets/wechat/2026-11-06/materials/08-poster-02.webp",
+    "public/assets/wechat/2026-11-06/materials/08-poster-03.webp",
+    "public/assets/wechat/2026-11-06/hero/pika-h3-flex-speed-and-limits.webp",
+    "public/assets/wechat/2026-11-06/card/pika-h3-flex-speed-and-limits.webp",
+    "public/assets/wechat/2026-11-06/materials/09-image-08.webp",
+    "public/assets/wechat/2026-11-06/materials/09-image-10.webp",
+    "public/assets/wechat/2026-11-06/materials/09-poster-01.webp",
+    "public/assets/wechat/2026-11-06/materials/09-poster-02.webp",
+    "public/assets/wechat/2026-11-06/materials/09-poster-03.webp",
+    "public/assets/wechat/2026-11-06/materials/09-poster-04.webp",
+    "public/assets/wechat/2026-11-06/materials/09-poster-05.webp",
+    "public/assets/wechat/2026-11-06/hero/humanizer-clearer-ai-writing.webp",
+    "public/assets/wechat/2026-11-06/card/humanizer-clearer-ai-writing.webp",
+    "public/assets/wechat/2026-11-06/materials/10-image-01.webp",
+    "public/assets/wechat/2026-11-06/materials/10-image-03.webp",
+    "public/assets/wechat/2026-11-06/hero/srt-whiteboard-animation-storytelling.webp",
+    "public/assets/wechat/2026-11-06/card/srt-whiteboard-animation-storytelling.webp",
+    "public/assets/wechat/2026-11-06/materials/11-image-01.webp",
+    "public/assets/wechat/2026-11-06/materials/11-image-02.webp",
+    "public/assets/wechat/2026-11-06/materials/11-image-03.webp",
+    "public/assets/wechat/2026-11-06/materials/11-poster-01.webp"
+  ],
+  "checks": [
+    {
+      "check": "article, cover, attribution and all source figures",
+      "slug": "prompt2rig-text-to-motion",
+      "figures": 2,
+      "videoReferences": 0,
+      "passed": true
+    },
+    {
+      "check": "article, cover, attribution and all source figures",
+      "slug": "ai-image-repair-structure-style",
+      "figures": 2,
+      "videoReferences": 0,
+      "passed": true
+    },
+    {
+      "check": "article, cover, attribution and all source figures",
+      "slug": "mixamo-mocap-agent-animation",
+      "figures": 1,
+      "videoReferences": 0,
+      "passed": true
+    },
+    {
+      "check": "article, cover, attribution and all source figures",
+      "slug": "audio8-compact-tts",
+      "figures": 2,
+      "videoReferences": 1,
+      "passed": true
+    },
+    {
+      "check": "article, cover, attribution and all source figures",
+      "slug": "video-to-game-playable-prototype",
+      "figures": 1,
+      "videoReferences": 1,
+      "passed": true
+    },
+    {
+      "check": "article, cover, attribution and all source figures",
+      "slug": "eight-view-ai-3d-blockout",
+      "figures": 7,
+      "videoReferences": 1,
+      "passed": true
+    },
+    {
+      "check": "article, cover, attribution and all source figures",
+      "slug": "qwen-faceswap-identity-transfer",
+      "figures": 2,
+      "videoReferences": 0,
+      "passed": true
+    },
+    {
+      "check": "article, cover, attribution and all source figures",
+      "slug": "mesh-avatar-studio-living-illustration",
+      "figures": 6,
+      "videoReferences": 3,
+      "passed": true
+    },
+    {
+      "check": "article, cover, attribution and all source figures",
+      "slug": "pika-h3-flex-speed-and-limits",
+      "figures": 7,
+      "videoReferences": 5,
+      "passed": true
+    },
+    {
+      "check": "article, cover, attribution and all source figures",
+      "slug": "humanizer-clearer-ai-writing",
+      "figures": 2,
+      "videoReferences": 0,
+      "passed": true
+    },
+    {
+      "check": "article, cover, attribution and all source figures",
+      "slug": "srt-whiteboard-animation-storytelling",
+      "figures": 4,
+      "videoReferences": 1,
+      "passed": true
+    },
+    {
+      "check": "search by original author or table contents",
+      "query": "Bite",
+      "slug": "humanizer-clearer-ai-writing",
+      "passed": true
+    },
+    {
+      "check": "search by original author or table contents",
+      "query": "94 GiB",
+      "slug": "pika-h3-flex-speed-and-limits",
+      "passed": true
+    },
+    {
+      "check": "responsive layout",
+      "label": "reading collection",
+      "width": 320,
+      "passed": true
+    },
+    {
+      "check": "responsive layout",
+      "label": "source attribution and comparison table",
+      "width": 320,
+      "passed": true
+    },
+    {
+      "check": "responsive layout",
+      "label": "reading collection",
+      "width": 390,
+      "passed": true
+    },
+    {
+      "check": "responsive layout",
+      "label": "source attribution and comparison table",
+      "width": 390,
+      "passed": true
+    },
+    {
+      "check": "responsive layout",
+      "label": "reading collection",
+      "width": 768,
+      "passed": true
+    },
+    {
+      "check": "responsive layout",
+      "label": "source attribution and comparison table",
+      "width": 768,
+      "passed": true
+    },
+    {
+      "check": "responsive layout",
+      "label": "reading collection",
+      "width": 1440,
+      "passed": true
+    },
+    {
+      "check": "responsive layout",
+      "label": "source attribution and comparison table",
+      "width": 1440,
+      "passed": true
+    },
+    {
+      "check": "return to the source collection",
+      "passed": true
+    }
+  ],
+  "assets": [
+    "reading-index-desktop.png",
+    "reading-article-desktop.png",
+    "reading-animation-desktop.png",
+    "reading-reference-desktop.png",
+    "reading-table-desktop.png",
+    "reading-walkthrough.mp4",
+    "reading-walkthrough.gif",
+    "reading-article-mobile.png",
+    "reading-figure-mobile.png",
+    "reading-mobile.mp4",
+    "reading-mobile.gif"
+  ],
+  "browserClosed": true,
+  "previewClosed": true,
+  "passed": true
+}

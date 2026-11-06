@@ -20,6 +20,10 @@ const visuals = JSON.parse(
   await fs.readFile(path.join(root, 'src/data/benchmarkVisuals.json'), 'utf8'),
 );
 const { benchmarkEditorial } = readContentModule(path.join(root, 'src/data/benchmarkEditorial.ts'));
+const { posts } = readContentModule(path.join(root, 'src/data/posts.ts'));
+const totalPosts = posts.length;
+const researchCount = posts.filter((post) => post.section === 'Research').length;
+const wechatSources = JSON.parse(await fs.readFile(path.join(root, 'src/data/wechatSources.json'), 'utf8'));
 const ffmpeg = process.env.FFMPEG_PATH || 'ffmpeg';
 const ffprobe = process.env.FFPROBE_PATH || 'ffprobe';
 execFileSync(ffmpeg, ['-version'], { windowsHide: true, stdio: 'ignore' });
@@ -28,6 +32,10 @@ const evidenceFiles = [
   'src/styles.css',
   'src/data/posts.ts',
   'src/data/researchPosts.ts',
+  'src/data/wechatPosts.ts',
+  'src/data/wechatEditorial.ts',
+  'src/data/wechatMaterials.ts',
+  'src/data/wechatSources.json',
   'src/data/benchmark.ts',
   'src/data/benchmarkPosts.ts',
   'src/data/benchmarkEditorial.ts',
@@ -49,6 +57,8 @@ const evidenceFiles = [
   ...Object.values(visuals.research)
     .flatMap((cover) => [cover.hero, cover.card])
     .map((src) => `public${src}`),
+  ...wechatSources.articles.flatMap((source) => [source.cover.hero, source.cover.card,
+    ...source.materials.map((item) => item.src)]).map((src) => `public${src}`),
 ];
 const digest = crypto.createHash('sha256');
 for (const filename of evidenceFiles)
@@ -297,10 +307,10 @@ try {
     passed: true,
   });
   await page.getByRole('button', { name: '清除筛选', exact: false }).click();
-  assert.equal((await page.locator('.section-head > p').innerText()).trim(), '70 篇匹配');
+  assert.equal((await page.locator('.section-head > p').innerText()).trim(), `${totalPosts} 篇匹配`);
   const more = page.getByRole('button', { name: '加载更多', exact: false });
-  for (let i = 0; i < 12 && (await more.count()); i++) await more.click();
-  assert.equal(await page.locator('.post-card').count(), 70);
+  for (let i = 0; i < Math.ceil(totalPosts / 6) && (await more.count()); i++) await more.click();
+  assert.equal(await page.locator('.post-card').count(), totalPosts);
   await page.locator('.post-card img').evaluateAll(async (images) => {
     images.forEach((image) => {
       image.loading = 'eager';
@@ -315,7 +325,7 @@ try {
       ),
   );
   report.checks.push({
-    check: 'all 70 article covers decode as raster images',
+    check: `all ${totalPosts} article covers decode as raster images`,
     passed: true,
   });
   await page.getByRole('button', { name: 'Notes', exact: true }).click();
@@ -323,7 +333,7 @@ try {
   assert.equal((await page.locator('.section-head > p').innerText()).trim(), '6 篇匹配');
   await page.getByRole('button', { name: 'Research', exact: true }).click();
   await page.waitForURL('**/#/research');
-  assert.equal((await page.locator('.section-head > p').innerText()).trim(), '18 篇匹配');
+  assert.equal((await page.locator('.section-head > p').innerText()).trim(), `${researchCount} 篇匹配`);
   await page.getByRole('button', { name: '测评日志', exact: true }).click();
   await page.waitForURL('**/#/benchmark');
   await page.locator('.post-card .bookmark').first().click();
@@ -332,7 +342,7 @@ try {
     1,
   );
   report.checks.push({
-    check: '70 total / 46 Benchmark / 18 Research / 6 Notes; bookmarks persist',
+    check: `${totalPosts} total / 46 Benchmark / ${researchCount} Research / 6 Notes; bookmarks persist`,
     passed: true,
   });
 

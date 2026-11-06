@@ -1,14 +1,18 @@
 {
-  "checkedAt": "2026-10-29T16:13:25.407Z",
+  "checkedAt": "2026-11-06T09:22:13.633Z",
   "snapshot": "1.9.0",
   "snapshotDate": "2026-10-29",
   "sourceCatalogSha256": "81c20e4eece8e2280df46d76b8f09cab8eab7bdab3da2053e8700258438a7ed5",
-  "implementationSha256": "b55c2eb633039b588bfe70f9fcae67eedbc2aac63181ce59d7858edba3d8bf7f",
+  "implementationSha256": "25f4a4e990659270f8dd19a0886f661ef03e884f5e63a60c86aedaaa0d6b5f4a",
   "evidenceFiles": [
     "src/App.tsx",
     "src/styles.css",
     "src/data/posts.ts",
     "src/data/researchPosts.ts",
+    "src/data/wechatPosts.ts",
+    "src/data/wechatEditorial.ts",
+    "src/data/wechatMaterials.ts",
+    "src/data/wechatSources.json",
     "src/data/benchmark.ts",
     "src/data/benchmarkPosts.ts",
     "src/data/benchmarkEditorial.ts",
@@ -243,7 +247,65 @@
     "public/assets/benchmark-visuals/hero/wechat-image-generation-world-models.webp",
     "public/assets/benchmark-visuals/card/wechat-image-generation-world-models.webp",
     "public/assets/benchmark-visuals/hero/subforge-subtitle-research-pipeline.webp",
-    "public/assets/benchmark-visuals/card/subforge-subtitle-research-pipeline.webp"
+    "public/assets/benchmark-visuals/card/subforge-subtitle-research-pipeline.webp",
+    "public/assets/wechat/2026-11-06/hero/prompt2rig-text-to-motion.webp",
+    "public/assets/wechat/2026-11-06/card/prompt2rig-text-to-motion.webp",
+    "public/assets/wechat/2026-11-06/materials/01-image-02.webp",
+    "public/assets/wechat/2026-11-06/materials/01-image-03.webp",
+    "public/assets/wechat/2026-11-06/hero/ai-image-repair-structure-style.webp",
+    "public/assets/wechat/2026-11-06/card/ai-image-repair-structure-style.webp",
+    "public/assets/wechat/2026-11-06/materials/02-image-05.webp",
+    "public/assets/wechat/2026-11-06/materials/02-image-06.webp",
+    "public/assets/wechat/2026-11-06/hero/mixamo-mocap-agent-animation.webp",
+    "public/assets/wechat/2026-11-06/card/mixamo-mocap-agent-animation.webp",
+    "public/assets/wechat/2026-11-06/materials/03-image-01.webp",
+    "public/assets/wechat/2026-11-06/hero/audio8-compact-tts.webp",
+    "public/assets/wechat/2026-11-06/card/audio8-compact-tts.webp",
+    "public/assets/wechat/2026-11-06/materials/04-image-01.webp",
+    "public/assets/wechat/2026-11-06/materials/04-poster-01.webp",
+    "public/assets/wechat/2026-11-06/hero/video-to-game-playable-prototype.webp",
+    "public/assets/wechat/2026-11-06/card/video-to-game-playable-prototype.webp",
+    "public/assets/wechat/2026-11-06/materials/05-poster-01.webp",
+    "public/assets/wechat/2026-11-06/hero/eight-view-ai-3d-blockout.webp",
+    "public/assets/wechat/2026-11-06/card/eight-view-ai-3d-blockout.webp",
+    "public/assets/wechat/2026-11-06/materials/06-image-03.webp",
+    "public/assets/wechat/2026-11-06/materials/06-image-04.webp",
+    "public/assets/wechat/2026-11-06/materials/06-image-05.webp",
+    "public/assets/wechat/2026-11-06/materials/06-image-06.webp",
+    "public/assets/wechat/2026-11-06/materials/06-image-07.webp",
+    "public/assets/wechat/2026-11-06/materials/06-image-08.webp",
+    "public/assets/wechat/2026-11-06/materials/06-poster-01.webp",
+    "public/assets/wechat/2026-11-06/hero/qwen-faceswap-identity-transfer.webp",
+    "public/assets/wechat/2026-11-06/card/qwen-faceswap-identity-transfer.webp",
+    "public/assets/wechat/2026-11-06/materials/07-image-01.webp",
+    "public/assets/wechat/2026-11-06/materials/07-image-02.webp",
+    "public/assets/wechat/2026-11-06/hero/mesh-avatar-studio-living-illustration.webp",
+    "public/assets/wechat/2026-11-06/card/mesh-avatar-studio-living-illustration.webp",
+    "public/assets/wechat/2026-11-06/materials/08-image-04.webp",
+    "public/assets/wechat/2026-11-06/materials/08-image-09.webp",
+    "public/assets/wechat/2026-11-06/materials/08-image-11.webp",
+    "public/assets/wechat/2026-11-06/materials/08-poster-01.webp",
+    "public/assets/wechat/2026-11-06/materials/08-poster-02.webp",
+    "public/assets/wechat/2026-11-06/materials/08-poster-03.webp",
+    "public/assets/wechat/2026-11-06/hero/pika-h3-flex-speed-and-limits.webp",
+    "public/assets/wechat/2026-11-06/card/pika-h3-flex-speed-and-limits.webp",
+    "public/assets/wechat/2026-11-06/materials/09-image-08.webp",
+    "public/assets/wechat/2026-11-06/materials/09-image-10.webp",
+    "public/assets/wechat/2026-11-06/materials/09-poster-01.webp",
+    "public/assets/wechat/2026-11-06/materials/09-poster-02.webp",
+    "public/assets/wechat/2026-11-06/materials/09-poster-03.webp",
+    "public/assets/wechat/2026-11-06/materials/09-poster-04.webp",
+    "public/assets/wechat/2026-11-06/materials/09-poster-05.webp",
+    "public/assets/wechat/2026-11-06/hero/humanizer-clearer-ai-writing.webp",
+    "public/assets/wechat/2026-11-06/card/humanizer-clearer-ai-writing.webp",
+    "public/assets/wechat/2026-11-06/materials/10-image-01.webp",
+    "public/assets/wechat/2026-11-06/materials/10-image-03.webp",
+    "public/assets/wechat/2026-11-06/hero/srt-whiteboard-animation-storytelling.webp",
+    "public/assets/wechat/2026-11-06/card/srt-whiteboard-animation-storytelling.webp",
+    "public/assets/wechat/2026-11-06/materials/11-image-01.webp",
+    "public/assets/wechat/2026-11-06/materials/11-image-02.webp",
+    "public/assets/wechat/2026-11-06/materials/11-image-03.webp",
+    "public/assets/wechat/2026-11-06/materials/11-poster-01.webp"
   ],
   "checks": [
     {
@@ -805,11 +867,11 @@
       "passed": true
     },
     {
-      "check": "all 70 article covers decode as raster images",
+      "check": "all 81 article covers decode as raster images",
       "passed": true
     },
     {
-      "check": "70 total / 46 Benchmark / 18 Research / 6 Notes; bookmarks persist",
+      "check": "81 total / 46 Benchmark / 29 Research / 6 Notes; bookmarks persist",
       "passed": true
     },
     {
@@ -886,7 +948,7 @@
           }
         ],
         "format": {
-          "duration": "18.200000"
+          "duration": "16.440000"
         }
       }
     },
@@ -904,7 +966,7 @@
           }
         ],
         "format": {
-          "duration": "13.400000"
+          "duration": "12.480000"
         }
       }
     },

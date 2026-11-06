@@ -1,5 +1,27 @@
 # Editorial illustrations / 主题插画
 
+## WeChat batch — 2026-11-06 / 公众号批次
+
+Eleven distinct covers were generated for the [reading library](../../docs/wechat-reading.md) through the requested **sub2-image-gen** skill, using the explicitly approved **gpt-image-2.5-flare** model, high quality and a requested size of 1536×1024. The [batch manifest](wechat-2026-11-06/manifest.json) records actual dimensions, PNG/prompt hashes and model authorization. Visual review removed unwanted mastheads from three initial outputs; the links below point to the accepted illustrations and exact final prompts. WebP derivatives are served on the site.
+
+11 张主题封面通过指定技能和明确获准的 **gpt-image-2.5-flare** 实际生成，质量 high，请求尺寸 1536×1024。生成台账保存模型授权、实际尺寸与原图/提示词哈希。视觉检查后修正三张初稿的多余刊头；下表均指向接受的插画与实际提示词。网页只部署压缩的 WebP。
+
+| Article / 文章 | Original and exact prompt / 原图与完整提示词 |
+| --- | --- |
+| prompt2rig 动作生产线 | [PNG](wechat-2026-11-06/prompt2rig-text-to-motion.png) · [Prompt](wechat-2026-11-06/prompts/prompt2rig-text-to-motion.txt) |
+| 图片结构与风格 | [PNG](wechat-2026-11-06/ai-image-repair-structure-style.png) · [Prompt](wechat-2026-11-06/prompts/ai-image-repair-structure-style.txt) |
+| Mixamo 动捕闭环 | [PNG](wechat-2026-11-06/mixamo-mocap-agent-animation.png) · [Prompt](wechat-2026-11-06/prompts/mixamo-mocap-agent-animation.txt) |
+| Audio8 语音选择 | [PNG](wechat-2026-11-06/audio8-compact-tts.png) · [Prompt](wechat-2026-11-06/prompts/audio8-compact-tts.txt) |
+| 视频生成小游戏 | [PNG](wechat-2026-11-06/video-to-game-playable-prototype.png) · [Prompt](wechat-2026-11-06/prompts/video-to-game-playable-prototype.txt) |
+| 八视角三维白模 | [PNG](wechat-2026-11-06/eight-view-ai-3d-blockout.png) · [Prompt](wechat-2026-11-06/prompts/eight-view-ai-3d-blockout.txt) |
+| Qwen-FaceSwap 输入 | [PNG](wechat-2026-11-06/qwen-faceswap-identity-transfer.png) · [Prompt](wechat-2026-11-06/prompts/qwen-faceswap-identity-transfer.txt) |
+| Mesh Avatar Studio | [PNG](wechat-2026-11-06/mesh-avatar-studio-living-illustration.png) · [Prompt](wechat-2026-11-06/prompts/mesh-avatar-studio-living-illustration.txt) |
+| Pika H3 Flex | [PNG](wechat-2026-11-06/pika-h3-flex-speed-and-limits.png) · [Prompt](wechat-2026-11-06/prompts/pika-h3-flex-speed-and-limits.txt) |
+| Humanizer 改稿清单 | [PNG](wechat-2026-11-06/humanizer-clearer-ai-writing.png) · [Prompt](wechat-2026-11-06/prompts/humanizer-clearer-ai-writing.txt) |
+| 字幕驱动白板动画 | [PNG](wechat-2026-11-06/srt-whiteboard-animation-storytelling.png) · [Prompt](wechat-2026-11-06/prompts/srt-whiteboard-animation-storytelling.txt) |
+
+## Benchmark artwork — 2026-10-30 / 测评插画
+
 Thirteen illustrations were generated with the explicitly requested `sub2-image-gen` skill, using **gpt-image-2.5**, high quality and a requested size of 1536×1024. Original PNG files and exact prompts are retained here; the blog serves compressed WebP derivatives, not these PNGs. Actual output dimensions, file sizes and SHA-256 hashes are recorded in [manifest.json](manifest.json).
 
 十三组插画通过用户指定的 `sub2-image-gen` 技能生成，模型为 **gpt-image-2.5**，质量为 high，请求尺寸为 1536×1024。这里保存原始 PNG 和完整提示词；网页仅发布压缩的 WebP 衍生图。实际返回尺寸、文件大小与 SHA-256 见 [manifest.json](manifest.json)。

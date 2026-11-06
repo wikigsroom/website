@@ -25,7 +25,7 @@ const generatedCoverRoot = '/assets/generated-covers/';
 const optimizedCoverRoot = `${generatedCoverRoot}optimized/`;
 
 type SortMode = 'latest' | 'reading' | 'title';
-type SectionFilter = typeof allValue | 'Blog' | 'Research' | 'Benchmark';
+type SectionFilter = typeof allValue | 'Blog' | 'Research' | 'Benchmark' | 'WeChat';
 type CoverVariant = 'card' | 'hero';
 
 const formatDate = (date: string) =>
@@ -59,9 +59,13 @@ const postSearchText = (post: Post) =>
     post.section || 'Blog',
     post.priority || '',
     post.sourcePath || '',
+    post.wechatSource?.title || '',
+    post.wechatSource?.account || '',
+    post.wechatSource?.byline || '',
     ...post.tags,
     ...post.content.map((block) => {
       if (block.type === 'list' || block.type === 'takeaways') return block.items.join(' ');
+      if (block.type === 'table') return [block.text, ...block.headers, ...block.rows.flat()].join(' ');
       return block.text;
     }),
   ]
@@ -77,12 +81,17 @@ const sectionRoutes: Record<string, SectionFilter> = {
   '#/research': 'Research',
   '#/benchmark': 'Benchmark',
   '#/notes': 'Blog',
+  '#/wechat': 'WeChat',
 };
 const getSectionFromHash = (): SectionFilter => sectionRoutes[window.location.hash] || allValue;
 
 const getPostSection = (post: Post) => post.section || 'Blog';
+const inSection = (post: Post, section: SectionFilter) =>
+  section === allValue || (section === 'WeChat' ? Boolean(post.wechatSource) : getPostSection(post) === section);
 
 const getOptimizedCover = (cover: string, variant: CoverVariant) => {
+  if (cover.startsWith('/assets/wechat/') && cover.includes('/hero/'))
+    return cover.replace('/hero/', `/${variant}/`);
   if (cover.startsWith('/assets/benchmark-visuals/hero/'))
     return cover.replace('/benchmark-visuals/hero/', `/benchmark-visuals/${variant}/`);
   if (!cover.startsWith(generatedCoverRoot)) return cover;
@@ -119,8 +128,8 @@ const ContentRenderer = ({ block }: { block: ContentBlock }) => {
         <BenchmarkResults roundId={block.roundId} />
       </Suspense>
     );
-  if (block.type === 'image' || block.type === 'video' || block.type === 'audio')
-    return <ArticleMedia key={block.src} block={block} />;
+  if (block.type === 'image' || block.type === 'video' || block.type === 'audio' || block.type === 'video-reference')
+    return <ArticleMedia key={block.type === 'video-reference' ? block.poster : block.src} block={block} />;
   if (block.type === 'link')
     return (
       <p className="article-source-link">
@@ -198,6 +207,7 @@ const Header = () => (
     </a>
     <nav className="header-nav" aria-label="Primary">
       <a href="#/">文章</a>
+      <a href="#/wechat">公众号精读</a>
       <a href="#/benchmark">测评日志</a>
       <a href="https://www.sidcloud.cn/">关于</a>
       <a href="https://github.com/carzygod" target="_blank" rel="noreferrer">
@@ -353,9 +363,8 @@ const ResearchBrief = () => {
         <p className="kicker">Research Board</p>
         <h2>当前研究板块：开源 AI 项目雷达与研究系统</h2>
         <p>
-          本轮内容来自 <code>research/</code>{' '}
-          下的系统文档和开源项目报告，整理为可持续追加的技术博客。当前主线是研究工作流、
-          本地优先、Agent 协议化、统一多模态、端侧生成与许可风险。
+          内容来自研究资料、开源项目报告及公开文章精读。按主题保留判断、原始来源与配套素材，
+          便于继续查阅、比较和补充实验。公众号原文日期与本站整理日期分别记录。
         </p>
       </div>
       <div className="research-metrics">
@@ -402,15 +411,14 @@ const HomeView = ({
   onBookmark: (slug: string) => void;
   onReset: () => void;
 }) => {
-  const sectionPosts =
-    section === allValue ? posts : posts.filter((post) => getPostSection(post) === section);
+  const sectionPosts = posts.filter((post) => inSection(post, section));
   const researchCount = posts.filter((post) => getPostSection(post) === 'Research').length;
   const blogCount = posts.filter((post) => getPostSection(post) === 'Blog').length;
   const categories = [allValue, ...unique(sectionPosts.map((post) => post.category))];
   const tags = [allValue, ...unique(sectionPosts.flatMap((post) => post.tags))];
   const pinned = sectionPosts.find((post) => post.pinned) || sectionPosts[0] || posts[0];
   const titleParts = [
-    section !== allValue ? section : '',
+    section !== allValue ? (section === 'WeChat' ? '公众号精读' : section) : '',
     category !== allValue ? category : '',
     tag !== allValue ? `#${tag}` : '',
     query.trim() ? `"${query.trim()}"` : '',
@@ -486,6 +494,17 @@ const HomeView = ({
       </section>
 
       {section === 'Research' ? <ResearchBrief /> : null}
+      {section === 'WeChat' ? (
+        <section className="reading-collection" aria-label="公众号精读导读">
+          <p className="kicker">Reading Library</p>
+          <h2>把值得留下的文章，变成随时能翻的笔记。</h2>
+          <p>按主题整理要点、使用流程与查阅表格，配上原文图示、动图和视频入口。
+            每篇保留作者与来源，封面由 AI 创作并单独标明。</p>
+          <div className="reading-collection-meta">
+            <span>{sectionPosts.length} 篇精读</span><span>原文素材可追溯</span><span>持续更新</span>
+          </div>
+        </section>
+      ) : null}
       {section === 'Benchmark' ? (
         <section className="batch-board" aria-label="测评批次总览">
           <p className="kicker">Benchmark Journal</p>
@@ -517,6 +536,7 @@ const HomeView = ({
               {[
                 [allValue, '全部'],
                 ['Research', 'Research'],
+                ['WeChat', '公众号精读'],
                 ['Benchmark', '测评日志'],
                 ['Blog', 'Notes'],
               ].map(([value, label]) => (
@@ -655,7 +675,7 @@ const ArticleView = ({
 
   return (
     <main className="article-view">
-      <article className={`article-shell${post.benchmarkRoundId ? ' is-benchmark-article' : ''}`}>
+      <article className={`article-shell${post.benchmarkRoundId ? ' is-benchmark-article' : ''}${post.wechatSource ? ' is-reading-article' : ''}`}>
         <figure className="article-cover">
           <img
             src={getOptimizedCover(post.cover, 'hero')}
@@ -700,6 +720,20 @@ const ArticleView = ({
             </p>
           )}
           {!post.benchmarkRoundId && <p>{post.subtitle}</p>}
+          {post.wechatSource && (
+            <aside className="reading-source" aria-label="原文信息">
+              <p className="kicker">原文与整理</p>
+              <a href={post.sourceUrl} target="_blank" rel="noopener noreferrer">
+                {post.wechatSource.title} ↗
+              </a>
+              <p>{post.wechatSource.account}
+                {post.wechatSource.byline && post.wechatSource.byline !== post.wechatSource.account
+                  ? ` · 作者 ${post.wechatSource.byline}` : ''}</p>
+              <p>原文 {post.wechatSource.sourcePublishedAt?.slice(0, 10) || '日期未提供'}
+                {' · '}本站整理 {post.publishedAt}</p>
+              <small>基于原文的主题精读与资料核对。配图保留各自来源，结论的适用条件在正文说明。</small>
+            </aside>
+          )}
           {post.benchmarkRoundId && (
             <button
               className="article-jump"
@@ -799,7 +833,7 @@ const App = () => {
   const result = useMemo(() => {
     const needle = query.trim().toLowerCase();
     const filtered = posts.filter((post) => {
-      const matchesSection = section === allValue || getPostSection(post) === section;
+      const matchesSection = inSection(post, section);
       const matchesCategory = category === allValue || post.category === category;
       const matchesTag = tag === allValue || post.tags.includes(tag);
       const matchesQuery = !needle || (searchIndex.get(post.slug) || '').includes(needle);
@@ -921,7 +955,7 @@ const App = () => {
             post={activePost}
             onBack={() => {
               window.location.hash =
-                Object.keys(sectionRoutes).find(
+                activePost.wechatSource ? '#/wechat' : Object.keys(sectionRoutes).find(
                   (route) => sectionRoutes[route] === getPostSection(activePost),
                 ) || '#/';
             }}

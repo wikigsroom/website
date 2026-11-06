@@ -4,7 +4,7 @@
 
 The sidcloud technical blog, built with React 18, TypeScript and Vite 6. This is the **`blog` branch of `wikigsroom/website`**. The studio website is maintained separately on `main`.
 
-Current content includes **70 articles: 46 Benchmark batch journals, 18 Research posts and six Blog notes**. The journals cover all **681 unique records** in Benchmark snapshot **1.9.0 (2026-10-29)**, including failed, pending, archived and review records. Another **89 cross-batch references** are explicitly labeled and do not count as new experiments.
+Current content includes **81 articles: 46 Benchmark batch journals, 29 Research posts (including eleven WeChat readings) and six Blog notes**. The journals cover all **681 unique records** in Benchmark snapshot **1.9.0 (2026-10-29)**, including failed, pending, archived and review records. Another **89 cross-batch references** are explicitly labeled and do not count as new experiments.
 
 Search, section/category/tag filters, sorting, archives, article navigation, a table of contents, reading progress, font-size controls, local bookmarks and link copying are available. Text, evidence and covers are bundled; large audio/video/images reuse public Benchmark URLs. No application backend or account login is required.
 
@@ -15,6 +15,16 @@ The visual edition adds actual video frames, result screenshots, full-track audi
 ![Voice-casting cover: thematic artwork with actual audio waveforms](public/assets/benchmark-visuals/card/r4090-voice-casting.webp)
 
 The visual edition is live at [blog.sidcloud.cn](https://blog.sidcloud.cn/#/benchmark). Production verification on 2026-10-30 checked all 46 illustrated journals, all 225 visual files and exact build files; see the [release proof](docs/releases/2026-10-30-visual-production.json).
+
+## WeChat reading library
+
+The [reading collection](https://blog.sidcloud.cn/#/wechat) turns public articles into complete, original notes with focused titles, takeaways, workflows, comparison tables, source credits and related links. The first batch has eleven articles and **36 source figures**, including two animations and all twelve original video references. Source publication dates are separate from the editorial date. Search covers original titles, authors, accounts and table cells.
+
+All eleven reading covers were generated through the user-selected **sub2-image-gen** skill with the explicitly approved **gpt-image-2.5-flare** model. Exact prompts, actual dimensions, PNG originals and hashes are retained in the [illustration archive](output/imagegen/README.md); only compact WebP derivatives are deployed. Source illustrations have separate credits. WeChat video posters explicitly link to the original article for playback.
+
+[Article index and ongoing workflow](docs/wechat-reading.md) · [Release notes](docs/releases/2026-11-06-wechat-reading.md). Raw source HTML/text stays in an ignored cache. Reviewed batch scripts append records and reject duplicate source URLs. Future readings follow the same review, documentation, Git push and isolated production-deployment process.
+
+![Source-attributed reading walkthrough](docs/media/wechat-20261106/reading-walkthrough.gif)
 
 ## Run locally
 
@@ -44,6 +54,11 @@ npm run preview
 | [`src/App.tsx`](src/App.tsx) | Hash navigation, search/filter/sort state, reader, bookmarks and sharing |
 | [`src/data/posts.ts`](src/data/posts.ts) | `Post`/`ContentBlock` types, six Blog entries and the combined article export |
 | [`src/data/researchPosts.ts`](src/data/researchPosts.ts) | 18 curated Research entries, priorities and source references |
+| [`src/data/wechatEditorial.ts`](src/data/wechatEditorial.ts) | Original editorial text for the WeChat reading collection |
+| [`src/data/wechatSources.json`](src/data/wechatSources.json) | Source credits/dates, selected figures, video links and cover provenance |
+| [`operations/wechat-batches/`](operations/wechat-batches/) | Reviewed source links, illustration concepts and media choices |
+| [`scripts/import-wechat.py`](scripts/import-wechat.py) | Public-article capture into the ignored cache |
+| [`scripts/prepare-wechat-media.py`](scripts/prepare-wechat-media.py) | Attributed derivatives and append-only batch ledger |
 | [`src/data/benchmarkEditorial.ts`](src/data/benchmarkEditorial.ts) | Headline/deck/topic, three takeaways, two analysis chapters and conclusion per batch |
 | [`src/data/benchmarkPosts.ts`](src/data/benchmarkPosts.ts) | One typed article per batch, computed counts, source and related-batch links |
 | [`src/data/benchmarkIndex.json`](src/data/benchmarkIndex.json) | Frozen public summary index used for navigation and search |
@@ -58,7 +73,7 @@ npm run preview
 | [`public/assets/`](public/assets/) | Local images, copied into the production build |
 | [`scripts/optimize-covers.mjs`](scripts/optimize-covers.mjs) | Native FFmpeg conversion to card/hero WebP variants |
 
-Hash routes are `#/` for all articles, `#/benchmark` for batch journals, `#/research` for Research, `#/notes` for six Blog notes and `#/post/<slug>` for an article. Batch slugs are stable: `benchmark-<round.id>`. All routes share one static HTML entry point. `#archive` scrolls to the archive section. Returning from a batch article opens the batch index.
+Hash routes are `#/` for all articles, `#/wechat` for source-attributed readings, `#/benchmark` for batch journals, `#/research` for Research, `#/notes` for six Blog notes and `#/post/<slug>` for an article. Batch slugs are stable: `benchmark-<round.id>`. All routes share one static HTML entry point. `#archive` scrolls to the archive section. Returning from an article opens its collection.
 
 Search trims and lowercases input, then matches a substring across title, subtitle, excerpt, category, section/priority/source metadata, tags and body text. Section, category, tag and query must all match. Default sorting is newest first; reading-time sorting is longest first. The index initially displays eight results and reveals six more per load-more action.
 
@@ -82,7 +97,7 @@ All 46 journals have individually edited headlines and distinct decks. Dates no 
 
 Cards, featured posts, related links and the index share the same headline. Colon-separated phrases wrap together where space permits; restrained serif headings, distinct decks and responsive spacing establish the reading hierarchy. Opening an article starts at the top. The searchable `takeaways` block joins the narrative, and reading-time estimates exclude optional evidence expansion. Analysis explains recorded experiments without claiming new runs, scores or causal findings.
 
-All 70 articles have image covers. The 46 batch covers now use actual video frames, result screenshots, audio waveforms or explicitly labeled gpt-image-2.5 artwork. Inline figures retain source links, original ownership and frame timestamps; selected original audio/video can be played without opening the full evidence list. See the [visual pipeline](docs/benchmark-visuals.md). Rebuilding visual assets additionally requires native Python with Pillow (`python -m pip install Pillow`), FFmpeg/FFprobe and a CJK font. A normal build uses committed derivatives and does not require image generation or the local archive.
+All 81 articles have image covers. The 46 batch covers use actual video frames, result screenshots, audio waveforms or explicitly labeled gpt-image-2.5 artwork. The eleven reading covers use the separately approved gpt-image-2.5-flare model. Inline figures retain source links, original ownership and frame timestamps; selected original audio/video can be played without opening the full evidence list. See the [visual pipeline](docs/benchmark-visuals.md). Rebuilding visual assets additionally requires native Python with Pillow (`python -m pip install Pillow`), FFmpeg/FFprobe and a CJK font. A normal build uses committed derivatives and does not require image generation or the local archive.
 
 Each source `rounds[]` entry becomes one article. Its `caseIds` order is preserved; every record is available as an expandable entry, including the 130-record historical TTS batch. Expanded entries show execution flags, timing scope, output duration, metrics, inputs, parameters, verification, limitations and original evidence links when recorded. The full evidence bundle loads when a batch article is opened; closed entries do not mount their detailed bodies. Search includes record IDs, titles, model names and summaries alongside article text.
 
@@ -102,7 +117,7 @@ npm run docs:media
 npm run release:check
 ```
 
-The synchronizer reads the [public catalog](https://benchmark.sidcloud.cn/api/catalog), validates associations, normalizes asset URLs, removes local machine paths and records the source SHA-256. It does not overwrite editorials. Update the expected coverage in `scripts/check-benchmark.mjs` deliberately when accepting new batches; the current gate requires 46 batches, 681 owners, 89 references and 70 articles. Review changed outcomes as well as counts. Build/CI uses the committed snapshot and does not fetch a changing catalog.
+The synchronizer reads the [public catalog](https://benchmark.sidcloud.cn/api/catalog), validates associations, normalizes asset URLs, removes local machine paths and records the source SHA-256. It does not overwrite editorials. Update the expected coverage in `scripts/check-benchmark.mjs` deliberately when accepting new batches; the current gate requires 46 batches, 681 owners, 89 references and 70 base articles plus every accepted WeChat reading (currently 81 total). Review changed outcomes as well as counts. Build/CI uses the committed snapshot and does not fetch a changing catalog.
 
 For optional local material access on Windows:
 
@@ -163,7 +178,7 @@ pwsh -NoProfile -File scripts/vercel.ps1 Production
 npm run verify:production -- "<deployment hostname printed by Vercel>"
 ```
 
-`operations/vercel-project.json` contains public identifiers. The wrapper validates the linked project, account and team, runs release checks and restores process environment overrides. Production verification checks READY state, domain assignment, exact build assets and all 46 articles, then closes its browser. Record release evidence and push it to `origin/blog`.
+`operations/vercel-project.json` contains public identifiers. The wrapper validates the linked project, account and team, runs release checks and restores process environment overrides. Production verification checks READY state, domain assignment, exact build/visual assets, all 46 batch journals and every reading article, then closes its browser. Record release evidence and push it to `origin/blog`.
 
 The existing Vercel blog project is `blogs`, separate from the studio project `sidcloud`. Git synchronization does not itself certify a Vercel release; when deployment is requested, independently verify production and record the result in the changelog.
 

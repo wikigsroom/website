@@ -14,10 +14,15 @@
     "benchmark:covers": "python scripts/prepare-benchmark-visuals.py",
     "benchmark:index": "node scripts/create-batch-index.mjs",
     "check:benchmark": "node scripts/check-benchmark.mjs",
+    "check:wechat": "node scripts/check-wechat.mjs && node scripts/export-wechat.mjs --check",
+    "wechat:import": "python scripts/import-wechat.py",
+    "wechat:media": "python scripts/prepare-wechat-media.py",
+    "wechat:export": "node scripts/export-wechat.mjs",
+    "docs:wechat": "node scripts/capture-wechat.mjs",
     "docs:media": "node scripts/capture-benchmark.mjs",
     "docs:check": "node scripts/check-docs.mjs",
     "verify:production": "node scripts/verify-production.mjs",
-    "release:check": "npm run lint && npm run build && npm run check:benchmark && npm run docs:check"
+    "release:check": "npm run lint && npm run build && npm run check:benchmark && npm run check:wechat && npm run docs:check"
   },
   "dependencies": {
     "lucide-react": "^0.468.0",

@@ -4,7 +4,7 @@
 
 这是 sidcloud 技术博客，使用 React 18、TypeScript 和 Vite 6，正式维护于 **`wikigsroom/website` 仓库的 `blog` 分支**。工作室官网在同一仓库的 `main` 分支独立维护。
 
-当前共有 **70 篇文章：46 篇测评批次日志、18 篇 Research、6 篇 Blog 笔记**。测评日志覆盖 Benchmark **1.9.0（2026-10-29）**的全部 **681 条独立记录**，包括失败、准备、历史和资料核查状态；另外 **89 次跨批次引用**单独标明，不算新增实验。
+当前共有 **81 篇文章：46 篇测评批次日志、29 篇 Research（含 11 篇公众号精读）、6 篇 Blog 笔记**。测评日志覆盖 Benchmark **1.9.0（2026-10-29）**的全部 **681 条独立记录**，包括失败、准备、历史和资料核查状态；另外 **89 次跨批次引用**单独标明，不算新增实验。
 
 支持搜索、栏目/分类/标签筛选、排序、归档、目录、阅读进度、大字、收藏和复制链接。正文、证据数据与封面本地打包，影音等大素材复用 Benchmark 的公开地址，不需要应用后端或账户登录。
 
@@ -15,6 +15,16 @@
 ![声线选角封面：主题插画叠加实际音轨波形](public/assets/benchmark-visuals/card/r4090-voice-casting.webp)
 
 可视化版已上线 [blog.sidcloud.cn](https://blog.sidcloud.cn/#/benchmark)，2026-10-30 已核验全部 46 篇图文测评、225 个图片文件与构建文件，详见 [生产验收记录](docs/releases/2026-10-30-visual-production.json)。
+
+## 公众号精读
+
+[精读集合](https://blog.sidcloud.cn/#/wechat) 将公开文章重新整理为可长期查阅的博客：独立标题、三点提要、流程、对照表、适用条件、原文信息与关联阅读。首批 11 篇配套 **36 项原文素材**，含两项动图及全部 12 段原视频的观看入口。原文日期与本站整理日期分别展示，搜索覆盖原标题、作者、公众号及表格内容。
+
+11 张新精读封面均通过指定的 **sub2-image-gen** 技能和用户明确批准的 **gpt-image-2.5-flare** 模型实际生成，提示词、实际尺寸、原始 PNG 和哈希维护在 [插画归档](output/imagegen/README.md)，网页仅上传 WebP。正文原文图示另行标明出处；微信视频明确显示为预览封面和原文观看入口。
+
+[首批目录与后续维护流程](docs/wechat-reading.md) · [更新记录](docs/releases/2026-11-06-wechat-reading.md)。原始 HTML/正文不进入公开仓库；批次脚本按来源去重并追加历史。后续用户提供链接后继续按相同标准整理、同步双语文档与媒体、推送 `origin/blog`，再通过独立账户发布服务器。
+
+![公众号精读演示](docs/media/wechat-20261106/reading-walkthrough.gif)
 
 ## 本地运行
 
@@ -44,6 +54,11 @@ npm run preview
 | [`src/App.tsx`](src/App.tsx) | Hash 导航、搜索/筛选/排序状态、阅读器、收藏和分享 |
 | [`src/data/posts.ts`](src/data/posts.ts) | `Post`/`ContentBlock` 类型、六篇 Blog 和合并后的文章导出 |
 | [`src/data/researchPosts.ts`](src/data/researchPosts.ts) | 十八篇整理后的 Research 内容、优先级及来源引用 |
+| [`src/data/wechatEditorial.ts`](src/data/wechatEditorial.ts) | 公众号精读的独立标题、正文、流程与分析 |
+| [`src/data/wechatSources.json`](src/data/wechatSources.json) | 原文信息/日期、图示、视频入口与封面来源台账 |
+| [`operations/wechat-batches/`](operations/wechat-batches/) | 审核后的来源链接、封面创意与素材选择 |
+| [`scripts/import-wechat.py`](scripts/import-wechat.py) | 将公开原文抓取到忽略缓存 |
+| [`scripts/prepare-wechat-media.py`](scripts/prepare-wechat-media.py) | 原文衍生图与按批次追加的公开台账 |
 | [`src/data/benchmarkEditorial.ts`](src/data/benchmarkEditorial.ts) | 独立标题、摘要、主题、三点提要、两个分析章节与结论 |
 | [`src/data/benchmarkPosts.ts`](src/data/benchmarkPosts.ts) | 一批一篇的文章生成、统计、来源与关联批次链接 |
 | [`src/data/benchmarkIndex.json`](src/data/benchmarkIndex.json) | 冻结的公开摘要索引，用于导航与搜索 |
@@ -58,7 +73,7 @@ npm run preview
 | [`public/assets/`](public/assets/) | 本地图片，构建时复制到产物 |
 | [`scripts/optimize-covers.mjs`](scripts/optimize-covers.mjs) | 使用原生 FFmpeg 生成卡片/头图 WebP 封面 |
 
-Hash 路由：`#/` 为全部文章，`#/benchmark` 为测评日志，`#/research` 为研究栏目，`#/notes` 为六篇 Blog 笔记，`#/post/<slug>` 为具体文章。测评 slug 固定为 `benchmark-<round.id>`，所有路由共用静态 HTML 入口；`#archive` 滚动到归档区。测评文章的“返回列表”回到测评日志栏目。
+Hash 路由：`#/` 为全部文章，`#/wechat` 为公众号精读，`#/benchmark` 为测评日志，`#/research` 为研究栏目，`#/notes` 为六篇 Blog 笔记，`#/post/<slug>` 为具体文章。测评 slug 固定为 `benchmark-<round.id>`，所有路由共用静态 HTML 入口；`#archive` 滚动到归档区。文章的“返回列表”回到各自栏目。
 
 搜索会去掉输入两端空格、转为小写，并在标题、副标题、摘要、分类、栏目/优先级/来源信息、标签和正文中匹配子串。栏目、分类、标签和查询条件必须同时满足。默认按日期倒序，阅读时长排序为长文优先。列表首次展示八篇，每次“加载更多”增加六篇。
 
@@ -82,7 +97,7 @@ npm run optimize:covers
 
 卡片、推荐位、关联链接和目录统一使用人工标题。冒号前后的短句在空间允许时整体换行，结合宋体标题、独立摘要和手机间距形成清楚的阅读层级。打开文章直接回到顶部。新增 `takeaways` 提要块参与搜索；阅读分钟数只估算正文，不包含可选展开的完整证据。分析围绕已有实验展开，不声称重新运行模型、增加主观评分或证明新的因果关系。
 
-全部 70 篇文章均有图像封面。46 篇测评封面改用实际视频抽帧、结果截图、真实波形或明确标识的 gpt-image-2.5 插画。正文配图保留原素材链接、记录归属和时间点，并可直接播放代表音视频。详见 [可视化流水线](docs/benchmark-visuals.md)。重建素材另需原生 Python、Pillow（`python -m pip install Pillow`）、FFmpeg/FFprobe 与中文字体；普通构建直接使用已提交的衍生图，不需要重新生图或访问本地归档。
+全部 81 篇文章均有图像封面。46 篇测评封面使用实际视频抽帧、结果截图、真实波形或明确标识的 gpt-image-2.5 插画；11 篇精读封面使用另经批准的 gpt-image-2.5-flare。正文配图保留原素材链接、记录归属和时间点，并可直接播放代表音视频。详见 [可视化流水线](docs/benchmark-visuals.md)。重建素材另需原生 Python、Pillow（`python -m pip install Pillow`）、FFmpeg/FFprobe 与中文字体；普通构建直接使用已提交的衍生图，不需要重新生图或访问本地归档。
 
 来源中每条 `rounds[]` 对应一篇文章，按 `caseIds` 原顺序提供全部记录，包括有 130 条记录的历史 TTS 批次。展开条目可读到已记录的执行标记、计时范围、成品时长、指标、输入、参数、核验、限制和原始证据。完整证据包在打开批次文章时载入，条目关闭时不挂载详细正文。搜索包含条目 ID、标题、模型名和摘要。
 
@@ -102,7 +117,7 @@ npm run docs:media
 npm run release:check
 ```
 
-同步脚本读取 [公开目录](https://benchmark.sidcloud.cn/api/catalog)，核对关联、规范素材 URL、移除本机路径并保存来源 SHA-256，不覆盖人工正文。接纳新增批次时，主动更新 `scripts/check-benchmark.mjs` 的预期值；当前要求 46 个批次、681 条归属记录、89 次引用、70 篇文章。除数量外还需审核结论和状态变化。构建和 CI 使用已提交快照，不临时拉取变化的数据。
+同步脚本读取 [公开目录](https://benchmark.sidcloud.cn/api/catalog)，核对关联、规范素材 URL、移除本机路径并保存来源 SHA-256，不覆盖人工正文。接纳新增批次时，主动更新 `scripts/check-benchmark.mjs` 的预期值；当前要求 46 个批次、681 条归属记录、89 次引用，以及 70 篇基础文章加上已接纳的全部公众号精读（目前合计 81 篇）。除数量外还需审核结论和状态变化。构建和 CI 使用已提交快照，不临时拉取变化的数据。
 
 Windows 下可选的本地素材入口：
 
@@ -161,7 +176,7 @@ pwsh -NoProfile -File scripts/vercel.ps1 Production
 npm run verify:production -- "<Vercel 输出的部署主机名>"
 ```
 
-`operations/vercel-project.json` 只保存公开项目标识。脚本核验本地关联、账户和团队，运行发布检查，退出时恢复进程环境变量。生产核验检查 READY 状态、域名归属、构建文件及全部 46 篇文章，并关闭自己的浏览器；随后保存发布验收并推送 `origin/blog`。
+`operations/vercel-project.json` 只保存公开项目标识。脚本核验本地关联、账户和团队，运行发布检查，退出时恢复进程环境变量。生产核验检查 READY 状态、域名归属、构建/图片字节、全部 46 篇测评与每篇精读，并关闭自己的浏览器；随后保存发布验收并推送 `origin/blog`。
 
 已有 Vercel 博客项目名为 `blogs`，与官网项目 `sidcloud` 分离。Git 同步不代表已完成 Vercel 发布；用户要求部署时需独立验证生产结果，并在更新记录中保存结果。
 

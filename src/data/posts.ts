@@ -1,5 +1,6 @@
 import { researchPosts } from './researchPosts';
 import { benchmarkPosts } from './benchmarkPosts';
+import { wechatPosts } from './wechatPosts';
 
 export type ContentBlock =
   | { type: 'p'; text: string }
@@ -9,7 +10,11 @@ export type ContentBlock =
   | { type: 'quote'; text: string }
   | { type: 'code'; language: string; text: string }
   | { type: 'table'; text: string; headers: string[]; rows: string[][] }
-  | { type: 'image'; src: string; alt: string; text: string }
+  | {
+      type: 'image'; src: string; alt: string; text: string;
+      sourceUrl?: string; sourcePage?: string; width?: number; height?: number;
+    }
+  | { type: 'video-reference'; poster: string; href: string; text: string }
   | { type: 'video' | 'audio'; src: string; poster?: string; text: string }
   | { type: 'link'; href: string; text: string }
   | {
@@ -36,6 +41,13 @@ export type Post = {
   priority?: 'P0' | 'P1' | 'P2' | 'P3';
   sourcePath?: string;
   sourceUrl?: string;
+  wechatSource?: {
+    title: string;
+    account: string;
+    byline: string;
+    sourcePublishedAt: string | null;
+    retrievedAt: string;
+  };
   excerpt: string;
   content: ContentBlock[];
 };
@@ -304,4 +316,4 @@ const blogPosts: Post[] = [
   },
 ];
 
-export const posts: Post[] = [...benchmarkPosts, ...researchPosts, ...blogPosts];
+export const posts: Post[] = [...wechatPosts, ...benchmarkPosts, ...researchPosts, ...blogPosts];

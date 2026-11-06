@@ -1,0 +1,174 @@
+{
+  "batch": "2026-11-06",
+  "skill": "sub2-image-gen",
+  "model": "gpt-image-2.5-flare",
+  "modelAuthorization": "User explicitly approved gpt-image-2.5-flare in this session on 2026-11-06, using the same sub2-image-gen skill and gateway.",
+  "verifiedAt": "2026-11-06T09:19:27.591804+00:00",
+  "covers": [
+    {
+      "slug": "prompt2rig-text-to-motion",
+      "model": "gpt-image-2.5-flare",
+      "quality": "high",
+      "requestedSize": "1536x1024",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "source": "output/imagegen/wechat-2026-11-06/prompt2rig-text-to-motion.png",
+      "prompt": "output/imagegen/wechat-2026-11-06/prompts/prompt2rig-text-to-motion.txt",
+      "promptSha256": "0227d2f4c924521b555f5b0975a86cfac953e8d1bc578e93a61f2b1fc5fd0f54",
+      "sourceSha256": "1f08d5eafc1f11bb7f79cc9aa5243987eeddf9db3f6c3c4a376cb30252d3dc94",
+      "bytes": 2116227
+    },
+    {
+      "slug": "ai-image-repair-structure-style",
+      "model": "gpt-image-2.5-flare",
+      "quality": "high",
+      "requestedSize": "1536x1024",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "source": "output/imagegen/wechat-2026-11-06/ai-image-repair-structure-style.png",
+      "prompt": "output/imagegen/wechat-2026-11-06/prompts/ai-image-repair-structure-style.txt",
+      "promptSha256": "1947c8cf3b88e73a7d447bbf290cf48101673c7b18baf3e4db541dab70248867",
+      "sourceSha256": "da265033227915cccde163ddd9a7873410836f7c0f8fcc0f9b7acf37db8ebfa6",
+      "bytes": 2793348
+    },
+    {
+      "slug": "mixamo-mocap-agent-animation",
+      "model": "gpt-image-2.5-flare",
+      "quality": "high",
+      "requestedSize": "1536x1024",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "source": "output/imagegen/wechat-2026-11-06/mixamo-mocap-agent-animation.png",
+      "prompt": "output/imagegen/wechat-2026-11-06/prompts/mixamo-mocap-agent-animation.txt",
+      "promptSha256": "242ca5cdba8bdcca0ba1f8c9aea69d65f6c4539845d759309106e18c0d827c4c",
+      "sourceSha256": "e4dbe7803809ce58cf8f19f4c5abdeb12ede3b40f2b2042b0ebaafd9787241fe",
+      "bytes": 2579905
+    },
+    {
+      "slug": "audio8-compact-tts",
+      "model": "gpt-image-2.5-flare",
+      "quality": "high",
+      "requestedSize": "1536x1024",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "source": "output/imagegen/wechat-2026-11-06/audio8-compact-tts.png",
+      "prompt": "output/imagegen/wechat-2026-11-06/prompts/audio8-compact-tts.txt",
+      "promptSha256": "d1c55741b1609fe68f5940a97f9e59bb82a521e639a13b641f9b7a3e4b2cb4c5",
+      "sourceSha256": "0b1438e8a94b723fb894d1068b47fecdbe1ac840c494f924988a53ea2ff4d3d1",
+      "bytes": 2298088
+    },
+    {
+      "slug": "video-to-game-playable-prototype",
+      "model": "gpt-image-2.5-flare",
+      "quality": "high",
+      "requestedSize": "1536x1024",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "source": "output/imagegen/wechat-2026-11-06/video-to-game-playable-prototype.png",
+      "prompt": "output/imagegen/wechat-2026-11-06/prompts/video-to-game-playable-prototype.txt",
+      "promptSha256": "442c82d154fe673eb11a04718b74d66d14e9cefa98279350dae559ced178bf53",
+      "sourceSha256": "bc8dcb9bd8c6dcf3e28e7fd0545a9155e32e3578a0718cc7e53cd86eec74ca90",
+      "bytes": 2444935
+    },
+    {
+      "slug": "eight-view-ai-3d-blockout",
+      "model": "gpt-image-2.5-flare",
+      "quality": "high",
+      "requestedSize": "1536x1024",
+      "dimensions": [
+        1586,
+        992
+      ],
+      "source": "output/imagegen/wechat-2026-11-06/eight-view-ai-3d-blockout.png",
+      "prompt": "output/imagegen/wechat-2026-11-06/prompts/eight-view-ai-3d-blockout.txt",
+      "promptSha256": "1875489310920e7eb4ec9d59805f2492a4633f6aae27756f632a9c1b29372d23",
+      "sourceSha256": "4232a8c91089be015729f6647cf3106984590f36f99704d37630fc59f75d7daa",
+      "bytes": 2264372
+    },
+    {
+      "slug": "qwen-faceswap-identity-transfer",
+      "model": "gpt-image-2.5-flare",
+      "quality": "high",
+      "requestedSize": "1536x1024",
+      "dimensions": [
+        1586,
+        992
+      ],
+      "source": "output/imagegen/wechat-2026-11-06/qwen-faceswap-identity-transfer.png",
+      "prompt": "output/imagegen/wechat-2026-11-06/prompts/qwen-faceswap-identity-transfer.txt",
+      "promptSha256": "1a570e77f41b065ba8116db0e393b173128c6264c2d2cffdd6ad20167728f46c",
+      "sourceSha256": "8b384112a8ab9e4e8f16aef7f0b50c36211c799106ef81d52c917862909447c3",
+      "bytes": 2501831
+    },
+    {
+      "slug": "mesh-avatar-studio-living-illustration",
+      "model": "gpt-image-2.5-flare",
+      "quality": "high",
+      "requestedSize": "1536x1024",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "source": "output/imagegen/wechat-2026-11-06/mesh-avatar-studio-living-illustration.png",
+      "prompt": "output/imagegen/wechat-2026-11-06/prompts/mesh-avatar-studio-living-illustration.txt",
+      "promptSha256": "42c2cbfa8e59d34a7d74e42a07053caecef089a9fb8d10efd67dcac612ba9856",
+      "sourceSha256": "54d72c0e5e1872342ea2df98add03c24805c4b21f98727ca9b9ab2683424ae86",
+      "bytes": 2341653
+    },
+    {
+      "slug": "pika-h3-flex-speed-and-limits",
+      "model": "gpt-image-2.5-flare",
+      "quality": "high",
+      "requestedSize": "1536x1024",
+      "dimensions": [
+        1586,
+        992
+      ],
+      "source": "output/imagegen/wechat-2026-11-06/pika-h3-flex-speed-and-limits.png",
+      "prompt": "output/imagegen/wechat-2026-11-06/prompts/pika-h3-flex-speed-and-limits.txt",
+      "promptSha256": "c2516d5430b83cb5a862eb6f42821d10a90e906052214d1bdbb57a84a5ea4ec8",
+      "sourceSha256": "e19e0672f404e1840b04b280c5e3071b400f8c02951fee5c8cdecb0aafa844bc",
+      "bytes": 2314870
+    },
+    {
+      "slug": "humanizer-clearer-ai-writing",
+      "model": "gpt-image-2.5-flare",
+      "quality": "high",
+      "requestedSize": "1536x1024",
+      "dimensions": [
+        1586,
+        992
+      ],
+      "source": "output/imagegen/wechat-2026-11-06/humanizer-clearer-ai-writing.png",
+      "prompt": "output/imagegen/wechat-2026-11-06/prompts/humanizer-clearer-ai-writing.txt",
+      "promptSha256": "2774bef724b7c08e061df27321dbcccbc3f90c6e1bd025dec1e99aa7f24aa28f",
+      "sourceSha256": "f290ea7ad3d4d62bdc1b9c61bc90ef052d1115a2a8be189598d2bc22d1f47b98",
+      "bytes": 2546400
+    },
+    {
+      "slug": "srt-whiteboard-animation-storytelling",
+      "model": "gpt-image-2.5-flare",
+      "quality": "high",
+      "requestedSize": "1536x1024",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "source": "output/imagegen/wechat-2026-11-06/srt-whiteboard-animation-storytelling.png",
+      "prompt": "output/imagegen/wechat-2026-11-06/prompts/srt-whiteboard-animation-storytelling.txt",
+      "promptSha256": "149a02d937138b21ce51c003102ef4eecac5cd29630dea8a9c7874de452f707b",
+      "sourceSha256": "a480f20f55f52ee5205c38f94f4d82149418b24908599cccd9463b5f6269d436",
+      "bytes": 2663643
+    }
+  ]
+}
